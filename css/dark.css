@@ -5,7 +5,7 @@
 	 --dshad: #192841;
 	 --dlak: #000000;
 	 --dblak: #000000;
-	--hfont: 'Monospace';
+	--hfont: Monospace;
 	--fsize: 1.5rem;
 }
 body{

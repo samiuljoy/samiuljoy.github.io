@@ -27,6 +27,8 @@
 	<div class="dropdown-content">
 		<a href="../demo/base.html">demo</a>
 		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
 		</div>
 	<li><a href="base.html"><back>base</back></a>
 </li>
@@ -113,6 +115,17 @@ B:	benzene pointing right
 <p>Makes a ring and puts N at position 3 with .V5 with R2.V5</p>
 
 <p>Hopefully from this part you can decipher rest of the portion and figure out how it works properly. For further reading see extra documentation stuff in /usr/share/docs/groff and also you can check out the man page for chem syntax with <code>man chem</code>.</p>
+
+<h3>Compilation</h3>
+
+<p>For compiling this into a pdf use the <code>-j</code> flag(preprocessor), so the shell command would look something like this;</p>
+
+<pre>
+<code>
+$ groff -mspdf -j filename&period;chem &gt; file&period;pdf
+</code>
+</pre>
+<a class='btn' href='code/gchem.html-code2.txt'>view raw</a>
 
 <hr>
 

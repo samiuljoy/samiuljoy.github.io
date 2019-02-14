@@ -8,6 +8,16 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
+	<pubDate>March  4, 2022</pubDate>
+	<title>Plans on future projects</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/future_projects.html">https://samiuljoy.github.io/microblog/future_projects.html</a>
+	<p>This article sums up my plans for future projects</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>October 15, 2021</pubDate>
 	<title>Turtle fractal tree</title>
 	<description><![CDATA[
