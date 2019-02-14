@@ -340,7 +340,7 @@ tr:nth-child(even) {
 	background-color: #d1dbdb;
 }
 table {
-	border: 1.5px solid grey;
+	border: 2px solid #353535;
 	border-collapse: collapse;
 	padding: 0.2rem;
 	outline: none;
