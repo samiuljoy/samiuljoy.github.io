@@ -49,7 +49,7 @@
 
 <item>
 	<pubDate>February 20, 2020</pubDate>
-	<title>login.sh && username.sh</title>
+	<title>login.sh + username.sh</title>
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/login.html">https://samiuljoy.github.io/microblog/login.html</a>
 	<p>Emulating Linux login mechanism using bash scripts</p>
