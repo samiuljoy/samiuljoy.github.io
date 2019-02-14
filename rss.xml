@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title></title>
-<description></description>
+<title>samiuljoy.github.io</title>
+<description>A blog about random stuffs</description>
 <language>en-us</language>
-<link>/rss.xml</link>
-<atom:link href='/rss.xml' rel='self' type='application/rss+xml' />
+<link>https://samiuljoy.github.io/rss.xml</link>
+<atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
+<item>
+	<pubDate>October 15, 2021</pubDate>
+	<title>Turtle fractal tree</title>
+	<description><![CDATA[
+	<p>https://samiuljoy.github.io/microblog/turtle.html</p>
+	<p>About the tree on the index page</p>
+	]]>
+	</description>
+</item>
+
 <item>
 	<pubDate>September 4, 2021</pubDate>
 	<title>Chemical structures with groff chem</title>
 	<description><![CDATA[
-	<p>/microblog/gchem.html</p>
+	<p>https://samiuljoy.github.io/microblog/gchem.html</p>
 	<p>Learn how to draw chemical structures with groff chem</p>
 	]]>
 	</description>
@@ -21,18 +31,8 @@
 	<pubDate>August 30, 2021</pubDate>
 	<title>Edit index.md pages</title>
 	<description><![CDATA[
-	<p>/demo/indexpage.html</p>
+	<p>https://samiuljoy.github.io/demo/indexpage.html</p>
 	<p>Learn how to edit index.md pages properly</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>October 15, 2021</pubDate>
-	<title>Turtle fractal tree</title>
-	<description><![CDATA[
-	<p>/microblog/turtle.html</p>
-	<p>About the tree on the index page</p>
 	]]>
 	</description>
 </item>
@@ -41,7 +41,7 @@
 	<pubDate>November 1, 2020</pubDate>
 	<title>Emulating user interactions using adb</title>
 	<description><![CDATA[
-	<p>/microblog/emulate.html</p>
+	<p>https://samiuljoy.github.io/microblog/emulate.html</p>
 	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser</p>
 	]]>
 	</description>
@@ -51,7 +51,7 @@
 	<pubDate>February 20, 2020</pubDate>
 	<title>login.sh && username.sh</title>
 	<description><![CDATA[
-	<p>/microblog/login.html</p>
+	<p>https://samiuljoy.github.io/microblog/login.html</p>
 	<p>Emulating Linux login mechanism using bash scripts</p>
 	]]>
 	</description>
@@ -61,7 +61,7 @@
 	<pubDate>February 13, 2020</pubDate>
 	<title>guess.sh</title>
 	<description><![CDATA[
-	<p>/microblog/guess.html</p>
+	<p>https://samiuljoy.github.io/microblog/guess.html</p>
 	<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
 	]]>
 	</description>

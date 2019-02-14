@@ -130,6 +130,7 @@ nav a{
 	color: var(--dpri);
 	font-weight:bold;
 	margin: 0.5rem;
+	text-decoration: none;
 }
 nav ul{
 	text-align:center;
