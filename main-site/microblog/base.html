@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Microblogs</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="samiuljoy">
+	<meta name="description" content="this are some small microblogs">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="microblog">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/base.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		</div>
+	<li><a href="base.html" style="text-decoration: none"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>🔆</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+pre {
+	background:black;
+	color:white;
+	overflow:auto;
+	padding:0.5rem;
+	border-radius:0.5rem;
+}
+@media screen and (max-width:500px) {
+	pre {
+	max-height:250px;
+	}
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h1>Microblogs</center></h1>
+
+<p>This is where my micro thoughts resides. Hopefully these articles comes to be of use.</p>
+
+
+<div class="card">
+<div class="date">September 4, 2021</div>
+<h2><a href="gchem.html">Chemical structures with groff chem</a></h2>
+<p>Learn how to draw chemical structures with groff chem</p>
+</div>
+
+<div class="card">
+<div class="date">February 13, 2020</div>
+<h2><a href="guess.html">guess.sh</a></h2>
+<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
+</div>
+
+<div class="card">
+<div class="date">February 20, 2020</div>
+<h2><a href="login.html">login.sh && username.sh</a></h2>
+<p>Emulating Linux login mechanism using bash scripts</p>
+</div>
+
+<div class="card">
+<div class="date">November 1, 2020</div>
+<h2><a href="emulate.html">Emulating user interactions using adb</a></h2>
+<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser</p>
+</div>
+
+<div class="card">
+<div class="date">October 15, 2021</div>
+<h2><a href="turtle.html">Turtle fractal tree</a></h2>
+<p>About the tree on the index page</p>
+</div>
+
+
+<hr>
+
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

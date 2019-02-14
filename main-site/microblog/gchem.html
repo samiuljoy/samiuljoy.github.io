@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Learn the basics of editing groff chemistry documents</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="samiuljoy">
+	<meta name="description" content="Learn how to edit groff chemistry document files">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Editing groff chemistry documents">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/gchem.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		</div>
+	<li><a href="base.html" style="text-decoration: none"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>🔆</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+pre {
+	background:black;
+	color:white;
+	overflow:auto;
+	padding:0.5rem;
+	border-radius:0.5rem;
+}
+@media screen and (max-width:500px) {
+	pre {
+	max-height:250px;
+	}
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h1>Groff Chem</center></h1>
+
+<p>Learn how to create chemical structures with groff. Groff is a text formating process for Linux systems. Groff is the Gnu version of roff. Groff is what used to write man pages on Gnu/Linux systems and roff on Unix systems. Chem is an additional extension for drawing chemical structures with groff.</p>
+
+<p>Chemical structures are bounded between .cstart and .cend sections. There's different labels for different structures. There's ring structure, there's Benzene structures so on and so forth.</p>
+
+<p>Below is an image of the structural formula of reserpine made with groff chem;</p>
+
+<center><img loading="lazy" class="pimg" src="../assets/reserpine.png" alt="Reserpine"></center>
+
+
+<div class="caption">Figure: When viewed through a pdf viewer</div>
+
+<p>This is the source code for writing this is groff format;</p>
+
+<pre>
+<code>
+&period;cstart
+R1:	benzene pointing up
+	bond -120 from R1&period;V5 ; O
+	bond left
+R2:	flatring5 pointing down double 4,5 with &period;V2 at R1&period;V3 with &period;V3 at R1&period;V2 put N at 1
+	H below R2&period;V1
+R3:	ring put N at 3 with &period;V5 at R2&period;V5
+R4:	ring put N at 1 with &period;V1 at R3&period;V3
+	back bond -120 from R4&period;V4 ; H
+	back bond 60 from R4&period;V3 ; H
+R5:	ring with &period;V1 at R4&period;V3
+	bond -120 
+D1:	double bond down ; O
+	bond left from D1&period;start ; O
+	bond left
+	back bond 60 from R5&period;V3 ; H
+	back bond down from R5&period;V4 ; O
+	bond down from O
+	bond 120 from R5&period;V3 ; O
+	bond 50 from O
+D2:	double bond up ; O
+	bond right length &period;1 from D2&period;start
+B:	benzene pointing right
+	bond 45 from B&period;V6 ; O
+	bond right
+	bond right from B&period;V1 ; O
+	bond right
+	bond 135 from B&period;V2 ; O
+	bond right
+&period;cend
+</code>
+</pre>
+<a class='btn' href='code/gchem.html-code1.txt'>view raw</a>
+
+<p><b>Explanation:</b> The R1:, D1:, B: are just labels for different structures. The R1-5 are ring structures from ring 1 to ring 5. R1: is a variable to be exact. You can place any variable in place of R1: or D1: but naming R1 for ring structures or B1 for first bond make things a lot easier to understand.</p>
+
+<p><b>R1</b></p>
+
+<p>The R1 label has a benzene structure that is pointing up, means position 1 is the top section of the benzene ring. If you've said pointing down, then it'd mean position 1 would start from the bottom top part. R1.V5 means on ring 1 at position 5. So, <code>bond -120 from R1.V5; O</code> means make a bond at R1.V5 which is -120 degrees(if you omit the - symbol from -120 then it'd make a bond in the other side) and put O at the end of the bond. Then on the next line we make a bond from O to left side.</p>
+
+<p><b>R2</b></p>
+
+<p>R2 ring structure starts with a flatring which is 5 sided and is pointing down and has a double bond at position 4 and 5. The <code>with .V2 at R1.V3 with .V3 at R1.V2</code> means the bond at position V2 of R2 would make bond with the V3 position with ring1 at position V3 and same for the later part. And at the end, put N at position 1 of R2.</p>
+
+<p><b>R3</b></p>
+
+<p>Makes a ring and puts N at position 3 with .V5 with R2.V5</p>
+
+<p>Hopefully from this part you can decipher rest of the portion and figure out how it works properly. For further reading see extra documentation stuff in /usr/share/docs/groff and also you can check out the man page for chem syntax with <code>man chem</code>.</p>
+
+<hr>
+
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,2 @@
+import crypt
+crypt.crypt('password', '$6$' + 'salt1234')

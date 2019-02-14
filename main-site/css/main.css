@@ -1,10 +1,9 @@
 :root{
-	 --dpri: #cdcdcd;
-	 --dsec: #eeeeee;
-	 --dbac: #000000;
-	 --dshad: #192841;
-	 --dlak: #000000;
-	 --dblak: #000000;
+	--pri: #002f30;
+	--sec: #006262;
+	--lnk: #002e43;
+	--lc: #778899;
+	--lbl: #000000;
 	--hfont: 'Monospace';
 	--fsize: 1.5rem;
 }
@@ -20,8 +19,6 @@ body{
 	max-width:50rem;
 	padding:1rem;
 	padding-top: 4.3rem;
-	background: var(--dlak);
-	color: var(--dpri);
 }
 @media screen and (min-width: 800px){
 	body {
@@ -46,28 +43,17 @@ body{
 	border-radius:0.3rem;
 	border:2px dashed grey;
 }
-a {
-	color: var(--dpri);
-	text-decoration: underline var(--dsec);
-}
-a:visited {
-	color: var(--dsec);
-}
-a:visited:hover, a:hover {
-	color: var(--dpri);
-	text-decoration: underline dashed var(--dsec);
-}
 p{
 	font-family: var(--hfont);
 	font-size: 1.15rem;
 }
 p a{
-	color: var(--dpri);
+	color: black;
 	text-decoration: none;
 	border-bottom: 2px solid grey;
 }
 p a:visited:hover, p a:hover{
-	color: var(--dpri);
+	color: var(--lbl);
 	text-decoration: none;
 	border-bottom: 2px dashed grey;
 }
@@ -75,28 +61,17 @@ p code {
 	font-family: var(--hfont);
 	color: black;
 	font-size: 1.15rem;
-	background: grey;
+	background: lightgrey;
 }
 @media screen and (max-width: 800px) {
-	p, p a {
+	p, p a, p code {
 	font-size: 1rem;
-	color: var(--dpri);
-	text-decoration: none;
-	}
-	blockquote p {
-	color: black;
-	}
-	p code {
-	font-size: 1rem;
-	color: black;
-	text-decoration: none;
 	}
 }
 home, back, .index{
-	background: var(--dlak);
+	background: var(--pri);
 	padding:0.5rem;
-	color: var(--dpri);
-	border: 2px solid grey;
+	color: white;
 	font-weight:bold;
 	border-radius: 0.5rem;
 	font-size: 1.15rem;
@@ -110,16 +85,14 @@ home, back, .index{
 }
 
 home:hover, back:hover, .index:hover {
-	background: var(--dlak);
-	color: white;
-	border: 2px dashed grey;
+	background: var(--lbl);
 }
 .btn{
 	display: inline-block;
-	background-color: black;
+	background-color: #eee;
 	text-decoration: none;
-	color: var(--dpri);
-	border: 1px solid #445566;
+	color: var(--sec);
+	border: 1px solid #ddd;
 	border-radius: 0.3rem;
 	width: 3rem auto;
 	font-weight: bold;
@@ -127,7 +100,7 @@ home:hover, back:hover, .index:hover {
 	margin-left: 0.3125rem;
 }
 nav a{
-	color: var(--dpri);
+	color: var(--lnk);
 	font-weight:bold;
 	margin: 0.5rem;
 }
@@ -137,8 +110,8 @@ nav ul{
 	padding: 1rem;
 	top: 0;
 	margin: 0;
-	background: black;
-	box-shadow: 0 4px 2px -2px rgba(25,40,65,.5);
+	background: white;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	opacity: 0.92;
 }
 nav ul li{
@@ -152,15 +125,11 @@ nav ul li{
 }
 .dropdown{
 	font-size: 1rem;
-	color: var(--dpri);
-	background-color: black;
 	text-align: center;
 	text-decoration: none;
 }
 .dropbtn{
 	border: none;
-	text-decoration: none;
-	color: var(--dpri);
 	background-color: inherit;
 	font-family: inherit;
 }
@@ -170,7 +139,7 @@ nav ul li{
 .dropdown-content{
 	display: none;
 	position: absolute;
-	background-color: #10101c;
+	background-color: #f9f9f9;
 	min-width: 140px;
 	max-height: 21.5rem;
 	overflow: scroll;
@@ -178,9 +147,7 @@ nav ul li{
 }
 .dropdown-content a{
 	float: inherit;
-	color: var(--dpri);
-	font-weight: bold;
-	text-decoration: none;
+	color: var(--pri);
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
@@ -190,9 +157,8 @@ nav ul li{
 	color: #dddddd;
 }
 .dropdown-content a:hover{
-	background-color: var(--dbac);
+	background-color: var(--pri);
 	color: white;
-	border: 2px dashed grey;
 	border-radius: 0.5rem;
 }
 .dropdown:hover .dropdown-content{
@@ -209,18 +175,18 @@ nav ul li{
 }
 .card{
 	padding: 20px;
-	box-shadow: 2px 4px 8px -2px #1c2e4a;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
 	border-radius: 0.5rem;
 	margin-bottom:4rem;
-	border: 1px solid #777777;
+	border: 1px solid #ddd;
 }
 .area, .area:visited, .area:hover, .area:visited:hover{
-	color: var(--dpri);
+	color: var(--lbl);
 	text-decoration: none;
 	font-weight: normal;
 }
 .date, author {
-	color: inherit;
+	color: grey;
 	margin-bottom: 1rem;
 	font-weight: bold;
 	font-size: 14px;
@@ -233,11 +199,11 @@ nav ul li{
 	float: left;
 }
 .card:hover{
-	box-shadow: 2px 4px 8px 2px #1c2e4a;
+	box-shadow: 2px 4px 8px 2px var(--pri);
 	border: none;
 }
 .card a{
-	color: white;
+	color:var(--sec);
 	text-decoration:none;
 	font-weight:bold;
 }
@@ -250,38 +216,39 @@ nav ul li{
 }
 .tag{
 	font-weight: bold;
-	color: var(--dpri);
+	color: var(--sec);
 }
 blockquote{
-	background: #808080;
-	color: black;
-	border-left:5px solid #704550;
+	background: #eee;
+	color: var(--lbl);
+	border-left:5px solid var(--lc);
 	font-size:120%;
 	margin:2rem 0;
 	padding:1rem;
 	border-radius: 0.3rem;
 }
 blockquote h1 {
+	color: #006262;
 	font-size: 25px;
 	font-weight: bold;
 }
 
 blockquote h2 {
+	color: #006262;
 	font-size: 22px;
 	font-weight: bold;
 }
 
 blockquote h3 {
+	color: #006262;
 	font-size: 20px;
 	font-weight: bold;
 }
-blockquote p b {
-	color: black;
-	font-weight: bold;
-}
+
 blockquote p {
 	margin: 0;
 }
+
 blockquote blockquote p {
 	font-size: 100%;
 }
@@ -293,22 +260,21 @@ ul{
 	font-family: var(--hfont);
 	font-weight: bold;
 	font-size: 1.15rem;
-	color: var(--dpri);
+	color: var(--lnk);
 }
 ol li{
 	font-family: var(--hfont);
 	font-size: 1.15rem;
-	color: white;
 }
 .ull{
 	font-family: var(--hfont);
 	font-size: 1.15rem;
 	font-weight: bold;
-	color: var(--dpri);
+	color: var(--lnk);
 	list-style-type: '# ';
 }
 .ull a {
-	color: white;
+	color: var(--lnk);
 	text-decoration: none;
 	border-bottom: 2px solid grey;
 }
@@ -343,7 +309,7 @@ html{
 }
 strong,b,h1,h2,h3,h4{
 	font-weight:bold;
-	color: var(--dsec);
+	color: var(--sec);
 }
 hr {
 	text-align: center;
@@ -362,17 +328,15 @@ hr:after {
 	content: 'return NULL\;';
 	padding: 0.5rem;
 	font-size: 1rem;
-	color: lightgrey;
+	color: grey;
 	display: inline;
-	background-color: black;
+	background-color: white;
 }
 tr:nth-child(odd) {
-	background-color: grey;
-	color: black;
+	background-color: white;
 }
 tr:nth-child(even) {
-	background-color: darkgrey;
-	color: black;
+	background-color: #d1dbdb;
 }
 table {
 	border: 1.5px solid grey;
@@ -392,11 +356,9 @@ table {
 		border: none;
 	}
 }
-th {
-	}
 td,th {
-	border-left: 1px solid black!important;
-	border-right: 1px solid black!important;
+	border-left: 1px solid grey!important;
+	border-right: 1px solid grey!important;
 	padding: 0.2rem;
 }
 @media screen and (max-width: 800px) {
@@ -406,12 +368,11 @@ td,th {
 	}
 }
 th {
-	border: 1px solid black!important;
-	color: black;
+	color: #005252;
 	padding: 0.45rem;
 }
 table tr{
-	border-bottom:1px solid var(--dlak);
+	border-bottom:1px solid var(--lbl);
 }
 table td{
 	padding:0.5rem;
@@ -456,9 +417,10 @@ pre{
 	margin-bottom: var(--fsize);
 	font-weight: bold;
 	text-align: center;
-	color: var(--dsec);
+	color: var(--sec);
 }
-/* 
+
+/* footer section commented out for now
 .footer{
 	background: #e6e6e6;
 	padding: 1.2rem;
@@ -481,6 +443,7 @@ pre{
 	font-size: 21px;
 }
 */
+
 iframe{
 	width: 100%;
 	height: 205px;

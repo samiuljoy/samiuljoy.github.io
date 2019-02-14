@@ -1,0 +1,7 @@
+#!/bin/bash
+runtime="4 second"
+endtime=$(date -ud "$runtime" +%s)
+while [ "$(date -u +%s)" -lt "$endtime" ]; do
+	printf "." $(sleep .5); printf "." $(sleep .5); printf "."$(sleep 0.5);
+	echo
+done

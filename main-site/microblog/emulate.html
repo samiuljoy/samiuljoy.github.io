@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Emulating User Interactions Using ADB</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Title is pretty much self explanatory, Using adb it was possible to emulate a normal user interaction on a Chrome browser. More ways to automate stuff in a very cool way!">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Emulating User Interactions Using ADB">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/emulate.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demos/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		</div>
+	<li><a href="base.html" style="text-decoration: none"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>🔆</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+pre {
+	background:black;
+	color:white;
+	overflow:auto;
+	padding:0.5rem;
+	border-radius:0.5rem;
+}
+@media screen and (max-width:500px) {
+	pre {
+	max-height:250px;
+	}
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h1>Emulating User Interactions Using ADB</center></h1>
+
+<p>Couple days back, well actually couple months back I came across a random video on YouTube about headless chromium browsers being used as a web scrapping tool with node.js and puppeteer for emulating user interactions <a href="https://youtube.com/watch?v=aRXzW-o-zqs" rel="nofollow">the video</a>. The fact that we could emulate user inputs using a <code>cli</code> was quite fascinating, suffice to say one could write a script to automate a whole bunch of stuffs without triggering the <b>I'm not a robot</b> part(except some sites). Now, everything seems pretty darn cool and all, and I came across this idea if it was possible to emulate the same thing but on an Android device. Sad news is that, there's no "Headless Chrome" for Android devices, since it depends on a bunch of libraries and stuffs, which unfortunately aren't available on Android for the current time. However, (here comes the fun part), it's actually possible to emulate user interactions on Android devices, which of course isn't only limited to using Chrome, but also, the whole UI of Android, meaning, we can automate basically everything we usually do on a typical Android device, but with scripts. Now how cool is that? Sounds pretty cool right? Well, let's get started!</p>
+
+<h2># Stuffs we'll be needing are;</h2>
+
+<ol>
+	<li>A PC</li>
+	<li>An Android</li>
+	<li>Little bit of Internet</li>
+</ol>
+
+<h2># Overview</h2>
+
+<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android<i>software</i>development#ADB" rel="nofollow">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it [^-^]</p>
+
+<h2># Gathering required stuffs</h2>
+
+<p>We'll be needing a PC to instruct and execute commands onto our devices. For that, we'll be needing adb. If you're on Linux OS, you can install adb using your package manager, if you're on macOS, you can install it using brew. Head over to your phone to enable usb debugging. Once you have everything set up, then we can begin.</p>
+
+<p>Make sure you can access your phone from your PC through the shell. Connect usb cable to your phone and open a terminal window on your PC, and type in <code>adb devices</code> which considering everything is properly set up, should display something like this</p>
+
+<pre>
+<code>
+&lsqb;user@debian&rsqb;:&sim;$ adb devices
+
+List of devices attached
+&ast; daemon starting on port 5555
+&ast; daemon started successfully
+
+ID	 	 device
+0e46ee341 	 authorized
+
+&lsqb;user@debian&rsqb;:&sim;$
+</code>
+</pre>
+
+<p>Everything seems fine? Let's proceed to the next step</p>
+
+<h2># Fun part begins here</h2>
+
+<p>Now that your device is connected, just for sake of fun, try this in your terminal;</p>
+
+<pre>
+<code>
+adb shell input keyevent 223; adb shell keyevent 224
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code1.txt'>view raw</a>
+
+<p>What this one liner code does is, it turns off the screen with <code>keyevent 223</code>, and turns the screen on with <code>keyevent 224</code>. Now, onto what we're here for. Emulation. Let's jump straight to it. Let's begin with starting Chrome Browser from our terminal. We could do this with either by going to the shell and executing from there, or we could use our native terminal. The difference between them is just that we have to add <code>adb shell</code> prefix for the later case. Either way, suit yourself to what you prefer. Now to start chrome, we can issue this command;</p>
+
+<pre>
+<code>
+adb shell am start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code2.txt'>view raw</a>
+
+<p><b>note: you could also use 'com.android.chrome/.MainActivity'</b></p>
+
+<p>This should launch Chrome Browser on your Android. The first part before "/" tells the shell to use chrome, the part after / tells the shell to actually launch chrome with activity Main, which brings the chrome app in foreground. Pretty cool right? Now, let's emulate swipe action to make it seem like as if you were swiping across the screen. Swipe action are executed with <code>input swipe</code> action, like so</p>
+
+
+<pre>
+<code>
+adb shell input swipe 400 700 400 130 500
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code3.txt'>view raw</a>
+
+<p>The 400 700 and 400 130 are <b>x</b> and <b>y</b> coordinates of the screen. 400 700 tells the device to emulate a tap on coordinate 400 700,then move across the screen to 400 130 coordinate, and this is done with <b>swipe</b> action. Now, we don't want the swipe action to be blazing fast, hence the velocity is defined with 500. Try replacing it with 100 and see things fly across the screen lol. The velocity part is optional and can be ignored. The important part of this whole thing is to get the pointer location, because for my phone, the coordinates were that and that, however this might be different in your case. So, to get the tap coordinates, you need to enable a feature under <b>Developer Options</b> on your device named <b>Pointer Locations</b>, go to developer options and scroll down a bit until you find pointer locations and enable it. After enabling it, you'll see a red margin on top of your screen, showing the coordinates. Tap on random surface of your screen, and you'll see the x and y coordinates pop up in <b>red</b>. Now, to do a swipe action, tap and note down the coordinates and then swipe up or down and take note of your final coordinates(note: the coordinates are the ones when the screen is tapped and hold, not the ones when tap is released), and that's it. Replace your four coordinates with the four coordinates above.</p>
+
+<h2># Performing a search query</h2>
+<p>Now, onto the next step let's start the chrome browser again, and this time let's perform a search query. To do that, start chrome browser and jump onto its home page. There's a search bar on the home page. Now what we usually do is tap on the search bar and type in whatever we want and hit enter. Well, that's basically what we'll doing, but with scripts.</p>
+
+<p>Remember to take a note of the coordinates of the search bar where we'll be emulating a tap action as if we were actually tapping on the search bar. Tap and hold the search bar and take notes of your coordinates while holding. Got the coordinates? Good, now smash this into your terminal</p>
+
+<pre>
+<code>
+adb shell input tap X Y
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code4.txt'>view raw</a>
+
+<p>Replace <code>X</code> and <code>Y</code> with the coordinates you got while tapping over the search bar. That should input a tap action on only on those coordinates of your screen. Remember to have chrome opened into its home screen. This should bring up the area where we input our texts and notice that there's already a blinking cursor waiting for you to input texts. This is where we'll be inserting our search query. To do that just type in;</p>
+
+
+<pre>
+<code>
+adb shell input text 'test'
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code5.txt'>view raw</a>
+
+<p>This should input the text 'test' into your search bar. Now, to emulate pressing 'Enter' key is pretty easy, just type in;</p>
+
+
+<pre>
+<code>
+adb shell input keyevent 66
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code6.txt'>view raw</a>
+
+<p><code>keyevent 66</code> emulates Return action. So there you go, you just performed a simple search query. To sum all of these up, we should now have a script that looks like this;</p>
+
+<pre>
+<code>
+&num; Let's start up chrome
+adb shell start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
+&num; wait for chrome to start up properly, wait for 2 seconds
+sleep 2
+&num; perform a tap action on X and Y coordinates to bring up the search bar
+adb shell input tap X Y
+&num; perform a search query with text
+adb shell input text 'test'
+&num; and hit enter
+adb shell input keyevent 66
+&num; and to perform a swipe, put any bottom to top coordinates like so
+adb shell input swipe 400 700 400 150 500
+&num; we are swiping up, which is why on Y coordinates change, from 700(bottom) to 150 (up)
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code7.txt'>view raw</a>
+
+<p>Pretty cool right? Try this automated search query to check for Cloudflare encryption</p>
+
+<pre>
+<code>
+adb shell start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
+sleep 2
+adb shell input tap X Y
+&num; %s have to be put between strings that contain spaces, we'll querying for 'cloudflare test'
+adb shell input text 'cloudflare%stest'
+&num; wait 2 seconds for search results to pop up
+sleep 2
+&num; what we're searching for is anything containing 'cloudflare esni' in the search queries&period;
+&num; now tap on the search query
+adb shell input tap X Y
+&num; X and Y being the search result coordinates
+&num; wait for the page to load properly
+sleep 3
+&num; then tap on the part that says 'check my browser'
+adb shell input tap X Y
+&num; wait for &sim;4 seconds for the results to properly load
+sleep 4
+&num; well there you go, you just completed an automated test, you can scroll down if you wish to,
+adb shell input swipe X Y X Y 500
+</code>
+</pre>
+<a class='btn' href='code/emulate.html-code8.txt'>view raw</a>
+
+<h2># Aftermath</h2>
+
+<p>Imagine all the stuffs we could automate with this!! Also, if you happen to have root privilege on your phone, that's even better, because with root privilege, you could put any script of yours and run it without needing a PC.</p>
+
+
+<p><b>This page has more contents to come and needs some improvement, should've modified it before pushing. Oh well -.-</b></p>
+
+<hr>
+
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="../js/toggle.js"></script>
+
+</body>
+</html>

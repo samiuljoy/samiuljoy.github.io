@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About this site</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="samiuljoy">
+	<meta name="description" content="About this site">
+	<link rel="stylesheet" href="./css/maind.css" type="text/css">
+	<link rel="stylesheet" href="./css/main.css" type="text/css">
+	<meta name="generator" content="About page">
+	<link rel="canonical" href="https://samiuljoy.github.io/">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="./index.html" style="color: white; text-decoration: none"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="./demo/base.html">demo</a>
+		<a href="./microblog/base.html">microblog</a>
+		</div>
+	<li><a href="./about.html" style="text-decoration: none"><back>about</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>🔆</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import './css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+pre {
+	background:black;
+	color:white;
+	overflow:auto;
+	padding:0.5rem;
+	border-radius:0.5rem;
+}
+@media screen and (max-width:500px) {
+	pre {
+	max-height:250px;
+	}
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>About this site</center></h2>
+
+<p>The primary objective was to showcase the <a href="demo/base.html" rel="nofollow">ssg demo pages</a>. ssg is the static site generator that I wrote from scratch in shell script. More details on <a href="https://github.com/samiuljoy/ssg" rel="nofollow">here</a>. Then thought a blog page would be nice supposedly. So micro blog page is over <a href="microblog/base.html" rel="nofollow">here</a>.</p>
+
+<h3 id="contact"># Contact</h3>
+
+<ul class="ull">
+	<li>kaggle -&gt; <a href="https://www.kaggle.com/samiuljoy" rel="nofollow">https://www.kaggle.com/samiuljoy</a></li>
+	<li>github -&gt; <a href="https://www.github.com/samiuljoy" rel="nofollow">https://www.github.com/samiuljoy</a></li>
+	<li>Rss for this site -&gt; <a href="https://samiuljoy.github.io/rss.xml" rel="nofollow">https://samiuljoy.github.io/rss.xml</a></li>
+	<li>joydotsamiul46atg mail -&gt; If you're not a bot, send me mail thru this address</li>
+</ul>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="./js/toggle.js"></script>
+</body>
+</html>

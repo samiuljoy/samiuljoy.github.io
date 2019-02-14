@@ -1,0 +1,1 @@
+echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Generating a graphical tree with turtle</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Generate a fractal tree with python module turtle">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="turtle fractal tree python">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/turtle.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		</div>
+	<li><a href="base.html" style="text-decoration: none"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>🔆</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+pre {
+	background:black;
+	color:white;
+	overflow:auto;
+	padding:0.5rem;
+	border-radius:0.5rem;
+}
+@media screen and (max-width:500px) {
+	pre {
+	max-height:250px;
+	}
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>Fractal tree</center></h2>
+
+<center><img loading="lazy" class="pimg" src="../assets/turtlen.png" alt="Fractal tree"></center>
+
+
+<div class="caption">Fractal Tree</div>
+
+<p>The tree that you saw first on index page was made with turtle. Turtle is a graphical module that comes built in with python programming language. Below is the source code for the tree.</p>
+
+<pre>
+<code>
+import turtle
+
+hr = turtle&period;Turtle()
+hr&period;color("white", "white")
+
+ts = turtle&period;getscreen()
+ts&period;bgcolor("black")
+
+hr&period;left(90)
+hr&period;speed(1500)
+
+def tree(i):
+    if i &lt; 4:
+        return
+    else:
+        hr&period;forward(i)
+        hr&period;left(30)
+        tree(3 &ast; i/4)
+        hr&period;right(60)
+        tree(3 &ast; i/4)
+        hr&period;left(30)
+        hr&period;backward(i)
+tree(100)
+turtle&period;done()
+</code>
+</pre>
+<a class='btn' href='code/turtle.html-code1.txt'>view raw</a>
+
+<p>I was going through my old notebooks, and found a turtle code in it, then modified it a bit.</p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/about.html#contact" rel="nofollow">Contact</a> | <a href="#" rel="nofollow">Go To Top ^</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>
