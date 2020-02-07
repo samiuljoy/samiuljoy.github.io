@@ -22,8 +22,15 @@ ul.center li
  a {
   color: black;
   }
- </style>
-<h2><pre><ul class="center">
+  
+  div.c {
+  text-align: justify; /* For Edge */
+  -moz-text-align-last: justify; /* For Firefox prior 58.0 */
+  text-align-last: justify;
+}
+
+</style>
+<h2><pre><ul class="center"><div class="c">
 <li><a href="bash-scripts/bash.html">bash-scripts</a></li>
 <li><a href="termux/termux.html">Termux-tweaks</a></li>
 <li><a href="python/python.html">Python</a></li>
