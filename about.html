@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 
-<!-- This here is a little modification to the Ultra super fast Jekyll theme -->
+<!-- This here is a little modification to the Ultra super fast Jekyll theme by me(Samiul Joy) -->
 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<meta name="viewport" content="width=device-width, initial-scale=0.9">
 
 <title>About</title>
 
@@ -24,12 +24,14 @@
 
 <script type="application/ld+json"> {"description":"About","@type":"Posting","headline":"About","dateModified":"2019-07-16T18:31:40+00:00","datePublished":"2019-07-16T18:31:40+00:00","url":"https://samiuljoy.github.io/about.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/about.html"},"@context":"https://schema.org"}</script>
 
+<!--
 <link rel="shortcut icon" href="/favicon.png">
 <link rel="alternate" type="application/atom+xml" title="Ultra" href="/atom.xml">
 <link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
+-->
 
-<style type="text/css"> 
-	
+<style type="text/css">
+
 body {
 	
 	font-size:1rem;
@@ -39,7 +41,6 @@ body {
 	-webkit-text-size-adjust:100%;
 	zoom:1;
 	font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-	
 	}
 	
 header p strong {
@@ -67,13 +68,15 @@ a,a:visited {
 
 a:hover,a:visited:hover {
 	
-	color:dodgerblue }
+	color: #61000C;
+
+}
 	
 a.active {
 	background:black;
 	padding:0.5rem;
 	color:white;
-	font-weight:bold }
+	font-weight:bold; }
 
 blockquote {
 	background:#f9f9f9;
@@ -102,6 +105,7 @@ dl dd{
 	}
 
 code,pre{
+	
 	font-family:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
 	font-size:92%
 	} 
@@ -114,7 +118,7 @@ pre{
 	width:100%
 	}
 
-.date{
+.date {
 	opacity:0.6
 	}
 	
@@ -131,10 +135,11 @@ body{
 	margin:0 auto;
 	max-width:50rem;
 	padding:1rem }
-
+	
 strong,b,h1,h2,h3,h4
 	{
-	font-weight:bold
+	font-weight:bold;
+	color: #006262;
 	}
 hr{
 	background:black;
@@ -159,8 +164,8 @@ table td{
 img{
 	width:100%;
 	margin:0.5rem 0
-	}
-	
+	} 
+
 nav ul{
 	list-style:none;
 	padding:0;
@@ -171,26 +176,102 @@ nav ul li{
 
 nav a{
 	margin:0.5rem;
-	text-transform:uppercase}
+	text-transform: uppercase}
+		
+.navbar {
+  	overflow: hidden;
+}
+	
+.dropdown-menu-center {
+	left: 50%;
+	right: auto;
+	text-align : center;
+	transform : translate(- 50% , 0);
+}
+	
+.navbar a {
+  float: inherit;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: inherit;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+}
+
+.content {
+	padding: 16px;
+	}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: inherit;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 footer{
-	margin:2rem 0}
+	margin:2rem 0;
+}
 
 </style></head>
 
-<body>
 <font style=font-family:"monospace">
 <header role="banner">
 <nav role="navigation">
-
 <ul>
 <li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
-<li><a href="https://samiuljoy.github.io/biopython/biopython.html">Biopython</a></li>
-<li><a href="https://samiuljoy.github.io/about.html" class="active">About</a></li>
-<li><a href="https://samiuljoy.github.io/bash-scripts/bash.html" >#!/bin/bash</a></li>
-<li><a href="https://samiuljoy.github.io/books/books.html">Book suggestions</a></li>
-<li><a href="https://samiuljoy.github.io/python/python.html">Pythons</a></li>
-<li><a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant Science</a></li>
+<li class="dropdown">
+    <button class="dropbtn"><b><u>INDEX</u></b> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
+      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
+      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
+      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
+      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
+      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+    </div>
+  </div>
+  <li><a href="https://samiuljoy.github.io" class="active">About</a></li>
 </ul>
 </nav>
 </header>
@@ -198,29 +279,16 @@ footer{
 <hr><main id="main" role="main">
 
 <article role="article"> 
+<center> <h2 style="color:#006262">*To Whom It May Concern*</h2> </center>
 
-<center> <h2>*To Whom It May Concern*</h2> </center>
-
-<p>I have absolutely no idea whatsoever why the hell am I even doing this lol, BUT! Whatever comes to my mind(useful of course)...I believe I should share....who knows things here could be helpful...you never know c:</p>
-<br>
-<h2><center>#whoami</h2></center>
-<p>A student of Plant Science as of 2020. I have a hell of a fascination for Linux and always liked the idea of open-source(I'm even writing this on a Debian OS). I'm a 21 year who has no idea what's his future is going to be, but he is passionate about micro-controllers, computers, and integrating Plant Science based knowledge into computers(Bio-computing or Bio-informatics, or perhaps Patent designing and Nucleotide model assessment). </p>
+<p>Posts here will most probably be related to Plant Science and Computational biology, also some of my funtime bash-scripts :-)</p>
+<h2 style="color:#006262"><center>#whoami</h2></center>
+<p>A student of Plant Science as of 2020. I have super fascination for Linux and always liked the idea of open-source(I'm even writing this on a Debian OS). I'm a 21 year who has no idea what's his future is going to be, but is passionate about micro-controllers, computers, and integrating Plant Science based knowledge into computers(Bio-computing or Bio-informatics, or perhaps Patent designing and Nucleotide model assessment). </p>
 <!--
 
 <h3 id="key-features">Key features</h3>
 
 <ul><li>seo optimized</li>
-<li>weighs under 2kb</li>
-<li>portfolio/blog pages</li>
-<li>AAA, 100/100 scores on Lighthouse, Gmetrix and Webpagetest</li>
-<li>responsive</li>
-<li>inline css</li>
-<li>compressed css, html</li>
-<li>sitemap</li>
-<li>robots.txt</li>
-<li>atom feed</li>
-</ul>
-
 -->
 
 </article></main>
@@ -228,5 +296,5 @@ footer{
 <br><p><center>Hope that you get benefited while surfing this site</p></center>
 
 <hr><center><footer class="footer" role="contentinfo">
-<small>email: samiuljoy46@yahoo.com<br><a href="https://github.com">github.com</a>.</center>
+<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
 </small></footer></body></html>
