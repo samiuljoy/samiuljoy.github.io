@@ -22,7 +22,11 @@
 <meta property="twitter:title" content="Bash-scripts" />
 <meta name="twitter:site" content="@yourusername" />
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/bash.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/bash.html"},"@context":"https://schema.org"}</script>
+<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/guess.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess.html"},"@context":"https://samiuljoy.github.io"}</script>
+
+<link rel="stylesheet" href="zenburn.css">
+<script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <!--
 <link rel="shortcut icon" href="/favicon.png">
@@ -119,55 +123,6 @@
 		margin-bottom:2rem
 	
 		}
-
-code,pre {
-	
-	font-family:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-	font-size:92%;
-	border: 1px solid #999;
-	display: block;
-	padding: 1px;
-	width: 140px;
-	height: 140px;  
-	}
-	
-	::-webkit-scrollbar {
-	
-	width: 4px;
-	height: 4px;
-	
-	}
-
-	::-webkit-scrollbar-track {
-
-	border: 1px solid grey;
-	border-radius:4px;
-		
-	}
-
-	::-webkit-scrollbar-thumb {
-				
-	background: grey;  
-	border-radius: 4px;
-	
-	}
-
-	::-webkit-scrollbar-thumb:hover {
-	
-	background: #88ba1c;  
-			
-	}
-	
-	pre {
-			
-	background: #eee;
-	color:black;
-	overflow: scroll;
-	padding:1em;
-	width:100%
-			
-	}
-	
 
 	.date {
 	
@@ -391,7 +346,6 @@ code,pre {
 
 </head>
 
-<ncpy>
 <font style=font-family:"monospace">
 <header role="banner">
 <nav role="navigation">
@@ -423,7 +377,7 @@ code,pre {
 
 <center><h2>guess.sh</h2></center>
 
-<pre><cpy1>#!/bin/bash
+<pre><code class="bash">#!/bin/bash
 
 #It's a number guessing game based of of $RANDOM variable
 
@@ -493,11 +447,28 @@ fi
 fi
 fi
 done
-</pre></cp1><ncpy>
+</pre></code>
 
-<p> You can save this as guess.sh and don't forget to chmod u+x the script. The ho.sh script is below, save it as ho.sh under the same directory as guess.sh, the chmod +x ho.sh, and you're good to go.</p></ncpy>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="pre">Copy</button>
+
+    <script src="clipboard.min.js"></script>
+
+    <script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+
+<p> You can save this as guess.sh and don't forget to chmod u+x the script. The ho.sh script is below, save it as ho.sh under the same directory as guess.sh, the chmod +x ho.sh, and you're good to go.</p>
 <center><h2>ho.sh</h2></center>
-<pre><cpy2>#!/bin/bash
+
+<pre><code class="bash">#!/bin/bash
 runtime="4 second"
 endtime=$(date -ud "$runtime" +%s)
 while [ "$(date -u +%s)" -lt "$endtime" ]; do
@@ -505,21 +476,38 @@ printf "." $(sleep .5); printf "." $(sleep .5); printf "."$(sleep 0.5);
 echo
 break
 done
-</pre>
-</cpy2>
+</pre></code>
 
-<ncpy>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="pre">Copy</button>
+
+<script src="clipboard.min.js"></script>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+</script>
+
+
+
 <p><br>
 The idea of creating this came while I was reading a book called "Python Crash Course" by Erric Matthes, where the intro goes like this..<br></p>
 
 <blockquote><p>"I wrote my first program on a kit computer my dad had assembled in our basement. The computer consisted nothing more than a bare motherboard connected to a keyboard without a case, and it had a bare cathode ray tube for a monitor. My initial program was a simple number guessing game, which looked something like this,</p>
-<pre>
+<pre><code class="plaintext">
 I'm thinking of a number, try to guess the number I'm thinking of: 25
 Too low! Guess again: 50
 Too high! Guess again: 42
 That's it. Would you like to play again? (Yes/No) no
 Thank's for playing
-</pre>
+</pre></code>
+
 <p>I'll always remeber how satisfied I felt watching my family play a game I created.</p>
 </blockquote>
 
@@ -527,3 +515,5 @@ Thank's for playing
 <hr><center><footer class="footer" role="contentinfo">
 <small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
 </small></footer></body></html>
+
+<!-- I feel so happy right now -->
