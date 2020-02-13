@@ -377,7 +377,7 @@
 
 <center><h2>guess.sh</h2></center>
 
-<pre><code class="bash">#!/bin/bash
+<pre id="foo"><code class="bash">#!/bin/bash
 
 #It's a number guessing game based of of $RANDOM variable
 
@@ -449,7 +449,7 @@ fi
 done
 </pre></code>
 
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="pre">Copy</button>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
 
     <script src="clipboard.min.js"></script>
 
@@ -468,7 +468,7 @@ done
 <p> You can save this as guess.sh and don't forget to chmod u+x the script. The ho.sh script is below, save it as ho.sh under the same directory as guess.sh, the chmod +x ho.sh, and you're good to go.</p>
 <center><h2>ho.sh</h2></center>
 
-<pre><code class="bash">#!/bin/bash
+<pre id="bar"><code class="bash">#!/bin/bash
 runtime="4 second"
 endtime=$(date -ud "$runtime" +%s)
 while [ "$(date -u +%s)" -lt "$endtime" ]; do
@@ -478,7 +478,7 @@ break
 done
 </pre></code>
 
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="pre">Copy</button>
+<button class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">Copy</button>
 
 <script src="clipboard.min.js"></script>
 
@@ -508,12 +508,13 @@ That's it. Would you like to play again? (Yes/No) no
 Thank's for playing
 </pre></code>
 
-<p>I'll always remeber how satisfied I felt watching my family play a game I created.</p>
+<p>I'll always remeber how satisfied I felt watching my family play a game I created."</p>
 </blockquote>
-
 
 <hr><center><footer class="footer" role="contentinfo">
 <small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
 </small></footer></body></html>
 
 <!-- I feel so happy right now -->
+<!-- Edited with vim editor -->
+<!-- Samiul Joy -->
