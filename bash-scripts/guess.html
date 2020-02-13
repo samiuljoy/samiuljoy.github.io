@@ -423,8 +423,7 @@ code,pre {
 
 <center><h2>guess.sh</h2></center>
 
-<pre><cpy1>
-#!/bin/bash
+<pre><cpy1>#!/bin/bash
 
 #It's a number guessing game based of of $RANDOM variable
 
@@ -498,8 +497,7 @@ done
 
 <p> You can save this as guess.sh and don't forget to chmod u+x the script. The ho.sh script is below, save it as ho.sh under the same directory as guess.sh, the chmod +x ho.sh, and you're good to go </p></ncpy>
 <center><h2>ho.sh</h2></center>
-<pre><cpy2>
-#!/bin/bash
+<pre><cpy2>#!/bin/bash
 runtime="4 second"
 endtime=$(date -ud "$runtime" +%s)
 while [ "$(date -u +%s)" -lt "$endtime" ]; do
@@ -511,8 +509,8 @@ done
 </cpy2>
 
 <ncpy>
-<p>
-The idea of creating this came while I was reading a book called "Python Crash Course" by Erric Matthes, where the intro goes like this..<br><br></p>
+<p><br>
+The idea of creating this came while I was reading a book called "Python Crash Course" by Erric Matthes, where the intro goes like this..<br></p>
 
 <blockquote><p>"I wrote my first program on a kit computer my dad had assembled in our basement. The computer consisted nothing more than a bare motherboard connected to a keyboard without a case, and it had a bare cathode ray tube for a monitor. My initial program was a simple number guessing game, which looked something like this,</p>
 <pre>
