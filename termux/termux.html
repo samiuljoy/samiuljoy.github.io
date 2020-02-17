@@ -1,45 +1,369 @@
-<html>
-<!-- Probably the worst html you've ever seen. -->
+<!-- This here is a whole new modification to the Ultra super fast Jekyll theme. Modifications by Samiul Joy -->
+
+<html lang="en">
+<head>
 <meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="viewport" content="width=device-width, initial-scale=0.5">
-<style>
-code {font-size: 120%;}
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+<title>Bash-scripts</title>
+
+<meta name="generator" content="bash-scripts" />
+<meta property="og:title" content="Bash-scripts" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Bash-scripts" />
+<meta property="og:description" content="Bash-scripts" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login.html" />
+<meta property="og:site_name" content="https://samiuljoy.github.io" />
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Bash-scripts" />
+<meta name="twitter:site" content="@yourusername" />
+
+<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/login.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess.html"},"@context":"https://samiuljoy.github.io"}</script>
+
+<link rel="stylesheet" href="zenburn.css">
+<script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<!--
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="alternate" type="application/atom+xml" title="Ultra" href="/atom.xml">
+<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
+-->
+
+<style type="text/css">
+
+	body {
+		
+		font-size:1rem;
+		line-height:1.5;
+		-webkit-font-smoothing:antialiased;
+		text-rendering:optimizeLegibility;
+		-webkit-text-size-adjust:100%;
+		zoom:1;
+		font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
+		
+		}
+	
+	header p strong {
+
+		text-transform:uppercase
+	
+		}
+	
+	.post-title {
+	
+		background:black;
+		margin:10rem 0;
+		color:white;
+		padding:2rem;
+		font-weight:bold 
+	
+		}
+		
+	
+	a,a:visited {
+	
+		color:black;
+		font-weight:bold 
+	
+		}
+
+	a:hover,a:visited:hover {
+	
+		color: #61000C;
+
+		}
+	
+	a.active {
+		
+		background:black;
+		padding:0.5rem;
+		color:white;
+		font-weight:bold; 
+		
+		}
+
+	blockquote {
+		
+		background:#f9f9f9;
+		border-left:5px solid black;
+		font-size:120%;
+		margin:2rem 0;
+		padding:1rem 
+		
+		}
+
+	blockquote p {
+	
+		margin:0
+		
+		}
+	
+	blockquote footer
+		{
+	
+		font-size:90%;
+		margin:1rem 0 0 0
+	
+		}
+	
+	dl dt {
+	
+		margin-bottom:0.5rem
+		
+		}
+
+	dl dd {
+
+		font-style:italic;
+		margin-bottom:2rem
+	
+		}
+
+	.date {
+	
+	opacity:0.6
+	
+		}
+	
+	html {
+	
+	box-sizing:border-box
+	
+		}
+
+	*,*:before,*:after {
+	
+	box-sizing:inherit
+	
+		}
+
+	body {
+
+	margin:0 auto;
+	max-width:50rem;
+	padding:1rem 
+	
+		}
+	
+	strong,b,h1,h2,h3,h4 {
+
+	font-weight:bold;
+	color: #006262;
+	
+		}
+
+	hr {
+	
+	background:black;
+	border:0;
+	height:2px;
+	margin:2rem 0;
+	width:100%
+	
+	}
+	
+	table{
+	
+	border-collapse:collapse;
+	text-align:left;
+	width:100%
+	
+	}
+
+	table tr {
+
+	border-bottom:1px solid black
+	
+	}
+
+	table td {
+
+	padding:0.5rem
+	
+	}
+
+	img {
+	
+	width:100%;
+	margin:0.5rem 0
+	
+	} 
 
 
-		pre code {
-			
-			background-color: #eee;
-			border: 1px solid #999;
-			display: block;
-			padding: 20px;
-                       -webkit-user-select: all;
-                       -moz-user-select: all;
-                       -ms-user-select: all;
-                        user-select: all;
-			
-			}
+	ncpy {
+
+  	-webkit-user-select: none;
+	  -moz-user-select: none;     
+	  -ms-user-select: none;      
+	  user-select: none;               
+	
+		}
+
+	cpy1 {  
+
+	  -webkit-user-select: text;  
+	  -moz-user-select: text;     
+	  -ms-user-select: text;      
+	  user-select: text;         
+	
+		}
+
+	cpy2 {  
+
+	  -webkit-user-select: text;  
+	  -moz-user-select: text;     
+	  -ms-user-select: text;      
+	  user-select: text;   
+	
+		}
 
 
-		div     {
 
-			padding-top: 20px;
-			padding-right: 50px;
-			padding-bottom: 50px;
-			padding-left: 50px;
-		        
-			}	
+	nav ul {
 
-		p
-			{
+	list-style:none;
+	padding:0;
+	text-align:center;
+	
+	}
 
-			font-family: "Lucida console", monospace;
-			
-			-webkit-user-select: none;
-  			-moz-user-select: none;
-  			-ms-user-select: none;
-  			 user-select: none;
+	nav ul li {
 
-			}		
+	display:inline-block;
+	
+	}
 
+	nav a {
+
+	margin:0.5rem;
+	text-transform: uppercase;
+	}
+		
+	.navbar {
+  	
+	overflow: hidden;
+	
+	}
+	
+	.dropdown-menu-center {
+	
+	left: 50%;
+	right: auto;
+	text-align : center;
+	transform : translate(- 50% , 0);
+	
+	}
+	
+	.navbar a {
+
+	  float: inherit;
+	  font-size: 16px;
+	  color: black;
+	  text-align: center;
+	  padding: 16px 18px;
+	  text-decoration: none;
+	
+	}
+
+	.dropdown {
+
+	  float: inherit;
+	  overflow: hidden;
+	
+	}
+
+	.dropdown .dropbtn {
+
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: black;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	
+		}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+
+	  background-color: #ddd;
+	
+	}
+
+	.content {
+	
+	padding: 16px;
+	
+	}
+
+	.dropdown-content {
+	
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 140px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	
+	}
+
+	.dropdown-content a {
+
+	  float: inherit;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	
+	}
+
+	.dropdown-content a:hover {
+	
+	background-color: #ddd;
+ 		
+	}
+
+	.dropdown:hover .dropdown-content {
+
+	  display: block;
+	
+	}
+
+	footer {
+
+	margin:2rem 0;
+	
+	}
 </style>
+</head>
+
+<!-- Pheww this took a lot of work, there's an old saying that, codes should be properly indented, it's an art -->
+	
+<font style=font-family:"monospace">
+<header role="banner">
+<nav role="navigation">
+<ul>
+<li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
+<li class="dropdown">
+    <button class="dropbtn"><b><u>INDEX</u></b> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
+      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
+      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
+      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
+      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
+      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+    </div>
+  </div>
+  <li><a href="https://samiuljoy.github.io/termux/termux.html" class="active">termux</a></li>
+</ul>
+</nav>
+</header>
+
+<hr><main id="main" role="main">
