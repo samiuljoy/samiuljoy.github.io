@@ -1,30 +1,29 @@
+<!DOCTYPE html>
+
 <!-- This here is a whole new modification to the Ultra super fast Jekyll theme. Modifications by Samiul Joy -->
 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name="theme-color" content="#1c4966" />
 
-<title>Bash-scripts</title>
+<title>BioPython</title>
 
-<meta name="generator" content="bash-scripts" />
-<meta property="og:title" content="Bash-scripts" />
+<meta name="generator" content="biopython" />
+<meta property="og:title" content="biopython" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Bash-scripts" />
-<meta property="og:description" content="Bash-scripts" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login.html" />
+<meta name="description" content="biopython" />
+<meta property="og:description" content="biopython" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/biopython/biopython.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/biopython/biopython.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Bash-scripts" />
-<meta name="twitter:site" content="@yourusername" />
+<meta property="twitter:title" content="Kaggle" />
+<meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/login.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess.html"},"@context":"https://samiuljoy.github.io"}</script>
-
-<link rel="stylesheet" href="zenburn.css">
-<script src="highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script type="application/ld+json"> {"description":"Kaggle","@type":"Posting","headline":"Kaggle","dateModified":"2020-03-8T18:31:40+00:00","datePublished":"2020-03-8T18:31:40+00:00","url":"https://samiuljoy.github.io/biopython/biopython.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/biopython/biopython.html"},"@context":"https://schema.org"}</script>
 
 <!--
 <link rel="shortcut icon" href="/favicon.png">
@@ -34,6 +33,12 @@
 
 <style type="text/css">
 
+@font-face {
+
+	font-family: hack;
+	src: url(font.ttf);
+}
+
 	body {
 		
 		font-size:1rem;
@@ -42,9 +47,8 @@
 		text-rendering:optimizeLegibility;
 		-webkit-text-size-adjust:100%;
 		zoom:1;
-		font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"
-		
-		}
+		font-family: hack;
+	}
 	
 	header p strong {
 
@@ -61,7 +65,6 @@
 		font-weight:bold 
 	
 		}
-		
 	
 	a,a:visited {
 	
@@ -108,7 +111,6 @@
 		margin:1rem 0 0 0
 	
 		}
-	
 	dl dt {
 	
 		margin-bottom:0.5rem
@@ -122,242 +124,207 @@
 	
 		}
 
-	.date {
+code,pre {
 	
+	font-family:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
+	font-size:92%;
+	border: 1px solid #999;
+	display: block;
+	padding: 1px;
+	width: 120px;
+	height: 120px;
+		
+	}
+	
+	::-webkit-scrollbar {
+	
+		width: 4px;
+		height: 4px;
+
+		}
+
+		::-webkit-scrollbar-track {
+			
+			border: 1px solid grey;
+			border-radius:4px;
+		
+			}
+
+			::-webkit-scrollbar-thumb {
+				
+				background: grey;  
+				border-radius: 4px;
+				
+				}
+
+				::-webkit-scrollbar-thumb:hover {
+	
+					background: #88ba1c;  
+					
+					}
+	
+			pre {
+			
+			   background: #eee;
+		           color:black;
+			   overflow: scroll;
+		           padding:1em;
+			   width:100%
+			
+			   }
+	
+.date {
 	opacity:0.6
+	}
 	
-		}
-	
-	html {
-	
+html{
 	box-sizing:border-box
-	
-		}
+	}
 
-	*,*:before,*:after {
-	
+*,*:before,*:after
+	{
 	box-sizing:inherit
-	
-		}
+	}
 
-	body {
-
+body{
 	margin:0 auto;
 	max-width:50rem;
-	padding:1rem 
+	padding:1rem }
 	
-		}
-	
-	strong,b,h1,h2,h3,h4 {
-
+strong,b,h1,h2,h3,h4
+	{
 	font-weight:bold;
-	color: #006262;
-	
-		}
-
-	hr {
-	
+	color: #1c4966;
+	}
+hr{
 	background:black;
 	border:0;
 	height:2px;
 	margin:2rem 0;
 	width:100%
-	
 	}
-	
-	table{
-	
+table{
 	border-collapse:collapse;
 	text-align:left;
-	width:100%
-	
-	}
+	width:100%}
 
-	table tr {
-
+table tr{
 	border-bottom:1px solid black
-	
 	}
 
-	table td {
-
+table td{
 	padding:0.5rem
-	
 	}
 
-	img {
-	
+img{
 	width:100%;
 	margin:0.5rem 0
-	
 	} 
 
-
-	ncpy {
-
-  	-webkit-user-select: none;
-	  -moz-user-select: none;     
-	  -ms-user-select: none;      
-	  user-select: none;               
-	
-		}
-
-	cpy1 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;         
-	
-		}
-
-	cpy2 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;   
-	
-		}
-
-
-
-	nav ul {
-
+nav ul{
 	list-style:none;
 	padding:0;
-	text-align:center;
-	
-	}
+	text-align:center}
 
-	nav ul li {
+nav ul li{
+	display:inline-block}
 
-	display:inline-block;
-	
-	}
-
-	nav a {
-
+nav a{
 	margin:0.5rem;
-	text-transform: uppercase;
-	}
+	text-transform: uppercase}
 		
-	.navbar {
-  	
-	overflow: hidden;
-	
+.navbar {
+  	overflow: hidden;
 	}
 	
-	.dropdown-menu-center {
-	
+.dropdown-menu-center {
 	left: 50%;
 	right: auto;
 	text-align : center;
 	transform : translate(- 50% , 0);
-	
 	}
 	
-	.navbar a {
-
-	  float: inherit;
-	  font-size: 16px;
-	  color: black;
-	  text-align: center;
-	  padding: 16px 18px;
-	  text-decoration: none;
-	
+.navbar a {
+  float: inherit;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
 	}
 
-	.dropdown {
-
-	  float: inherit;
-	  overflow: hidden;
-	
+.dropdown {
+  float: inherit;
+  overflow: hidden;
 	}
 
-	.dropdown .dropbtn {
-
-	  font-size: 16px;  
-	  border: none;
-	  outline: none;
-	  color: black;
-	  background-color: inherit;
-	  font-family: inherit;
-	  margin: 0;
-	
-		}
-
-	.navbar a:hover, .dropdown:hover .dropbtn {
-
-	  background-color: #ddd;
-	
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 	}
 
-	.content {
-	
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+	}
+
+.content {
 	padding: 16px;
 	
 	}
 
-	.dropdown-content {
-	
-	  display: none;
-	  position: absolute;
-	  background-color: #f9f9f9;
-	  min-width: 140px;
-	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	  z-index: 1;
-	
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 	}
 
-	.dropdown-content a {
-
-	  float: inherit;
-	  color: black;
-	  padding: 12px 16px;
-	  text-decoration: none;
-	  display: block;
-	  text-align: left;
-	
+.dropdown-content a {
+  float: inherit;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
 	}
 
-	.dropdown-content a:hover {
-	
-	background-color: #ddd;
- 		
+.dropdown-content a:hover {
+  background-color: #ddd;
+ 	}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 	}
 
-	.dropdown:hover .dropdown-content {
-
-	  display: block;
-	
-	}
-
-	footer {
-
+footer{
 	margin:2rem 0;
-	
 	}
+
 </style>
 </head>
 
-<!-- Pheww this took a lot of work, there's an old saying that, codes should be properly indented, it's an art -->
-	
-<font style=font-family:"monospace">
+<font style=font-family:"hack">
 <header role="banner">
 <nav role="navigation">
 <ul>
 <li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
 <li class="dropdown">
-    <button class="dropbtn"><b><u>INDEX</u></b> 
+	<button class="dropbtn"><strong style="color:#000000"><u>INDEX</u></strong>
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
       <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
       <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
- <a href="https://samiuljoy.github.io/kaggle/kaggle.html">kaggle</a>
       <a href="https://samiuljoy.github.io/python/python.html">Python</a>
       <a href="https://samiuljoy.github.io/books/books.html">Books</a>
+      <a href="https://samiuljoy.github.io/kaggle/kaggle.html">Kaggle</a>
       <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
       <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
     </div>
@@ -368,3 +335,22 @@
 </header>
 
 <hr><main id="main" role="main">
+
+<h1><center>BioPython</h1></center>
+
+	<p>
+	BioPython is probably a great achievement for all those biologists + programmers out there. For those who are willing to integrate programming with biology and such! BioPython comes with great features like gene sequence modifications and analysis, manipulating <strong>fasta</strong> and <strong>genebank</strong> files with ease. 
+	</p>
+	<p>So far I came up with these projects.</p>
+	
+	<h3 id="key-features">BioPython projects</h3>
+
+	<ul>
+	<li><a href="https://www.kaggle.com/samiuljoy/biopython-demos" style="color:#1c4966">biopython-demos</a></li>
+</ul>
+<br>
+
+<hr><center>
+	<footer class="footer" role="contentinfo">
+<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#1c4966">github.com</a></center>
+</small></footer></body></html>
