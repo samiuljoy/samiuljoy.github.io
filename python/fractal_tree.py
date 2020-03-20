@@ -1,0 +1,18 @@
+import turtle as turtle
+foo = turtle.Turtle()
+
+foo.forward(100)
+foo.left(90)
+foo.backward(100)
+foo.right(90)
+foo.backward(100)
+foo.reset()
+foo.left(90)
+foo.forward(100)
+foo.left(30)
+foo.forward(50)
+foo.back(50)
+foo.right(60)
+foo.forward(50)
+foo.backward(50)
+foo.left(30)
