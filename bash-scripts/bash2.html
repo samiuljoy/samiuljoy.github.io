@@ -9,28 +9,6 @@
 <meta name="theme-color" content="#10101c" />
 
 <title>Bash-scripts</title>
-
-<meta name="generator" content="bash-scripts" />
-<meta property="og:title" content="Bash-scripts" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Bash-scripts" />
-<meta property="og:description" content="Bash-scripts" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/bash.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/bash.html" />
-<meta property="og:site_name" content="https://samiuljoy.github.io" />
-<meta property="og:type" content="article" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Bash-scripts" />
-<meta name="twitter:site" content="@yourusername" />
-
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2019-07-16T18:31:40+00:00","datePublished":"2019-07-16T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/bash.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/bash.html"},"@context":"https://schema.org"}</script>
-
-<!--
-<link rel="shortcut icon" href="/favicon.png">
-<link rel="alternate" type="application/atom+xml" title="Ultra" href="/atom.xml">
-<link rel="sitemap" type="application/xml" title="sitemap" href="/sitemap.xml" />
--->
-
 <style type="text/css">
 
 @font-face {
@@ -68,7 +46,7 @@
 	
 	a,a:visited {
 	
-		color:black;
+		color: #708090;
 		font-weight:bold 
 	
 		}
@@ -194,7 +172,7 @@ body{
 strong,b,h1,h2,h3,h4
 	{
 	font-weight:bold;
-	color: #006262;
+	color: #708090;
 	}
 hr{
 	background:black;
@@ -254,8 +232,6 @@ nav a{
 	}
 
 .dropdown {
-  float: inherit;
-  overflow: hidden;
 	}
 
 .dropdown .dropbtn {
@@ -269,7 +245,7 @@ nav a{
 	}
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
+  background-color: #3f3f3f;
 	}
 
 .content {
@@ -280,7 +256,7 @@ nav a{
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #10101c;
   min-width: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -288,7 +264,7 @@ nav a{
 
 .dropdown-content a {
   float: inherit;
-  color: black;
+  color: #778899;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -296,7 +272,7 @@ nav a{
 	}
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: black;
  	}
 
 .dropdown:hover .dropdown-content {
@@ -306,35 +282,66 @@ nav a{
 footer{
 	margin:2rem 0;
 	}
+	.switch {
+	align-self: flex-end;
+    	margin: -1rem;
+	}
+	
+	.inner-switch {
+    	display: inline-block;
+    	background-color: #000000;
+    	color: #778899;
+    	font-weight: bold;
+    	font-family: hack;
+    	border: 1px solid #778899;
+    	border-radius: 1.25rem;
+    	width: 3.925rem;
+    	text-align: center;
+    	font-size: 1rem;
+    	padding: 0.1875rem;
+    	margin-left: 0.3125rem;
+	}
 
 </style>
 </head>
 
+<body bgcolor=#10101c>
 <font style=font-family:"hack">
+<font color="#778899">
+
 <header role="banner">
 <nav role="navigation">
 <ul>
-<li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
+<li><a href="/index2.html">Home</a></li>
 <li class="dropdown">
     <button class="dropbtn"><b><u>INDEX</u></b> 
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
-      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
-      <a href="https://samiuljoy.github.io/kaggle/kaggle.html">kaggle</a>
-      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
-      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
-      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
-      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+      <a href="/biopython/biopython.html">BioPython</a>
+      <a href="/plant-science/plant-science.html">Plant-science</a>
+      <a href="/kaggle/kaggle.html">kaggle</a>
+      <a href="/python/python.html">Python</a>
+      <a href="/books/books.html">Books</a>
+      <a href="/termux/termux.html"> >_ </a>
+      <a href="/writings/writings.html">Writings</a>
     </div>
   </div>
-  <li><a href="https://samiuljoy.github.io/bash-scripts/bash.html" class="active">bash</a></li>
+  <li><a href="bash2.html" class="active">bash</a></li>
 </ul>
 </nav>
 </header>
 
-<hr><main id="main" role="main">
+<hr>
+
+<div class="switch">	
+	<button class="inner-switch">
+	<a href="bash.html" style="color:#778899; background-color:#000000; text-decoration: none">
+		<span>Light</a></span>
+	</button>	
+</div>
+
+<main id="main" role="main">
 
 <h1><center>#!/bin/bash</h1></center>
 
@@ -342,8 +349,8 @@ footer{
 
 	<h3 id="key-features">Bash-Scripts</h3>
 
-	<ul><li><a href="https://samiuljoy.github.io/bash-scripts/guess.html">guess.sh</a></li>
-		<li> <a href="https://samiuljoy.github.io/bash-scripts/login.html">login-prompt.sh</a></li>
+	<ul><li><a href="guess2.html">guess.sh</a></li>
+		<li> <a href="login2.html">login-prompt.sh</a></li>
 </ul>
 
 

@@ -36,6 +36,8 @@
 
 <style type="text/css">
 
+/* custom font */
+
 @font-face {
 
 	font-family: hack;
@@ -94,7 +96,7 @@
 
 	blockquote {
 		
-		background: grey;
+		background: #ddd;
 		color: black;
 		border-left:5px solid black;
 		font-size:120%;
@@ -173,7 +175,7 @@
 	
 	}
 	
-	table{
+	table {
 	
 	border-collapse:collapse;
 	text-align:left;
@@ -199,8 +201,9 @@
 	margin:0.5rem 0
 	
 	} 
-
-
+/* 
+copy and no copy webkits
+*/
 	ncpy {
 
   	-webkit-user-select: none;
@@ -279,7 +282,9 @@
 	.dropdown {
 
 	  float: inherit;
-	  overflow: hidden;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
 	
 	}
 
@@ -346,6 +351,26 @@
 	margin:2rem 0;
 	
 	}
+
+.switch {
+    align-self: flex-end;
+    margin: -1rem;
+}
+.inner-switch {
+    display: inline-block;
+    background-color: #10101c;
+    color: #778899;
+    font-weight: bold;
+    font-family: hack;
+    border: 1px solid #10101c;
+    border-radius: 1.25rem;
+    width: 3.925rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+
 </style>
 
 <!-- Pheww this took a lot of work, there's an old saying that, codes should be properly indented, it's an art -->
@@ -375,7 +400,17 @@
 </nav>
 </header>
 
-<hr><main id="main" role="main">
+<hr>
+<!-- For migrating into dark mode -->
+
+<div class="switch">	
+	<button class="inner-switch">
+		<a href="guess2.html" style="color:#778899; background-color:#10101c; text-decoration: none">
+		<span>Dark</a></span>
+	</button>
+</div>
+
+<main id="main" role="main">
 <h1><center>./guess.sh</h1></center>
 
 	<p>This here is a simple bash game where you guess a 2 digit number, but is it confined to only guessing the 2 digits? hmm...</p>
