@@ -35,11 +35,11 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 
 .hljs {
   display: block;
-  border: 1px solid #999;
+  border: 1px solid #0e2433;
   overflow: auto;
   padding: 0.5em;
   height: 175px;
-  background: #10101c;
+  background: #0e2433;
   color: #dcdcdc;
 }
 
