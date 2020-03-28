@@ -7,7 +7,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 <meta name="theme-color" content="#10101c" />
-
 <title>Bash-scripts</title>
 
 <meta name="generator" content="bash-scripts" />
@@ -15,17 +14,17 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Bash-scripts" />
 <meta property="og:description" content="Bash-scripts" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login.html" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login2.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/login2.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bash-scripts" />
-<meta name="twitter:site" content="@yourusername" />
+<meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/login.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess.html"},"@context":"https://samiuljoy.github.io"}</script>
+<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/login2.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/login2.html"},"@context":"https://samiuljoy.github.io"}</script>
 
-<link rel="stylesheet" href="zenburn.css">
+<link rel="stylesheet" href="zenburn2.css">
 <script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
@@ -38,6 +37,7 @@
 <style type="text/css">
 
 @font-face {
+
 	font-family: hack;
 	src: url(font.ttf);
 }
@@ -51,7 +51,7 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
-		}
+	}
 	
 	header p strong {
 
@@ -72,31 +72,46 @@
 	
 	a,a:visited {
 	
-		color:black;
+		color:#778899;
 		font-weight:bold 
 	
 		}
 
 	a:hover,a:visited:hover {
 	
-		color: #61000C;
+		color: #778899;
 
 		}
 	
 	a.active {
 		
-		background:black;
+		background: inherit;
 		padding:0.5rem;
-		color:white;
+		color: #778899;
 		font-weight:bold; 
-		
+		border-radius: 0.5rem;
+		border: 1px solid #708090;
+		margin: 0.925rem;	
+		text-decoration: none;
 		}
+
+home, index {
+	background: inherit;
+	padding:0.5rem;
+	color: #778899;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px solid #708090;
+	text-decoration: none;		
+	}
+
 
 	blockquote {
 		
-		background:#f9f9f9;
+		background: grey;
+		color: black;
 		border-left:5px solid black;
-		font-size:120%;
+		font-size:110%;
 		margin:2rem 0;
 		padding:1rem 
 		
@@ -133,19 +148,19 @@
 	
 	opacity:0.6
 	
-		}
+	}
 	
 	html {
 	
 	box-sizing:border-box
 	
-		}
+	}
 
 	*,*:before,*:after {
 	
 	box-sizing:inherit
 	
-		}
+	}
 
 	body {
 
@@ -153,18 +168,18 @@
 	max-width:50rem;
 	padding:1rem 
 	
-		}
+	}
 	
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
-	color: #006262;
+	color: #708090;
 	
-		}
+	}
 
 	hr {
 	
-	background:black;
+	background: #778899;
 	border:0;
 	height:2px;
 	margin:2rem 0;
@@ -246,7 +261,6 @@
 	nav a {
 
 	margin:0.5rem;
-	text-transform: uppercase;
 	}
 		
 	.navbar {
@@ -278,7 +292,9 @@
 	.dropdown {
 
 	  float: inherit;
-	  overflow: hidden;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
 	
 	}
 
@@ -296,7 +312,7 @@
 
 	.navbar a:hover, .dropdown:hover .dropbtn {
 
-	  background-color: #ddd;
+	  background-color: #0e2443;
 	
 	}
 
@@ -310,7 +326,7 @@
 	
 	  display: none;
 	  position: absolute;
-	  background-color: #f9f9f9;
+	  background-color: #10101c;
 	  min-width: 140px;
 	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  z-index: 1;
@@ -320,7 +336,7 @@
 	.dropdown-content a {
 
 	  float: inherit;
-	  color: black;
+	  color: #778899;
 	  padding: 12px 16px;
 	  text-decoration: none;
 	  display: block;
@@ -330,7 +346,7 @@
 
 	.dropdown-content a:hover {
 	
-	background-color: #ddd;
+	background-color: black;
  		
 	}
 
@@ -345,31 +361,86 @@
 	margin:2rem 0;
 	
 	}
-</style>
-</head>
+.switch .tooltip {
 
-<!-- Pheww this took a lot of work, there's an old saying that, codes should be properly indented, it's an art -->
+	align-self: flex-end;
+    	margin: -1rem;
+
+	}
 	
+.inner-switch {
+	
+	background-color: inherit;
+	color: inherit;
+    	cursor: pointer;
+	border: none;
+    	border-radius: 1.25rem;
+	float: left;
+	text-decoration: none;
+	width: 1.925rem;
+	height: 1.925rem;
+	text-align: center;
+	}
+
+.tooltip .tooltiptext {
+
+	visibility: hidden;
+	width: 210px;
+	background-color: inherit;
+	color: gray;
+	border: 2px solid inherit;
+	text-align: center;
+	border-radius: 50px;
+	padding: 0px 0;
+	position: absolute;
+	font-style: italic;
+	}
+	
+.tooltip:hover .tooltiptext {
+
+	visibility: visible;
+	width: 210px;	
+	}
+
+</style>
+
+</head>
+<body bgcolor=#10101c>
+<font style=font-family:"hack">
+<font color="#778899">
+
+<div class="switch">		
+<a href="login.html" class="tooltip">
+
+	<button class="inner-switch">
+<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+
+	</button>
+	<span class="tooltiptext">light colorscheme</span>
+	</a>
+		
+</div>
+
 <font style=font-family:"hack">
 <header role="banner">
 <nav role="navigation">
 <ul>
-<li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
+	<li><a href="../index2.html" style="text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-    <button class="dropbtn"><b><u>INDEX</u></b> 
+	<index>	<button class="dropbtn"><b>index</b> 
       <i class="fa fa-caret-down"></i>
-    </button>
+	</button></index>
     <div class="dropdown-content">
-      <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
-      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
-      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
- <a href="https://samiuljoy.github.io/kaggle/kaggle.html">kaggle</a>
-      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
-      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
-      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+      <a href="../biopython/biopython2.html">BioPython</a>
+      <a href="../plant-science/plant-science2.html">Plant-science</a>
+      <a href="../kaggle/kaggle2.html">kaggle</a>
+      <a href="../python/python.html">Python</a>
+      <a href="../books/books2.html">Books</a>
+      <a href="../termux/termux.html"> >_ </a>
+      <a href="../writings/writings2.html">Writings</a>
     </div>
   </div>
-  <li><a href="https://samiuljoy.github.io/bash-scripts/login.html" class="active">bashes</a></li>
+  <li><a href="bash2.html" class="active">bash</a></li>
 </ul>
 </nav>
 </header>
@@ -438,7 +509,8 @@ done
 fi
 fi
 </pre></code>
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
+
+<button class="btn" style="background-color:#000000; color:#778899; border: 1px solid #0e2443; border-radius: 1.25rem; width: 3.525rem;  display: inline-block; font-family: hack; font-size: 1rem; padding: 0.1875rem; margin-left: 0.3125rem" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
 
     <script src="clipboard.min.js"></script>
 
@@ -504,7 +576,8 @@ fi
 rm tmp.txt
 </pre></code>
 
-<button class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">Copy</button>
+<button class="btn" style="background-color:#000000; color:#778899; border: 1px solid #0e2443; border-radius: 1.25rem; width: 3.525rem;  display: inline-block; font-family: hack; font-size: 1rem; padding: 0.1875rem; margin-left: 0.3125rem" data-clipboard-action="copy" data-clipboard-target="#bar">Copy</button>
+
 
 <script src="clipboard.min.js"></script>
 
@@ -522,10 +595,11 @@ rm tmp.txt
 
 <p>Now this is actually nowhere near the way that works in a real Linux OS, however, the rest is up to you and how you use it.
 </p>
-
 <hr><center><footer class="footer" role="contentinfo">
-<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
+		<small><b>{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#778899">github.com</a></center>
 </small></footer></body></html>
+
+
 
 <!-- I feel so happy right now -->
 <!-- Edited with <3 in VIM editor -->

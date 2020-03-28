@@ -53,108 +53,32 @@
 
 	a:hover,a:visited:hover {
 	
-		color: #61000C;
+		color: #778899;
 
 		}
 	
 	a.active {
 		
-		background:black;
+		background: inherit;
 		padding:0.5rem;
-		color:white;
+		color: #778899;
 		font-weight:bold; 
-		
+		border-radius: 0.5rem;
+		border: 1px solid #708090;
+		margin: 0.925rem;	
+		text-decoration: none;
 		}
 
-	blockquote {
-		
-		background:#f9f9f9;
-		border-left:5px solid black;
-		font-size:120%;
-		margin:2rem 0;
-		padding:1rem 
-		
-		}
-
-	blockquote p {
-	
-		margin:0
-		
-		}
-	
-	blockquote footer
-		{
-	
-		font-size:90%;
-		margin:1rem 0 0 0
-	
-		}
-	dl dt {
-	
-		margin-bottom:0.5rem
-		
-		}
-
-	dl dd {
-
-		font-style:italic;
-		margin-bottom:2rem
-	
-		}
-
-code,pre {
-	
-	font-family:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-	font-size:92%;
-	border: 1px solid #999;
-	display: block;
-	padding: 1px;
-	width: 120px;
-	height: 120px;
-		
+home, index {
+	background: inherit;
+	padding:0.5rem;
+	color: #778899;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px solid #708090;
+	text-decoration: none;		
 	}
-	
-	::-webkit-scrollbar {
-	
-		width: 4px;
-		height: 4px;
 
-		}
-
-		::-webkit-scrollbar-track {
-			
-			border: 1px solid grey;
-			border-radius:4px;
-		
-			}
-
-			::-webkit-scrollbar-thumb {
-				
-				background: grey;  
-				border-radius: 4px;
-				
-				}
-
-				::-webkit-scrollbar-thumb:hover {
-	
-					background: #88ba1c;  
-					
-					}
-	
-			pre {
-			
-			   background: #eee;
-		           color:black;
-			   overflow: scroll;
-		           padding:1em;
-			   width:100%
-			
-			   }
-	
-.date {
-	opacity:0.6
-	}
-	
 html{
 	box-sizing:border-box
 	}
@@ -175,23 +99,11 @@ strong,b,h1,h2,h3,h4
 	color: #708090;
 	}
 hr{
-	background:black;
+	background:#778899;
 	border:0;
 	height:2px;
 	margin:2rem 0;
 	width:100%
-	}
-table{
-	border-collapse:collapse;
-	text-align:left;
-	width:100%}
-
-table tr{
-	border-bottom:1px solid black
-	}
-
-table td{
-	padding:0.5rem
 	}
 
 img{
@@ -209,8 +121,7 @@ nav ul li{
 
 nav a{
 	margin:0.5rem;
-	text-transform: uppercase}
-		
+}	
 .navbar {
   	overflow: hidden;
 	}
@@ -245,7 +156,7 @@ nav a{
 	}
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #3f3f3f;
+  background-color: #0e2443;
 	}
 
 .content {
@@ -272,34 +183,56 @@ nav a{
 	}
 
 .dropdown-content a:hover {
-  background-color: black;
+ 	 background-color: #0e2443;
  	}
 
 .dropdown:hover .dropdown-content {
-  display: block;
+  	display: block;
 	}
 
 footer{
 	margin:2rem 0;
 	}
-	.switch {
+
+.switch .tooltip {
+
 	align-self: flex-end;
     	margin: -1rem;
+
 	}
 	
-	.inner-switch {
-    	display: inline-block;
-    	background-color: #000000;
-    	color: #778899;
-    	font-weight: bold;
-    	font-family: hack;
-    	border: 1px solid #778899;
+.inner-switch {
+	
+	background-color: inherit;
+	color: inherit;
+    	cursor: pointer;
+	border: none;
     	border-radius: 1.25rem;
-    	width: 3.925rem;
-    	text-align: center;
-    	font-size: 1rem;
-    	padding: 0.1875rem;
-    	margin-left: 0.3125rem;
+	float: left;
+	text-decoration: none;
+	width: 1.925rem;
+	height: 1.925rem;
+	text-align: center;
+	}
+
+.tooltip .tooltiptext {
+
+	visibility: hidden;
+	width: 210px;
+	background-color: inherit;
+	color: gray;
+	border: 2px solid inherit;
+	text-align: center;
+	border-radius: 50px;
+	padding: 0px 0;
+	position: absolute;
+	font-style: italic;
+	}
+	
+.tooltip:hover .tooltiptext {
+
+	visibility: visible;
+	width: 210px;	
 	}
 
 </style>
@@ -309,22 +242,35 @@ footer{
 <font style=font-family:"hack">
 <font color="#778899">
 
+<div class="switch">		
+<a href="bash.html" class="tooltip">
+
+	<button class="inner-switch">
+<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+
+	</button>
+	<span class="tooltiptext">light colorscheme</span>
+	</a>
+		
+</div>
+
+<font style=font-family:"hack">
 <header role="banner">
 <nav role="navigation">
 <ul>
-<li><a href="/index2.html">Home</a></li>
+	<li><a href="../index2.html" style="text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-    <button class="dropbtn"><b><u>INDEX</u></b> 
+	<index>	<button class="dropbtn"><b>index</b> 
       <i class="fa fa-caret-down"></i>
-    </button>
+	</button></index>
     <div class="dropdown-content">
-      <a href="/biopython/biopython.html">BioPython</a>
-      <a href="/plant-science/plant-science.html">Plant-science</a>
-      <a href="/kaggle/kaggle.html">kaggle</a>
-      <a href="/python/python.html">Python</a>
-      <a href="/books/books.html">Books</a>
-      <a href="/termux/termux.html"> >_ </a>
-      <a href="/writings/writings.html">Writings</a>
+      <a href="../biopython/biopython2.html">BioPython</a>
+      <a href="../plant-science/plant-science2.html">Plant-science</a>
+      <a href="../kaggle/kaggle2.html">kaggle</a>
+      <a href="../python/python.html">Python</a>
+      <a href="../books/books2.html">Books</a>
+      <a href="../termux/termux.html"> >_ </a>
+      <a href="../writings/writings2.html">Writings</a>
     </div>
   </div>
   <li><a href="bash2.html" class="active">bash</a></li>
@@ -333,13 +279,6 @@ footer{
 </header>
 
 <hr>
-
-<div class="switch">	
-	<button class="inner-switch">
-	<a href="bash.html" style="color:#778899; background-color:#000000; text-decoration: none">
-		<span>Light</a></span>
-	</button>	
-</div>
 
 <main id="main" role="main">
 
@@ -356,5 +295,5 @@ footer{
 
 
 <hr><center><footer class="footer" role="contentinfo">
-<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
+		<small><b>{github.com/samiuljoy}</><br><a href="https://github.com" style="color:#778899">github.com</a></center>
 </small></footer></body></html>

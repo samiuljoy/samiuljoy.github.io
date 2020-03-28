@@ -7,22 +7,22 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 <meta name="theme-color" content="#10101c" />
-<title>Bash-scripts</title>
+<title>kaggle</title>
 
-<meta name="generator" content="bash-scripts" />
-<meta property="og:title" content="Bash-scripts" />
+<meta name="generator" content="kaggle" />
+<meta property="og:title" content="kaggle" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Bash-scripts" />
-<meta property="og:description" content="Bash-scripts" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/guess2.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/guess2.html" />
+<meta name="description" content="kaggle" />
+<meta property="og:description" content="kaggle" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/kaggle/kaggle.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/kaggle/kaggle.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Bash-scripts" />
+<meta property="twitter:title" content="kaggle" />
 <meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/guess2.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess2.html"},"@context":"https://samiuljoy.github.io"}</script>
+<script type="application/ld+json"> {"description":"kaggle","@type":"Posting","headline":"kaggle","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/kaggle/kaggle.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/kaggle/kaggle.html"},"@context":"https://samiuljoy.github.io"}</script>
 
 <link rel="stylesheet" href="zenburn2.css">
 <script src="highlight.pack.js"></script>
@@ -410,7 +410,7 @@ home, index {
 <font color="#778899">
 
 <div class="switch">		
-<a href="guess.html" class="tooltip">
+<a href="kaggle.html" class="tooltip">
 
 	<button class="inner-switch">
 <svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
@@ -433,152 +433,37 @@ home, index {
     <div class="dropdown-content">
       <a href="../biopython/biopython2.html">BioPython</a>
       <a href="../plant-science/plant-science2.html">Plant-science</a>
-      <a href="../kaggle/kaggle2.html">kaggle</a>
       <a href="../python/python.html">Python</a>
       <a href="../books/books2.html">Books</a>
       <a href="../termux/termux.html"> >_ </a>
       <a href="../writings/writings2.html">Writings</a>
     </div>
   </div>
-  <li><a href="bash2.html" class="active">bash</a></li>
+  <li><a href="kaggle2.html" class="active">kaggle</a></li>
 </ul>
 </nav>
 </header>
 
-<hr>
+<hr><main id="main" role="main">
 
-<main id="main" role="main">
-<h1><center>./guess.sh</h1></center>
+<h1><center>kaggle!</h1></center>
 
-	<p>This here is a simple bash game where you guess a 2 digit number, but is it confined to only guessing the 2 digits? hmm...</p>
-	<p><b>Also for it to execute properly, you'll need another bash script named ho.sh ^.^</b></p>
+	<p>One day (probably around early 2019) I was googling containers, virtualization, and was introduced to <a href="https://docker.com" style="color:#708090">docker</a> and it's containerization and how <a href="https://kaggle.com" style="color:#708090">kaggle</a> uses that to serve a virtual computer over the net. I was completely mind blown just by reading this and thought of giving <a href="https://kaggle.com" style="color:#708090">kaggle</a> a try.</p>
+	<p>So far I came up with these projects.</p>
+	
+	<h3 id="key-features">kaggle-projects</h3>
 
-<center><h2>guess.sh</h2></center>
+	<ul>
+		<li><a href="https://www.kaggle.com/samiuljoy/fractal-fern-frond" style="color:#708090">fractal-fern-frond</a></li>
+		<li><a href="https://www.kaggle.com/samiuljoy/biopython-demos" style="color:#708090">biopython-demos</a></li>
+</ul>
+<br>
+<p>My kaggle profile <a href="https://kaggle.com/samiuljoy" style="color:#708090">https://kaggle.com/samiuljoy</a></p>
 
-<pre id="foo"><code class="bash">#!/bin/bash
-
-#It's a number guessing game based of of $RANDOM variable
-
-well=`echo $RANDOM | cut -b "1-2"`
-exec 2>/dev/null
-
-while true; do
-echo "I'm thinking of a number, can you guess what it is?"
-read number
-      if [ "$number" == "" ]; then
-        
-	echo "Ahh breaking the loop ain't we?"
-sleep 1
-       	echo "What are you upto lately? $first"
-	read first
-        echo "cool"
-        sleep 2
-echo
-     echo "I've been into programming and pythons lately"
-	echo
-sleep 2
-	echo "Hmm "
-	echo
-	./ho.sh
-	echo
-	echo "I've been into turmoils lately?"
-	echo
-sleep 2
-	echo "But hope to figure it out soon"
-echo
-sleep 2
-	echo "I will be leaving for college soon"
-echo
-sleep 2
-	echo "Tell me about you perhaps on curious.queries@gmail.com?"
-echo
-sleep 2
-	echo "Farewell c:"
-echo
-sleep 2
-	echo "This was written at 3 pm on January 31st, 2020 on Android 5.1.1 with an app called termux and with vim editor"
-echo
-exit 0
-
-else
-if [ "$number" -lt "$well" ]; then
-echo "The guessed number is low"
-echo
-else if [ "$number" -gt "$well" ]; then
-echo "Its high yo"
-echo
-else
-if [ "$number" == "$well" ]; then
-echo "You got it right!!"
-echo
-yes=yes
-no=no
-echo "Wanna play again?[yes/no]"
-read answer
-if [ "$answer" == "$yes" ]; then
-./guess.sh
-else echo "Program ends"
-break
-fi
-fi
-fi
-fi
-fi
-done
-</pre></code>
-
-<button class="btn" style="background-color:#000000; color:#778899; border: 1px solid #0e2443; border-radius: 1.25rem; width: 3.525rem;  display: inline-block; font-family: hack; font-size: 1rem; padding: 0.1875rem; margin-left: 0.3125rem" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
-
-<p> You can save this as guess.sh and don't forget to chmod u+x the script. The ho.sh script is below, save it as ho.sh under the same directory as guess.sh, the chmod +x ho.sh, and you're good to go.</p>
-<center><h2>ho.sh</h2></center>
-
-<pre id="bar"><code class="bash">#!/bin/bash
-runtime="4 second"
-endtime=$(date -ud "$runtime" +%s)
-while [ "$(date -u +%s)" -lt "$endtime" ]; do
-printf "." $(sleep .5); printf "." $(sleep .5); printf "."$(sleep 0.5);
-echo
-break
-done
-</pre></code>
-
-<button class="btn" style="background-color:#000000; color:#778899; border: 1px solid #0e2443; border-radius: 1.25rem; width: 3.525rem;  display: inline-block; font-family: hack; font-size: 1rem; padding: 0.1875rem; margin-left: 0.3125rem" data-clipboard-action="copy" data-clipboard-target="#bar">Copy</button>
-
-<script src="clipboard.min.js"></script>
-
-<script>
-    var clipboard = new ClipboardJS('.btn');
-
-    clipboard.on('success', function(e) {
-        console.log(e);
-    });
-
-    clipboard.on('error', function(e) {
-        console.log(e);
-    });
-</script>
-
-
-
-<p><br>
-The idea of creating this came while I was reading a book called "Python Crash Course" by Erric Matthes, where the intro goes like this..<br></p>
-
-<blockquote><p>"I wrote my first program on a kit computer my dad had assembled in our basement. The computer consisted nothing more than a bare motherboard connected to a keyboard without a case, and it had a bare cathode ray tube for a monitor. My initial program was a simple number guessing game, which looked something like this,</p>
-<pre><code class="plaintext">
-I'm thinking of a number, try to guess the number I'm thinking of: 25
-Too low! Guess again: 50
-Too high! Guess again: 42
-That's it. Would you like to play again? (Yes/No) no
-Thank's for playing
-</pre></code>
-
-<p>I'll always remeber how satisfied I felt watching my family play a game I created."</p>
-</blockquote>
-
-<hr><center><footer class="footer" role="contentinfo">
-		<small><b>{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#778899">github.com</a></center>
+<hr><center>
+	<footer class="footer" role="contentinfo">
+		<small><b style="color: #708090">{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#708090">github.com</a></center>
 </small></footer></body></html>
 
-<!-- I feel so happy right now -->
-<!-- Edited with vim editor -->
-<!-- Samiul Joy -->
+
+

@@ -20,7 +20,7 @@
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bash-scripts" />
-<meta name="twitter:site" content="@yourusername" />
+<meta name="twitter:site" content="@samiuljoy46" />
 
 <script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/guess.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess.html"},"@context":"https://samiuljoy.github.io"}</script>
 
@@ -81,17 +81,21 @@
 
 	a:hover,a:visited:hover {
 	
-		color: #61000C;
+		color: grey;
 
 		}
 	
-	a.active {
-		
-		background:black;
+	a.active {	
+
+		background: #002f30;
 		padding:0.5rem;
 		color:white;
 		font-weight:bold; 
-		
+		border-radius: 0.5rem;
+		border: 1px;
+		margin: 0.925rem;	
+		text-decoration: none;
+	
 		}
 
 	blockquote {
@@ -231,7 +235,15 @@ copy and no copy webkits
 	
 		}
 
-
+home, index {
+	background: #002f30;
+	padding:0.5rem;
+	color:white;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px;
+		
+	}
 
 	nav ul {
 
@@ -250,7 +262,6 @@ copy and no copy webkits
 	nav a {
 
 	margin:0.5rem;
-	text-transform: uppercase;
 	}
 		
 	.navbar {
@@ -302,7 +313,7 @@ copy and no copy webkits
 
 	.navbar a:hover, .dropdown:hover .dropbtn {
 
-	  background-color: #ddd;
+	  background-color: #002e43;
 	
 	}
 
@@ -351,67 +362,91 @@ copy and no copy webkits
 	margin:2rem 0;
 	
 	}
+	
+	.switch .tooltip {
 
-.switch {
-    align-self: flex-end;
-    margin: -1rem;
-}
+	align-self: flex-end;
+    	margin: -1rem;
+
+	}
+	
 .inner-switch {
-    display: inline-block;
-    background-color: #10101c;
-    color: #778899;
-    font-weight: bold;
-    font-family: hack;
-    border: 1px solid #10101c;
-    border-radius: 1.25rem;
-    width: 3.925rem;
-    text-align: center;
-    font-size: 1rem;
-    padding: 0.1875rem;
-    margin-left: 0.3125rem;
-}
+	
+	background-color: inherit;
+	color: inherit;
+    	cursor: pointer;
+	border: 1px solid white;
+    	border-radius: 1.25rem;
+	float: left;
+	text-decoration: none;
+	width: 1.925rem;
+	text-align: center;
+	}
+
+.tooltip .tooltiptext {
+
+	visibility: hidden;
+	width: 210px;
+	background-color: inherit;
+	color: #3f3f3f;
+	border: 2px solid inherit;
+	text-align: center;
+	border-radius: 50px;
+	padding: 0px 0;
+	position: absolute;
+	font-style: italic;
+	}
+	
+.tooltip:hover .tooltiptext {
+
+	visibility: visible;
+	width: 210px;	
+	}
 
 </style>
 
-<!-- Pheww this took a lot of work, there's an old saying that, codes should be properly indented, it's an art -->
-
 </head>
 <font style=font-family:"hack">
+	<div class="switch">		
+	<a href="guess2.html" class="tooltip" text-decoration: none">
+
+	<button class="inner-switch">
+<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+	</button>
+	<span class="tooltiptext">dark colorscheme</span>
+	</a>
+		
+</div>
+
+<font style=font-family:"hack">
+
 <header role="banner">
 <nav role="navigation">
 <ul>
-<li><a href="../index.html">Home</a></li>
+	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-    <button class="dropbtn"><b><u>INDEX</u></b> 
+	<index><button class="dropbtn"><b style="color: white">index</b> 
       <i class="fa fa-caret-down"></i>
-    </button>
+	</button></index>
     <div class="dropdown-content">
-      <a href="/biopython/biopython.html">BioPython</a>
-      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
- <a href="https://samiuljoy.github.io/kaggle/kaggle.html">kaggle</a>
-      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
-      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
-      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
-      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+      <a href="../biopython/biopython.html">BioPython</a>
+      <a href="../plant-science/plant-science.html">Plant-science</a>
+      <a href="../kaggle/kaggle.html">kaggle</a>
+      <a href="../python/python.html">Python</a>
+      <a href="../books/books.html">Books</a>
+      <a href="../termux/termux.html"> >_ </a>
+      <a href="../writings/writings.html">Writings</a>
     </div>
   </div>
-  <li><a href="https://samiuljoy.github.io/bash-scripts/guess.html" class="active">bashes</a></li>
+  <li><a href="bash.html" class="active">bash</a></li>
 </ul>
 </nav>
 </header>
 
-<hr>
-<!-- For migrating into dark mode -->
+<hr><main id="main" role="main">
 
-<div class="switch">	
-	<button class="inner-switch">
-		<a href="guess2.html" style="color:#778899; background-color:#10101c; text-decoration: none">
-		<span>Dark</a></span>
-	</button>
-</div>
-
-<main id="main" role="main">
 <h1><center>./guess.sh</h1></center>
+
 
 	<p>This here is a simple bash game where you guess a 2 digit number, but is it confined to only guessing the 2 digits? hmm...</p>
 	<p><b>Also for it to execute properly, you'll need another bash script named ho. ^.^</b></p>
@@ -552,10 +587,10 @@ Thank's for playing
 <p>I'll always remeber how satisfied I felt watching my family play a game I created."</p>
 </blockquote>
 
-<hr><center><footer class="footer" role="contentinfo">
-<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
-</small></footer></body></html>
 
+<hr><center><footer class="footer" role="contentinfo">
+		<small><b style="color: black">{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#006262">github.com</a></center>
+</small></footer></body></html>
 <!-- I feel so happy right now -->
 <!-- Edited with vim editor -->
 <!-- Samiul Joy -->

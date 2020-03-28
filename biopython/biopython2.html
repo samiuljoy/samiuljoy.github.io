@@ -6,25 +6,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
-<meta name="theme-color" content="#1c4966" />
+<meta name="theme-color" content="#10101c" />
 <title>BioPython</title>
 
-<meta name="generator" content="biopython" />
-<meta property="og:title" content="Bash-scripts" />
+<meta name="generator" content="biopython2" />
+<meta property="og:title" content="biopython2" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Bash-scripts" />
-<meta property="og:description" content="Bash-scripts" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/biopython/biopython.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/biopython/biopython.html" />
+<meta name="description" content="biopython2" />
+<meta property="og:description" content="biopython2" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/biopython2/biopython2.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/biopython2/biopython2.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Bash-scripts" />
+<meta property="twitter:title" content="biopython2" />
 <meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/biopython/biopython.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/biopython/biopython.html"},"@context":"https://samiuljoy.github.io"}</script>
+<script type="application/ld+json"> {"description":"biopython2","@type":"Posting","headline":"biopython2","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/biopython2/biopython2.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/biopython2/biopython2.html"},"@context":"https://samiuljoy.github.io"}</script>
 
-<link rel="stylesheet" href="zenburn.css">
+<link rel="stylesheet" href="zenburn2.css">
 <script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
@@ -35,8 +35,6 @@
 -->
 
 <style type="text/css">
-
-/* custom font */
 
 @font-face {
 
@@ -74,31 +72,84 @@
 	
 	a,a:visited {
 	
-		color:black;
+		color:#778899;
 		font-weight:bold 
 	
 		}
 
 	a:hover,a:visited:hover {
 	
-		color: grey;
+		color: #778899;
 
 		}
 	
-	a.active {	
-
-		background: #1c4966;
+	a.active {
+		
+		background: inherit;
 		padding:0.5rem;
-		color:white;
+		color: #778899;
 		font-weight:bold; 
 		border-radius: 0.5rem;
-		border: 1px solid #778899;
+		border: 1px solid #708090;
 		margin: 0.925rem;	
 		text-decoration: none;
+		}
+
+home, index {
+	background: inherit;
+	padding:0.5rem;
+	color: #778899;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px solid #708090;
+	text-decoration: none;		
+	}
+
+
+	blockquote {
+		
+		background: grey;
+		color: black;
+		border-left:5px solid black;
+		font-size:110%;
+		margin:2rem 0;
+		padding:1rem 
+		
+		}
+
+	blockquote p {
+	
+		margin:0
+		
+		}
+	
+	blockquote footer
+		{
+	
+		font-size:90%;
+		margin:1rem 0 0 0
+	
+		}
+	
+	dl dt {
+	
+		margin-bottom:0.5rem
+		
+		}
+
+	dl dd {
+
+		font-style:italic;
+		margin-bottom:2rem
 	
 		}
 
-
+	.date {
+	
+	opacity:0.6
+	
+	}
+	
 	html {
 	
 	box-sizing:border-box
@@ -122,13 +173,13 @@
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
-	color: #1c4966;
+	color: #708090;
 	
 	}
 
 	hr {
 	
-	background: black;
+	background: #778899;
 	border:0;
 	height:2px;
 	margin:2rem 0;
@@ -136,6 +187,26 @@
 	
 	}
 	
+	table{
+	
+	border-collapse:collapse;
+	text-align:left;
+	width:100%
+	
+	}
+
+	table tr {
+
+	border-bottom:1px solid black
+	
+	}
+
+	table td {
+
+	padding:0.5rem
+	
+	}
+
 	img {
 	
 	width:100%;
@@ -143,15 +214,35 @@
 	
 	} 
 
-home, index {
-	background: #1c4966;
-	padding:0.5rem;
-	color:white;
-	font-weight:bold;
-	border-radius: 0.5rem;
-	border: 1px solid #778899;
-	 		
-	}
+
+	ncpy {
+
+  	-webkit-user-select: none;
+	  -moz-user-select: none;     
+	  -ms-user-select: none;      
+	  user-select: none;               
+	
+		}
+
+	cpy1 {  
+
+	  -webkit-user-select: text;  
+	  -moz-user-select: text;     
+	  -ms-user-select: text;      
+	  user-select: text;         
+	
+		}
+
+	cpy2 {  
+
+	  -webkit-user-select: text;  
+	  -moz-user-select: text;     
+	  -ms-user-select: text;      
+	  user-select: text;   
+	
+		}
+
+
 
 	nav ul {
 
@@ -221,7 +312,7 @@ home, index {
 
 	.navbar a:hover, .dropdown:hover .dropbtn {
 
-	  background-color: #002e43;
+	  background-color: #0e2443;
 	
 	}
 
@@ -235,7 +326,7 @@ home, index {
 	
 	  display: none;
 	  position: absolute;
-	  background-color: #f9f9f9;
+	  background-color: #10101c;
 	  min-width: 140px;
 	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  z-index: 1;
@@ -245,7 +336,7 @@ home, index {
 	.dropdown-content a {
 
 	  float: inherit;
-	  color: black;
+	  color: #778899;
 	  padding: 12px 16px;
 	  text-decoration: none;
 	  display: block;
@@ -255,7 +346,7 @@ home, index {
 
 	.dropdown-content a:hover {
 	
-	background-color: #ddd;
+	background-color: black;
  		
 	}
 
@@ -270,8 +361,7 @@ home, index {
 	margin:2rem 0;
 	
 	}
-	
-	.switch .tooltip {
+.switch .tooltip {
 
 	align-self: flex-end;
     	margin: -1rem;
@@ -283,11 +373,12 @@ home, index {
 	background-color: inherit;
 	color: inherit;
     	cursor: pointer;
-	border: 1px solid white;
+	border: none;
     	border-radius: 1.25rem;
 	float: left;
 	text-decoration: none;
 	width: 1.925rem;
+	height: 1.925rem;
 	text-align: center;
 	}
 
@@ -296,7 +387,7 @@ home, index {
 	visibility: hidden;
 	width: 210px;
 	background-color: inherit;
-	color: #3f3f3f;
+	color: gray;
 	border: 2px solid inherit;
 	text-align: center;
 	border-radius: 50px;
@@ -314,39 +405,41 @@ home, index {
 </style>
 
 </head>
+<body bgcolor=#10101c>
 <font style=font-family:"hack">
-	<div class="switch">		
-	<a href="biopython2.html" class="tooltip" text-decoration: none">
+<font color="#778899">
+
+<div class="switch">		
+<a href="biopython.html" class="tooltip">
 
 	<button class="inner-switch">
-<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+
 	</button>
-	<span class="tooltiptext">dark colorscheme</span>
+	<span class="tooltiptext">light colorscheme</span>
 	</a>
 		
 </div>
 
 <font style=font-family:"hack">
-
 <header role="banner">
 <nav role="navigation">
 <ul>
-	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
+	<li><a href="../index2.html" style="text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index><button class="dropbtn"><b style="color: white">index</b> 
+	<index>	<button class="dropbtn"><b>index</b> 
       <i class="fa fa-caret-down"></i>
 	</button></index>
     <div class="dropdown-content">
-      <a href="../bash-scripts/bash.html">*.sh</a>
-      <a href="../plant-science/plant-science.html">Plant-science</a>
-      <a href="../kaggle/kaggle.html">kaggle</a>
+      <a href="../plant-science/plant-science2.html">Plant-science</a>
+      <a href="../kaggle/kaggle2.html">kaggle</a>
       <a href="../python/python.html">Python</a>
-      <a href="../books/books.html">Books</a>
+      <a href="../books/books2.html">Books</a>
       <a href="../termux/termux.html"> >_ </a>
-      <a href="../writings/writings.html">Writings</a>
+      <a href="../writings/writings2.html">Writings</a>
     </div>
   </div>
-  <li><a href="biopython.html" class="active">biopython</a></li>
+  <li><a href="biopython2.html" class="active">biopython</a></li>
 </ul>
 </nav>
 </header>
@@ -363,11 +456,11 @@ home, index {
 	<h3 id="key-features">BioPython projects</h3>
 
 	<ul>
-	<li><a href="https://www.kaggle.com/samiuljoy/biopython-demos" style="color:#1c4966">biopython-demos</a></li>
+	<li><a href="https://www.kaggle.com/samiuljoy/biopython-demos">biopython-demos</a></li>
 </ul>
 <br>
 
 <hr><center>
 	<footer class="footer" role="contentinfo">
-		<small><b>{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#1c4966">github.com</a></center>
+		<small><b>{github.com/samiuljoy}</b><br><a href="https://github.com">github.com</a></center>
 </small></footer></body></html>

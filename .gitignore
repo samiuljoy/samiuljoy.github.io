@@ -2,7 +2,7 @@
 hannibal.jpg
 
 # plans of later pushes
-/bash-scripts/checklist.txt
+bash-scripts/checklist.txt
 
 # image
 bino.jpg
@@ -10,3 +10,16 @@ bino.jpg
 # ignore transfer file lists
 bash-scripts/transfer.txt
 bash-scripts/transferD.txt
+
+# random shits
+bash-scripts/dark2.svg
+bash-scripts/dark3.svg
+bash-scripts/day.svg
+bash-scripts/logo.txt
+bash-scripts/logo1.txt
+bash-scripts/night.svg
+bash-scripts/script.js
+bash-scripts/style
+
+# But then again, ignore all
+transfer*

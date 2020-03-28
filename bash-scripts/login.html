@@ -7,7 +7,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 <meta name="theme-color" content="#002f30" />
-
 <title>Bash-scripts</title>
 
 <meta name="generator" content="bash-scripts" />
@@ -21,9 +20,9 @@
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Bash-scripts" />
-<meta name="twitter:site" content="@yourusername" />
+<meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/login.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/guess.html"},"@context":"https://samiuljoy.github.io"}</script>
+<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/login.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/login.html"},"@context":"https://samiuljoy.github.io"}</script>
 
 <link rel="stylesheet" href="zenburn.css">
 <script src="highlight.pack.js"></script>
@@ -37,7 +36,10 @@
 
 <style type="text/css">
 
+/* custom font */
+
 @font-face {
+
 	font-family: hack;
 	src: url(font.ttf);
 }
@@ -51,7 +53,7 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
-		}
+	}
 	
 	header p strong {
 
@@ -79,22 +81,27 @@
 
 	a:hover,a:visited:hover {
 	
-		color: #61000C;
+		color: grey;
 
 		}
 	
-	a.active {
-		
-		background:black;
+	a.active {	
+
+		background: #002f30;
 		padding:0.5rem;
 		color:white;
 		font-weight:bold; 
-		
+		border-radius: 0.5rem;
+		border: 1px;
+		margin: 0.925rem;	
+		text-decoration: none;
+	
 		}
 
 	blockquote {
 		
-		background:#f9f9f9;
+		background: #ddd;
+		color: black;
 		border-left:5px solid black;
 		font-size:120%;
 		margin:2rem 0;
@@ -133,19 +140,19 @@
 	
 	opacity:0.6
 	
-		}
+	}
 	
 	html {
 	
 	box-sizing:border-box
 	
-		}
+	}
 
 	*,*:before,*:after {
 	
 	box-sizing:inherit
 	
-		}
+	}
 
 	body {
 
@@ -153,18 +160,18 @@
 	max-width:50rem;
 	padding:1rem 
 	
-		}
+	}
 	
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
 	color: #006262;
 	
-		}
+	}
 
 	hr {
 	
-	background:black;
+	background: black;
 	border:0;
 	height:2px;
 	margin:2rem 0;
@@ -172,7 +179,7 @@
 	
 	}
 	
-	table{
+	table {
 	
 	border-collapse:collapse;
 	text-align:left;
@@ -198,8 +205,9 @@
 	margin:0.5rem 0
 	
 	} 
-
-
+/* 
+copy and no copy webkits
+*/
 	ncpy {
 
   	-webkit-user-select: none;
@@ -227,7 +235,15 @@
 	
 		}
 
-
+home, index {
+	background: #002f30;
+	padding:0.5rem;
+	color:white;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px;
+		
+	}
 
 	nav ul {
 
@@ -246,7 +262,6 @@
 	nav a {
 
 	margin:0.5rem;
-	text-transform: uppercase;
 	}
 		
 	.navbar {
@@ -278,7 +293,9 @@
 	.dropdown {
 
 	  float: inherit;
-	  overflow: hidden;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
 	
 	}
 
@@ -296,7 +313,7 @@
 
 	.navbar a:hover, .dropdown:hover .dropbtn {
 
-	  background-color: #ddd;
+	  background-color: #002e43;
 	
 	}
 
@@ -345,34 +362,87 @@
 	margin:2rem 0;
 	
 	}
-</style>
-</head>
-
-<!-- Pheww this took a lot of work, there's an old saying that, codes should be properly indented, it's an art -->
 	
+	.switch .tooltip {
+
+	align-self: flex-end;
+    	margin: -1rem;
+
+	}
+	
+.inner-switch {
+	
+	background-color: inherit;
+	color: inherit;
+    	cursor: pointer;
+	border: 1px solid white;
+    	border-radius: 1.25rem;
+	float: left;
+	text-decoration: none;
+	width: 1.925rem;
+	text-align: center;
+	}
+
+.tooltip .tooltiptext {
+
+	visibility: hidden;
+	width: 210px;
+	background-color: inherit;
+	color: #3f3f3f;
+	border: 2px solid inherit;
+	text-align: center;
+	border-radius: 50px;
+	padding: 0px 0;
+	position: absolute;
+	font-style: italic;
+	}
+	
+.tooltip:hover .tooltiptext {
+
+	visibility: visible;
+	width: 210px;	
+	}
+
+</style>
+
+</head>
 <font style=font-family:"hack">
+	<div class="switch">		
+	<a href="login2.html" class="tooltip" text-decoration: none">
+
+	<button class="inner-switch">
+<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+	</button>
+	<span class="tooltiptext">dark colorscheme</span>
+	</a>
+		
+</div>
+
+<font style=font-family:"hack">
+
 <header role="banner">
 <nav role="navigation">
 <ul>
-<li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
+	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-    <button class="dropbtn"><b><u>INDEX</u></b> 
+	<index>	<button class="dropbtn"><b style="color: white">index</b> 
       <i class="fa fa-caret-down"></i>
-    </button>
+	</button></index>
     <div class="dropdown-content">
-      <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
-      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
-      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
- <a href="https://samiuljoy.github.io/kaggle/kaggle.html">kaggle</a>
-      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
-      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
-      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+      <a href="../biopython/biopython.html">BioPython</a>
+      <a href="../plant-science/plant-science.html">Plant-science</a>
+      <a href="../kaggle/kaggle.html">kaggle</a>
+      <a href="../python/python.html">Python</a>
+      <a href="../books/books.html">Books</a>
+      <a href="../termux/termux.html"> >_ </a>
+      <a href="../writings/writings.html">Writings</a>
     </div>
   </div>
-  <li><a href="https://samiuljoy.github.io/bash-scripts/login.html" class="active">bashes</a></li>
+  <li><a href="bash.html" class="active">bash</a></li>
 </ul>
 </nav>
 </header>
+
 
 <hr><main id="main" role="main">
 <h1><center>./login.sh &&<br>./username.sh</h1></center>
@@ -522,11 +592,9 @@ rm tmp.txt
 
 <p>Now this is actually nowhere near the way that works in a real Linux OS, however, the rest is up to you and how you use it.
 </p>
-
 <hr><center><footer class="footer" role="contentinfo">
-<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
+		<small><b style="color: black">{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#006262">github.com</a></center>
 </small></footer></body></html>
-
 <!-- I feel so happy right now -->
 <!-- Edited with <3 in VIM editor -->
 <!-- by Samiul Joy -->

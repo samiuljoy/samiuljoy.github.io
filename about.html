@@ -1,35 +1,32 @@
 <!DOCTYPE html>
 
-<!-- This here is a little modification to the Ultra super fast Jekyll theme by me(Samiul Joy) -->
+<!-- This here is a whole new modification to the Ultra super fast Jekyll theme. Modifications by Samiul Joy -->
 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 <meta name="theme-color" content="#002f30" />
-<style>
-@font-face {
-	font-family: hack;
-	src: url(font.ttf);
-}
-</style>
-
-<title>About</title>
+<title>about</title>
 
 <meta name="generator" content="about" />
-<meta property="og:title" content="About" />
+<meta property="og:title" content="about" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="About" />
-<meta property="og:description" content="To whom it may concern" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/about.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/about.html" />
+<meta name="description" content="about" />
+<meta property="og:description" content="about" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/about/about.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/about/about.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="About" />
-<meta name="twitter:site" content="@yourusername" />
+<meta property="twitter:title" content="about" />
+<meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"About","@type":"Posting","headline":"About","dateModified":"2019-07-16T18:31:40+00:00","datePublished":"2019-07-16T18:31:40+00:00","url":"https://samiuljoy.github.io/about.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/about.html"},"@context":"https://schema.org"}</script>
+<script type="application/ld+json"> {"description":"about","@type":"Posting","headline":"about","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/about/about.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/about/about.html"},"@context":"https://samiuljoy.github.io"}</script>
+
+<link rel="stylesheet" href="zenburn.css">
+<script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <!--
 <link rel="shortcut icon" href="/favicon.png">
@@ -39,247 +36,410 @@
 
 <style type="text/css">
 
-body {
-	
-	font-size:1rem;
-	line-height:1.5;
-	-webkit-font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-	-webkit-text-size-adjust:100%;
-	zoom:1;
-	font-family: hack}
-	
-header p strong {
+/* custom font */
 
-	text-transform:uppercase
-	
+@font-face {
+
+	font-family: hack;
+	src: url(font.ttf);
+}
+
+	body {
+		
+		font-size:1rem;
+		line-height:1.5;
+		-webkit-font-smoothing:antialiased;
+		text-rendering:optimizeLegibility;
+		-webkit-text-size-adjust:100%;
+		zoom:1;
+		font-family: hack;
 	}
 	
-.post-title {
-	
-	background:black;
-	margin:10rem 0;
-	color:white;
-	padding:2rem;
-	font-weight:bold 
-	
-	}
-	
-a,a:visited {
-	
-	color:black;
-	font-weight:bold 
-	
-	}
+	header p strong {
 
-a:hover,a:visited:hover {
+		text-transform:uppercase
 	
-	color: #61000C;
-
-	}
+		}
 	
-a.active {
-	background:black;
-	padding:0.5rem;
-	color:white;
-	font-weight:bold; }
-
-blockquote {
-	background:#f9f9f9;
-	border-left:5px solid black;
-	font-size:120%;
-	margin:2rem 0;
-	padding:1rem }
-
-blockquote p {
-	margin:0
-	}
+	.post-title {
 	
-blockquote footer
-	{
-	font-size:90%;
-	margin:1rem 0 0 0
-	}
-dl dt
-	{
-	margin-bottom:0.5rem
-	}
-
-dl dd{
-	font-style:italic;
-	margin-bottom:2rem
-	}
-
-code,pre{
+		background:black;
+		margin:10rem 0;
+		color:white;
+		padding:2rem;
+		font-weight:bold 
 	
-	font-family:San Francisco Mono,Monaco,"Consolas","Lucida Console","DejaVu Sans Mono","Bitstream Vera Sans Mono",monospace;
-	font-size:92%
-	} 
+		}
+		
+	
+	a,a:visited {
+	
+		color:black;
+		font-weight:bold 
+	
+		}
 
-pre{
-	background:black;
-	color:white;
-	overflow:auto;
-	padding:1em;
-	width:100%
-	}
+	a:hover,a:visited:hover {
+	
+		color: grey;
 
-.date {
+		}
+	
+	a.active {	
+
+		background: #002f30;
+		padding:0.5rem;
+		color:white;
+		font-weight:bold; 
+		border-radius: 0.5rem;
+		border: 1px;
+		margin: 0.925rem;	
+		text-decoration: none;
+	
+		}
+
+	blockquote {
+		
+		background: #ddd;
+		color: black;
+		border-left:5px solid black;
+		font-size:120%;
+		margin:2rem 0;
+		padding:1rem 
+		
+		}
+
+	blockquote p {
+	
+		margin:0
+		
+		}
+	
+	blockquote footer
+		{
+	
+		font-size:90%;
+		margin:1rem 0 0 0
+	
+		}
+	
+	dl dt {
+	
+		margin-bottom:0.5rem
+		
+		}
+
+	dl dd {
+
+		font-style:italic;
+		margin-bottom:2rem
+	
+		}
+
+	.date {
+	
 	opacity:0.6
+	
 	}
 	
-html{
+	html {
+	
 	box-sizing:border-box
+	
 	}
 
-*,*:before,*:after
-	{
+	*,*:before,*:after {
+	
 	box-sizing:inherit
+	
 	}
 
-body{
+	body {
+
 	margin:0 auto;
 	max-width:50rem;
-	padding:1rem }
+	padding:1rem 
 	
-strong,b,h1,h2,h3,h4
-	{
+	}
+	
+	strong,b,h1,h2,h3,h4 {
+
 	font-weight:bold;
 	color: #006262;
+	
 	}
 
-hr	{
-	background:black;
+	hr {
+	
+	background: black;
 	border:0;
 	height:2px;
 	margin:2rem 0;
 	width:100%
-	}
-table{
-	border-collapse:collapse;
-	text-align:left;
-	width:100%}
-
-table tr{
-	border-bottom:1px solid black
-	}
-
-table td{
-	padding:0.5rem
-	}
-
-img{
-	width:100%;
-	margin:0.5rem 0
-	} 
-
-nav ul{
-	list-style:none;
-	padding:0;
-	text-align:center}
-
-nav ul li{
-	display:inline-block}
-
-nav a{
-	margin:0.5rem;
-	text-transform: uppercase}
-		
-.navbar {
-  	overflow: hidden;
+	
 	}
 	
-.dropdown-menu-center {
+	table {
+	
+	border-collapse:collapse;
+	text-align:left;
+	width:100%
+	
+	}
+
+	table tr {
+
+	border-bottom:1px solid black
+	
+	}
+
+	table td {
+
+	padding:0.5rem
+	
+	}
+
+	img {
+	
+	width:100%;
+	margin:0.5rem 0
+	
+	} 
+/* 
+copy and no copy webkits
+*/
+	ncpy {
+
+  	-webkit-user-select: none;
+	  -moz-user-select: none;     
+	  -ms-user-select: none;      
+	  user-select: none;               
+	
+		}
+
+	cpy1 {  
+
+	  -webkit-user-select: text;  
+	  -moz-user-select: text;     
+	  -ms-user-select: text;      
+	  user-select: text;         
+	
+		}
+
+	cpy2 {  
+
+	  -webkit-user-select: text;  
+	  -moz-user-select: text;     
+	  -ms-user-select: text;      
+	  user-select: text;   
+	
+		}
+
+home, index {
+	background: #002f30;
+	padding:0.5rem;
+	color:white;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px;
+		
+	}
+
+	nav ul {
+
+	list-style:none;
+	padding:0;
+	text-align:center;
+	
+	}
+
+	nav ul li {
+
+	display:inline-block;
+	
+	}
+
+	nav a {
+
+	margin:0.5rem;
+	}
+		
+	.navbar {
+  	
+	overflow: hidden;
+	
+	}
+	
+	.dropdown-menu-center {
+	
 	left: 50%;
 	right: auto;
 	text-align : center;
 	transform : translate(- 50% , 0);
+	
 	}
 	
-.navbar a {
-  float: inherit;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  padding: 16px 18px;
-  text-decoration: none;
+	.navbar a {
+
+	  float: inherit;
+	  font-size: 16px;
+	  color: black;
+	  text-align: center;
+	  padding: 16px 18px;
+	  text-decoration: none;
+	
 	}
 
-.dropdown {
-  float: inherit;
-  overflow: hidden;
+	.dropdown {
+
+	  float: inherit;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
+	
 	}
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: black;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+	.dropdown .dropbtn {
+
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: black;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	
+		}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+
+	  background-color: #002e43;
+	
 	}
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #ddd;
-	}
-
-.content {
+	.content {
+	
 	padding: 16px;
+	
 	}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	.dropdown-content {
+	
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 140px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	
 	}
 
-.dropdown-content a {
-  float: inherit;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+	.dropdown-content a {
+
+	  float: inherit;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	
 	}
 
-.dropdown-content a:hover {
-  background-color: #ddd;
+	.dropdown-content a:hover {
+	
+	background-color: #ddd;
+ 		
 	}
 
-.dropdown:hover .dropdown-content {
-  display: block;
+	.dropdown:hover .dropdown-content {
+
+	  display: block;
+	
 	}
 
-footer{
+	footer {
+
 	margin:2rem 0;
+	
+	}
+	
+	.switch .tooltip {
+
+	align-self: flex-end;
+    	margin: -1rem;
+
+	}
+	
+.inner-switch {
+	
+	background-color: inherit;
+	color: inherit;
+    	cursor: pointer;
+	border: 1px solid white;
+    	border-radius: 1.25rem;
+	float: left;
+	text-decoration: none;
+	width: 1.925rem;
+	text-align: center;
 	}
 
-</style></head>
+.tooltip .tooltiptext {
+
+	visibility: hidden;
+	width: 210px;
+	background-color: inherit;
+	color: #3f3f3f;
+	border: 2px solid inherit;
+	text-align: center;
+	border-radius: 50px;
+	padding: 0px 0;
+	position: absolute;
+	font-style: italic;
+	}
+	
+.tooltip:hover .tooltiptext {
+
+	visibility: visible;
+	width: 210px;	
+	}
+
+</style>
+
+</head>
+<font style=font-family:"hack">
+	<div class="switch">		
+	<a href="about2.html" class="tooltip" text-decoration: none">
+
+	<button class="inner-switch">
+<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+	</button>
+	<span class="tooltiptext">dark colorscheme</span>
+	</a>
+		
+</div>
 
 <font style=font-family:"hack">
+
 <header role="banner">
 <nav role="navigation">
 <ul>
-<li><a href="https://samiuljoy.github.io/index.html">Home</a></li>
+	<li><a href="index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-    <button class="dropbtn"><b><u>INDEX</u></b> 
+	<index><button class="dropbtn"><b style="color: white">index</b> 
       <i class="fa fa-caret-down"></i>
-    </button>
+	</button></index>
     <div class="dropdown-content">
-      <a href="https://samiuljoy.github.io/bash-scripts/bash.html">#!/bin/bash</a>
-      <a href="https://samiuljoy.github.io/plant-science/plant-science.html">Plant-science</a>
-      <a href="https://samiuljoy.github.io/kaggle/kaggle.html">kaggle</a>
-      <a href="https://samiuljoy.github.io/python/python.html">Python</a>
-      <a href="https://samiuljoy.github.io/books/books.html">Books</a>
-      <a href="https://samiuljoy.github.io/termux/termux.html"> >_ </a>
-      <a href="https://samiuljoy.github.io/writings/writings.html">Writings</a>
+      <a href="bash-scripts/bash.html">*.sh</a>
+      <a href="biopython/biopython.html">BioPython</a>
+      <a href="plant-science/plant-science.html">Plant-science</a>
+      <a href="kaggle/kaggle.html">kaggle</a>
+      <a href="python/python.html">Python</a>
+      <a href="books/books.html">Books</a>
+      <a href="termux/termux.html"> >_ </a>
+      <a href="writings/writings.html">Writings</a>
     </div>
   </div>
-  <li><a href="https://samiuljoy.github.io/about.html" class="active">About</a></li>
+  <li><a href="about.html" class="active">about</a></li>
 </ul>
 </nav>
 </header>
@@ -304,5 +464,5 @@ footer{
 <br><p><center>Hope that you get benefited while surfing this site</p></center>
 
 <hr><center><footer class="footer" role="contentinfo">
-<small>samiuljoy46@yahoo.com<br><a href="https://github.com" style="color:#006262">github.com</a></center>
+		<small><b>{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#006262">github.com</a></center>
 </small></footer></body></html>
