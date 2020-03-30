@@ -7,22 +7,22 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 
 ::-webkit-scrollbar {
 	
-	width: 4px;
-	height: 4px;
+	width: 3.5px;
+	height: 3.5px;
 
 	}
 
 ::-webkit-scrollbar-track {
 			
 	border: 2px #3f3f3f;
-	border-radius:5px;
+	border-radius: 0.5rem;
 		
 	}
 
 ::-webkit-scrollbar-thumb {
 				
 	background: grey;  
-	border-radius: 5px;
+	border-radius: 0.5rem;
 				
 	}
 
@@ -35,7 +35,8 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 
 .hljs {
   display: block;
-  border: 1px solid #999;
+  border: 2px solid #10101c;
+  border-radius: 0.5rem;
   overflow: auto;
   padding: 0.5em;
   height: 175px;
