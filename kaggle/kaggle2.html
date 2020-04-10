@@ -15,15 +15,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="kaggle" />
 <meta property="og:description" content="kaggle" />
-<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/kaggle/kaggle.html" />
-<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/kaggle/kaggle.html" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/kaggle/guess2.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/kaggle/guess2.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="kaggle" />
 <meta name="twitter:site" content="@samiuljoy46" />
 
-<script type="application/ld+json"> {"description":"kaggle","@type":"Posting","headline":"kaggle","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/kaggle/kaggle.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/kaggle/kaggle.html"},"@context":"https://samiuljoy.github.io"}</script>
+<script type="application/ld+json"> {"description":"kaggle","@type":"Posting","headline":"kaggle","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/kaggle/guess2.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/kaggle/guess2.html"},"@context":"https://samiuljoy.github.io"}</script>
 
 <link rel="stylesheet" href="zenburn2.css">
 <script src="highlight.pack.js"></script>
@@ -52,6 +52,11 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
+		margin:0 auto;
+		max-width:50rem;
+		padding:1rem;
+		padding-top: 3rem;
+
 	}
 	
 	header p strong {
@@ -105,18 +110,14 @@ home, index {
 	border: 1px solid #708090;
 	text-decoration: none;		
 	}
-ul {
-	list-style-type: '# ';
-	color: #778899; 
-}
-
 
 
 	blockquote {
 		
-		background: grey;
+		background: #707070;
 		color: black;
 		border-left:5px solid black;
+		border-radius: 0.5rem;
 		font-size:110%;
 		margin:2rem 0;
 		padding:1rem 
@@ -168,14 +169,6 @@ ul {
 	
 	}
 
-	body {
-
-	margin:0 auto;
-	max-width:50rem;
-	padding:1rem 
-	
-	}
-	
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
@@ -220,42 +213,15 @@ ul {
 	
 	} 
 
-
-	ncpy {
-
-  	-webkit-user-select: none;
-	  -moz-user-select: none;     
-	  -ms-user-select: none;      
-	  user-select: none;               
-	
-		}
-
-	cpy1 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;         
-	
-		}
-
-	cpy2 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;   
-	
-		}
-
-
-
 	nav ul {
-
 	list-style:none;
-	padding:0;
+	padding: 1.4rem;
+	top: 0;
+	margin: 0;
+	background: #10101c;
 	text-align:center;
-	
+	width: 100%;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
 
 	nav ul li {
@@ -338,7 +304,10 @@ ul {
 	  z-index: 1;
 	
 	}
-
+ul {
+	list-style-type: '# ';
+	color: #778899; 
+}
 	.dropdown-content a {
 
 	  float: inherit;
@@ -381,6 +350,9 @@ ul {
 	border: none;
     	border-radius: 1.25rem;
 	float: left;
+	margin: 0.5rem;
+	top: 0;
+	padding: 0.5rem;
 	}
 
 .tooltip .tooltiptext {
@@ -410,28 +382,16 @@ ul {
 <font style=font-family:"hack">
 <font color="#778899">
 
-<div class="switch">		
-<a href="kaggle.html" class="tooltip">
-
-	<button class="inner-switch">
-<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
-
-	</button>
-	<span class="tooltiptext">light colorscheme</span>
-	</a>
-		
-</div>
-
-<font style=font-family:"hack">
 <header role="banner">
 <nav role="navigation">
-<ul>
-	<li><a href="../index2.html" style="text-decoration: none"><home>home</home></a></li>
+<ul style="position: fixed; top: 0; left: 0; right: 0">
+	<li><a href="index2.html" style="text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index>	<button class="dropbtn"><b>index</b> 
+	<index>	<button class="dropbtn"><b>roam</b> 
       <i class="fa fa-caret-down"></i>
 	</button></index>
     <div class="dropdown-content">
+	    <a href="../bash-scripts/bash2.html">*.sh</a>
       <a href="../biopython/biopython2.html">BioPython</a>
       <a href="../plant-science/plant-science2.html">Plant-science</a>
       <a href="../python/python.html">Python</a>
@@ -444,8 +404,18 @@ ul {
 </ul>
 </nav>
 </header>
+<div class="switch">		
+<a href="guess.html" class="tooltip">
 
-<hr><main id="main" role="main">
+	<button class="inner-switch" style="position: fixed">
+<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+
+	</button>
+		</a>
+		
+</div>
+
+<main id="main" role="main">
 
 <h1><center>kaggle!</h1></center>
 
@@ -465,6 +435,3 @@ ul {
 	<footer class="footer" role="contentinfo">
 		<small><b style="color: #708090">{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#708090">github.com</a></center>
 </small></footer></body></html>
-
-
-

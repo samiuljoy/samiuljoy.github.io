@@ -51,6 +51,10 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
+		margin:0 auto;
+		max-width:50rem;
+		padding:1rem;
+		padding-top: 3rem;
 	}
 	
 	header p strong {
@@ -167,14 +171,6 @@ ul {
 	
 	}
 
-	body {
-
-	margin:0 auto;
-	max-width:50rem;
-	padding:1rem 
-	
-	}
-	
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
@@ -220,41 +216,17 @@ ul {
 	} 
 
 
-	ncpy {
-
-  	-webkit-user-select: none;
-	  -moz-user-select: none;     
-	  -ms-user-select: none;      
-	  user-select: none;               
-	
-		}
-
-	cpy1 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;         
-	
-		}
-
-	cpy2 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;   
-	
-		}
-
-
-
 	nav ul {
-
 	list-style:none;
-	padding:0;
+	padding: 1.4rem;
+	top: 0;
+	margin: 0;
+	background: #10101c;
 	text-align:center;
-	
+	width: 100%;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+
+
 	}
 
 	nav ul li {
@@ -372,36 +344,6 @@ ul {
     	margin: -1rem;
 
 	}
-	
-.inner-switch {
-	
-	background-color: inherit;
-    	cursor: pointer;
-	border: none;
-    	border-radius: 1.25rem;
-	float: left;
-	}
-
-.tooltip .tooltiptext {
-
-	visibility: hidden;
-	width: 210px;
-	background-color: inherit;
-	color: gray;
-	border: 2px solid inherit;
-	text-align: center;
-	border-radius: 50px;
-	padding: 0px 0;
-	position: absolute;
-	font-style: italic;
-	}
-	
-.tooltip:hover .tooltiptext {
-
-	visibility: visible;
-	width: 210px;	
-	}
-
 </style>
 
 </head>
@@ -410,13 +352,14 @@ ul {
 <font color="#778899">
 <header role="banner">
 <nav role="navigation">
-<ul>
+<ul style="position: fixed; top: 0; left: 0; right: 0">
 	<li><a href="../index2.html" style="text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index>	<button class="dropbtn"><b>index</b> 
+	<index>	<button class="dropbtn"><b>roam</b> 
       <i class="fa fa-caret-down"></i>
 	</button></index>
     <div class="dropdown-content">
+	<a href="../bash-scripts/bash2.html">*.sh</a>
       <a href="../biopython/biopython2.html">BioPython</a>
       <a href="../plant-science/plant-science2.html">Plant-science</a>
       <a href="../kaggle/kaggle2.html">kaggle</a>
@@ -430,7 +373,7 @@ ul {
 </nav>
 </header>
 
-<hr><main id="main" role="main">
+<main id="main" role="main">
 
 <h1><center>python!</h1></center>
 

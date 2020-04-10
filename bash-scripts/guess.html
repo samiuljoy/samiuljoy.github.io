@@ -54,6 +54,11 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
+		margin:0 auto;
+		max-width:50rem;
+		padding:1rem; 
+		padding-top: 3rem;
+
 	}
 	
 	header p strong {
@@ -105,7 +110,6 @@
 		color: black;
 		border-left:5px solid black;
 		font-size:120%;
-		border-radius: 0.5rem;
 		margin:2rem 0;
 		padding:1rem 
 		
@@ -156,14 +160,6 @@
 	
 	}
 
-	body {
-
-	margin:0 auto;
-	max-width:50rem;
-	padding:1rem 
-	
-	}
-	
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
@@ -207,35 +203,6 @@
 	margin:0.5rem 0
 	
 	} 
-/* 
-copy and no copy webkits
-*/
-	ncpy {
-
-  	-webkit-user-select: none;
-	  -moz-user-select: none;     
-	  -ms-user-select: none;      
-	  user-select: none;               
-	
-		}
-
-	cpy1 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;         
-	
-		}
-
-	cpy2 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;   
-	
-		}
 
 home, index {
 	background: #002f30;
@@ -244,15 +211,16 @@ home, index {
 	font-weight:bold;
 	border-radius: 0.5rem;
 	border: 1px;
-		
 	}
 
 	nav ul {
-
 	list-style:none;
-	padding:0;
+	padding: 1.4rem;
+	top: 0;
+	margin: 0;
 	text-align:center;
-	
+	background: white;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
 
 	nav ul li {
@@ -269,7 +237,6 @@ home, index {
 	.navbar {
   	
 	overflow: hidden;
-	
 	}
 	
 	.dropdown-menu-center {
@@ -379,6 +346,9 @@ home, index {
 	border: none;
     	border-radius: 1.25rem;
 	float: left;
+	margin: 0.5rem;
+	top: 0;
+	padding: 0.5rem;
 	}
 
 .tooltip .tooltiptext {
@@ -386,8 +356,8 @@ home, index {
 	visibility: hidden;
 	width: 210px;
 	background-color: inherit;
-	color: #3f3f3f;
-	border: 2px solid inherit;
+	color: #10101c;
+	border: none;
 	text-align: center;
 	border-radius: 50px;
 	padding: 0px 0;
@@ -399,31 +369,22 @@ home, index {
 
 	visibility: visible;
 	width: 210px;	
+	background: #778899;
 	}
+
 
 </style>
 
 </head>
-<font style=font-family:"hack">
-	<div class="switch">		
-	<a href="guess2.html" class="tooltip" text-decoration: none">
-
-	<button class="inner-switch">
-<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
-	</button>
-	<span class="tooltiptext">dark colorscheme</span>
-	</a>
-		
-</div>
-
+<body>
 <font style=font-family:"hack">
 
 <header role="banner">
 <nav role="navigation">
-<ul>
+<ul style="position: fixed; top: 0; left: 0; right: 0">
 	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index><button class="dropbtn"><b style="color: white">index</b> 
+	<index>	<button class="dropbtn"><b style="color: white">roam</b> 
       <i class="fa fa-caret-down"></i>
 	</button></index>
     <div class="dropdown-content">
@@ -440,8 +401,19 @@ home, index {
 </ul>
 </nav>
 </header>
+	<div class="switch">		
+	<a href="guess2.html" class="tooltip" text-decoration: none">
 
-<hr><main id="main" role="main">
+	<button class="inner-switch" style="position: fixed">
+<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+	</button>
+	<span class="tooltiptext"></span>
+	</a>
+		
+</div>
+
+
+<main id="main" role="main">
 
 <h1><center>./guess.sh</h1></center>
 

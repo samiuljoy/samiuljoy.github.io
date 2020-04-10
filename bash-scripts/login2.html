@@ -52,6 +52,11 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
+		margin:0 auto;
+		max-width:50rem;
+		padding:1rem;
+		padding-top: 3rem;
+
 	}
 	
 	header p strong {
@@ -109,9 +114,10 @@ home, index {
 
 	blockquote {
 		
-		background: grey;
+		background: #707070;
 		color: black;
 		border-left:5px solid black;
+		border-radius: 0.5rem;
 		font-size:110%;
 		margin:2rem 0;
 		padding:1rem 
@@ -163,14 +169,6 @@ home, index {
 	
 	}
 
-	body {
-
-	margin:0 auto;
-	max-width:50rem;
-	padding:1rem 
-	
-	}
-	
 	strong,b,h1,h2,h3,h4 {
 
 	font-weight:bold;
@@ -215,42 +213,15 @@ home, index {
 	
 	} 
 
-
-	ncpy {
-
-  	-webkit-user-select: none;
-	  -moz-user-select: none;     
-	  -ms-user-select: none;      
-	  user-select: none;               
-	
-		}
-
-	cpy1 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;         
-	
-		}
-
-	cpy2 {  
-
-	  -webkit-user-select: text;  
-	  -moz-user-select: text;     
-	  -ms-user-select: text;      
-	  user-select: text;   
-	
-		}
-
-
-
 	nav ul {
-
 	list-style:none;
-	padding:0;
+	padding: 1.4rem;
+	top: 0;
+	margin: 0;
+	background: #10101c;
 	text-align:center;
-	
+	width: 100%;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
 
 	nav ul li {
@@ -333,7 +304,10 @@ home, index {
 	  z-index: 1;
 	
 	}
-
+ul {
+	list-style-type: '# ';
+	color: #778899; 
+}
 	.dropdown-content a {
 
 	  float: inherit;
@@ -376,6 +350,9 @@ home, index {
 	border: none;
     	border-radius: 1.25rem;
 	float: left;
+	margin: 0.5rem;
+	top: 0;
+	padding: 0.5rem;
 	}
 
 .tooltip .tooltiptext {
@@ -405,25 +382,12 @@ home, index {
 <font style=font-family:"hack">
 <font color="#778899">
 
-<div class="switch">		
-<a href="login.html" class="tooltip">
-
-	<button class="inner-switch">
-<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
-
-	</button>
-	<span class="tooltiptext">light colorscheme</span>
-	</a>
-		
-</div>
-
-<font style=font-family:"hack">
 <header role="banner">
 <nav role="navigation">
-<ul>
+<ul style="position: fixed; top: 0; left: 0; right: 0">
 	<li><a href="../index2.html" style="text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index>	<button class="dropbtn"><b>index</b> 
+	<index>	<button class="dropbtn"><b>roam</b> 
       <i class="fa fa-caret-down"></i>
 	</button></index>
     <div class="dropdown-content">
@@ -440,8 +404,19 @@ home, index {
 </ul>
 </nav>
 </header>
+<div class="switch">		
+<a href="login.html" class="tooltip">
 
-<hr><main id="main" role="main">
+	<button class="inner-switch" style="position: fixed">
+<svg class="dark-mode-toggle-icon" style="fill: #708090" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zm-2 5.79V18h-3.52L12 20.48 9.52 18H6v-3.52L3.52 12 6 9.52V6h3.52L12 3.52 14.48 6H18v3.52L20.48 12 18 14.48zM12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+
+	</button>
+		</a>
+		
+</div>
+
+
+<main id="main" role="main">
 <h1><center>./login.sh &&<br>./username.sh</h1></center>
 
 <p>

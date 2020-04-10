@@ -7,24 +7,27 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 <meta name="theme-color" content="#002f30" />
-
-<title>Bash-scripts</title>
+<title>bash-scripts</title>
 <meta name="author" content="Samiul Joy">
-<meta name="generator" content="bash-scripts" />
+<link rel="preload" href="font.ttf">
+<meta name="generator" content="Bash-scripts" />
 <meta property="og:title" content="Bash-scripts" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Bash-scripts" />
-<meta property="og:description" content="Bash-scripts" />
+<meta name="description" content="bash-scripts" />
+<meta property="og:description" content="bash" />
 <link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/bash.html" />
 <meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/bash.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Bash-scripts" />
+<meta property="twitter:title" content="bash" />
 <meta name="twitter:site" content="@samiuljoy46" />
-<link rel="preload" href="font.ttf">
 
-<script type="application/ld+json"> {"description":"Bash-scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2019-07-16T18:31:40+00:00","datePublished":"2019-07-16T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/bash.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/bash.html"},"@context":"https://schema.org"}</script>
+<script type="application/ld+json"> {"description":"bash","@type":"Posting","headline":"bash","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/bash.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/bash.html"},"@context":"https://samiuljoy.github.io"}</script>
+
+<link rel="stylesheet" href="zenburn.css">
+<script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 
 <!--
 <link rel="shortcut icon" href="/favicon.png">
@@ -33,6 +36,8 @@
 -->
 
 <style type="text/css">
+
+/* custom font */
 
 @font-face {
 
@@ -49,6 +54,11 @@
 		-webkit-text-size-adjust:100%;
 		zoom:1;
 		font-family: hack;
+		margin:0 auto;
+		max-width:50rem;
+		padding:1rem; 
+		padding-top: 3rem;
+
 	}
 	
 	header p strong {
@@ -66,6 +76,7 @@
 		font-weight:bold 
 	
 		}
+		
 	
 	a,a:visited {
 	
@@ -80,8 +91,8 @@
 
 		}
 	
-	a.active {
-		
+	a.active {	
+
 		background: #002f30;
 		padding:0.5rem;
 		color:white;
@@ -90,50 +101,111 @@
 		border: 1px;
 		margin: 0.925rem;	
 		text-decoration: none;
+	
 		}
 
-html{
-	box-sizing:border-box
-	}
+	blockquote {
+		
+		background: #ddd;
+		color: black;
+		border-left:5px solid black;
+		font-size:120%;
+		margin:2rem 0;
+		padding:1rem 
+		
+		}
 
-*,*:before,*:after
-	{
-	box-sizing:inherit
-	}
-
-body{
-	margin:0 auto;
-	max-width:50rem;
-	padding:1rem }
+	blockquote p {
 	
-strong,b,h1,h2,h3,h4
-	{
+		margin:0
+		
+		}
+	
+	blockquote footer
+		{
+	
+		font-size:90%;
+		margin:1rem 0 0 0
+	
+		}
+	
+	dl dt {
+	
+		margin-bottom:0.5rem
+		
+		}
+ul {
+	list-style-type: '# ';
+	color: #778899; 
+}
+
+	dl dd {
+
+		font-style:italic;
+		margin-bottom:2rem
+	
+		}
+
+	.date {
+	
+	opacity:0.6
+	
+	}
+	
+	html {
+	
+	box-sizing:border-box
+	
+	}
+
+	*,*:before,*:after {
+	
+	box-sizing:inherit
+	
+	}
+
+	strong,b,h1,h2,h3,h4 {
+
 	font-weight:bold;
 	color: #006262;
+	
 	}
-hr{
-	background: #006262;
+
+	hr {
+	
+	background: black;
 	border:0;
 	height:2px;
 	margin:2rem 0;
 	width:100%
+	
 	}
-table{
+	
+	table {
+	
 	border-collapse:collapse;
 	text-align:left;
-	width:100%}
+	width:100%
+	
+	}
 
-table tr{
+	table tr {
+
 	border-bottom:1px solid black
+	
 	}
 
-table td{
+	table td {
+
 	padding:0.5rem
+	
 	}
 
-img{
+	img {
+	
 	width:100%;
 	margin:0.5rem 0
+	
 	} 
 
 home, index {
@@ -143,101 +215,128 @@ home, index {
 	font-weight:bold;
 	border-radius: 0.5rem;
 	border: 1px;
-		
 	}
 
-
-nav ul{
+	nav ul {
 	list-style:none;
-	padding:0;
-	text-align:center}
-
-nav ul li{
-	display:inline-block
+	padding: 1.4rem;
+	top: 0;
+	margin: 0;
+	text-align:center;
+	background: white;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
 
-ul {
-	list-style-type: '# ';
-	color: #778899; 
-}
+	nav ul li {
 
-nav a {
-	margin: 0.5rem;
+	display:inline-block;
+	
+	}
 
+	nav a {
+
+	margin:0.5rem;
 	}
 		
-.navbar {
-  	overflow: hidden;
+	.navbar {
+  	
+	overflow: hidden;
 	}
 	
-.dropdown-menu-center {
+	.dropdown-menu-center {
+	
 	left: 50%;
 	right: auto;
 	text-align : center;
 	transform : translate(- 50% , 0);
+	
 	}
 	
-.navbar a {
-  float: inherit;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  text-decoration: none;
+	.navbar a {
+
+	  float: inherit;
+	  font-size: 16px;
+	  color: black;
+	  text-align: center;
+	  padding: 16px 18px;
+	  text-decoration: none;
+	
 	}
 
-.dropdown {
+	.dropdown {
+
+	  float: inherit;
+	  font-size: 16px;
+	  text-align: center;
+	  text-decoration: none;
+	
 	}
 
-.dropdown .dropbtn {
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: black;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
+	.dropdown .dropbtn {
+
+	  font-size: 16px;  
+	  border: none;
+	  outline: none;
+	  color: black;
+	  background-color: inherit;
+	  font-family: inherit;
+	  margin: 0;
+	
+		}
+
+	.navbar a:hover, .dropdown:hover .dropbtn {
+
+	  background-color: #002e43;
+	
 	}
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #002e43;
-	}
-
-.content {
+	.content {
+	
 	padding: 16px;
 	
 	}
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 140px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+	.dropdown-content {
+	
+	  display: none;
+	  position: absolute;
+	  background-color: #f9f9f9;
+	  min-width: 140px;
+	  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  z-index: 1;
+	
 	}
 
-.dropdown-content a {
-  float: inherit;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
+	.dropdown-content a {
+
+	  float: inherit;
+	  color: black;
+	  padding: 12px 16px;
+	  text-decoration: none;
+	  display: block;
+	  text-align: left;
+	
 	}
 
-.dropdown-content a:hover {
-  background-color: #ddd;
- 	}
-
-.dropdown:hover .dropdown-content {
-  display: block;
+	.dropdown-content a:hover {
+	
+	background-color: #ddd;
+ 		
 	}
 
-footer{
+	.dropdown:hover .dropdown-content {
+
+	  display: block;
+	
+	}
+
+	footer {
+
 	margin:2rem 0;
+	
 	}
-
-.switch .tooltip {
+	
+	.switch .tooltip {
 
 	align-self: flex-end;
     	margin: -1rem;
@@ -251,6 +350,9 @@ footer{
 	border: none;
     	border-radius: 1.25rem;
 	float: left;
+	margin: 0.5rem;
+	top: 0;
+	padding: 0.5rem;
 	}
 
 .tooltip .tooltiptext {
@@ -258,8 +360,8 @@ footer{
 	visibility: hidden;
 	width: 210px;
 	background-color: inherit;
-	color: #3f3f3f;
-	border: 2px solid inherit;
+	color: #10101c;
+	border: none;
 	text-align: center;
 	border-radius: 50px;
 	padding: 0px 0;
@@ -271,32 +373,22 @@ footer{
 
 	visibility: visible;
 	width: 210px;	
+	background: #778899;
 	}
 
+
 </style>
+
 </head>
-
-<font style=font-family:"hack">
-
-<div class="switch">		
-	<a href="bash2.html" class="tooltip" text-decoration: none">
-
-	<button class="inner-switch">
-<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
-	</button>
-	<span class="tooltiptext">dark colorscheme</span>
-	</a>
-		
-</div>
-
+<body>
 <font style=font-family:"hack">
 
 <header role="banner">
 <nav role="navigation">
-<ul>
+<ul style="position: fixed; top: 0; left: 0; right: 0">
 	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index><button class="dropbtn"><b style="color: white">index</b> 
+	<index>	<button class="dropbtn"><b style="color: white">roam</b> 
       <i class="fa fa-caret-down"></i>
 	</button></index>
     <div class="dropdown-content">
@@ -313,8 +405,19 @@ footer{
 </ul>
 </nav>
 </header>
+	<div class="switch">		
+	<a href="bash2.html" class="tooltip" text-decoration: none">
 
-<hr><main id="main" role="main">
+	<button class="inner-switch" style="position: fixed">
+<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
+	</button>
+	<span class="tooltiptext"></span>
+	</a>
+		
+</div>
+
+
+<main id="main" role="main">
 
 <h1><center>#!/bin/bash</h1></center>
 
