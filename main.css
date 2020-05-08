@@ -1,0 +1,427 @@
+body {
+	font-size:1rem;
+	line-height:1.5;
+	-webkit-font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+	-webkit-text-size-adjust:100%;
+	zoom:1;
+	font-family: 'Comfortaa';
+	margin:0 auto;
+	max-width:50rem;
+	padding:1rem; 
+	padding-top: 4.3rem;
+	}
+
+.switch {
+	align-self: flex-end;
+	margin: -1rem;
+	}
+	
+.inner-switch {
+	background-color: inherit;
+	cursor: pointer;
+	position: fixed;
+	margin: 0.5rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 1px 2px 2px rgba(0,0,0,.2);
+	top: 0;
+	padding: 0.2rem;
+	}
+
+a {
+	color: #002e43;
+	font-weight:bold; 
+	}
+
+a:visited {
+	color: #778899;
+	font-weight: bold;
+	}
+
+a:hover, a:visited:hover {
+	color: grey;
+	}
+	
+a.active {	
+	background: #002f30;
+	padding:0.5rem;
+	color:white;
+	font-weight:bold; 
+	border-radius: 0.5rem;
+	border: 1px;
+	margin: 0.925rem;	
+	text-decoration: none;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	}
+
+.card {
+ 	padding: 20px;
+ 	box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+ 	border-radius: 0.5rem;
+	margin-bottom:4rem;
+	border: 1px solid #ddd;
+	}	
+
+.area, .area:visited, .area:hover, .area:visited:hover {
+	color: black;
+	text-decoration: none;
+	font-weight: normal;
+	}
+
+.date {
+	color: grey;
+	float: right;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 0;
+	}
+
+.author {
+	color: grey;
+	float: left;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 14px;
+	margin-top: 0;
+	}
+
+.card:hover {
+	box-shadow: 2px 4px 8px 2px #002f30;
+	border: none;
+	}
+
+.tag {
+	font-weight: bold;
+	color: #006262;
+	}
+
+blockquote {
+	background: #eee;
+	color: black;
+	border-left:5px solid #778899;
+	font-size:120%;
+	margin:2rem 0;
+	padding:1rem; 
+	}
+	
+blockquote header {
+	color: #006262;
+	font-size: 25px;
+	font-weight: bold;
+	}
+
+blockquote p {
+	margin:0;
+	}
+	
+blockquote footer {
+	font-size:90%;
+	margin:1rem 0 0 0;
+	}
+
+ul {
+	list-style-type: '# ';
+	color: #778899; 
+	}
+
+.ull {
+	font-family: 'Baloo Paaji 2';
+	font-size: 19px;
+	font-weight: bold;
+	color: #002e43;
+	list-style-type: '# ';
+	}
+
+.navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	}
+
+ol li {
+	font-family: 'Baloo Paaji 2';
+	font-size: 19px;
+	}
+	
+dl dt {
+	margin-bottom:0.5rem;
+	}
+
+dl dd {
+	font-style:italic;
+	margin-bottom:2rem;
+	}
+
+html {
+	box-sizing:border-box;
+	}
+
+*,*:before,*:after {
+	box-sizing:inherit;
+	}
+
+strong,b,h1,h2,h3,h4 {
+	font-weight:bold;
+	color: #006262;
+	}
+
+hr {
+	background: #002f30;
+	border: none;
+	height:1px;
+	border-radius: 2rem;
+	margin: 3rem 3rem;
+	}
+
+p {
+	font-family: 'Baloo Paaji 2';
+	font-size:1.2rem;
+	}
+
+table {
+	border-collapse:collapse;
+	text-align:left;
+	width:100%
+	overflow: auto;
+	whitespace: nowrap;
+	}
+
+table tr {
+	border-bottom:1px solid black;
+	}
+
+table td {
+	padding:0.5rem;
+	}
+
+.img {
+	width: 100%;
+	height: auto;
+	margin:0.5rem 0;
+	border: none;
+	border-radius: 0.5rem;
+	} 
+
+.pimg {
+	width: 100%;
+	height: auto;
+	margin:1rem 0;
+	border: none;
+	border-radius: 0.5rem;
+	} 
+
+.cover {
+	width: 100%;
+	height: auto;
+	margin:1rem 0;
+	border: none;
+	border-radius: 0.5rem;
+	} 
+
+@media screen and (min-width: 800px) {
+  .cover {   
+    width: 75%;
+		height: 75%;
+  }
+}
+
+.caption {
+	font-size: 14px;
+	font-style: italic;
+	margin-top: -0.5rem;
+	margin-bottom: 1.5rem;
+	font-weight: bold;
+	color: #006262;
+	}
+
+home, back {
+	background: #002f30;
+	padding:0.5rem;
+	color:white;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	}
+
+home:hover, back:hover {
+	background: black;
+	}
+
+index {
+	background: #002f30;
+	padding:0.5rem;
+	margin-right: 0.3rem;
+	color:white;
+	font-weight:bold;
+	border-radius: 0.5rem;
+	border: 1px;
+	text-decoration: none;
+	text-align: center;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	}
+
+index:hover {
+	background: black;
+	outline: none;
+	}
+
+.btn {
+	display: inline-block;
+	background-color:#eee; 
+	color: #006262; 
+	font-family: 'Comfortaa';
+	border: 1px solid #ddd;
+	border-radius: 1.25rem; 
+	width: 3rem auto;
+	font-weight: bold;
+	padding: 0.1875rem; 
+	margin-left: 0.3125rem;
+	}
+
+/* nav ul ::-webkit-scrollbar {
+	width: 2px;
+	height: 2px;
+	}
+
+nav ul ::-webkit-scrollbar-track {
+	border: 2px #3f3f3f;
+	border-radius:2px;
+	}
+
+nav ul ::-webkit-scrollbar-thumb {
+	background: grey;  
+	border-radius: 2px;
+	}
+
+nav ul ::-webkit-scrollbar-thumb:hover {
+	background: #88ba1c;  
+	}
+*/
+
+nav ul {
+	list-style:none;
+	text-align:center;
+	padding: 1.4rem;
+	top: 0;
+	margin: 0;
+	background: white;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	opacity: 0.92;
+	}
+
+nav ul li {
+	display:inline-block;
+	}
+
+nav a {
+	margin: 0.5rem;
+	}
+		
+.navbar {
+	overflow: hidden;
+	}
+	
+.dropdown-menu-center {
+	left: 50%;
+	right: auto;
+	text-align : center;
+	transform : translate(- 50% , 0);
+	}
+	
+.navbar a {
+	float: inherit;
+	font-size: 16px;
+	color: black;
+	text-align: center;
+	padding: 16px 18px;
+	text-decoration: none;
+	}
+
+.dropdown {
+	float: inherit;
+	font-size: 16px;
+	text-align: center;
+	text-decoration: none;
+	}
+
+.dropdown .dropbtn {
+	font-size: 16px;  
+	border: none;
+	outline: none;
+	font-weight: bold;
+	color: white;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+	}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+	background-color: inherit;
+	}
+
+.content {
+	padding: 16px;
+	}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 140px;
+	max-height: 21.5rem;
+	overflow: scroll;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+
+.dropdown-content a {
+	float: inherit;
+	color: #002f30;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+	}
+
+.dropdown-content a:hover {
+	background-color: #002f30;
+	color: white;
+	border-radius: 0.5rem;
+	}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+	border-radius: 0.5rem;	
+	border: none;
+	top: 4.3rem;
+	}
+
+.footer {
+	background: #e6e6e6;
+	padding: 1.2rem;
+	border-radius:0.5rem;
+	font-family: 'Baloo Paaji 2';
+	color: #006262;
+	margin-top: 2rem;
+	font-weight: bold;
+	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	}
+
+.footer a {
+	text-decoration: none;
+	color: #192841;
+	}
+
+.pin {
+	left:-1.5rem;
+	position: relative;
+	margin-top: -1.6rem;
+	font-size: 21px;
+	}
+
+/* Written with <3 by Samiul Joy. Yes it has some flaws here and there, but idk, try it perhaps, maybe you'll like it. Also if you like it, feel free to support me. github/samiuljoy */
