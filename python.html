@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>python</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=0.8">
+<meta name="theme-color" content="#1c4966" />
+<meta name="author" content="Samiul Joy">
+<link rel="icon" href="../organic.svg">
+<link rel="stylesheet" type="text/css" href="../css/codeL.css">
+<link rel="stylesheet" type="text/css" href="../css/maind.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+<meta name="generator" content=Python />
+<meta property="og:title" content=Python />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Collection of my Python programs" />
+<meta property="og:description" content="Collection of my Python programs" />
+<link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/python/python.html" />
+<meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/python/python.html" />
+<meta property="og:site_name" content="https://samiuljoy.github.io" />
+<meta property="og:type" content="article" />
+<meta name="twitter:card" content="Collection of my Python programs" />
+<meta property="twitter:title" content=Python />
+<meta name="twitter:site" content="@samiuljoy46" />
+
+<script type="application/ld+json"> {"description":"Collection of my Python programs","@type":"Posting","headline":Python,"dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/python/python.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/python/python.html"},"@context":"https://samiuljoy.github.io"}</script>
+
+</head>
+
+<body id="body">
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
+<li class="dropdown">
+	<button class="dropbtn"><index>roam</index> 
+	</button>
+    <div class="dropdown-content">
+      <a href="../biopython/biopython.html">BioPython</a>
+      <a href="../plant-science/plant-science.html">Plant-science</a>
+      <a href="../kaggle/kaggle.html">kaggle</a>
+      <a href="../posts/posts.html">posts</a>
+      <a href="../books/books.html">Books</a>
+      <a href="../termux/termux.html"> >_ </a>
+      <a href="../bash-scripts/bash.html">*.sh</a>
+    </div>
+  </div>
+  <li><a href="python.html" style="text-decoration: none"><back>python</back></a></li>
+</ul>
+</nav>
+</header>
+
+<div class="switch, inner-switch">
+<span id="mode" onclick="toggle()">🐼</span>
+</div>
+
+<main id="main" role="main">
+
+<h1><center>python!</h1></center>
+
+	<p>I love python! nuff said c:</p>
+	<p>I'll be coming up with some data analysis programs soon, perhaps will be more relevant to BioPython and such..let's see what time brings us</p>
+	
+	<h3 id="key-features">python programs so far</h3>
+
+	<ul>
+		<li><a href="fractal-fern-frond.html">fractal fern frond</a></li>
+		<li><a href="square.html">square iterations</a></li>
+		<li><a href="tree.html">fractal tree</a></li>
+	</ul>
+<br>
+
+<footer class="footer" role="contentinfo">
+<div class="pin">📎</div>
+<center>GitHub is awesome!<br><a href="mailto:joy.samiul46@gmail.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ⬆</a>
+</footer>
+</center>
+
+	<script>
+// check for saved 'darkMode' in localStorage
+let darkMode = localStorage.getItem('darkMode'); 
+const darkModeToggle = document.querySelector('#mode');
+var word = document.getElementById("mode");
+var meta = document.querySelector("meta[name=theme-color]");
+
+const enableDarkMode = () => {
+  // 1. Add the class to the body
+  document.body.classList.add('D');
+  meta.setAttribute("content", "#10101c");
+  word.innerHTML = "🐭";
+  // 2. Update darkMode in localStorage
+  localStorage.setItem('darkMode', 'enabled');
+}
+
+const disableDarkMode = () => {
+  // 1. Remove the class from the body
+  document.body.classList.remove('D');
+  meta.setAttribute("content", "#002f30");
+  word.innerHTML = "🐼";
+  // 2. Update darkMode in localStorage 
+  localStorage.setItem('darkMode', null);
+}
+ 
+// If the user already visited and enabled darkMode
+// start things off with it on
+if (darkMode === 'enabled') {
+  enableDarkMode();
+}
+
+// When someone clicks the button
+darkModeToggle.addEventListener('click', () => {
+  // get their darkMode setting
+  darkMode = localStorage.getItem('darkMode'); 
+  
+  // if it not current enabled, enable it
+  if (darkMode !== 'enabled') {
+    enableDarkMode();
+  // if it has been enabled, turn it off  
+  } else {  
+    disableDarkMode(); 
+  }
+});
+	</script>
+	<script>
+function toggle() {
+  var body = document.getElementById('body')
+  var currentClass = body.className
+  var newClass = body.className == 'D' ? 'L' : 'D'
+  body.className = newClass
+  document.cookie = 'theme=' + (newClass == 'L' ? 'light' : 'dark')
+  console.log('Cookies are now: ' + document.cookie)
+}
+
+function isDarkThemeSelected() {
+  return document.cookie.match(/theme=dark/i) != null
+}
+
+function setThemeFromCookie() {
+  var body = document.getElementById('body')
+  body.className = isDarkThemeSelected() ? 'D' : 'L'
+}
+
+(function() {
+  setThemeFromCookie()
+})();
+	</script>
+</body>
+</html>
