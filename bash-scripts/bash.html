@@ -1,83 +1,88 @@
+
 <!DOCTYPE html>
-
-<!-- This here is a whole new modification to the Ultra super fast Jekyll theme. Modifications by Samiul Joy -->
-
 <html lang="en">
 <head>
+<title>Bash-scripts</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
 <meta name="theme-color" content="#002f30" />
-<title>bash-scripts</title>
 <meta name="author" content="Samiul Joy">
-<link rel="preload" href="font.ttf">
+<link rel="icon" href="../organic.svg">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" type="text/css" href="../css/maind.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 <meta name="generator" content="Bash-scripts" />
 <meta property="og:title" content="Bash-scripts" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="bash-scripts" />
-<meta property="og:description" content="bash" />
+<meta name="description" content="Funtime Bash scripts" />
+<meta property="og:description" content="Funtime Bash scripts" />
 <link rel="canonical" href="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/bash.html" />
 <meta property="og:url" content="https://github.com/samiuljoy/samiuljoy.github.io/bash-scripts/bash.html" />
 <meta property="og:site_name" content="https://samiuljoy.github.io" />
 <meta property="og:type" content="article" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="bash" />
+<meta name="twitter:card" content="Funtime Bash scripts" />
+<meta property="twitter:title" content="Bash-scripts" />
 <meta name="twitter:site" content="@samiuljoy46" />
-<link rel="stylesheet" type="text/css" href="../day.css">
-<link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
 
-<script type="application/ld+json"> {"description":"bash","@type":"Posting","headline":"bash","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/bash.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/bash.html"},"@context":"https://samiuljoy.github.io"}</script>
+<script type="application/ld+json"> {"description":"Funtime Bash scripts","@type":"Posting","headline":"Bash-scripts","dateModified":"2020-02-13T18:31:40+00:00","datePublished":"2020-02-13T18:31:40+00:00","url":"https://samiuljoy.github.io/bash-scripts/bash.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://samiuljoy.github.io/bash-scripts/bash.html"},"@context":"https://samiuljoy.github.io"}</script>
 
 </head>
-<body>
+
+<body id="body">
 <header role="banner">
 <nav role="navigation">
-<ul style="position: fixed; top: 0; left: 0; right: 0">
+
+<ul class="navigation">
 	<li><a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a></li>
 <li class="dropdown">
-	<index>	<button class="dropbtn"><b style="color: white">roam</b> 
-      <i class="fa fa-caret-down"></i>
-	</button></index>
+	<button class="dropbtn"><index>roam</index> 
+	</button>
     <div class="dropdown-content">
       <a href="../biopython/biopython.html">BioPython</a>
       <a href="../plant-science/plant-science.html">Plant-science</a>
       <a href="../kaggle/kaggle.html">kaggle</a>
-      <a href="../python/python.html">Python</a>
+      <a href="../python/python.html">*.py</a>
       <a href="../books/books.html">Books</a>
       <a href="../termux/termux.html"> >_ </a>
-      <a href="../writings/writings.html">Writings</a>
+      <a href="../posts/posts.html">posts</a>
     </div>
   </div>
-  <li><a href="bash.html" class="active">bash</a></li>
+  <li><a href="bash.html" style="text-decoration: none"><back>bash</back></a></li>
 </ul>
 </nav>
 </header>
-	<div class="switch">		
-	<a href="bash2.html" class="tooltip" text-decoration: none">
 
-	<button class="inner-switch" style="position: fixed">
-<svg class="dark-mode-toggle-icon" height=25px width=25px viewbox="0 0 24 24"><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>
-	</button>
-	<span class="tooltiptext"></span>
-	</a>
-		
+<div class="switch, inner-switch">
+<span id="mode" onclick="toggle()">🐼</span>
 </div>
-
 
 <main id="main" role="main">
 
 <h1><center>#!/bin/bash</h1></center>
 
-	<p>Here are some of my funtime bash-scripts. These scripts are a mere product of my childish mind :)</p>
+<p>Here are some of my funtime bash-scripts. These scripts are a mere product of my childish mind :)</p>
+<br><br>  
 
-	<h3 id="key-features">Bash-Scripts</h3>
+<a class="area" href="guess.html">
+<div class="card">
+<div class="date">13th February 2020</div>
+<h2>./guess.sh</h2>
+<p>A simple number guessing bash game where you get to guess two digit random numbers.</p>
+<div class="tag">#terminal, #bash, #games</div>
+</div>
+</a>
 
-	<ul><li><a href="guess.html">guess.sh</a></li>
-		<li> <a href="login.html">login-prompt.sh</a></li>
-</ul>
+<a class="area" href="login.html">
+<div class="card">
+<div class="date">20th February 2020</div>
+<h2>./login.sh && ./username.sh</h2>
+<p>An emulation of a typical linux login mechanism using simple bash scripts</p>
+<div class="tag">#terminal, #Linux, #bash</div>
+</div>
+</a>
 
-
-
-<hr><center><footer class="footer" role="contentinfo">
-		<small><b style="color: black">{github.com/samiuljoy}</b><br><a href="https://github.com" style="color:#006262">github.com</a></center>
-</small></footer></body></html>
+<script src="../js/toggle.js"></script>
+<script src="../js/kevin.js"></script>
+</body>
+</html>

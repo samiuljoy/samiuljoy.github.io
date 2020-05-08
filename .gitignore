@@ -20,6 +20,9 @@ bash-scripts/logo1.txt
 bash-scripts/night.svg
 bash-scripts/script.js
 bash-scripts/style
+bash-scripts/tmp
+posts/tmp
+posts/retro.html
 
 # But then again, ignore all
 transfer*
