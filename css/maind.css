@@ -226,7 +226,7 @@
 	background: black;
 	}
 
-.D index {
+.D .index {
 	background: #10101c;
 	color: #778899;
 	font-weight:bold;
@@ -239,7 +239,7 @@
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
 
-.D index:hover {
+.D .index:hover {
 	background: black;
 	}
 
@@ -279,7 +279,7 @@
 .D nav ul {
 	list-style:none;
 	text-align:center;
-	padding: 1.4rem;
+	padding: 1rem;
 	top: 0;
 	margin: 0;
 	background: #10101c;

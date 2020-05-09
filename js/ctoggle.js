@@ -16,7 +16,7 @@ const enableDarkMode = () => {
 const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('D');
-  meta.setAttribute("content", "#002f30");
+  meta.setAttribute("content", "#1c4966");
   word.innerHTML = "🐼";
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
