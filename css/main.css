@@ -355,7 +355,7 @@ nav a {
 	outline: none;
 	font-weight: bold;
 	color: white;
-	background-color: #002f30;
+	background-color: inherit;
 	font-family: inherit;
 	margin: 0;
 	}
