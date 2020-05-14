@@ -1,6 +1,6 @@
 ## samiuljoy.github.io
 
-## about
+## `about`
 
 1. This site is made from scratch with 💙 and the whole design/concept and everything's from my bare head. My objectives/design ideas were to
 a. Keeping it simple
@@ -14,9 +14,9 @@ d. And simple
 
 4. Hope you get benefited while surfing (:
 
-## facts!
+## `facts!`
 
 May sound ironic, but this whole website's edits were done with a VIM editor on an android phone! What! 
 Yeah, my RAM and Hard Disk died on me..I would've edited it with VIM on my PC anyways, but oh well, turns out I could implement the whole thing on a phone! Now how cool is that! I used termux as my terminal of course.
 
-To jump into dark-mode from the start, you can tap on the old guy.
+`To jump into dark-mode from the start, you can tap on the old guy.`
