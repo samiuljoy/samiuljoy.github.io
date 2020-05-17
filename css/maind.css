@@ -11,6 +11,7 @@
 	margin:0 auto;
 	max-width:50rem;
 	padding-top: 4.3rem;
+	padding: 1rem;
 	}
 
 .D .switch {
@@ -43,7 +44,7 @@
 	background: #707070;
 	color: black;
 	border-left:5px solid black;
-	font-size:110%;
+	font-size:120%;
 	margin:2rem 0;
 	padding:1rem; 
 	}
