@@ -1,13 +1,6 @@
-:root {
-	--dpri: #778899;
-	--dsec: #708090;
-	--dbac: #10101c;
-	--dshad: #192841;
-	}
-
 .D {
-	background: var(--dbac);
-	color: var(--dpri);
+	background: #10101c;
+	color: #778899;
 	font-size:1rem;
 	line-height:1.5;
 	-webkit-font-smoothing:antialiased;
@@ -31,13 +24,13 @@
 	position: fixed;
 	margin: 0.5rem;
 	border-radius: 0.5rem;
-	box-shadow: 0 1px 2px 2px var(--dshad);
+	box-shadow: 0 1px 2px 2px #192841;
 	top: 0;
 	padding: 0.2rem;
 	}
 
 .D a {
-	color: var(--dsec);
+	color: #778899;
 	font-weight:bold; 
 	}
 
@@ -73,7 +66,7 @@
 .D .card {
  	padding: 20px;
  	box-shadow: 0 4px 8px -2px #1c2e4a;
- 	border: 1px solid var(--dpri);
+ 	border: 1px solid #778899;
  	border-radius: 0.5rem;
 	margin-bottom: 4rem;
 	}	
@@ -84,7 +77,7 @@
 	}
 
 .D .area, .D .area:visited, .D .area:hover, .D .area:visited:hover {
-	color: var(--dpri);
+	color: #778899;
 	text-decoration: none;
 	font-weight: normal;
 	}
@@ -109,7 +102,7 @@
 
 .D .tag {
 	font-weight: bold;
-	color: var(--dpri);
+	color: #778899;
 	}
 
 .D a:hover, .D a:visited:hover {
@@ -117,12 +110,12 @@
 	}
 	
 .D a.active {	
-	background: var(--dbac);
+	background: #10101c;
 	padding:0.5rem;
-	color: var(--dpri);
+	color: #778899;
 	font-weight:bold; 
 	border-radius: 0.5rem;
-	border: 1px solid var(--dsec);
+	border: 1px solid #708090;
 	margin: 0.925rem;	
 	text-decoration: none;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
@@ -130,14 +123,14 @@
 
 .D ul {
 	list-style-type: '# ';
-	color: var(--dpri); 
+	color: #778899; 
 	}
 
 .D .ull {
 	font-family: 'Baloo Paaji 2';
 	font-size: 19px;
 	font-weight: bold;
-	color: var(--dpri);
+	color: #778899;
 	list-style-type: '# ';
 	}
 
@@ -161,11 +154,11 @@
 
 .D strong,.D b,.D h1,.D h2, .D h3,h4 {
 	font-weight:bold;
-	color: var(--dsec);
+	color: #708090;
 	}
 
 .D hr {
-	background: var(--dpri);
+	background: #778899;
 	border: none;
 	height:1px;
 	border-radius: 2rem;
@@ -215,16 +208,16 @@
 	font-weight: bold;
 	margin-top: -0.5rem;
 	margin-bottom: 1.5rem;
-	color: var(--dsec);
+	color: #708090;
 	}
 
 .D home, .D back {
-	background: var(--dbac);
+	background: #10101c;
 	padding:0.5rem;
-	color: var(--dpri);
+	color: #778899;
 	font-weight:bold;
 	border-radius: 0.5rem;
-	border: 1.7px solid var(--dpri);
+	border: 1.7px solid #778899;
 	text-align: center;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
@@ -234,12 +227,12 @@
 	}
 
 .D .index {
-	background: var(--dbac);
-	color: var(--dpri);
+	background: #10101c;
+	color: #778899;
 	font-weight:bold;
 	border-radius: 0.5rem;
 	text-decoration: none;
-	border: 1.7px solid var(--dpri);
+	border: 1.7px solid #778899;
 	text-align: center;
 	padding: 0.5rem;
 	margin-right: 0.3rem;
@@ -253,7 +246,7 @@
 .D .btn {
 	display: inline-block;
 	background-color:#000000; 
-	color:var(--dpri); 
+	color:#778899; 
 	font-family: 'Comfortaa';
 	border: 1px solid #0e2443;
 	border-radius: 1.25rem; 
@@ -274,12 +267,12 @@
 	}
 
 .D nav ul ::-webkit-scrollbar-thumb {
-	background: var(--dpri);  
+	background: #778899;  
 	border-radius: 2px;
 	}
 
 .D nav ul ::-webkit-scrollbar-thumb:hover {
-	background: var(--dpri);  
+	background: #778899;  
 	}
 */
 
@@ -289,7 +282,7 @@
 	padding: 1rem;
 	top: 0;
 	margin: 0;
-	background: var(--dbac);
+	background: #10101c;
 	opacity: 0.92;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 	}
@@ -336,7 +329,7 @@
 	color: black;
 	background-color: inherit;
 	font-weight: bold;
-	color: var(--dpri);
+	color: #778899;
 	font-family: inherit;
 	margin: 0;
 	}
@@ -362,7 +355,7 @@
 
 .D .dropdown-content a {
 	float: inherit;
-	color: var(--dpri);
+	color: #778899;
 	padding: 12px 16px;
 	text-decoration: none;
 	font-weight: bold;
@@ -371,8 +364,8 @@
 	}
 
 .D .dropdown-content a:hover {
-	background-color: var(--dbac);
-	color: var(--dpri);
+	background-color: #10101c;
+	color: #778899;
 	border-radius: 0.5rem;
 	}
 
@@ -384,24 +377,24 @@
 	}
 
 .D .footer {
-	background: var(--dbac);
-	color: var(--dsec);
+	background: #10101c;
+	color: #708090;
 	padding: 1rem;
 	font-family: 'Baloo Paaji 2';
 	border-radius:0.5rem;
-	border: 0.5px solid var(--dshad);
+	border: 0.5px solid #192841;
 	margin-top: 2rem;
 	font-weight:bold;
-	box-shadow: 0 1px 2px 2px var(--dshad);
+	box-shadow: 0 1px 2px 2px #192841;
 	}
 	
 .D .footer a {
 	text-decoration: none;
-	color: var(--dpri);
+	color: #778899;
 	}
 
 .D .footer b {
-	color: :var(--dpri);
+	color: :#778899;
 	}
 
 .D .pin {
