@@ -1,3 +1,10 @@
+:root {
+	--cpri: #1c4966;
+	--csec: #1c4966;
+	--clin: #002e43;
+	--cc: #778899;
+	}
+
 body {
 	font-size:1rem;
 	line-height:1.5;
@@ -29,12 +36,12 @@ body {
 	}
 
 a {
-	color: #002e43;
+	color: var(--clin);
 	font-weight:bold; 
 	}
 
 a:visited {
-	color: #778899;
+	color: var(--cc);
 	font-weight: bold;
 	}
 
@@ -43,7 +50,7 @@ a:hover, a:visited:hover {
 	}
 	
 a.active {	
-	background: #1c4966;
+	background: var(--cpri);
 	padding:0.5rem;
 	color:white;
 	font-weight:bold; 
@@ -87,26 +94,26 @@ a.active {
 	}
 
 .card:hover {
-	box-shadow: 2px 4px 8px 2px #1c4966;
+	box-shadow: 2px 4px 8px 2px var(--cpri);
 	border: none;
 	}
 
 .tag {
 	font-weight: bold;
-	color: #1c4966;
+	color: var(--csec);
 	}
 
 blockquote {
 	background: #eee;
 	color: black;
-	border-left:5px solid #778899;
+	border-left:5px solid var(--cc);
 	font-size:120%;
 	margin:2rem 0;
 	padding:1rem; 
 	}
 	
 blockquote header {
-	color: #1c4966;
+	color: var(--csec);
 	font-size: 25px;
 	font-weight: bold;
 	}
@@ -122,14 +129,14 @@ blockquote footer {
 
 ul {
 	list-style-type: '# ';
-	color: #778899; 
+	color: var(--cc); 
 	}
 
 .ull {
 	font-family: 'Baloo Paaji 2';
 	font-size: 19px;
 	font-weight: bold;
-	color: #002e43;
+	color: var(--clin);
 	list-style-type: '# ';
 	}
 
@@ -164,11 +171,11 @@ html {
 
 strong,b,h1,h2,h3,h4 {
 	font-weight:bold;
-	color: #1c4966;
+	color: var(--csec);
 	}
 
 hr {
-	background: #1c4966;
+	background: var(--cpri);
 	border: none;
 	height:1px;
 	border-radius: 2rem;
@@ -233,11 +240,11 @@ table td {
 	margin-top: -0.5rem;
 	margin-bottom: 1.5rem;
 	font-weight: bold;
-	color: #1c4966;
+	color: var(--csec);
 	}
 
 home, back {
-	background: #1c4966;
+	background: var(--cpri);
 	padding:0.5rem;
 	color:white;
 	font-weight:bold;
@@ -253,7 +260,7 @@ home:hover, back:hover {
 	}
 
 .index {
-	background: #1c4966;
+	background: var(--cpri);
 	padding:0.5rem;
 	margin-right: 0.3rem;
 	color:white;
@@ -272,8 +279,8 @@ home:hover, back:hover {
 
 .btn {
 	display: inline-block;
-	background-color:#eee; 
-	color: #1c4966; 
+	background-color: #eee; 
+	color: var(--csec); 
 	font-family: 'Comfortaa';
 	border: 1px solid #ddd;
 	border-radius: 1.25rem; 
@@ -381,7 +388,7 @@ nav a {
 
 .dropdown-content a {
 	float: inherit;
-	color: #1c4966;
+	color: var(--cpri);
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
@@ -389,7 +396,7 @@ nav a {
 	}
 
 .dropdown-content a:hover {
-	background-color: #1c4966;
+	background-color: var(--cpri);
 	color: white;
 	border-radius: 0.5rem;
 	}
@@ -406,7 +413,7 @@ nav a {
 	padding: 1.2rem;
 	border-radius:0.5rem;
 	font-family: 'Baloo Paaji 2';
-	color: #1c4966;
+	color: var(--csec);
 	margin-top: 2rem;
 	font-weight: bold;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
