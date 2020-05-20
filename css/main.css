@@ -229,9 +229,9 @@ table td {
 	} 
 
 @media screen and (min-width: 800px) {
-	.cover {   
-		width: 75%;
-		height: 75%;
+.cover {   
+	width: 75%;
+	height: 75%;
 	}
 }
 
