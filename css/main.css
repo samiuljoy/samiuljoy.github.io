@@ -3,6 +3,7 @@
 	--lsec: #006262;
 	--llin: #002e43;
 	--lc: #778899;
+	--lblak: #000000;
 	}
 
 body {
@@ -70,7 +71,7 @@ a.active {
 	}	
 
 .area, .area:visited, .area:hover, .area:visited:hover {
-	color: black;
+	color: var(--lblak);
 	text-decoration: none;
 	font-weight: normal;
 	}
@@ -105,7 +106,7 @@ a.active {
 
 blockquote {
 	background: #eee;
-	color: black;
+	color: var(--lblak);
 	border-left:5px solid var(--lc);
 	font-size:120%;
 	margin:2rem 0;
@@ -196,7 +197,7 @@ table {
 	}
 
 table tr {
-	border-bottom:1px solid black;
+	border-bottom:1px solid var(--lblak);
 	}
 
 table td {
@@ -228,10 +229,10 @@ table td {
 	} 
 
 @media screen and (min-width: 800px) {
-  .cover {   
-    width: 75%;
+	.cover {   
+		width: 75%;
 		height: 75%;
-  }
+	}
 }
 
 .caption {
@@ -256,7 +257,7 @@ home, back {
 	}
 
 home:hover, back:hover {
-	background: black;
+	background: var(--lblak);
 	}
 
 .index {
@@ -273,7 +274,7 @@ home:hover, back:hover {
 	}
 
 .index:hover {
-	background: black;
+	background: var(--lblak);
 	outline: none;
 	}
 
@@ -343,7 +344,7 @@ nav a {
 .navbar a {
 	float: inherit;
 	font-size: 16px;
-	color: black;
+	color: var(--lblak);
 	text-align: center;
 	padding: 16px 18px;
 	text-decoration: none;

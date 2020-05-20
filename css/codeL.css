@@ -3,6 +3,7 @@
 	--csec: #1c4966;
 	--clin: #002e43;
 	--cc: #778899;
+	--cblak: #000000;
 	}
 
 body {
@@ -70,7 +71,7 @@ a.active {
 	}	
 
 .area, .area:visited, .area:hover, .area:visited:hover {
-	color: black;
+	color: var(--cblak);
 	text-decoration: none;
 	font-weight: normal;
 	}
@@ -105,7 +106,7 @@ a.active {
 
 blockquote {
 	background: #eee;
-	color: black;
+	color: var(--cblak);
 	border-left:5px solid var(--cc);
 	font-size:120%;
 	margin:2rem 0;
@@ -196,7 +197,7 @@ table {
 	}
 
 table tr {
-	border-bottom:1px solid black;
+	border-bottom:1px solid var(--cblak);
 	}
 
 table td {
@@ -229,7 +230,7 @@ table td {
 
 @media screen and (min-width: 800px) {
   .cover {   
-    width: 75%;
+  	width: 75%;
 		height: 75%;
   }
 }
@@ -256,7 +257,7 @@ home, back {
 	}
 
 home:hover, back:hover {
-	background: black;
+	background: var(--cblak);
 	}
 
 .index {
@@ -273,7 +274,7 @@ home:hover, back:hover {
 	}
 
 .index:hover {
-	background: black;
+	background: var(--cblak);
 	outline: none;
 	}
 
@@ -343,7 +344,7 @@ nav a {
 .navbar a {
 	float: inherit;
 	font-size: 16px;
-	color: black;
+	color: var(--cblak);
 	text-align: center;
 	padding: 16px 18px;
 	text-decoration: none;

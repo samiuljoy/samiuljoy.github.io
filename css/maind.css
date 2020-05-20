@@ -3,6 +3,7 @@
 	--dsec: #708090;
 	--dbac: #10101c;
 	--dshad: #192841;
+	--dlak: #000000;
 	}
 
 .D {
@@ -48,8 +49,8 @@
 
 .D blockquote {
 	background: #707070;
-	color: black;
-	border-left:5px solid black;
+	color: var(--dlak);
+	border-left:5px solid var(--dlak);
 	font-size:120%;
 	margin:2rem 0;
 	padding:1rem; 
@@ -58,7 +59,7 @@
 .D blockquote header {
 	font-weight: bold;
 	font-size: 25px;
-	color: black;
+	color: var(--dlak);
 	}
 
 .D blockquote p {
@@ -186,7 +187,7 @@
 	}
 
 .D table tr {
-	border-bottom:1px solid black;
+	border-bottom:1px solid var(--dlak);
 	}
 
 .D table td {
@@ -230,7 +231,7 @@
 	}
 
 .D home:hover, back:hover {
-	background: black;
+	background: var(--dlak);
 	}
 
 .D .index {
@@ -247,12 +248,12 @@
 	}
 
 .D .index:hover {
-	background: black;
+	background: var(--dlak);
 	}
 
 .D .btn {
 	display: inline-block;
-	background-color:#000000; 
+	background-color: var(--dlak); 
 	color:var(--dpri); 
 	font-family: 'Comfortaa';
 	border: 1px solid #0e2443;
@@ -316,7 +317,7 @@
 .D .navbar a {
 	float: inherit;
 	font-size: 16px;
-	color: black;
+	color: var(--dlak);
 	text-align: center;
 	padding: 16px 18px;
 	text-decoration: none;
@@ -333,7 +334,7 @@
 	font-size: 16px;  
 	border: none;
 	outline: none;
-	color: black;
+	color: var(--dlak);
 	background-color: inherit;
 	font-weight: bold;
 	color: var(--dpri);
@@ -352,7 +353,7 @@
 .D .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: black;
+	background-color: var(--dlak);
 	min-width: 140px;
 	height: 21.5rem;
 	overflow: scroll;
