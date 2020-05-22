@@ -42,6 +42,8 @@
 	font-weight:bold; 
 	text-decoration-line: underline;
 	text-decoration-style: dotted;
+	font-family: 'Comfortaa';
+	font-size: 1rem;
 	}
 
 .D a:visited {
@@ -401,6 +403,7 @@
 .D .footer a {
 	text-decoration: none;
 	color: var(--dpri);
+	font-family: 'Baloo Paaji 2';
 	}
 
 .D .footer b {
