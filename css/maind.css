@@ -40,6 +40,8 @@
 .D a {
 	color: var(--dsec);
 	font-weight:bold; 
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
 	}
 
 .D a:visited {

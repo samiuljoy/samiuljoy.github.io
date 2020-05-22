@@ -39,6 +39,8 @@ body {
 a {
 	color: var(--llin);
 	font-weight:bold; 
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
 	}
 
 a:visited {
