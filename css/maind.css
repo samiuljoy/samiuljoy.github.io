@@ -40,15 +40,14 @@
 .D a {
 	color: var(--dsec);
 	font-weight:bold; 
-	text-decoration-line: underline;
-	text-decoration-style: dotted;
+	text-decoration: underline dotted var(--dsec);
 	font-family: 'Comfortaa';
 	font-size: 1rem;
 	}
 
-.D a:visited {
+.D a:visited:hover, .D a:hover {
 	color: grey;
-	font-weight: bold;
+	text-decoration: underline dotted grey;
 	}
 
 .D blockquote {
@@ -115,10 +114,6 @@
 .D .tag {
 	font-weight: bold;
 	color: var(--dpri);
-	}
-
-.D a:hover, .D a:visited:hover {
-	color: grey;
 	}
 	
 .D a.active {	

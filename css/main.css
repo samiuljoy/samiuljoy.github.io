@@ -39,8 +39,7 @@ body {
 a {
 	color: var(--llin);
 	font-weight:bold; 
-	text-decoration-line: underline;
-	text-decoration-style: dotted;
+	text-decoration: underline dotted var(--llin);
 	font-family: 'Comfortaa';
 	font-size: 1rem;
 	}
@@ -52,6 +51,7 @@ a:visited {
 
 a:hover, a:visited:hover {
 	color: grey;
+	text-decoration: underline dotted grey;
 	}
 	
 a.active {	
