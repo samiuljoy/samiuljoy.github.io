@@ -36,6 +36,11 @@ body {
 	padding: 0.2rem;
 	}
 
+p {
+	font-family: 'Baloo Paaji 2';
+	font-size:1.23rem;
+	}
+
 a {
 	color: var(--clin);
 	font-weight:bold; 
@@ -185,11 +190,6 @@ hr {
 	height:1px;
 	border-radius: 2rem;
 	margin: 3rem 3rem;
-	}
-
-p {
-	font-family: 'Baloo Paaji 2';
-	font-size:1.23rem;
 	}
 
 table {
