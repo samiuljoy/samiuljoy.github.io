@@ -45,14 +45,14 @@
 .D a {
 	color: var(--dsec);
 	font-weight:bold; 
-	text-decoration: underline dotted var(--dsec);
+	text-decoration: underline lightblue;
 	font-family: 'Comfortaa';
 	font-size: 1rem;
 	}
 
 .D a:visited:hover, .D a:hover {
 	color: grey;
-	text-decoration: underline dotted grey;
+	text-decoration: underline lightgrey;
 	}
 
 .D blockquote {
@@ -189,6 +189,14 @@
 	border-radius: 0.5rem;
 	} 
 
+.D .pimg {
+	width: 100%;
+	height: auto;
+	margin:1rem 0;
+	border: none;
+	border-radius: 0.5rem;
+	} 
+
 .D .cover {
 	width: 100%;
 	height: auto;
@@ -197,8 +205,14 @@
 	border-radius: 0.5rem;
 	} 
 
+@media screen and (min-width: 800px) {
+.cover, .pimg {   
+	width: 75%;
+	height: 75%;
+	}
+}
+
 .D .caption {
-	font-size: 14px;
 	font-style: italic;
 	font-weight: bold;
 	margin-top: -0.5rem;

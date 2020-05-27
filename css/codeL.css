@@ -44,7 +44,7 @@ p {
 a {
 	color: var(--clin);
 	font-weight:bold; 
-	text-decoration: underline dotted var(--clin);
+	text-decoration: underline lightblue;
 	font-family: 'Comfortaa';
 	font-size: 1rem;
 	}
@@ -56,7 +56,7 @@ a:visited {
 
 a:hover, a:visited:hover {
 	color: grey;
-	text-decoration: underline dotted grey;
+	text-decoration: underline lightgrey;
 	}
 	
 .card {
@@ -221,14 +221,13 @@ table td {
 	} 
 
 @media screen and (min-width: 800px) {
-.cover {   
+.cover, .pimg {   
 	width: 75%;
 	height: 75%;
 	}
 }
 
 .caption {
-	font-size: 14px;
 	font-style: italic;
 	margin-top: -0.5rem;
 	margin-bottom: 1.5rem;
