@@ -121,18 +121,6 @@
 	color: var(--dpri);
 	}
 	
-.D a.active {	
-	background: var(--dbac);
-	padding:0.5rem;
-	color: var(--dpri);
-	font-weight:bold; 
-	border-radius: 0.5rem;
-	border: 1px solid var(--dsec);
-	margin: 0.925rem;	
-	text-decoration: none;
-	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
-	}
-
 .D ul {
 	list-style-type: '# ';
 	color: var(--dpri); 

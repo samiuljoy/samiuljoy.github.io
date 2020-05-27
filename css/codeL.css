@@ -59,18 +59,6 @@ a:hover, a:visited:hover {
 	text-decoration: underline dotted grey;
 	}
 	
-a.active {	
-	background: var(--cpri);
-	padding:0.5rem;
-	color:white;
-	font-weight:bold; 
-	border-radius: 0.5rem;
-	border: 1px;
-	margin: 0.925rem;	
-	text-decoration: none;
-	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
-	}
-
 .card {
  	padding: 20px;
  	box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
