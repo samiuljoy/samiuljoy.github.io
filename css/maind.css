@@ -21,6 +21,13 @@
 	padding-top: 4.3rem;
 	}
 
+@media screen and (min-width: 800px) {
+body {
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+		}
+}
+
 .D .switch {
 	align-self: flex-end;
 	margin: -1rem;
@@ -39,7 +46,7 @@
 
 .D p {
 	font-family: 'Baloo Paaji 2';
-	font-size:1.23rem;
+	font-size:1.2rem;
 	}
 
 .D a {
@@ -204,13 +211,6 @@
 	border: none;
 	border-radius: 0.5rem;
 	} 
-
-@media screen and (min-width: 800px) {
-.cover, .pimg {   
-	width: 75%;
-	height: 75%;
-	}
-}
 
 .D .caption {
 	font-style: italic;

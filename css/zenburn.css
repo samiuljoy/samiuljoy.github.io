@@ -14,6 +14,12 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   color: #dcdcdc;
 }
 
+@media screen and (min-width: 800px) {
+	.hljs {
+		min-height: 210px;
+	}
+}
+
 .hljs-keyword,
 .hljs-selector-tag,
 .hljs-tag {
@@ -71,11 +77,11 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   color: #7f9f7f;
 }
 
-.D .hljs-emphasis {
+.hljs-emphasis {
   font-style: italic;
 }
 
-.D .hljs-strong {
+.hljs-strong {
   font-weight: bold;
 }
 
@@ -88,6 +94,12 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   height: 175px;
   background: #152238;
   color: #dcdcdc;
+}
+
+@media screen and (min-width: 800px) {
+	.D .hljs {
+		min-height: 210px;
+	}
 }
 
 .D .hljs-keyword,
