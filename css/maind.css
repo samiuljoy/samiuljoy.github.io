@@ -52,7 +52,7 @@ body {
 .D a {
 	color: var(--dsec);
 	font-weight:bold; 
-	text-decoration: underline lightblue;
+	text-decoration: underline grey;
 	font-family: 'Comfortaa';
 	font-size: 1rem;
 	}

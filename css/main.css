@@ -52,8 +52,6 @@ a {
 	color: var(--llin);
 	font-weight:bold; 
 	text-decoration: underline lightblue;
-	font-family: 'Comfortaa';
-	font-size: 1rem;
 	}
 
 a:visited {
@@ -226,6 +224,13 @@ table td {
 	border: none;
 	border-radius: 0.5rem;
 	} 
+
+@media screen and (min-width: 800px) {
+	.pimg {
+		width: 80%;
+		height: auto;
+	}
+}
 
 .caption {
 	font-style: italic;

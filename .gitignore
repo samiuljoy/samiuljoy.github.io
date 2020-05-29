@@ -23,7 +23,7 @@ bash-scripts/style
 bash-scripts/tmp
 posts/tmp
 posts/retro.html
-iframe.txt
+iframe.html
 
 # But then again, ignore all
 transfer*
