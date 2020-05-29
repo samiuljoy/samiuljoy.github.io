@@ -50,11 +50,8 @@ body {
 	}
 
 .D a {
-	color: var(--dsec);
-	font-weight:bold; 
-	text-decoration: underline grey;
-	font-family: 'Comfortaa';
-	font-size: 1rem;
+	color: var(--dpri);
+	text-decoration: underline dashed grey;
 	}
 
 .D a:visited:hover, .D a:hover {
@@ -301,6 +298,8 @@ body {
 	}
 
 .D nav a {
+	color: var(--dpri);
+	font-weight: bold;
 	margin: 0.5rem;
 	}
 		

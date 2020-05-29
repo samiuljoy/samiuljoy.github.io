@@ -49,9 +49,14 @@ p {
 	}
 
 a {
+	color: black;
+	text-decoration: underline dashed grey;
+	}
+
+nav a {
 	color: var(--llin);
-	font-weight:bold; 
-	text-decoration: underline lightblue;
+	font-weight:bold;
+	margin: 0.5rem;
 	}
 
 a:visited {
@@ -321,11 +326,7 @@ nav ul {
 nav ul li {
 	display:inline-block;
 	}
-
-nav a {
-	margin: 0.5rem;
-	}
-		
+	
 .navbar {
 	overflow: hidden;
 	}

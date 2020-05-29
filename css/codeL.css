@@ -49,11 +49,8 @@ p {
 	}
 
 a {
-	color: var(--clin);
-	font-weight:bold; 
-	text-decoration: underline lightblue;
-	font-family: 'Comfortaa';
-	font-size: 1rem;
+	color: black;
+	text-decoration: underline dashed grey;
 	}
 
 a:visited {
@@ -318,6 +315,8 @@ nav ul li {
 	}
 
 nav a {
+	color: var(--clin);
+	font-weight: bold;
 	margin: 0.5rem;
 	}
 		
