@@ -56,7 +56,7 @@ body {
 
 .D a:visited:hover, .D a:hover {
 	color: grey;
-	text-decoration: underline lightgrey;
+	text-decoration: dotted lightgrey;
 	}
 
 .D blockquote {
