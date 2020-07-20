@@ -21,3 +21,5 @@ May sound ironic, but this whole website's edits were done with a VIM editor on 
 My RAM and Hard Disk died on me..I would've edited it with VIM on my PC anyways, but oh well, turns out I could implement the whole thing on a phone! Now how cool is that! I used [termux](https://termux.com) as my terminal of course.
 
 `To jump into dark-mode from the start, you can tap on the reading grandpa.`
+
+If you like what you see, feel free to support! Donate:Bitcoin: 1A71uaHBVbL5jAVw2G1oRxPhNF9Z6XDPqr (:
