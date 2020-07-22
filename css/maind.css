@@ -51,12 +51,16 @@ body {
 
 .D a {
 	color: var(--dpri);
-	text-decoration: underline dashed grey;
+	text-decoration: underline var(--dsec);
+	}
+
+a:visited {
+	color: var(--dpri);
 	}
 
 .D a:visited:hover, .D a:hover {
-	color: grey;
-	text-decoration: dotted lightgrey;
+	color: var(--dpri);
+	text-decoration: underline dashed var(--dsec);
 	}
 
 .D blockquote {
@@ -186,9 +190,9 @@ body {
 	}
 
 .D .img {
-	width:100%;
-	margin:0.5rem 0;
+	width: 100%;
 	height: auto;
+	margin:0.5rem 0;
 	border: none;
 	border-radius: 0.5rem;
 	} 
@@ -209,11 +213,18 @@ body {
 	border-radius: 0.5rem;
 	} 
 
+@media screen and (min-width: 800px) {
+	.D .pimg {
+		width: 80%;
+		height: auto;
+	}
+}
+
 .D .caption {
 	font-style: italic;
-	font-weight: bold;
 	margin-top: -0.5rem;
 	margin-bottom: 1.5rem;
+	font-weight: bold;
 	color: var(--dsec);
 	}
 
@@ -383,6 +394,16 @@ body {
 	border: none;
 	top: 4rem;
 	}
+
+@media screen and (min-width: 800px) {
+
+.D .dropdown:hover .dropdown-content {
+	display: table;
+	border-radius: 0.5rem;	
+	border: none;
+	top: 3.3rem;
+	}
+}
 
 .D .footer {
 	background: var(--dbac);
