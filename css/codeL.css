@@ -8,7 +8,7 @@
 
 body {
 	font-size:1rem;
-	line-height:1.5;
+	line-height:1.55;
 	-webkit-font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 	-webkit-text-size-adjust:100%;
@@ -45,7 +45,7 @@ body {
 
 p {
 	font-family: 'Baloo Paaji 2';
-	font-size:1.2rem;
+	font-size:1.3rem;
 	}
 
 a {
@@ -141,7 +141,7 @@ ul {
 
 .ull {
 	font-family: 'Baloo Paaji 2';
-	font-size: 19px;
+	font-size: 1.3rem;
 	font-weight: bold;
 	color: var(--llin);
 	list-style-type: '# ';
@@ -156,7 +156,7 @@ ul {
 
 ol li {
 	font-family: 'Baloo Paaji 2';
-	font-size: 19px;
+	font-size: 1.3rem;
 	}
 	
 dl dt {

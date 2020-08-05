@@ -10,7 +10,7 @@
 	background: var(--dbac);
 	color: var(--dpri);
 	font-size:1rem;
-	line-height:1.5;
+	line-height:1.55;
 	-webkit-font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 	-webkit-text-size-adjust:100%;
@@ -46,7 +46,7 @@ body {
 
 .D p {
 	font-family: 'Baloo Paaji 2';
-	font-size:1.2rem;
+	font-size:1.3rem;
 	}
 
 .D a {
@@ -136,7 +136,7 @@ a:visited {
 
 .D .ull {
 	font-family: 'Baloo Paaji 2';
-	font-size: 19px;
+	font-size: 1.3rem;
 	font-weight: bold;
 	color: var(--dpri);
 	list-style-type: '# ';
@@ -144,7 +144,7 @@ a:visited {
 
 .D ol li {
 	font-family: 'Baloo Paaji 2';
-	font-size: 19px;
+	font-size: 1.3rem;
 	}
 
 .D dl dt {
