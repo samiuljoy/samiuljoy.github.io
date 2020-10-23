@@ -9,14 +9,14 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   border-radius: 0.5rem;
   overflow: auto;
   padding: 0.5em;
-  height: 175px;
+  height: auto;
   background: #10101c;
   color: #dcdcdc;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
 	.hljs {
-		min-height: 210px;
+		min-height: 180px;
 	}
 }
 
@@ -91,14 +91,14 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   border-radius: 0.5rem;
   overflow: auto;
   padding: 0.5em;
-  height: 175px;
+  height: auto;
   background: #152238;
   color: #dcdcdc;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 800px) {
 	.D .hljs {
-		min-height: 210px;
+		min-height: 180px;
 	}
 }
 
