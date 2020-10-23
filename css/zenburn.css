@@ -16,7 +16,7 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 
 @media screen and (min-width: 800px) {
 	.hljs {
-		min-height: auto;
+		height: auto;
 	}
 }
 
@@ -98,7 +98,7 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 
 @media screen and (min-width: 800px) {
 	.D .hljs {
-		min-height: auto;
+		height: auto;
 	}
 }
 
