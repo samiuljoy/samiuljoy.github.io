@@ -70,12 +70,13 @@
 <p>Let's try to emulate the whole mechanism.</p> 
 
 <ol>
-<li>A new user types in "adduser" and a username prompt appears asking the user to put in their name.</li>
-<li>If that username is already taken, tells the user that the username is already taken and to type in a different name. Else adds the new username and then asks for their password.</li>
-<li>If the password field is blank, tells the user to put in a legit password.</li>
-<li>Then saves the username::password in the /etc/shadow file followed by hashes.</li>
-<li>Then at the time of login, a user types in their username and password.</li>
-<li>If the typed in password matches with that of the saved hash in /etc/shadow, then user can log in, else exit.</li></ol>
+	<li>A new user types in "adduser" and a username prompt appears asking the user to put in their name.</li>
+	<li>If that username is already taken, tells the user that the username is already taken and to type in a different name. Else adds the new username and then asks for their password.</li>
+	<li>If the password field is blank, tells the user to put in a legit password.</li>
+	<li>Then saves the username::password in the /etc/shadow file followed by hashes.</li>
+	<li>Then at the time of login, a user types in their username and password.</li>
+	<li>If the typed in password matches with that of the saved hash in /etc/shadow, then user can log in, else exit.</li>
+</ol>
 
 <p><b>I'm assuming you have prior knowledge in shell scripting. </b></p>
 	
@@ -222,9 +223,182 @@ rm tmp.txt
 <p>Now this is actually nowhere near the way that works in a real Linux OS, however, the rest is up to you and how you use it.
 </p>
 
+<p>
+Before writing this post I also asked a question on stack exchange about this script and how it worked on a Linux system. And also got some good suggestions. Turns out that I can use <code><b>openssl</code></b> to actually introduce salting.
+</p>
+
+<p>
+For this, you need to have <code><b>openssl</code></b> installed on your OS. If you're on a Debian based system, chances are <code><b>openssl</code></b> is already installed on your system. If not you can always run <code><b>apt install openssl</code></b> from your preferred terminal. If you're on a macOS, you can install <code><b>openssl</code></b> using <code><b>brew install openssl</code></b> from your terminal. Once you have <code><b>openssl</code></b> installed, then we can begin
+</p>
+
+<p>
+Now, to introduce salting, with <code><b>openssl</code></b> there's a one liner command for that, <br>
+<pre id="openssl"><code class="bash">openssl passwd -6 -salt xyz yourpassword</pre></code>
+</p>
+<button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#openssl">Copy</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied3() { 
+	var ho = document.getElementById("copy3");
+	  if (ho.innerHTML === "Copy") {
+	   ho.innerHTML = "Copied!";
+ 	 } 
+	   else {
+ 	   ho.innerHTML = "Copy"; }
+}
+</script>
+
+<p>
+<code><b>openssl</code></b> will generate a password followed by the <code><b>passwd</code></b> command. The number -6 indicates sha512sum character output, where -1 will generate a md5sum character output and -5 will generate a sha256sum caharacter output. -salt will tell the output to randomize the characters based on the input characters, in these case xyz. One way to test this out is to replace xyz with any other character and the output will be different. replace yourpass with whatever password you choose. The same thing can be obtained with python3. Here's how; </p>
+
+<pre id="python"><code class="python">import crypt
+print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))
+</pre></code>
+
+<button id="copy4" onclick="copied4()" class="btn" data-clipboard-action="copy" data-clipboard-target="#python">Copy</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied4() { 
+	var ho = document.getElementById("copy4");
+	  if (ho.innerHTML === "Copy") {
+	   ho.innerHTML = "Copied!";
+ 	 } 
+	   else {
+ 	   ho.innerHTML = "Copy"; }
+}
+</script>
+
+<p>
+Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code> to run the script from your terminal
+</p>
+<p>
+This can also be issued as a one liner command, like so;
+</p>
+
+<pre id="poneline"><code class="bash">python3 -c 'import crypt; print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))'
+</pre></code>
+
+<button id="copy5" onclick="copied5()" class="btn" data-clipboard-action="copy" data-clipboard-target="#poneline">Copy</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied5() { 
+	var ho = document.getElementById("copy5");
+	  if (ho.innerHTML === "Copy") {
+	   ho.innerHTML = "Copied!";
+ 	 } 
+	   else {
+ 	   ho.innerHTML = "Copy"; }
+}
+</script>
+
+<p>
+What this will do is generate a salted characters off of "yourpasswd" with sha512sum checksum and output it to the terminal. You have to have Python installed prior to running this script. Linux and macOS comes with Python pre-installed. But in most cases it's Python2. To install Python3 on Linux like OS, you can use your package manager to download and install Python3. On macOS, you can follow <a href="https://docs.python-guide.org/starting/install3/osx" rel="nofollow" target="_blank">this</a> tutorial.
+</p>
+
+<p>
+The python3 script will produce a different output on every run, which will make it impossible to verify the checksums. Let's use this script instead
+</p>
+
+<pre id="simplified"><code class="python">import crypt
+crypt.crypt('password', '$6$' + 'salt1234')
+</pre></code>
+
+<button id="copy6" onclick="copied6()" class="btn" data-clipboard-action="copy" data-clipboard-target="#simplified">Copy</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied6() { 
+	var ho = document.getElementById("copy6");
+	  if (ho.innerHTML === "Copy") {
+	   ho.innerHTML = "Copied!";
+ 	 } 
+	   else {
+ 	   ho.innerHTML = "Copy"; }
+}
+</script>
+
+<p>
+A more easier way would be to do it with <code><b>mkpasswd</b></code> from within bash. To generate sha512sum characters from given "password"
+</p>
+
+<pre id="mkpasswd"><code class="bash">mkpasswd -m sha-512 -S salt1234 password
+</pre></code>
+
+<button id="copy7" onclick="copied7()" class="btn" data-clipboard-action="copy" data-clipboard-target="#mkpasswd">Copy</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied7() { 
+	var ho = document.getElementById("copy7");
+	  if (ho.innerHTML === "Copy") {
+	   ho.innerHTML = "Copied!";
+ 	 } 
+	   else {
+ 	   ho.innerHTML = "Copy"; }
+}
+</script>
+
+<p>
+Now, to include this in our scripts <b>username.sh</b> and <b>login.sh</b> we just have to replace some variables with either the <code><b>openssl</b></code> or <code><b>mkpasswd</b></code> or <code><b>python</b></code> 
+</p>
+
+<center><h2>Salting With `mkpasswd`</h2></center>
+<p>
+On line 34 of the script <code><b>username.sh</b></code> we can replace 
+<pre><code class="bash"><b>echo $usame::$(echo $passwd | md5sum) >> mango.txt</code></pre></b></p><p> 
+with this line, if you plan to use mkpasswd.<p>
+<pre><code class="bash"><b>echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) >> mango.txt</pre></code></b>
+
+<p>
+Now on line 24 of <code><b>login.sh</code></b> you need to replace</p>
+<pre><code class="bash"><b>echo $password | md5sum > tmp.txt </pre></code></b></p><p>with</p>
+<pre><code class="bash"><b>echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code></b>
 <footer class="footer" role="contentinfo">
 <div class="pin">📎</div>
-<center>GitHub is awesome!<br><a href="mailto:joy.samiul46@gmail.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ⬆</a>
+<center>GitHub is awesome!<br><a href="mailto:joy.samiul46@gmail.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ^</a>
 </footer>
 </center>
 
