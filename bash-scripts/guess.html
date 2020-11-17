@@ -65,9 +65,9 @@
 
 <h1><center>./guess.sh</h1></center>
 
-
-	<p>This here is a simple bash game where you guess a 2 digit number, but is it confined to only guessing the 2 digits? hmm...</p>
-	<p><b>Also for it to execute properly, you'll need another bash script named ho. ^.^</b></p>
+<p>This here is a simple bash game where you guess a 2 digit number, but is it confined to only guessing the 2 digits? hmm...</p>
+<p>Also, this is my first game in bash script.</p>
+<p><b>For it to execute properly, you'll need another bash script named ho. ^.^</b></p>
 
 <center><h2>guess.sh</h2></center>
 
@@ -81,12 +81,12 @@ exec 2>/dev/null
 while true; do
 echo "I'm thinking of a number, can you guess what it is?"
 read number
-      if [ "$number" == "" ]; then
+
+      if [[ "$number" == "" ]]; then
         
 	echo "Ahh breaking the loop ain't we?"
 sleep 1
-       	echo "What are you upto lately? $first"
-	read first
+       	echo "What are you upto lately?"
         echo "cool"
         sleep 2
 echo
@@ -117,21 +117,21 @@ echo
 exit 0
 
 else
-if [ "$number" -lt "$well" ]; then
+if [[ "$number" -lt "$well" ]]; then
 echo "The guessed number is low"
 echo
-else if [ "$number" -gt "$well" ]; then
+else if [[ "$number" -gt "$well" ]]; then
 echo "Its high yo"
 echo
 else
-if [ "$number" == "$well" ]; then
+if [[ "$number" = "$well" ]]; then
 echo "You got it right!!"
 echo
 yes=yes
 no=no
 echo "Wanna play again?[yes/no]"
 read answer
-if [ "$answer" == "$yes" ]; then
+if [[ "$answer" = "$yes" ]]; then
 ./guess.sh
 else echo "Program ends"
 break
@@ -217,7 +217,7 @@ Thank's for playing
 
 <footer class="footer" role="contentinfo">
 <div class="pin">📎</div>
-<center>GitHub is awesome!<br><a href="mailto:joy.samiul46@gmail.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ⬆</a>
+<center>GitHub is awesome!<br><a href="mailto:samiuljoy46@yahoo.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ^</a>
 </footer>
 </center>
 

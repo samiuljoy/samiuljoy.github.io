@@ -385,7 +385,7 @@ A more easier way would be to do it with <code><b>mkpasswd</b></code> from withi
 Now, to include this in our scripts <b>username.sh</b> and <b>login.sh</b> we just have to replace some variables with either the <code><b>openssl</b></code> or <code><b>mkpasswd</b></code> or <code><b>python</b></code> 
 </p>
 
-<center><h2>Salting With `mkpasswd`</h2></center>
+<center><h2>Salting with `mkpasswd`</h2></center>
 <p>
 On line 34 of the script <code><b>username.sh</b></code> we can replace 
 <pre><code class="bash"><b>echo $usame::$(echo $passwd | md5sum) >> mango.txt</code></pre></b></p><p> 
@@ -396,9 +396,15 @@ with this line, if you plan to use mkpasswd.<p>
 Now on line 24 of <code><b>login.sh</code></b> you need to replace</p>
 <pre><code class="bash"><b>echo $password | md5sum > tmp.txt </pre></code></b></p><p>with</p>
 <pre><code class="bash"><b>echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code></b>
+
+<p>Same results can be achieved with <code><b>openssl</code></b>,and <code><b>python</code></b>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know btw, you know how to reach me. Good luck (:</p>
+
+
+
+
 <footer class="footer" role="contentinfo">
 <div class="pin">📎</div>
-<center>GitHub is awesome!<br><a href="mailto:joy.samiul46@gmail.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ^</a>
+<center>GitHub is awesome!<br><a href="mailto:samiuljoy46@yahoo.com?subject=Reporting an issue regarding samiuljoy.github.io">Report an issue</a> || <a href="../about.html#contact">Contact</a> || <a href="#">Go to Top ^</a>
 </footer>
 </center>
 
