@@ -24,14 +24,14 @@ body {
 body {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
-		}
+	}
 }
 
 .switch {
 	align-self: flex-end;
 	margin: -1rem;
 	}
-	
+
 .inner-switch {
 	background-color: inherit;
 	cursor: pointer;
@@ -45,7 +45,7 @@ body {
 
 p {
 	font-family: 'Baloo Paaji 2';
-	font-size:1.3rem;
+	font-size: 1.3rem;
 	}
 
 a {
@@ -67,14 +67,14 @@ a:hover, a:visited:hover {
 	color: var(--llin);
 	text-decoration: underline dashed var(--lpri);
 	}
-	
+
 .card {
- 	padding: 20px;
- 	box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
- 	border-radius: 0.5rem;
+	padding: 20px;
+	box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+	border-radius: 0.5rem;
 	margin-bottom:4rem;
 	border: 1px solid #ddd;
-	}	
+	}
 
 .area, .area:visited, .area:hover, .area:visited:hover {
 	color: var(--lblak);
@@ -90,7 +90,7 @@ a:hover, a:visited:hover {
 	font-size: 14px;
 	margin-top: 0;
 	}
-
+/* The author part might be necessary when someone contributes other than me */
 .author {
 	color: grey;
 	float: left;
@@ -118,7 +118,7 @@ blockquote {
 	margin:2rem 0;
 	padding:1rem; 
 	}
-	
+
 blockquote header {
 	color: var(--lsec);
 	font-size: 25px;
@@ -128,7 +128,7 @@ blockquote header {
 blockquote p {
 	margin:0;
 	}
-	
+
 blockquote footer {
 	font-size:90%;
 	margin:1rem 0 0 0;
@@ -141,7 +141,7 @@ ul {
 
 .ull {
 	font-family: 'Baloo Paaji 2';
-	font-size: 1.3rem;
+	font-size: 19px;
 	font-weight: bold;
 	color: var(--llin);
 	list-style-type: '# ';
@@ -158,7 +158,7 @@ ol li {
 	font-family: 'Baloo Paaji 2';
 	font-size: 1.3rem;
 	}
-	
+
 dl dt {
 	margin-bottom:0.5rem;
 	}
@@ -172,7 +172,7 @@ html {
 	box-sizing:border-box;
 	}
 
-*,*:before,*:after {
+*,*:before, *:after {
 	box-sizing:inherit;
 	}
 
@@ -230,9 +230,9 @@ table td {
 	} 
 
 @media screen and (min-width: 800px) {
-	.pimg {
-		width: 80%;
-		height: auto;
+.pimg {
+	width: 80%;
+	height: auto;
 	}
 }
 
@@ -325,18 +325,18 @@ nav ul {
 nav ul li {
 	display:inline-block;
 	}
-	
+
 .navbar {
 	overflow: hidden;
 	}
-	
+
 .dropdown-menu-center {
 	left: 50%;
 	right: auto;
 	text-align : center;
 	transform : translate(- 50% , 0);
 	}
-	
+
 .navbar a {
 	float: inherit;
 	font-size: 16px;
@@ -400,7 +400,7 @@ nav ul li {
 
 .dropdown:hover .dropdown-content {
 	display: block;
-	border-radius: 0.5rem;	
+	border-radius: 0.5rem;
 	border: none;
 	}
 
@@ -408,7 +408,7 @@ nav ul li {
 
 .dropdown:hover .dropdown-content {
 	display: table;
-	border-radius: 0.5rem;	
+	border-radius: 0.5rem;
 	border: none;
 	}
 }
@@ -450,4 +450,4 @@ iframe {
 		border-radius: 0.2rem;
 	}
 }
-/* Written with <3 by Samiul Joy. Yes it has some flaws here and there, but idk, try it perhaps, maybe you'll like it. Also if you like it, feel free to support me. github/samiuljoy */
+/* Written with <3 by Samiul Joy. Yes it has some flaws here and there, but idk, try it perhaps, maybe you'll like it. Also if you like it, feel free to support me. https://github.com/samiuljoy */

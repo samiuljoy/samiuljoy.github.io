@@ -25,14 +25,14 @@
 body {
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
-		}
+	}
 }
 
 .D .switch {
 	align-self: flex-end;
 	margin: -1rem;
 	}
-	
+
 .D .inner-switch {
 	background-color: inherit;
 	cursor: pointer;
@@ -81,19 +81,19 @@ a:visited {
 .D blockquote p {
 	margin:0;
 	}
-	
+
 .D blockquote footer {
 	font-size:90%;
 	margin:1rem 0 0 0;
 	}
-	
+
 .D .card {
- 	padding: 20px;
- 	box-shadow: 0 4px 8px -2px #1c2e4a;
- 	border: 1px solid var(--dpri);
- 	border-radius: 0.5rem;
+	padding: 20px;
+	box-shadow: 0 4px 8px -2px #1c2e4a;
+	border: 1px solid var(--dpri);
+	border-radius: 0.5rem;
 	margin-bottom: 4rem;
-	}	
+	}
 
 .D .card:hover {
 	box-shadow: 2px 4px 8px 2px #1c2e4a;
@@ -214,9 +214,9 @@ a:visited {
 	} 
 
 @media screen and (min-width: 800px) {
-	.D .pimg {
-		width: 80%;
-		height: auto;
+.D .pimg {
+	width: 80%;
+	height: auto;
 	}
 }
 
@@ -313,18 +313,18 @@ a:visited {
 	font-weight: bold;
 	margin: 0.5rem;
 	}
-		
+
 .D .navbar {
 	overflow: hidden;
 	}
-	
+
 .D .dropdown-menu-center {
 	left: 50%;
 	right: auto;
 	text-align : center;
 	transform : translate(- 50% , 0);
 	}
-	
+
 .D .navbar a {
 	float: inherit;
 	font-size: 16px;
@@ -414,7 +414,7 @@ a:visited {
 	font-weight:bold;
 	box-shadow: 0 1px 2px 2px var(--dshad);
 	}
-	
+
 .D .footer a {
 	text-decoration: none;
 	color: var(--dpri);
@@ -428,4 +428,4 @@ a:visited {
 .D .pin {
 	display: none;
 	}
-/* Written with <3 by Samiul Joy. Yes it has some flaws here and there, but idk, try it perhaps, maybe you'll like it. Also if you like it, feel free to support me. github/samiuljoy */
+/* Written with <3 by Samiul Joy. Yes it has some flaws here and there, but idk, try it perhaps, maybe you'll like it. Also if you like it, feel free to support me. https://github.com/samiuljoy */
