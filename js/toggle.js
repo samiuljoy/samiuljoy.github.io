@@ -8,8 +8,8 @@ const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('D');
   meta.setAttribute("content", "#10101c");
- // word.innerHTML = "🐭";
-  word.innerHTML = "^-^";
+  word.innerHTML = "🐭";
+  //word.innerHTML = "^-^";
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
 }
@@ -18,8 +18,8 @@ const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('D');
   meta.setAttribute("content", "#002f30");
-  // word.innerHTML = "🐼";
-  word.innerHTML = "-.-";
+  word.innerHTML = "🐼";
+  // word.innerHTML = "-.-";
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
 }
