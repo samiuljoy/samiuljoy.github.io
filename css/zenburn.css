@@ -10,6 +10,7 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   overflow: auto;
   padding: 0.5em;
   height: auto;
+  font-family: 'Fira Code'
   background: #10101c;
   color: #dcdcdc;
 }
