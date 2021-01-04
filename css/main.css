@@ -4,6 +4,8 @@
 	--llin: #002e43;
 	--lc: #778899;
 	--lblak: #000000;
+	--bodyfont: 'Fira Code';
+	--headerfont: 'Comfortaa';
 	}
 
 body {
@@ -13,7 +15,7 @@ body {
 	text-rendering:optimizeLegibility;
 	-webkit-text-size-adjust:100%;
 	zoom:1;
-	font-family: 'Comfortaa';
+	font-family: var(--headerfont);
 	margin:0 auto;
 	max-width:50rem;
 	padding:1rem; 
@@ -44,7 +46,7 @@ body {
 	}
 
 p {
-	font-family: 'Baloo Paaji 2';
+	font-family: var(--bodyfont);
 	font-size: 1.3rem;
 	}
 
@@ -140,7 +142,7 @@ ul {
 	}
 
 .ull {
-	font-family: 'Baloo Paaji 2';
+	font-family: var(--bodyfont);
 	font-size: 19px;
 	font-weight: bold;
 	color: var(--llin);
@@ -155,7 +157,7 @@ ul {
 	}
 
 ol li {
-	font-family: 'Baloo Paaji 2';
+	font-family: var(--bodyfont);
 	font-size: 1.3rem;
 	}
 
@@ -282,7 +284,7 @@ home:hover, back:hover {
 	display: inline-block;
 	background-color: #eee; 
 	color: var(--lsec); 
-	font-family: 'Comfortaa';
+	font-family: var(--headerfont);
 	border: 1px solid #ddd;
 	border-radius: 1.25rem; 
 	width: 3rem auto;
@@ -417,7 +419,7 @@ nav ul li {
 	background: #e6e6e6;
 	padding: 1.2rem;
 	border-radius:0.5rem;
-	font-family: 'Baloo Paaji 2';
+	font-family: var(--bodyfont);
 	color: var(--lsec);
 	margin-top: 2rem;
 	font-weight: bold;
@@ -427,7 +429,7 @@ nav ul li {
 .footer a {
 	text-decoration: none;
 	color: #192841;
-	font-family: 'Baloo Paaji 2';
+	font-family: var(--bodyfont);
 	}
 
 .pin {
