@@ -77,23 +77,23 @@
 
 <h2># Overview</h2>
 
-<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android_software_development#ADB">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying seeing the results (:</p>
+<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android_software_development#ADB">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it ^-^ (:</p>
 
 <h2># Gathering required stuffs</h2>
-<p>We'll be needing a PC to instruct and execute commands onto our devices. For that, we'll be needing adb. If you're on Linux OS, you can install adb using your package manager, if you're on macOS, you can install it using brew. Refer to <a href="">this</a> guide for setting up adb on your PC. Head over to your phone to enable usb debugging. Once you have everything set up, then we can begin.</p>
+<p>We'll be needing a PC to instruct and execute commands onto our devices. For that, we'll be needing adb. If you're on Linux OS, you can install adb using your package manager, if you're on macOS, you can install it using brew. Head over to your phone to enable usb debugging. Once you have everything set up, then we can begin.</p>
 
 <p>Make sure you can access your phone from your PC through the shell. Connect usb cable to your phone and open a terminal window on your PC, and type in <code><b>adb devices</b></code> which considering everything is properly set up, should display something like this</p>
 
-<pre><code>[aarch@aarch]:~$ adb devices
+<pre><code>[arch@arch]:~$ adb devices
 
 List of devices attached
 * daemon starting on port 5555
-* daemon started successfuly
+* daemon started successfully
 
 ID	 	 device
 0e46ee341 	 authorized
 
-[aarch@aarch]:~$
+[arch@arch]:~$
 </code>
 </pre>
 
@@ -127,7 +127,7 @@ ID	 	 device
 }
 </script>
 
-<p>What this one liner code does is, it turns off the screen with <code><b>keyevent 223</code></b>, and turns the screen on with <code><b>keyevent 224</code></b>. Here's a <a href="#">list</a> of arbitary keyevents that might come in handy. Now, onto what we're here for. Emulation. Let's jump straight to it. Let's begin with starting Chrome Browser from our terminal. We could do this with either by going to the shell and executing from there, or we could use our native terminal. The difference between them is just that we have to add <code><b>adb shell</b></code> prefix for the later case. Either way, suit yourself to what you prefer. Now to start chrome, we can issue this command;</p>
+<p>What this one liner code does is, it turns off the screen with <code><b>keyevent 223</code></b>, and turns the screen on with <code><b>keyevent 224</code></b>. Now, onto what we're here for. Emulation. Let's jump straight to it. Let's begin with starting Chrome Browser from our terminal. We could do this with either by going to the shell and executing from there, or we could use our native terminal. The difference between them is just that we have to add <code><b>adb shell</b></code> prefix for the later case. Either way, suit yourself to what you prefer. Now to start chrome, we can issue this command;</p>
 
 <pre id="chrome"><code>adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main</code></pre>
 
@@ -152,7 +152,7 @@ ID	 	 device
 }
 </script>
 
-<p>This should launch Chrome Browser on your Android. Pretty cool right? Now, let's emulate swipe action to make it seem like as if you were swiping across the screen. Swipe action can be performed with <code><b>input swipe</b></code> action, like so</p>
+<p>This should launch Chrome Browser on your Android. The first part before "/" tells the shell to use chrome, the part after / tells the shell to actually launch chrome with activity Main, which brings the chrome app in foreground. Pretty cool right? Now, let's emulate swipe action to make it seem like as if you were swiping across the screen. Swipe action are executed with <code><b>input swipe</b></code> action, like so</p>
 
 <pre id="swipe"><code>adb shell input swipe 400 700 400 130 500</code></pre>
 
@@ -183,7 +183,7 @@ ID	 	 device
 <h2># Performing a search query</h2>
 <p>Now, onto the next step let's start the chrome browser again, and this time let's perform a search query. To do that, start chrome browser and jump onto its home page. There's a search bar on the home page. Now what we usually do is tap on the search bar and type in whatever we want and hit enter. Well, that's basically what we'll doing, but with scripts.</p>
 
-<p>Remember to take a note of the coordinates of the search bar where we'll be emulating a tap action as if we were actually tapping on the search bar. Tap and hold over the search bar and take notes of your coordinates while holding. Got the coordinates? Good, now smash this into your terminal</p>
+<p>Remember to take a note of the coordinates of the search bar where we'll be emulating a tap action as if we were actually tapping on the search bar. Tap and hold the search bar and take notes of your coordinates while holding. Got the coordinates? Good, now smash this into your terminal</p>
 
 <pre><code>adb shell input tap X Y</code></pre>
 
@@ -195,7 +195,7 @@ ID	 	 device
 
 <pre><code>adb shell input keyevent 66</code></pre>
 
-<p><code><b>keyevent</b></code> emulates Return action. So there you go, you just performed a simple search query. To sum all of these up, we should now have a script that looks like this;</p>
+<p><code><b>keyevent 66</b></code> emulates Return action. So there you go, you just performed a simple search query. To sum all of these up, we should now have a script that looks like this;</p>
 
 <pre><code># Let's start up chrome
 adb shell start -n com.android.chrome/com.google.android.apps.chrome.Main
@@ -237,11 +237,15 @@ adb shell input swipe X Y X Y 500
 
 <h2># Aftermath</h2>
 
-<p>Imagine all the stuffs we can automate with this!!. Also, if you happen to have root privilege on your phone, that's even better at least in scenarios like these, because with root privilege, you could put any script of yours and run it from anywhere, even the scripts above. Some of the stuffs I automated include every night poweroff the device at given time which is quite easy to perform with if statements, like so;</p>
+<p>Imagine all the stuffs we could automate with this!! Also, if you happen to have root privilege on your phone, that's even better, because with root privilege, you could put any script of yours and run it without needing a PC.</p>
+
+<!--
+Some of the stuffs I automated include every night poweroff the device at given time which is quite easy to perform with if statements, like so;
 
 <pre><code class="bash">if [ `date +%T | sed 's/://g'` == '010000' ]; then
 svc poweroff
 fi</code></pre>
+-->
 
 <p><b>This page has more contents to come and needs some improvement, should've modified it before pushing. Oh well -.-</b></p>
 

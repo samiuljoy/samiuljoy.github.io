@@ -65,7 +65,7 @@
 
 <h1><center>./login.sh &&<br>./username.sh</h1></center>
 
-<p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a /etc/shadow file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) thing with a shell script? Wouldn't that be fun?</p>
+<p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a /etc/shadow file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) with a shell script? Wouldn't that be fun?</p>
 	
 <p>Let's try to emulate the whole mechanism.</p> 
 
@@ -78,7 +78,7 @@
 	<li>If the typed in password matches with that of the saved hash in /etc/shadow, then user can log in, else exit.</li>
 </ol>
 
-<p><b>I'm assuming you have prior knowledge in shell scripting. </b></p>
+<p><b>I'm assuming you are somewhat knowledgeable in shell scripting. </b></p>
 	
 <h2>Script 1: username.sh</h2>
 <p>
@@ -165,6 +165,7 @@ trap '' INT TSTP
 read -p "Enter username: " usname
 
 grep -q $usname mango.txt
+
 if [ "$?" -gt 0 ]; then
 	echo "Username not found"
 	sleep 1
@@ -224,15 +225,15 @@ rm tmp.txt
 </p>
 
 <p>
-Before writing this post I also asked a question on stack exchange about this script and how it worked on a Linux system. And also got some good suggestions. Turns out that I can use <code><b>openssl</code></b> to actually introduce salting.
+Before writing this post I also asked a question on Unix stack exchange about this script and how it worked on a Linux system, and got some good suggestions. Turns out that I can use <code><b>openssl</code></b> to actually introduce salting.
 </p>
 
 <p>
-For this, you need to have <code><b>openssl</code></b> installed on your OS. If you're on a Debian based system, chances are <code><b>openssl</code></b> is already installed on your system. If not you can always run <code><b>apt install openssl</code></b> from your preferred terminal. If you're on a macOS, you can install <code><b>openssl</code></b> using <code><b>brew install openssl</code></b> from your terminal. Once you have <code><b>openssl</code></b> installed, then we can begin
+For this, you need to have <code><b>openssl</code></b> installed on your OS. If you're on a debian based system, chances are <code><b>openssl</code></b> is already installed on your system. If not you can always run <code><b>apt install openssl</code></b> from your preferred terminal. If you're on a macOS, you can install <code><b>openssl</code></b> using <code><b>brew install openssl</code></b> from your terminal. Once you have <code><b>openssl</code></b> installed, then we can begin
 </p>
 
 <p>
-Now, to introduce salting, with <code><b>openssl</code></b> there's a one liner command for that, <br>
+Now, to induce salting, with <code><b>openssl</code></b> there's a one liner command; <br>
 <pre id="openssl"><code class="bash">openssl passwd -6 -salt xyz yourpassword</pre></code>
 </p>
 <button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#openssl">Copy</button>
@@ -257,8 +258,7 @@ Now, to introduce salting, with <code><b>openssl</code></b> there's a one liner 
 }
 </script>
 
-<p>
-<code><b>openssl</code></b> will generate a password followed by the <code><b>passwd</code></b> command. The number -6 indicates sha512sum character output, where -1 will generate a md5sum character output and -5 will generate a sha256sum caharacter output. -salt will tell the output to randomize the characters based on the input characters, in these case xyz. One way to test this out is to replace xyz with any other character and the output will be different. replace yourpass with whatever password you choose. The same thing can be obtained with python3. Here's how; </p>
+<p><code><b>openssl</code></b> will generate a password followed by the <code><b>passwd</code></b> command. The number -6 indicates sha512sum character output, where -1 will generate a md5sum character output and -5 will generate a sha256sum character output. The -salt flag will tell the output to randomize the characters based on the input characters, in this case xyz. One way to test this out is to replace xyz with any other character and the output will be different. Replace yourpass with whatever password you choose. The same thing can be obtained with python3 like so; </p>
 
 <pre id="python"><code class="python">import crypt
 print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))
@@ -287,11 +287,9 @@ print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))
 </script>
 
 <p>
-Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code> to run the script from your terminal
-</p>
-<p>
-This can also be issued as a one liner command, like so;
-</p>
+Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code> to run the script from your terminal.</p>
+
+<p>This can also be issued as a one liner command, like so; </p>
 
 <pre id="poneline"><code class="bash">python3 -c 'import crypt; print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))'
 </pre></code>
@@ -318,13 +316,9 @@ This can also be issued as a one liner command, like so;
 }
 </script>
 
-<p>
-What this will do is generate a salted characters off of "yourpasswd" with sha512sum checksum and output it to the terminal. You have to have Python installed prior to running this script. Linux and macOS comes with Python pre-installed. But in most cases it's Python2. To install Python3 on Linux like OS, you can use your package manager to download and install Python3. On macOS, you can follow <a href="https://docs.python-guide.org/starting/install3/osx" rel="nofollow" target="_blank">this</a> tutorial.
-</p>
+<p>What this will do is generate salted characters off of "yourpasswd" randomized with sha512sum checksum and output it to the terminal. You have to have Python3 installed prior to running this script. Linux and macOS comes with Python pre-installed. However, that might not always be the case. to install Python3 on Linux like OS, you can use your package manager to download and install Python3. On macOS, you can follow <a href="https://docs.python-guide.org/starting/install3/osx" rel="nofollow" target="_blank">this</a> tutorial.</p>
 
-<p>
-The python3 script will produce a different output on every run, which will make it impossible to verify the checksums. Let's use this script instead
-</p>
+<p>The python3 script will produce a different output on every run, which will make it impossible to verify the checksums. I haven't figured a proper way ti mitigate this issue, but for now let's use this script instead</p>
 
 <pre id="simplified"><code class="python">import crypt
 crypt.crypt('password', '$6$' + 'salt1234')
@@ -397,10 +391,7 @@ Now on line 24 of <code><b>login.sh</code></b> you need to replace</p>
 <pre><code class="bash"><b>echo $password | md5sum > tmp.txt </pre></code></b></p><p>with</p>
 <pre><code class="bash"><b>echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code></b>
 
-<p>Same results can be achieved with <code><b>openssl</code></b>,and <code><b>python</code></b>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know btw, you know how to reach me. Good luck (:</p>
-
-
-
+<p>Same results can be achieved with <code><b>openssl</code></b>,and <code><b>python</code></b>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^.^</p>
 
 <footer class="footer" role="contentinfo">
 <div class="pin">📎</div>
