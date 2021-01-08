@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
@@ -5,7 +6,7 @@
 <description>Updates from Samiul Joy</description>
 <language>en-us</language>
 <link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
-<atom:link href="https://samiuljoy.github.io/rss/rss-feed.xml" rel="self" type="application/rss+xml" />
+	<!-- <atom:link href="https://samiuljoy.github.io/rss/rss-feed.xml" rel="self" type="application/rss+xml" /> -->
 <image>
 <title>samiuljoy.github.io</title>
 <url>https://samiuljoy.github.io/read.svg</url>
@@ -15,16 +16,16 @@
 <!-- LB -->
 
 <item>
-	<title>This is  a test/demo and will be removed within a hour</title>
-	<guid isPermaLink="false">https://samiuljoy.github.io<guid>
+	<title>This is a test/demo and will be removed within a hour</title>
+		<!--	<guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
 	<pubDate>8 jan 2020</pubDate>
 	<link>https://samiuljoy.github.io</link>
-	<description><![CDATA[<p>Hello world!! This is my first rss feed post!!!</p>
+	<description><p>Hello world!! This is my first rss feed post!!!</p>
 		<p>Hope everyone sees it!!</p>
-		<img src="https://samiuljoy.github.io/read.svg">
+		<img src="https://samiuljoy.github.io/assets/bio.png">
 			This above was a image
 		<p>Plead visit <a href="https://samiuljoy.github.io">samiuljoy.github.io</a>.</p>
-		]]></description>
+	</description>
 </item>
 
 </channel>
