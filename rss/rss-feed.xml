@@ -1,0 +1,65 @@
+]0;firejail /usr/bin/w3m https://lukesmith.xyz/rss.xml <?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Luke Smith</title>
+<description>Updates from Luke Smith.</description>
+<language>en-us</language>
+<link>https://lukesmith.xyz/rss.xml</link>
+<atom:link href="https://lukesmith.xyz/rss.xml" rel="self" type="application/rss+xml" />
+<image>
+<title>Luke Smith</title>
+<url>https://samiuljoy.github.io/read.svg</url>
+<link>https://samiuljoy.github.io</link>
+</image>
+
+<!-- LB -->
+
+<item>
+	<title>This is  a test/demo and will be removed within a hour</title>
+	<guid isPermaLink="false">https://videos.lukesmith.xyz</guid>
+	<pubDate> Thu, 07 Jan 2021 09:25:24 -0500</pubDate>
+	<link>https://videos.lukesmith.xyz</link>
+	<description><![CDATA[<p>PeerTube has recently released version 3.0.0, which has added many things, including the ability to livestream. I've already updated by PeerTube instance to version 3 (it is linked from this RSS entry), but the link is just <a href="https://videos.lukesmith.xyz">videos.lukesmith.xyz</a> .</p>
+
+		<p>I'm not sure if I'll end up immediately using the livestream ability, but it is certainly nice to have a non-YouTube option which is, in fact, self-hosted.</p>
+
+		<p>Aside from that, I <strong>strong</strong> recommend you add my PeerTube instance to your RSS feed. Get the link here: <a href="https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3">https://videos.lukesmith.xyz/feeds/videos.xml?accountId=3</a> .
+			This is what I view as my permanent and primary non-YouTube video store, and I occasionally post things not on YouTube here.
+			In the future, I plan on using it and my main website to make an "interactive" archive of video/text as an independent and self-sustained site.</p>
+			]]></description>
+</item>
+
+<item>
+	<title>Short Notice: Appearing on Millenniyule TONIGHT at 7PM New York Time</title>
+	<guid isPermaLink="false">https://www.millennialwoes.com/millenniyule?y=2020</guid>
+	<pubDate> Tue, 29 Dec 2020 17:18:17 -0500</pubDate>
+	<link>https://www.millennialwoes.com/millenniyule?y=2020</link>
+	<description><![CDATA[
+	<p>Sorry for the short notice, I've been busy for the holidays, but I've been asked to be interviewed on Millenniyule in less than two hours from when I'm posting this. I'm scheduled for 7PM to as late as 9PM New York time.</p>
+
+	<p>The livestream will be on <a href="https://www.youtube.com/user/MillennialWoes">this channel</a> (i.e. not my own due to bandwidth issues).
+	</p>
+
+	<p>If you miss it, you can get it <a href="https://www.youtube.com/playlist?list=PLLt8gt-3ZZmHNxM5nNdDtHiuKSz-Iu1nL">at the bottom of this playlist</a> when it's over.</p>
+
+		]]></description>
+</item>
+
+<item>
+	<title>New website</title>
+	<guid isPermaLink="false">https://lukesmith.xyz</guid>
+	<pubDate> Fri, 11 Dec 2020 18:02:48 -0500</pubDate>
+	<link>https://lukesmith.xyz</link>
+	<description><![CDATA[<p>Got a new simplified website. Real old school, no CSS sheet. I'm going to make it more text-based and have more writings.</p>
+
+		<p>I've also rolled over this RSS feed.</p>
+
+		<p>A lot of the site is still unfinished, so notify my of anything I've missed so far.
+			I want to keep old links more or less in place. I haven't decided if I want to keep using my old blog script (this entry is RSS only).
+		I feel like I had neglected the blog for a while, and my new site is more conducive to browsing as I add even more.</p>]]></description>
+</item>
+
+</channel>
+
+</rss>
