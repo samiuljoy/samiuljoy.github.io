@@ -1,4 +1,4 @@
-<!-- <?xml version="1.0" encoding="UTF-8" ?> -->
+<?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
@@ -19,11 +19,12 @@
 		<!--	<guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
 	<pubDate>8 jan 2020</pubDate>
 	<link>https://samiuljoy.github.io</link>
-	<description><p>Hello world!! This is my first rss feed post!!!</p>
+	<description><![CDATA[<p>Hello world!! This is my first rss feed post!!!</p>
+		<img src="https://samiuljoy.github.io/assets/bio.png" alt="This is an image">
 		<p>Hope everyone sees it!!</p>
 		<p>This is another line</p>
 		<p>Plead visit <a href="https://samiuljoy.github.io">samiuljoy.github.io</a>.</p>
-	</description>
+		]]></description>
 </item>
 
 </channel>
