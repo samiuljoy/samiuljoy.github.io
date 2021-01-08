@@ -1,12 +1,11 @@
-]0;firejail /usr/bin/w3m https://lukesmith.xyz/rss.xml <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
 <title>Luke Smith</title>
 <description>Updates from Luke Smith.</description>
 <language>en-us</language>
-<link>https://lukesmith.xyz/rss.xml</link>
-<atom:link href="https://lukesmith.xyz/rss.xml" rel="self" type="application/rss+xml" />
+<link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
+<atom:link href="https://samiuljoy.github.io/rss/rss-feed.xml" rel="self" type="application/rss+xml" />
 <image>
 <title>Luke Smith</title>
 <url>https://samiuljoy.github.io/read.svg</url>
