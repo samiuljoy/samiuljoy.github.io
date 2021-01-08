@@ -7,11 +7,7 @@
 <language>en-us</language>
 <link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
 	<!-- <atom:link href="https://samiuljoy.github.io/rss/rss-feed.xml" rel="self" type="application/rss+xml" /> -->
-<image>
 <title>samiuljoy.github.io</title>
-<url>https://samiuljoy.github.io/read.svg</url>
-<link>https://samiuljoy.github.io/read.svg</link>
-</image>
 
 <!-- LB -->
 
@@ -22,8 +18,7 @@
 	<link>https://samiuljoy.github.io</link>
 	<description><p>Hello world!! This is my first rss feed post!!!</p>
 		<p>Hope everyone sees it!!</p>
-		<img src="https://samiuljoy.github.io/assets/bio.png">
-			This above was a image
+		<p>This is another line</p>
 		<p>Plead visit <a href="https://samiuljoy.github.io">samiuljoy.github.io</a>.</p>
 	</description>
 </item>
