@@ -6,27 +6,28 @@
 <description>Updates from Samiul Joy</description>
 <language>en-us</language>
 <link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
-	<!-- <atom:link href="https://samiuljoy.github.io/rss/rss-feed.xml" rel="self" type="application/rss+xml" /> -->
+<atom:link href="https://samiuljoy.github.io/rss/rss-feed.xml" rel="self" type="application/rss+xml" />
 <image>
 <title>samiuljoy.github.io</title>
 <url>https://samiuljoy.github.io/assets/bio.png</url>
 <link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
 </image>
+
 <!-- LB -->
 
 <item>
-	<title>This is a test/demo and will be removed within a hour</title>
+	<title>My first rss post!!</title>
 		<!--	<guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
-	<pubDate>8 jan 2020</pubDate>
+	<pubDate>8 January 2021</pubDate>
 	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!! This is my first rss feed post!!!</p>
-		<img src="https://samiuljoy.github.io/assets/bio.png" alt="This is an image">
-		<p>Hope everyone sees it!!</p>
-		<p>This is another line</p>
-		<p>Plead visit <a href="https://samiuljoy.github.io">samiuljoy.github.io</a>.</p>
+		<p><b>Subject: Today I customized an app for the first time.</b></p>
+		<p>Hello world!! For the first time in my life I was able to extract the source codes from an app, edit some color properties, customized it to my liking, and repacked the app and signed it and installed it and voilla!! There was my app!! It feels good ^_^</p>
+		<p>The name of the app was overchan, just incase anyone wondering ^_^</p>
+		<p>Have a wonderful day!!</p>
+		<p>Visit <a href="https://samiuljoy.github.io">samiuljoy.github.io</a>.</p>
 		]]></description>
 </item>
 
 </channel>
-
 </rss>
