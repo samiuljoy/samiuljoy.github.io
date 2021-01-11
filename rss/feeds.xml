@@ -7,17 +7,19 @@
 <language>en-us</language>
 <link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
 <atom:link href="https://samiuljoy.github.io/rss/feeds.xml" rel="self" type="application/rss+xml" />
+<!--
 <image>
 <title>samiuljoy.github.io</title>
 <url>https://samiuljoy.github.io/assets/bio.png</url>
 <link>https://samiuljoy.github.io/rss/feeds.xml</link>
 </image>
+-->
 
 <!-- Content starts here -->
 
 <item>
 	<title>Just got familiar with gopher and gemini</title>
-	<guid isPermaLink="false">https://samiuljoy.github.io<guid>
+		<!-- <guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
 	<pubDate> Mon, 11 Jan 2021 15:25:00 -0500</pubDate>
 	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!!</p>
@@ -32,7 +34,7 @@
 
 <item>
 	<title>My first rss post!!</title>
-	<guid isPermaLink="false">https://samiuljoy.github.io<guid>
+	<!-- <guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
 	<pubDate> Fri, 08 Jan 2021 15:25:00 -0500</pubDate>
 	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!! This is my first rss feed post!!!</p>
