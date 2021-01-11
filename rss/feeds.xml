@@ -19,6 +19,7 @@
 	<title>Just got familiar with gopher and gemini</title>
 	<guid isPermaLink="false">https://samiuljoy.github.io<guid>
 	<pubDate> Mon, 11 Jan 2021 15:25:00 -0500</pubDate>
+	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!!</p>
 		<p><b>Subject: Got myself familiar with Gopher and gemini</b></p>
 		<p>Gopher and Gemini are two internet protocols that existed back in 1965(funny thing that these protocols uses 1965 ports as well ^-^). People used these prior to http/s web standard. It eventually went into abyss. Nevertheless, just got introduced to it through fediverse, and thought it'd be a good idea to check it out. I seem to enjoy it so far. Also got to know couple of people from there and followed them on fediverse. I've came across pretty decent people on gemini and gopher. Worth checking out.</p>
@@ -33,6 +34,7 @@
 	<title>My first rss post!!</title>
 	<guid isPermaLink="false">https://samiuljoy.github.io<guid>
 	<pubDate> Fri, 08 Jan 2021 15:25:00 -0500</pubDate>
+	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!! This is my first rss feed post!!!</p>
 		<p><b>Subject: Today I customized an app for the first time.</b></p>
 		<p>Hello world!! For the first time in my life I was able to extract the source codes from an app, edit some color properties, customized it to my liking, and repacked the app and signed it and installed it and voila!! There was my app!! It feels good ^_^</p>
