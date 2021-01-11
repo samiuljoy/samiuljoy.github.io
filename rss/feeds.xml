@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
@@ -6,7 +6,7 @@
 <description>Random posts from Samiul Joy</description>
 <language>en-us</language>
 <link>https://samiuljoy.github.io/rss/rss-feed.xml</link>
-	<!-- <atom:link href="https://samiuljoy.github.io/rss/feeds.xml" rel="self" type="application/rss+xml" /> -->
+<atom:link href="https://samiuljoy.github.io/rss/feeds.xml" rel="self" type="application/rss+xml" />
 <!--
 <image>
 <title>samiuljoy.github.io</title>
