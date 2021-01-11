@@ -18,7 +18,7 @@
 <item>
 	<title>Just got familiar with gopher and gemini</title>
 		<!--	<guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
-	<pubDate> Mon, 11 Jan 2021 15:25:00 -0500</pubDate>
+		<!-- <pubDate> Mon, 11 Jan 2021 15:25:00 -0500</pubDate> -->
 	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!!</p>
 		<p><b>Subject: Got myself familiar with Gopher and gemini</b></p>
@@ -33,7 +33,7 @@
 <item>
 	<title>My first rss post!!</title>
 		<!--	<guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
-	<pubDate> Fri, 08 Jan 2021 15:25:00 -0500</pubDate>
+		<!-- <pubDate> Fri, 08 Jan 2021 15:25:00 -0500</pubDate> -->
 	<link>https://samiuljoy.github.io</link>
 	<description><![CDATA[<p>Hello world!! This is my first rss feed post!!!</p>
 		<p><b>Subject: Today I customized an app for the first time.</b></p>
