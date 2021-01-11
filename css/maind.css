@@ -8,6 +8,16 @@
 	--headerfont: 'Comfortaa';
 	}
 
+@font-face { 
+	font-family: 'Comfortaa';
+	src: url('comfortaa.ttf') format('truetype');
+}
+
+@font-face { 
+	font-family: 'Baloo Paaji 2';
+	src: url('baloopji2.ttf') format('truetype');
+}
+
 .D {
 	background: var(--dbac);
 	color: var(--dpri);
