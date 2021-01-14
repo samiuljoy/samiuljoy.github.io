@@ -18,16 +18,15 @@
 <!-- Content starts here -->
 
 <item>
-	<title>Today was quite an interesting day</title>
+	<title>Fixed the mozilla.location issue while recompiling + more</title>
 	<!-- <guid isPermaLink="false">https://samiuljoy.github.io<guid> -->
-	<pubDate> Wed, 13 Jan 2021 15:25:00 -0500</pubDate>
+	<pubDate> Wed, 14 Jan 2021 15:25:00 -0500</pubDate>
 	<!-- <link>https://samiuljoy.github.io</link> -->
 	<description><![CDATA[<p>Hello world!!</p>
-		<p><b>Subject: Fiddling around with Firefox(Android) source codes</b></p>
-		<p>Today while fiddling around with Firefox(Android) source codes, I came across a location.service.mozilla url, which I assume is for location based telemetry or something similar. I tried replacing the url with 0.0.0.0 and then recompiling and installing. Well, starting the app leads to an instant crash, however when reverted back to location.service, the app starts normally. This I found quite odd. But, then again, maybe I'm missing something here, maybe some variables are predefined across files that are somehow linked. Will try to fiddle with the codes more.</p>
-		<p>Meanwhile, I tried decompiling chrome(Android) and was unable to do so. Maybe they made their app to be resistant to decompiling software. This is the very reason why I like open-source apps, under GPL license, anyone could edit the application and use it to their need!</p>
-		<p>Love and support open-source, yeah that should be the motto!! ^..^</p>
-		<p>Love and support open-source and I hope you have a wonderful day!!</p>
+		<p><b>Subject: Fixed the mozilla.location service issue mentioned in the last post and reliving nostalgia!!</b></p>
+		<p>I was able to fix the location.service url issue. Turns out, replacing 0.0.0.0 with http://0.0.0.0 does the job perfectly.</p>
+		<p>Also started playing Beneath a Steel Sky on my Android device. I remember playing it back in 2014 on my Ubuntu machine. Good to know that <a href='https://scummvm.org'>https://scummvm.org</a> made it possible to port it on Android!! That's pretty cool!!</p>
+		<p>Have a nice day!</p>
 		<p><a href="https://samiuljoy.github.io">samiuljoy.github.io</a>.</p>
 		]]></description>
 </item>
