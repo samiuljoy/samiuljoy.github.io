@@ -16,6 +16,19 @@
 -->
 
 <!-- Content starts here -->
+<item>
+	<title>Performance improvement for firefox in Android</title>
+	<pubDate>Fri, 15 Jan 2021 15:25:00 -0500</pubDate>
+	<description><![CDATA[
+		<p>Hello world!!</p>
+		<p>Recompiling firefox after removing couple of stuffs seems to improve performance. Although this is hardly noticeable on modern devices above 2GB of ram, however, on older device, this change is apparent. Also, the latest version of firefox pre-release(85.0-beta-7) performance improvement is also seen(by default without manual intervention). Looking forward to a better performance from firefox-fenix.</p>
+		<p>Have a nice day!!</p>
+		<p><a href="https://samiuljoy.github.io">samiuljoy.github.io</a></p>
+		]]>
+	</description>
+
+</item>
+
 
 <item>
 	<title>Fixed the mozilla.location issue while recompiling + more</title>
