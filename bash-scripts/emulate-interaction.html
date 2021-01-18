@@ -75,7 +75,7 @@
 
 <h2># Overview</h2>
 
-<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android_software_development#ADB">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it ^-^ (:</p>
+<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android_software_development#ADB">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it [^-^]</p>
 
 <h2># Gathering required stuffs</h2>
 <p>We'll be needing a PC to instruct and execute commands onto our devices. For that, we'll be needing adb. If you're on Linux OS, you can install adb using your package manager, if you're on macOS, you can install it using brew. Head over to your phone to enable usb debugging. Once you have everything set up, then we can begin.</p>
@@ -103,7 +103,7 @@ ID	 	 device
 
 <pre id="test"><code class="POSIX">adb shell input keyevent 223; adb shell keyevent 224</code></pre>
 
-<button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#test">Copy</button>
+<button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#test">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -117,11 +117,9 @@ ID	 	 device
     });
 	function copied1() { 
 	var guess = document.getElementById("copy1");
-	  if (guess.innerHTML === "Copy") {
-	   guess.innerHTML = "Copied!";
- 	 } 
-	   else {
- 	   guess.innerHTML = "Copy"; }
+	  if (guess.innerHTML === "yank") {
+	   guess.innerHTML = "yanked";
+ 	 }
 }
 </script>
 
@@ -129,7 +127,7 @@ ID	 	 device
 
 <pre id="chrome"><code>adb shell am start -n com.android.chrome/com.google.android.apps.chrome.Main</code></pre>
 
-<button id="copy2" onclick="copied2()" class="btn" data-clipboard-action="copy" data-clipboard-target="#chrome">Copy</button>
+<button id="copy2" onclick="copied2()" class="btn" data-clipboard-action="copy" data-clipboard-target="#chrome">yank</button>
 <script>
     var clipboard = new ClipboardJS('.btn');
 
@@ -142,11 +140,9 @@ ID	 	 device
     });
 	function copied2() { 
 	var guess = document.getElementById("copy2");
-	  if (guess.innerHTML === "Copy") {
-	   guess.innerHTML = "Copied!";
+	  if (guess.innerHTML === "yank") {
+	   guess.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   guess.innerHTML = "Copy"; }
 }
 </script>
 
@@ -154,7 +150,7 @@ ID	 	 device
 
 <pre id="swipe"><code>adb shell input swipe 400 700 400 130 500</code></pre>
 
-<button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#swipe">Copy</button>
+<button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#swipe">yank</button>
 <script>
     var clipboard = new ClipboardJS('.btn');
 
@@ -167,14 +163,11 @@ ID	 	 device
     });
 	function copied3() { 
 	var guess = document.getElementById("copy3");
-	  if (guess.innerHTML === "Copy") {
-	   guess.innerHTML = "Copied!";
+	  if (guess.innerHTML === "yank") {
+	   guess.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   guess.innerHTML = "Copy"; }
 }
 </script>
-
 
 <p>The 400 700 and 400 130 are <b>x</b> and <b>y</b> coordinates of the screen. 400 700 tells the device to emulate a tap on coordinate 400 700,then move across the screen to 400 130 coordinate, and this is done with <b>swipe</b> action. Now, we don't want the swipe action to be blazing fast, hence the velocity is defined with 500. Try replacing it with 100 and see things fly across the screen lol. The velocity part is optional and can be ignored. The important part of this whole thing is to get the pointer location, because for my phone, the coordinates were that and that, however this might be different in your case. So, to get the tap coordinates, you need to enable a feature under <b>Developer Options</b> on your device named <b>Pointer Locations</b>, go to developer options and scroll down a bit until you find pointer locations and enable it. After enabling it, you'll see a red margin on top of your screen, showing the coordinates. Tap on random surface of your screen, and you'll see the x and y coordinates pop up in <font style="color:red; font-weight:bold">red</font>. Now, to do a swipe action, tap and note down the coordinates and then swipe up or down and take note of your final coordinates(note: the coordinates are the ones when the screen is tapped and hold, not the ones when tap is released), and that's it. Replace your four coordinates with the four coordinates above.</p>
 

@@ -124,7 +124,7 @@ done
 fi
 fi
 </pre></code>
-<button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
+<button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -138,11 +138,10 @@ fi
     });
 	function copied1() { 
 	var login = document.getElementById("copy1");
-	  if (login.innerHTML === "Copy") {
-	   login.innerHTML = "Copied!";
+	  if (login.innerHTML === "yank") {
+	   login.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   login.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -197,7 +196,7 @@ fi
 rm tmp.txt
 </pre></code>
 
-<button id="copy2" onclick="copied2()" class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">Copy</button>
+<button id="copy2" onclick="copied2()" class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -211,11 +210,10 @@ rm tmp.txt
     });
 	function copied2() { 
 	var ho = document.getElementById("copy2");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -234,7 +232,7 @@ For this, you need to have <code><b>openssl</code></b> installed on your OS. If 
 Now, to induce salting, with <code><b>openssl</code></b> there's a one liner command; <br>
 <pre id="openssl"><code class="bash">openssl passwd -6 -salt xyz yourpassword</pre></code>
 </p>
-<button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#openssl">Copy</button>
+<button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#openssl">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -248,11 +246,10 @@ Now, to induce salting, with <code><b>openssl</code></b> there's a one liner com
     });
 	function copied3() { 
 	var ho = document.getElementById("copy3");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -262,7 +259,7 @@ Now, to induce salting, with <code><b>openssl</code></b> there's a one liner com
 print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))
 </pre></code>
 
-<button id="copy4" onclick="copied4()" class="btn" data-clipboard-action="copy" data-clipboard-target="#python">Copy</button>
+<button id="copy4" onclick="copied4()" class="btn" data-clipboard-action="copy" data-clipboard-target="#python">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -276,11 +273,10 @@ print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))
     });
 	function copied4() { 
 	var ho = document.getElementById("copy4");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -292,7 +288,7 @@ Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code>
 <pre id="poneline"><code class="bash">python3 -c 'import crypt; print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))'
 </pre></code>
 
-<button id="copy5" onclick="copied5()" class="btn" data-clipboard-action="copy" data-clipboard-target="#poneline">Copy</button>
+<button id="copy5" onclick="copied5()" class="btn" data-clipboard-action="copy" data-clipboard-target="#poneline">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -306,11 +302,10 @@ Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code>
     });
 	function copied5() { 
 	var ho = document.getElementById("copy5");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -322,7 +317,7 @@ Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code>
 crypt.crypt('password', '$6$' + 'salt1234')
 </pre></code>
 
-<button id="copy6" onclick="copied6()" class="btn" data-clipboard-action="copy" data-clipboard-target="#simplified">Copy</button>
+<button id="copy6" onclick="copied6()" class="btn" data-clipboard-action="copy" data-clipboard-target="#simplified">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -336,11 +331,10 @@ crypt.crypt('password', '$6$' + 'salt1234')
     });
 	function copied6() { 
 	var ho = document.getElementById("copy6");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -351,7 +345,7 @@ A more easier way would be to do it with <code><b>mkpasswd</b></code> from withi
 <pre id="mkpasswd"><code class="bash">mkpasswd -m sha-512 -S salt1234 password
 </pre></code>
 
-<button id="copy7" onclick="copied7()" class="btn" data-clipboard-action="copy" data-clipboard-target="#mkpasswd">Copy</button>
+<button id="copy7" onclick="copied7()" class="btn" data-clipboard-action="copy" data-clipboard-target="#mkpasswd">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -365,11 +359,10 @@ A more easier way would be to do it with <code><b>mkpasswd</b></code> from withi
     });
 	function copied7() { 
 	var ho = document.getElementById("copy7");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 

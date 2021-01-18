@@ -134,7 +134,7 @@ fi
 done
 </pre></code>
 
-<button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">Copy</button>
+<button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -148,11 +148,10 @@ done
     });
 	function copied1() { 
 	var guess = document.getElementById("copy1");
-	  if (guess.innerHTML === "Copy") {
-	   guess.innerHTML = "Copied!";
+	  if (guess.innerHTML === "yank") {
+	   guess.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   guess.innerHTML = "Copy"; }
+	   
 }
 </script>
 
@@ -169,7 +168,7 @@ break
 done
 </pre></code>
 
-<button id="copy2" onclick="copied2()" class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">Copy</button>
+<button id="copy2" onclick="copied2()" class="btn" data-clipboard-action="copy" data-clipboard-target="#bar">yank</button>
 
 <script>
     var clipboard = new ClipboardJS('.btn');
@@ -183,11 +182,10 @@ done
     });
 	function copied2() { 
 	var ho = document.getElementById("copy2");
-	  if (ho.innerHTML === "Copy") {
-	   ho.innerHTML = "Copied!";
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
  	 } 
-	   else {
- 	   ho.innerHTML = "Copy"; }
+	   
 }
 </script>
 
