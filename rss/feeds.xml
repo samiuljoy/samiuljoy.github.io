@@ -16,6 +16,19 @@
 -->
 
 <!-- Content starts here -->
+
+<item>
+	<title>Figuring out a way to disable transition effects on fenix Android</title>
+	<pubDate>Tue, 19 Jan 2021 15:25:00 -0500</pubDate>
+	<description><![CDATA[
+		<p>Hello World!!</p>
+		<p>Other Android browsers like brave and chrome have little to no animation in their UI. Which in my opnion is a good thing. They actually took into consideration about those android devices that are running old hardwares. Fenix on the other hand, has a bit of transition and animation going on here and there in thier UI. Which looks good, definitely and adds a bit of premium feel to it, however imo, this is useless. Hence fiddling around with the source codes to find a way to turn it off. On my newer phone, turning off animations from the developer options seems to negate transition effects, however on the older device, this doesn't turn off transitions. Let's see if I can find a way to manipulate transitions and animations.</p>
+		<p>Have a nice day!! and love and support open-source. If Fenix wasn't open-sourced, couldn't even edit the source codes to begin with!</p>
+		<p><a href="https://samiuljoy.github.io">samiuljoy.github.io</a></p>
+		]]>
+	</description>
+</item>
+
 <item>
 	<title>Performance improvement for firefox in Android</title>
 	<pubDate>Fri, 15 Jan 2021 15:25:00 -0500</pubDate>
