@@ -116,6 +116,7 @@ home:hover, back:hover {
 	display: inline-block;
 	background-color: #eee; 
 	color: var(--lsec); 
+	font-size: 1rem;
 	font-family: var(--hfont);
 	border: 1px solid #ddd;
 	border-radius: 1.25rem; 

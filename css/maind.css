@@ -279,6 +279,7 @@ a:visited {
 .D .btn {
 	display: inline-block;
 	background-color: var(--dlak); 
+	font-size: 1rem;
 	color:var(--dpri); 
 	font-family: var(--hfont);
 	border: 1px solid #0e2443;
