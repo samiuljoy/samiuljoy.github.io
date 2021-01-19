@@ -3,11 +3,17 @@ Zenburn style from voldmar.ru (c) Vladimir Epifanov <voldmar@voldmar.ru>
 based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 */
 
+@font-face { 
+	font-family: 'Fira Code Medium';
+	src: url('fc-m.otf') format('opentype');
+}
+
 .hljs {
   display: block;
   border: 2px solid #10101c;
   border-radius: 0.5rem;
   overflow: auto;
+  font-family: 'Fira Code Medium';
   padding: 0.5em;
   height: auto;
   background: #10101c;

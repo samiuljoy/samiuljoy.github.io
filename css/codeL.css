@@ -1,9 +1,9 @@
 :root {
-	--lpri: #1c4966;
-	--lsec: #1c4966;
-	--llin: #002e43;
+	--pri: #1c4966;
+	--sec: #1c4966;
+	--lnk: #002e43;
 	--lc: #778899;
-	--lblak: #000000;
+	--lbl: #000000;
 	--pfont: 'Baloo Paaji 2';
 	--hfont: 'Comfortaa';
 	}
@@ -70,16 +70,16 @@ a {
 	}
 
 a:visited {
-	color: var(--lpri);
+	color: var(--pri);
 	}
 
 a:hover, a:visited:hover {
-	color: var(--llin);
-	text-decoration: underline dashed var(--lpri);
+	color: var(--lnk);
+	text-decoration: underline dashed var(--pri);
 	}
 
 home, back {
-	background: var(--lpri);
+	background: var(--pri);
 	padding:0.5rem;
 	color:white;
 	font-weight:bold;
@@ -91,11 +91,11 @@ home, back {
 	}
 
 home:hover, back:hover {
-	background: var(--lblak);
+	background: var(--lbl);
 	}
 
 .index {
-	background: var(--lpri);
+	background: var(--pri);
 	padding:0.5rem;
 	margin-right: 0.3rem;
 	color:white;
@@ -108,26 +108,26 @@ home:hover, back:hover {
 	}
 
 .index:hover {
-	background: var(--lblak);
+	background: var(--lbl);
 	outline: none;
 	}
 
 .btn {
 	display: inline-block;
 	background-color: #eee; 
-	color: var(--lsec); 
-	font-size: 1rem;
+	color: var(--sec); 
 	font-family: var(--hfont);
 	border: 1px solid #ddd;
 	border-radius: 1.25rem; 
 	width: 3rem auto;
 	font-weight: bold;
 	padding: 0.1875rem; 
+	font-size: 1rem;
 	margin-left: 0.3125rem;
 	}
 
 nav a {
-	color: var(--llin);
+	color: var(--lnk);
 	font-weight:bold;
 	margin: 0.5rem;
 	}
@@ -161,7 +161,7 @@ nav ul li {
 .navbar a {
 	float: inherit;
 	font-size: 16px;
-	color: var(--lblak);
+	color: var(--lbl);
 	text-align: center;
 	padding: 16px 18px;
 	text-decoration: none;
@@ -206,7 +206,7 @@ nav ul li {
 
 .dropdown-content a {
 	float: inherit;
-	color: var(--lpri);
+	color: var(--pri);
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
@@ -218,7 +218,7 @@ nav ul li {
 }
 
 .dropdown-content a:hover {
-	background-color: var(--lpri);
+	background-color: var(--pri);
 	color: white;
 	border-radius: 0.5rem;
 	}
@@ -247,7 +247,7 @@ nav ul li {
 	}
 
 .area, .area:visited, .area:hover, .area:visited:hover {
-	color: var(--lblak);
+	color: var(--lbl);
 	text-decoration: none;
 	font-weight: normal;
 	}
@@ -271,18 +271,18 @@ nav ul li {
 	}
 
 .card:hover {
-	box-shadow: 2px 4px 8px 2px var(--lpri);
+	box-shadow: 2px 4px 8px 2px var(--pri);
 	border: none;
 	}
 
 .tag {
 	font-weight: bold;
-	color: var(--lsec);
+	color: var(--sec);
 	}
 
 blockquote {
 	background: #eee;
-	color: var(--lblak);
+	color: var(--lbl);
 	border-left:5px solid var(--lc);
 	font-size:120%;
 	margin:2rem 0;
@@ -290,7 +290,7 @@ blockquote {
 	}
 
 blockquote header {
-	color: var(--lsec);
+	color: var(--sec);
 	font-size: 25px;
 	font-weight: bold;
 	}
@@ -313,7 +313,7 @@ ul {
 	font-family: var(--pfont);
 	font-size: 19px;
 	font-weight: bold;
-	color: var(--llin);
+	color: var(--lnk);
 	list-style-type: '# ';
 	}
 
@@ -348,11 +348,11 @@ html {
 
 strong,b,h1,h2,h3,h4 {
 	font-weight:bold;
-	color: var(--lsec);
+	color: var(--sec);
 	}
 
 hr {
-	background: var(--lpri);
+	background: var(--pri);
 	border: none;
 	height:1px;
 	border-radius: 2rem;
@@ -368,7 +368,7 @@ table {
 	}
 
 table tr {
-	border-bottom:1px solid var(--lblak);
+	border-bottom:1px solid var(--lbl);
 	}
 
 table td {
@@ -411,7 +411,7 @@ table td {
 	margin-top: -0.5rem;
 	margin-bottom: 1.5rem;
 	font-weight: bold;
-	color: var(--lsec);
+	color: var(--sec);
 	}
 
 .footer {
@@ -419,7 +419,7 @@ table td {
 	padding: 1.2rem;
 	border-radius:0.5rem;
 	font-family: var(--pfont);
-	color: var(--lsec);
+	color: var(--sec);
 	margin-top: 2rem;
 	font-weight: bold;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);

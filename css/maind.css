@@ -290,26 +290,6 @@ a:visited {
 	margin-left: 0.3125rem;
 	}
 
-/* .D nav ul ::-webkit-scrollbar {
-	width: 2px;
-	height: 2px;
-	}
-
-.D nav ul ::-webkit-scrollbar-track {
-	border: 2px #3f3f3f;
-	border-radius:2px;
-	}
-
-.D nav ul ::-webkit-scrollbar-thumb {
-	background: var(--dpri);  
-	border-radius: 2px;
-	}
-
-.D nav ul ::-webkit-scrollbar-thumb:hover {
-	background: var(--dpri);  
-	}
-*/
-
 .D nav ul {
 	list-style:none;
 	text-align:center;
