@@ -8,6 +8,7 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   border-radius: 0.5rem;
   overflow: auto;
   padding: 0.5em;
+  font-size: 1rem;
   height: auto;
   background: #000000;
   color: #dcdcdc;
@@ -91,6 +92,7 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
   overflow: auto;
   padding: 0.5em;
   height: auto;
+  font-size: 1rem;
   background: #152238;
   color: #dcdcdc;
 }
