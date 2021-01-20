@@ -9,8 +9,8 @@
 <meta name="theme-color" content="#002f30" />
 <meta name="author" content="Samiul Joy">
 <meta name="description" content="Title is pretty much self explanatory. Using adb it was possible to emulate a normal user interaction on a Chrome browser. More ways to automate stuff in a very cool way!" />
-<link rel="stylesheet" type="text/css" href="../css/main.css">
 <link rel="stylesheet" type="text/css" href="../css/maind.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
 <link rel="stylesheet" href="../css/zenburn.css">
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/highlight.pack.js"></script>
@@ -76,7 +76,7 @@
 
 <p>Make sure you can access your phone from your PC through the shell. Connect usb cable to your phone and open a terminal window on your PC, and type in <code><b>adb devices</b></code> which considering everything is properly set up, should display something like this</p>
 
-<pre><code>[arch@arch]:~$ adb devices
+<pre><code>[user@debian]:~$ adb devices
 
 List of devices attached
 * daemon starting on port 5555
@@ -85,7 +85,7 @@ List of devices attached
 ID	 	 device
 0e46ee341 	 authorized
 
-[arch@arch]:~$
+[user@debian]:~$
 </code>
 </pre>
 
