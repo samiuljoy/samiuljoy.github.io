@@ -70,8 +70,8 @@ body {
 	text-decoration: underline var(--dsec);
 	}
 
-a:visited {
-	color: var(--dpri);
+.D a:visited {
+	color: #dddddd;
 	}
 
 .D a:visited:hover, .D a:hover {
