@@ -16,6 +16,18 @@
 -->
 
 <!-- Content starts here -->
+<iterm>
+	<title>Figured out a way to disable transitions and animations</title>
+	<pubDate>Tue, 26 Jan 2021 15:25:00 -0500</pubDate>
+	<description><![CDATA[
+		<p>Hello World!</p>
+		<p>Was able to disable transitions and animations customizing some value under /res/values/ to @null or 0. Fenix now seems to be faster. Way faster than before.</p>
+		<p>Also, started watching Serial Experiment Lain and Ergo Proxy. Quite fascinating.</p>
+		<p>Have a nice day!!</p>
+		<p><a href="https://samiuljoy.github.io">https://samiuljoy.github.io</a></p>
+		]]>
+	</description>
+</item>
 
 <item>
 	<title>Figuring out a way to disable transition effects on fenix Android</title>
