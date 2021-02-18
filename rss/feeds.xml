@@ -16,6 +16,19 @@
 -->
 
 <!-- Content starts here -->
+
+<iterm>
+	<title>I f**d up my phone</title>
+	<pubDate>Thu, 18 Feb 2021 15:25:00 -0500</pubDate>
+	<description><![CDATA[
+		<p>Hello World!</p>
+		<p>Well, I tried to do a system reset and dump stuffs to the system partition. The network firmware or radio doesn't seem to be working. I was thinking about doing a system reset for past couple of days, good thing is I was able to back everything up before all of this. I think improper file permission lead to this stage. Hmm..let's see if I can fix this.</p>
+		<p>Have a nice day!!</p>
+		<p><a href="https://samiuljoy.github.io">https://samiuljoy.github.io</a></p>
+		]]>
+	</description>
+</item>
+
 <iterm>
 	<title>Figured out a way to disable transitions and animations</title>
 	<pubDate>Tue, 26 Jan 2021 15:25:00 -0500</pubDate>
