@@ -81,6 +81,7 @@ a:hover, a:visited:hover {
 home, back {
 	background: var(--pri);
 	padding:0.5rem;
+	font-family: monospace;
 	color:white;
 	font-weight:bold;
 	border-radius: 0.5rem;
@@ -97,6 +98,7 @@ home:hover, back:hover {
 .index {
 	background: var(--pri);
 	padding:0.5rem;
+	font-family: monospace;
 	margin-right: 0.3rem;
 	color:white;
 	font-weight:bold;

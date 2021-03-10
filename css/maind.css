@@ -246,6 +246,7 @@ body {
 
 .D home, .D back {
 	background: var(--dbac);
+	font-family: monospace;
 	padding:0.5rem;
 	color: var(--dpri);
 	font-weight:bold;
@@ -261,6 +262,7 @@ body {
 
 .D .index {
 	background: var(--dbac);
+	font-family: monospace;
 	color: var(--dpri);
 	font-weight:bold;
 	border-radius: 0.5rem;

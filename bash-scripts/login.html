@@ -57,7 +57,7 @@
 
 <h1><center>./login.sh &&<br>./username.sh</h1></center>
 
-<p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a /etc/shadow file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) with a shell script? Wouldn't that be fun?</p>
+	<p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a <u>/etc/shadow</u> file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) with a shell script? Wouldn't that be fun?</p>
 	
 <p>Let's try to emulate the whole mechanism.</p> 
 
@@ -181,7 +181,8 @@ if [ "$?" == 0 ]; then
 echo -e "\nyo"
 
 #else print login failed
-else echo -e "\nLogin failed"
+else
+	echo -e "\nLogin failed"
 	sleep 1
 	pkill -9 bash
 fi
@@ -356,7 +357,6 @@ A more easier way would be to do it with <code><b>mkpasswd</b></code> from withi
 	  if (ho.innerHTML === "yank") {
 	   ho.innerHTML = "yanked!";
  	 } 
-	   
 }
 </script>
 
@@ -369,14 +369,55 @@ Now, to include this in our scripts <b>username.sh</b> and <b>login.sh</b> we ju
 On line 34 of the script <code><b>username.sh</b></code> we can replace 
 <pre><code class="bash"><b>echo $usame::$(echo $passwd | md5sum) >> mango.txt</code></pre></b></p><p> 
 with this line, if you plan to use mkpasswd.<p>
-<pre><code class="bash"><b>echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) >> mango.txt</pre></code></b>
+
+<pre id="replace1"><code class="bash"><b>echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) >> mango.txt</pre></code></b>
+
+<button id="copy8" onclick="copied8()" class="btn" data-clipboard-action="copy" data-clipboard-target="#replace1">yank</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied8() { 
+	var ho = document.getElementById("copy8");
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
+ 	 } 
+}
+</script>
 
 <p>
 Now on line 24 of <code><b>login.sh</code></b> you need to replace</p>
 <pre><code class="bash"><b>echo $password | md5sum > tmp.txt </pre></code></b></p><p>with</p>
-<pre><code class="bash"><b>echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code></b>
+<pre id="replace2"><code class="bash"><b>echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code></b>
 
-<p>Same results can be achieved with <code><b>openssl</code></b>,and <code><b>python</code></b>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^.^</p>
+<button id="copy9" onclick="copied9()" class="btn" data-clipboard-action="copy" data-clipboard-target="#replace2">yank</button>
+
+<script>
+    var clipboard = new ClipboardJS('.btn');
+
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+	function copied9() { 
+	var ho = document.getElementById("copy9");
+	  if (ho.innerHTML === "yank") {
+	   ho.innerHTML = "yanked!";
+ 	 } 
+}
+</script>
+
+<p>Same results can be achieved with <code><b>openssl</code></b> and <code><b>python</code></b>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^_^</p>
 
 <footer class="footer" role="contentinfo">
 <div class="pin">📎</div>
