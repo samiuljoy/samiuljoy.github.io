@@ -1,7 +1,7 @@
 :root {
-	--dpri: #778899;
-	--dsec: #708090;
-	--dbac: #10101c;
+	--dpri: #cdcdcd;
+	--dsec: #eeeeee;
+	--dbac: #000000;
 	--dshad: #192841;
 	--dlak: #000000;
 	--pfont: 'Baloo Paaji 2';
@@ -109,7 +109,7 @@
 .D blockquote {
 	background: #707070;
 	color: var(--dlak);
-	border-left:5px solid var(--dlak);
+	border-left:5px solid var(--dshad);
 	font-size:120%;
 	margin:2rem 0;
 	padding:1rem; 
@@ -133,7 +133,7 @@
 .D .card {
 	padding: 20px;
 	box-shadow: 0 4px 8px -2px #1c2e4a;
-	border: 1px solid var(--dpri);
+	border: 1px solid var(--dshad);
 	border-radius: 0.5rem;
 	margin-bottom: 4rem;
 }
@@ -153,6 +153,7 @@
 	color: inherit;
 	float: right;
 	font-weight: bold;
+	font-family: monospace;
 	margin-bottom: 1rem;
 	margin-top: 0;
 	font-size: 14px;
@@ -327,7 +328,7 @@
 	margin: 0;
 	background: var(--dbac);
 	opacity: 0.92;
-	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
+	box-shadow: 0 4px 2px -2px rgba(25,40,65,.5);
 }
 
 .D nav ul li {
@@ -371,7 +372,6 @@
 	font-size: 16px;  
 	border: none;
 	outline: none;
-	color: var(--dlak);
 	background-color: inherit;
 	font-weight: bold;
 	color: var(--dpri);
@@ -390,7 +390,7 @@
 .D .dropdown-content {
 	display: none;
 	position: absolute;
-	background-color: var(--dlak);
+	background-color: #10101c;
 	min-width: 140px;
 	height: 21.5rem;
 	overflow: scroll;

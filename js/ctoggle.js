@@ -1,14 +1,18 @@
 // check for saved 'darkMode' in localStorage
 let darkMode = localStorage.getItem('darkMode'); 
-const darkModeToggle = document.querySelector('#mode');
-var word = document.getElementById("mode");
+const darkModeToggle = document.querySelector('#switch');
+var word1 = document.getElementById("mode");
+var word2 = document.getElementById("sword");
+// changes the meta tab color for chrome based browsers on mobile devices
 var meta = document.querySelector("meta[name=theme-color]");
 
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('D');
   meta.setAttribute("content", "#10101c");
-  word.innerHTML = "🐭";
+  word1.innerHTML = "Dark";
+	word2.innerHTML = "🐭";
+  //word.innerHTML = "^-^";
   // 2. Update darkMode in localStorage
   localStorage.setItem('darkMode', 'enabled');
 }
@@ -17,7 +21,9 @@ const disableDarkMode = () => {
   // 1. Remove the class from the body
   document.body.classList.remove('D');
   meta.setAttribute("content", "#1c4966");
-  word.innerHTML = "🐼";
+  word1.innerHTML = "Light"
+	word2.innerHTML = "🐼";
+  // word.innerHTML = "-.-";
   // 2. Update darkMode in localStorage 
   localStorage.setItem('darkMode', null);
 }
