@@ -49,8 +49,9 @@
 </nav>
 </header>
 
-<div class="switch, inner-switch">
-<span id="mode">🐼</span>
+<div id="switch" class="inner-switch">
+	<span id="mode">Light</span>
+	<span id="sword">🐼</span>
 </div>
 
 <main id="main" role="main">
@@ -216,7 +217,7 @@ rm tmp.txt
 </p>
 
 <p>
-Before writing this post I also asked a question on Unix stack exchange about this script and how it worked on a Linux system, and got some good suggestions. Turns out that I can use <code><b>openssl</code></b> to actually introduce salting.
+Before writing this post I also asked a question on Unix stack exchange about this script and how it worked on a Linux system, and got some good suggestions. Turns out that I can use <code><b>openssl</code></b> to actually induce salting.
 </p>
 
 <p>
@@ -225,7 +226,7 @@ For this, you need to have <code><b>openssl</code></b> installed on your OS. If 
 
 <p>
 Now, to induce salting, with <code><b>openssl</code></b> there's a one liner command; <br>
-<pre id="openssl"><code class="bash">openssl passwd -6 -salt xyz yourpassword</pre></code>
+<pre id="openssl"><code>openssl passwd -6 -salt xyz yourpassword</pre></code>
 </p>
 <button id="copy3" onclick="copied3()" class="btn" data-clipboard-action="copy" data-clipboard-target="#openssl">yank</button>
 
@@ -367,10 +368,12 @@ Now, to include this in our scripts <b>username.sh</b> and <b>login.sh</b> we ju
 <center><h2>Salting with `mkpasswd`</h2></center>
 <p>
 On line 34 of the script <code><b>username.sh</b></code> we can replace 
-<pre><code class="bash"><b>echo $usame::$(echo $passwd | md5sum) >> mango.txt</code></pre></b></p><p> 
-with this line, if you plan to use mkpasswd.<p>
+<pre><code class="bash">echo $usame::$(echo $passwd | md5sum) >> mango.txt</code></pre></p>
+<p> 
+with this line, if you plan to use mkpasswd.
+</p>
 
-<pre id="replace1"><code class="bash"><b>echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) >> mango.txt</pre></code></b>
+<pre id="replace1"><code class="bash">echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) >> mango.txt</pre></code>
 
 <button id="copy8" onclick="copied8()" class="btn" data-clipboard-action="copy" data-clipboard-target="#replace1">yank</button>
 
@@ -394,8 +397,8 @@ with this line, if you plan to use mkpasswd.<p>
 
 <p>
 Now on line 24 of <code><b>login.sh</code></b> you need to replace</p>
-<pre><code class="bash"><b>echo $password | md5sum > tmp.txt </pre></code></b></p><p>with</p>
-<pre id="replace2"><code class="bash"><b>echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code></b>
+<pre><code class="bash">echo $password | md5sum > tmp.txt </pre></code></p><p>with</p>
+<pre id="replace2"><code class="bash">echo $(mkpasswd -m sha-512 -S salt1234 $password) > tmp.txt</pre></code>
 
 <button id="copy9" onclick="copied9()" class="btn" data-clipboard-action="copy" data-clipboard-target="#replace2">yank</button>
 
