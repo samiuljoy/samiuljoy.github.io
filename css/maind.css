@@ -53,7 +53,7 @@
 	}
 
 	.D .inner-switch:hover {
-		color: 1px solid var(--lpri);
+		color: 1px solid var(--dpri);
 		transform: scale(1, 1);
 		padding-left: 4.15rem;
 		padding-right: 5px;
@@ -95,8 +95,15 @@
 }
 
 .D .inner-switch:hover {
-	border: 1px solid var(--sec);
+	border: 1px solid var(--dshad);
 }
+
+@media screen and (max-width: 800px) {
+	.inner-switch span:nth-child(1) {
+		display: none;
+	}
+}
+
 .D p {
 	font-family: var(--pfont);
 	font-size:1.35rem;
@@ -115,7 +122,7 @@
 }
 
 .D a:visited {
-	color: #dddddd;
+	color: var(--dsec);
 }
 
 .D a:visited:hover, .D a:hover {
@@ -197,7 +204,7 @@
 
 .D .ull {
 	font-family: var(--pfont);
-	font-size: 1.3rem;
+	font-size: 1.35rem;
 	font-weight: bold;
 	color: var(--dpri);
 	list-style-type: '# ';
@@ -289,10 +296,11 @@
 	color: var(--dsec);
 }
 
-.D home, .D back {
+.D home, .D back, .D .index {
 	background: var(--dbac);
 	font-family: monospace;
 	padding:0.5rem;
+	font-size: 1.1rem;
 	color: var(--dpri);
 	font-weight:bold;
 	border-radius: 0.5rem;
@@ -301,25 +309,12 @@
 /*	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2); */
 }
 
-.D home:hover, back:hover {
-	background: var(--dlak);
-}
-
-.D .index {
-	background: var(--dbac);
-	font-family: monospace;
-	color: var(--dpri);
-	font-weight:bold;
-	border-radius: 0.5rem;
-	text-decoration: none;
-	border: 1.7px solid var(--dpri);
-	text-align: center;
-	padding: 0.5rem;
-/*	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2); */
+.D home:hover, .D back:hover {
+	background: var(--dshad);
 }
 
 .D .index:hover {
-	background: var(--dlak);
+	background: var(--dshad);
 }
 
 .D .btn {
@@ -457,6 +452,7 @@
 	font-family: var(--pfont);
 	border-radius:0.5rem;
 	border: 0.5px solid var(--dshad);
+	font-size: 1.2rem;
 	margin-top: 2rem;
 	font-weight:bold;
 	box-shadow: 0 1px 2px 2px var(--dshad);

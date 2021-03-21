@@ -129,13 +129,14 @@ a:hover, a:visited:hover {
 	text-decoration: underline dashed var(--pri);
 }
 
-home, back {
+home, back, .index {
 	background: var(--pri);
 	padding:0.5rem;
 	font-family: monospace;
 	color:white;
 	font-weight:bold;
 	border-radius: 0.5rem;
+	font-size: 1.1rem;
 	border: 1px;
 	font-size: inherit;
 	text-decoration: none;
@@ -145,17 +146,6 @@ home, back {
 
 home:hover, back:hover {
 	background: var(--lbl);
-}
-
-.index {
-	background: var(--pri);
-	font-size: inherit;
-	padding: 0.5rem;
-	border-radius: 0.5rem;
-	font-family: monospace;
-	text-align: center;
-	text-decoration: none;
-	font-weight: bold;
 }
 
 .index:hover {
@@ -367,7 +357,7 @@ ul {
 
 .ull {
 	font-family: var(--pfont);
-	font-size: 19px;
+	font-size: 1.35rem;
 	font-weight: bold;
 	color: var(--lnk);
 	list-style-type: '# ';
@@ -477,6 +467,7 @@ table td {
 	font-family: var(--pfont);
 	color: var(--sec);
 	margin-top: 2rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2);
 }
