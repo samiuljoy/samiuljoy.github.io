@@ -1,8 +1,8 @@
-@font-face {
+/*@font-face {
 	font-family: 'Comfortaa';
 	src: url('comfortaa.ttf') format('truetype');
 }
-
+*/
 body {
 	font-size:1rem;
 	line-height:1.4;
@@ -10,7 +10,7 @@ body {
 	-webkit-text-size-adjust:100%;
 	zoom:1;
 	text-rendering:optimizeLegibility;
-	font-family: 'Comfortaa';
+	font-family: 'monospace';
 	}
 
 .a {
@@ -48,7 +48,7 @@ img {
 	zoom:1;
 	background: #707070;
 	text-rendering:optimizeLegibility;
-	font-family: 'Comfortaa';
+	font-family: 'monospace';
 	}
 
 .D .a {
