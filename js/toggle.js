@@ -9,7 +9,7 @@ var meta = document.querySelector("meta[name=theme-color]");
 const enableDarkMode = () => {
   // 1. Add the class to the body
   document.body.classList.add('D');
-  meta.setAttribute("content", "#10101c");
+  meta.setAttribute("content", "#000000");
   word1.innerHTML = "Dark";
 	word2.innerHTML = "🐭";
   //word.innerHTML = "^-^";

@@ -121,6 +121,20 @@
 	text-decoration: underline var(--dsec);
 }
 
+.D p a {
+	color: var(--dpri);
+	text-decoration: none;
+	font-family: monospace;
+	border-bottom: 1px dashed grey;
+	font-size: 1.1rem;
+}
+
+.D p a:visited:hover, .D p a:hover {
+	color: var(--dpri);
+	text-decoration: none;
+	border-bottom: 2px solid grey;
+}
+
 .D a:visited {
 	color: var(--dsec);
 }
