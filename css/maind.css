@@ -4,50 +4,15 @@
 	--dbac: #000000;
 	--dshad: #192841;
 	--dlak: #000000;
-	--pfont: 'Baloo Paaji 2';
-	--hfont: 'monospace';
-}
-
-@font-face { 
-	font-family: 'Baloo Paaji 2';
-	src: url('baloopji2.ttf') format('truetype');
 }
 
 .D {
 	background: var(--dbac);
 	color: var(--dpri);
-	font-size: 1rem;
-	line-height:1.55;
-	-webkit-font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
-	-webkit-text-size-adjust:100%;
-	zoom:1;
-	font-family: var(--hfont);
-	margin:0 auto;
-	max-width:50rem;
-	padding-top: 4.3rem;
-}
-
-@media screen and (min-width: 800px) {
-	body {
-		padding-left: 2.5rem;
-		padding-right: 2.5rem;
-		font-size: 1rem;
-	}
 }
 
 .D .inner-switch {
-	background-color: inherit;
-	cursor: pointer;
-	position: fixed;
-	text-decoration: none;
-	display: inline;
-	overflow: hidden;
-	margin: 0.5rem;
-	border-radius: 0.5rem;
 	box-shadow: 0 1px 2px 2px rgba(0,46,67,.2);
-	top: 0;
-	padding: 0.2rem;
 }
 
 .D .inner-switch:hover {
@@ -56,57 +21,12 @@
 
 @media screen and (min-width: 800px) {
 	.D .inner-switch {
-		background-color: inherit;
-		cursor: pointer;
-		position: fixed;
-		text-decoration: none;
-		display: inline;
-		overflow: hidden;
-		margin: 0.5rem;
-		border-radius: 0.5rem;
 		box-shadow: 0 1px 2px 2px var(--dshad);
-		top: 0;
-		padding: 0.2rem;
-		transition: padding .2s ease, background-position .2s ease, transform .5s ease;;
 	}
 
 	.D .inner-switch:hover {
 		color: 1px solid var(--dpri);
-		transform: scale(1, 1);
-		padding-left: 4.15rem;
-		padding-right: 5px;
-		background-position: 5px center;
 	}
-
-	.D .inner-switch:span {
-		margin: 0;
-		padding: 0;
-	}
-
-	.D .inner-switch span:nth-child(1) {
-		position: absolute;
-		left: -70px;
-		transition: left .2s ease;
-	}
-
-	.D .inner-switch:hover span:nth-child(1) {
-		left: 15px;
-	}
-
-	.D .inner-switch:nth-child(1) {
-		margin-right: 1em;
-	}
-}
-
-@media screen and (max-width: 800px) {
-	.inner-switch span:nth-child(1) {
-		display: none;
-	}
-}
-
-.D p {
-	font-family: var(--pfont);
-	font-size: 1.35rem;
 }
 
 .D a {
@@ -117,30 +37,18 @@
 .D p a {
 	color: var(--dpri);
 	text-decoration: none;
-	font-family: monospace;
-	border-bottom: 1px dashed grey;
-	font-size: 1.2rem;
 }
 
 @media screen and (max-width: 800px) {
-	.D p {
-	font-family: var(--pfont);
-	font-size: 1.4rem;
-	}
-
 	.D p a {
 		color: var(--dpri);
 		text-decoration: none;
-		border-bottom: 1px dashed grey;
-		font-family: monospace;
-		font-size: inherit;
 	}
 }
 
 .D p a:visited:hover, .D p a:hover {
 	color: var(--dpri);
 	text-decoration: none;
-	border-bottom: 2px solid grey;
 }
 
 .D a:visited {
@@ -154,64 +62,33 @@
 
 .D blockquote {
 	background: #707070;
-	color: var(--dlak);
 	border-left:5px solid var(--dshad);
-	font-size:120%;
-	margin:2rem 0;
-	padding:1rem; 
 }
 
 .D blockquote header {
-	font-weight: bold;
-	font-size: 25px;
 	color: var(--dlak);
 }
 
-.D blockquote p {
-	margin:0;
-}
-
-.D blockquote footer {
-	font-size:90%;
-	margin:1rem 0 0 0;
-}
-
 .D .card {
-	padding: 20px;
 	box-shadow: 0 4px 8px -2px #1c2e4a;
 	border: 1px solid var(--dshad);
-	border-radius: 0.5rem;
-	margin-bottom: 4rem;
 }
 
 .D .card:hover {
 	box-shadow: 2px 4px 8px 2px #1c2e4a;
-	border: none;
 }
 
 .D .area, .D .area:visited, .D .area:hover, .D .area:visited:hover {
 	color: var(--dpri);
 	text-decoration: none;
-	font-weight: normal;
 }
 
 .D .date {
 	color: inherit;
-	float: right;
-	font-weight: bold;
-	font-family: monospace;
-	margin-bottom: 1rem;
-	margin-top: 0;
-	font-size: 14px;
 }
 
 .D .author {
 	color: inherit;
-	float: left;
-	font-weight: bold;
-	margin-bottom: 1rem;
-	margin-top: 0;
-	font-size: 14px;
 }
 
 .D .tag {
@@ -225,29 +102,8 @@
 }
 
 .D .ull {
-	font-family: var(--pfont);
-	font-size: 1.35rem;
-	font-weight: bold;
 	color: var(--dpri);
 	list-style-type: '# ';
-}
-
-.D ol li {
-	font-family: var(--pfont);
-	font-size: 1.3rem;
-}
-
-.D dl dt {
-	margin-bottom:0.5rem;
-}
-
-.D dl dd {
-	font-style:italic;
-	margin-bottom:2rem;
-}
-
-.D html {
-	box-sizing:border-box;
 }
 
 .D strong,.D b,.D h1,.D h2, .D h3,h4 {
@@ -257,193 +113,54 @@
 
 .D hr {
 	background: var(--dpri);
-	border: none;
-	height:1px;
-	border-radius: 2rem;
-	margin: 3rem 3rem;
-}
-
-.D table {
-	border-collapse:collapse;
-	text-align:left;
-	overflow: auto;
-	whitespace: nowrap;
-	width:100%;
-}
-
-.D table tr {
-	border-bottom:1px solid var(--dlak);
-}
-
-.D table td {
-	padding:0.5rem;
-}
-
-.D .img {
-	width: 100%;
-	height: auto;
-	margin:0.5rem 0;
-	border: none;
-	border-radius: 0.5rem;
-} 
-
-.D .pimg {
-	width: 100%;
-	height: auto;
-	margin:1rem 0;
-	border: none;
-	border-radius: 0.5rem;
-} 
-
-.D .cover {
-	width: 100%;
-	height: auto;
-	margin:1rem 0;
-	border: none;
-	border-radius: 0.5rem;
-} 
-
-@media screen and (min-width: 800px) {
-	.D .pimg {
-		width: 80%;
-		height: auto;
-	}
 }
 
 .D .caption {
-	font-style: italic;
-	margin-top: -0.5rem;
-	margin-bottom: 1.5rem;
-	font-weight: bold;
 	color: var(--dsec);
 }
 
 .D home, .D back, .D .index {
 	background: var(--dbac);
-	font-family: monospace;
-	padding:0.5rem;
-	font-size: 1.1rem;
 	color: var(--dpri);
-	font-weight:bold;
-	border-radius: 0.5rem;
 	border: 1.7px solid var(--dpri);
-	text-align: center;
-/*	box-shadow: 0 4px 2px -2px rgba(0,0,0,.2); */
 }
 
-.D home:hover, .D back:hover {
-	background: var(--dshad);
-}
-
-.D .index:hover {
+.D home:hover, .D back:hover, .D .index:hover {
 	background: var(--dshad);
 }
 
 .D .btn {
-	display: inline-block;
 	background-color: var(--dlak); 
-	font-size: 1rem;
-	color:var(--dpri); 
-	font-family: var(--hfont);
+	color: var(--dpri); 
 	border: 1px solid #0e2443;
-	border-radius: 1.25rem; 
-	width: 3rem auto;
-	font-weight: bold;
-	padding: 0.1875rem; 
-	margin-left: 0.3125rem;
 }
 
 .D nav ul {
-	list-style:none;
-	text-align:center;
-	padding: 1rem;
-	top: 0;
-	margin: 0;
 	background: var(--dbac);
-	opacity: 0.92;
 	box-shadow: 0 4px 2px -2px rgba(25,40,65,.5);
-}
-
-.D nav ul li {
-	display:inline-block;
 }
 
 .D nav a {
 	color: var(--dpri);
-	font-weight: bold;
-	margin: 0.5rem;
-}
-
-.D .navbar {
-	overflow: hidden;
-}
-
-.D .dropdown-menu-center {
-	left: 50%;
-	right: auto;
-	text-align : center;
-	transform : translate(- 50% , 0);
-}
-
-.D .navbar a {
-	float: inherit;
-	font-size: 16px;
-	color: var(--dlak);
-	text-align: center;
-	padding: 16px 18px;
-	text-decoration: none;
 }
 
 .D .dropbtn {
-	font-size: inherit;
-	border: none;
-	outline: none;
-	background-color: inherit;
+	text-decoration: none;
 	color: var(--dpri);
-	font-family: inherit;
 }
 
 .D .dropdown {
-	font-size: 1rem;
-	border: none;
-	text-align: center;
-	text-rendering: none;
-	float: inherit;
-	outline: none;
-	background-color: inherit;
-	font-weight: bold;
 	color: var(--dpri);
-	font-family: inherit;
-	margin: 0;
-}
-
-.D .navbar a:hover, .D .dropdown:hover .dropbtn {
-	background-color: inherit;
-}
-
-.D .content {
-	padding: 16px;
 }
 
 .D .dropdown-content {
-	display: none;
-	position: absolute;
 	background-color: #10101c;
-	min-width: 140px;
-	height: 21.5rem;
-	overflow: scroll;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-	z-index: 1;
 }
 
 .D .dropdown-content a {
-	float: inherit;
 	color: var(--dpri);
-	padding: 12px 16px;
-	text-decoration: none;
 	font-weight: bold;
-	display: block;
-	text-align: left;
+	text-decoration: none;
 }
 
 .D .dropdown-content a:hover {
@@ -452,38 +169,17 @@
 	border-radius: 0.5rem;
 }
 
-.D .dropdown:hover .dropdown-content {
-	display: block;
-	border-radius: 0.5rem;	
-	border: none;
-}
-
-@media screen and (min-width: 800px) {
-
-	.D .dropdown:hover .dropdown-content {
-		display: table;
-		border-radius: 0.5rem;	
-		border: none;
-	}
-}
-
 .D .footer {
 	background: var(--dbac);
 	color: var(--dsec);
 	padding: 1rem;
-	font-family: var(--pfont);
-	border-radius:0.5rem;
 	border: 0.5px solid var(--dshad);
-	font-size: 1.2rem;
-	margin-top: 2rem;
-	font-weight:bold;
 	box-shadow: 0 1px 2px 2px var(--dshad);
 }
 
 .D .footer a {
 	text-decoration: none;
 	color: var(--dpri);
-	font-family: var(--pfont);
 }
 
 .D .footer b {
