@@ -122,11 +122,11 @@
 .D home, .D back, .D .index {
 	background: var(--dbac);
 	color: var(--dpri);
-	border: 1.7px solid var(--dpri);
+	border: 2px solid grey;
 }
 
 .D home:hover, .D back:hover, .D .index:hover {
-	background: var(--dshad);
+	color: white;
 }
 
 .D .btn {
@@ -165,13 +165,12 @@
 
 .D .dropdown-content a:hover {
 	background-color: var(--dbac);
-	color: var(--dpri);
-	border-radius: 0.5rem;
+	color: white;
 }
 
 .D .footer {
 	background: var(--dbac);
-	color: var(--dsec);
+	color: white;
 	padding: 1rem;
 	border: 0.5px solid var(--dshad);
 	box-shadow: 0 1px 2px 2px var(--dshad);

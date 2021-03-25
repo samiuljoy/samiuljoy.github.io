@@ -4,7 +4,7 @@ based on dark.css by Ivan Sagalaev. Modified by Samiul Joy.
 */
 .hljs {
   display: block;
-  border: 1px solid #252525;
+  border: 2px solid #252525;
   border-radius: 0.5rem;
   overflow: auto;
   padding: 0.5em;
