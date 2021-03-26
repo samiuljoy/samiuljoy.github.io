@@ -3,6 +3,11 @@
 <html lang="en">
 <head>
 <title>About</title>
+<script>
+	if (localStorage.getItem("darkMode") === "enabled" || (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem("darkMode")) ) {
+	document.documentElement.setAttribute("darkMode", "enabled");
+}
+</script>
 <link rel="icon" href="organic.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -51,7 +56,9 @@
 
 <div id="switch" class="inner-switch">
 	<span id="mode">Light</span>
-	<span id="sword">🐼</span>
+	<span id="sword"><svg class="svgg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon">
+	<path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+</svg>
 </div>
 
 <main id="main" role="main">
