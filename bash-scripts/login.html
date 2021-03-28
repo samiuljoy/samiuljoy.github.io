@@ -3,6 +3,13 @@
 <html lang="en">
 <head>
 <title>login</title>
+<meta name="theme-color" content="#002f30" />
+<link rel="stylesheet" type="text/css" href="../css/maind.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" href="../css/zenburn.css">
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script>
 	if (localStorage.getItem("darkMode") === "enabled" || (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem("darkMode")) ) {
 	document.documentElement.setAttribute("darkMode", "enabled");
@@ -11,15 +18,8 @@
 <link rel="icon" href="../organic.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
-<meta name="theme-color" content="#002f30" />
 <meta name="author" content="Samiul Joy">
 <meta name="description" content="Emulating login mechanism on a Linux system with bash scripts" />
-<link rel="stylesheet" type="text/css" href="../css/maind.css">
-<link rel="stylesheet" type="text/css" href="../css/main.css">
-<link rel="stylesheet" href="../css/zenburn.css">
-<script src="../js/clipboard.min.js"></script>
-<script src="../js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 <meta name="generator" content=login.sh />
 <meta property="og:title" content=login.sh />
 <meta property="og:locale" content="en_US" />
@@ -45,11 +45,11 @@
 	</button>
     <div class="dropdown-content">
       <a href="../biopython/biopython.html">BioPython</a>
-      <a href="../plantology/plantology.html">Plantology</a>
+	  <!-- <a href="../plantology/plantology.html">Plantology</a> -->
       <a href="../kaggle/kaggle.html">kaggle</a>
       <a href="../python/python.html">*.py</a>
-      <a href="../books/books.html">Books</a>
-      <a href="../termux/termux.html"> >_ </a>
+	  <!--       <a href="../books/books.html">Books</a> -->
+	  <!--       <a href="../termux/termux.html"> >_ </a> -->
       <a href="../posts/posts.html">posts</a>
     </div>
   </div>
@@ -86,7 +86,7 @@
 	<b>Description:</b> What it basically does is that, it saves your name and your password in a file called mango.txt, and the next time you try logging in, the login.sh script pulls the data from mango.txt and compares that with input password.</p>
 	
 <center><h2>./username.sh</center></h2>
-<pre id="foo"><code class="bash">#!/bin/bash
+<pre id="foo"><code class="bash">#!/bin/sh
 
 # What I'm planning to do here is that, create a useradd script which allows a user to add themselves by puting in their names
 # and their password. This will save the username::password to a file called mango.txt and prompt at each login by running
@@ -133,11 +133,11 @@ fi
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied1() { 
 	var login = document.getElementById("copy1");
@@ -155,7 +155,7 @@ fi
 </p> 
 <center><h2>./login.sh</center></h2>
 
-<pre id="bar"><code class="bash">#!/bin/bash
+<pre id="bar"><code class="bash">#!/bin/sh
 
 # A simple login bash script
 #trap interrupts your keyboard if you press ctrl+z or ctrl+c
@@ -206,11 +206,11 @@ rm tmp.txt
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied2() { 
 	var ho = document.getElementById("copy2");
@@ -242,11 +242,11 @@ Now, to induce salting, with <code><b>openssl</code></b> there's a one liner com
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied3() { 
 	var ho = document.getElementById("copy3");
@@ -269,11 +269,11 @@ print(crypt.crypt("yourpasswd", crypt.mksalt(crypt.METHOD_SHA512)))
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied4() { 
 	var ho = document.getElementById("copy4");
@@ -298,11 +298,11 @@ Save this in a file like passwd.py and use <code><b>python3 passwd.py</b></code>
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied5() { 
 	var ho = document.getElementById("copy5");
@@ -327,11 +327,11 @@ crypt.crypt('password', '$6$' + 'salt1234')
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied6() { 
 	var ho = document.getElementById("copy6");
@@ -355,11 +355,11 @@ A more easier way would be to do it with <code><b>mkpasswd</b></code> from withi
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied7() { 
 	var ho = document.getElementById("copy7");
@@ -389,11 +389,11 @@ with this line, if you plan to use mkpasswd.
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied8() { 
 	var ho = document.getElementById("copy8");
@@ -414,11 +414,11 @@ Now on line 24 of <code><b>login.sh</code></b> you need to replace</p>
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied9() { 
 	var ho = document.getElementById("copy9");

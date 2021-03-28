@@ -3,6 +3,13 @@
 <html lang="en">
 <head>
 <title>A simple number guessing game writen in shell script</title>
+<meta name="theme-color" content="#002f30" />
+<link rel="stylesheet" type="text/css" href="../css/maind.css">
+<link rel="stylesheet" type="text/css" href="../css/main.css">
+<link rel="stylesheet" href="../css/zenburn.css">
+<script src="../js/clipboard.min.js"></script>
+<script src="../js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 <script>
 	if (localStorage.getItem("darkMode") === "enabled" || (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem("darkMode")) ) {
 	document.documentElement.setAttribute("darkMode", "enabled");
@@ -11,15 +18,8 @@
 <link rel="icon" href="../organic.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
-<meta name="theme-color" content="#002f30" />
 <meta name="author" content="Samiul Joy">
 <meta name="description" content="A simple bash game where you get to guess 2 digit numbers" />
-<link rel="stylesheet" type="text/css" href="../css/maind.css">
-<link rel="stylesheet" type="text/css" href="../css/main.css">
-<link rel="stylesheet" href="../css/zenburn.css">
-<script src="../js/clipboard.min.js"></script>
-<script src="../js/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
 <meta name="generator" content=guess.sh />
 <meta property="og:title" content=guess.sh />
 <meta property="og:locale" content="en_US" />
@@ -44,11 +44,11 @@
 	</button>
     <div class="dropdown-content">
       <a href="../biopython/biopython.html">BioPython</a>
-      <a href="../plantology/plantology.html">Plantology</a>
+	  <!--       <a href="../plantology/plantology.html">Plantology</a> -->
       <a href="../kaggle/kaggle.html">kaggle</a>
       <a href="../python/python.html">*.py</a>
-      <a href="../books/books.html">Books</a>
-      <a href="../termux/termux.html"> >_ </a>
+	  <!--       <a href="../books/books.html">Books</a> -->
+	  <!--       <a href="../termux/termux.html"> >_ </a> -->
       <a href="../posts/posts.html">posts</a>
     </div>
   </div>
@@ -142,11 +142,11 @@ done
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied1() { 
 	var guess = document.getElementById("copy1");
@@ -176,11 +176,11 @@ done
     var clipboard = new ClipboardJS('.btn');
 
     clipboard.on('success', function(e) {
-        console.log(e);
+        
     });
 
     clipboard.on('error', function(e) {
-        console.log(e);
+        
     });
 	function copied2() { 
 	var ho = document.getElementById("copy2");
