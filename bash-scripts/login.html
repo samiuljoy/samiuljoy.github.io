@@ -10,13 +10,6 @@
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--
-<script>
-	if (localStorage.getItem("darkMode") === "enabled" || (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem("darkMode")) ) {
-	document.documentElement.setAttribute("darkMode", "enabled");
-}
-</script>
--->
 <link rel="icon" href="../organic.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -70,15 +63,15 @@
 	display: none;
 }
 pre {
-		background: black;
-		color: white;
-		overflow: auto;
-		padding: 0.5rem;
-		border-radius: 0.5rem;
+	background: black;
+	color: white;
+	overflow: auto;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 }
 @media screen and (max-width: 500px) {
 	pre {
-		max-height: 250px;
+	max-height: 250px;
 	}
 }
 .btn {
@@ -120,36 +113,28 @@ pre {
 
 exec 2>/dev/null
 echo -n "Enter username: "
-
 read usame
 
 if [ "$usame" == "" ]; then echo -e "Username can not be blank\n"
-	./username.sh
+    ./username.sh
 else
-
-grep -q $usame mango.txt
-
-if [ "$?" == 0 ]; then
-	
-	echo -e "A username with the same name already exists\n"
-       
-	./username.sh
-
-	else
-	echo -n "Password: "
-	read -s -p "Password: " passwd
-		
-	while true; do
-
-		if [ "$passwd" == "" ]; then echo "Password can not be blank\n"
-		
-		else 
-			echo $usame::$(echo $passwd | md5sum) >> mango.txt
-			echo -e "\nUser $usame added\n"
-		break
-fi
-done
-fi
+    grep -q $usame mango.txt
+    if [ "$?" == 0 ]; then
+    echo -e "A username with the same name already exists\n"   
+    ./username.sh
+    else
+        echo -n "Password: "
+        read -s -p "Password: " passwd
+        while true; do
+            if [ "$passwd" == "" ]; then
+                echo "Password can not be blank\n"
+        else
+            echo $usame::$(echo $passwd | md5sum) >> mango.txt
+            echo -e "\nUser $usame added\n"
+        break
+            fi
+        done
+    fi
 fi
 </pre></code>
 <button id="copy1" onclick="copied1()" class="btn" data-clipboard-action="copy" data-clipboard-target="#foo">yank</button>
@@ -184,43 +169,36 @@ fi
 
 # A simple login bash script
 #trap interrupts your keyboard if you press ctrl+z or ctrl+c
-
 trap '' INT TSTP
 
 read -p "Enter username: " usname
-
 grep -q $usname mango.txt
 
 if [ "$?" -gt 0 ]; then
-	echo "Username not found"
-	sleep 1
-	pkill -9 bash
+    echo "Username not found"
+    sleep 1
+    pkill -9 bash
 else
-read -s -p "Password: " password
-
-if [ "$password" == "" ]; then 
-	echo "Password can not be blank"
-	./login.sh
-else
-
-#saves the password in md5sum format in tmp.txt
-echo $password | md5sum > tmp.txt
-
-#assigning a tmp variable which reads the tmp.txt
-tmp="$(cat tmp.txt)"
-
-#if the md5 hashes match, then allow login saying yo
-cat mango.txt | grep -q $usname::$tmp
-if [ "$?" == 0 ]; then
-echo -e "\nyo"
-
-#else print login failed
-else
-	echo -e "\nLogin failed"
-	sleep 1
-	pkill -9 bash
-fi
-fi
+    read -s -p "Password: " password
+    if [ "$password" == "" ]; then 
+        echo "Password can not be blank"
+        ./login.sh
+    else
+        #saves the password in md5sum format in tmp.txt
+        echo $password | md5sum > tmp.txt
+        #assigning a tmp variable which reads the tmp.txt
+        tmp="$(cat tmp.txt)"
+        #if the md5 hashes match, then allow login saying yo
+        cat mango.txt | grep -q $usname::$tmp
+        if [ "$?" == 0 ]; then
+            echo -e "\nyo"
+            #else print login failed
+        else
+            echo -e "\nLogin failed"
+            sleep 1
+            pkill -9 bash
+        fi
+    fi
 fi
 rm tmp.txt
 </pre></code>

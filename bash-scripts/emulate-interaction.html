@@ -10,13 +10,6 @@
 <script src="../js/clipboard.min.js"></script>
 <script src="../js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--
-<script>
-	if (localStorage.getItem("darkMode") === "enabled" || (window.matchMedia("(prefers-color-scheme: dark)").matches && !localStorage.getItem("darkMode")) ) {
-	document.documentElement.setAttribute("darkMode", "enabled");
-}
-</script>
--->
 <link rel="icon" href="../organic.svg">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=0.8">
@@ -70,15 +63,15 @@
 	display: none;
 }
 pre {
-		background: black;
-		color: white;
-		overflow: auto;
-		padding: 0.5rem;
-		border-radius: 0.5rem;
+	background: black;
+	color: white;
+	overflow: auto;
+	padding: 0.5rem;
+	border-radius: 0.5rem;
 }
 @media screen and (max-width: 500px) {
 	pre {
-		max-height: 250px;
+	max-height: 250px;
 	}
 }
 .btn {
