@@ -17,7 +17,19 @@
 
 <!-- Content starts here -->
 
-<iterm>
+<item>
+	<title>Working on a markdown -> html parser</title>
+	<pubDate>Thu, 16 Apr 2021 15:25:00 -0500</pubDate>
+	<description><![CDATA[
+		<p>Hello World!</p>
+		<p>Working on a markdown to html parser but only with regexes, because why not! Thought this would be a good way to learn more about regexes. </p>
+		<p>Have a nice day!!</p>
+		<p><a href="https://samiuljoy.github.io">https://samiuljoy.github.io</a></p>
+		]]>
+	</description>
+</item>
+
+<item>
 	<title>I f**d up my phone</title>
 	<pubDate>Thu, 18 Feb 2021 15:25:00 -0500</pubDate>
 	<description><![CDATA[
@@ -29,7 +41,7 @@
 	</description>
 </item>
 
-<iterm>
+<item>
 	<title>Figured out a way to disable transitions and animations</title>
 	<pubDate>Tue, 26 Jan 2021 15:25:00 -0500</pubDate>
 	<description><![CDATA[
@@ -64,7 +76,6 @@
 		<p><a href="https://samiuljoy.github.io">samiuljoy.github.io</a></p>
 		]]>
 	</description>
-
 </item>
 
 
