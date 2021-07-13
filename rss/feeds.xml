@@ -18,6 +18,18 @@
 <!-- Content starts here -->
 
 <item>
+	<title>Trying to find a way to get rid of fancy colors in code blocks or atleast replace it with something minimal</title>
+	<pubDate>Thu, 13 July 2021 15:25:00 -0500</pubDate>
+	<description><![CDATA[
+		<p>Hello World!</p>
+		<p>I use some bloated javascript on my site, for code block syntax highlighting. I'm thinking of getting rid of it. I'm writing a shell script to do that for me when I run it on a html file. My general approach is to use regex like sed and awk to do that. Let's see how this goes. The problem with that is that, say I have this ctype called `int` which I want to wrap it around colors say something in between `font` tags, then if I have another word int within a normal sentence, then it would be wraped around `font` tags as well. That part I need to figure out. Let's see where this goes.</p>
+		<p>Have a nice day!!</p>
+		<p><a href="https://samiuljoy.github.io">https://samiuljoy.github.io</a></p>
+		]]>
+	</description>
+</item>
+
+<item>
 	<title>I have removed the matrix links because matrix is made in israel</title>
 	<pubDate>Thu, 04 July 2021 15:25:00 -0500</pubDate>
 	<description><![CDATA[
