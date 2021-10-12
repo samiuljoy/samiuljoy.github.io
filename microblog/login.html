@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Emulating login mechanism</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Emulating login mechanism on a Linux System with shell scripts">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="login.sh">
+	<link rel="canonical" href="https://samiuljoy.github.io/bash/login.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html" style="color: white; text-decoration: none"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demos/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		</div>
+	<li><a href="base.html" style="text-decoration: none"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>🔆</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+pre {
+	background:black;
+	color:white;
+	overflow:auto;
+	padding:0.5rem;
+	border-radius:0.5rem;
+}
+@media screen and (max-width:500px) {
+	pre {
+	max-height:250px;
+	}
+}
+.btn {
+	display:none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h1>./login.sh && ./username.sh</center></h1>
+
+<p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a <u>/etc/shadow</u> file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) with a shell script? Wouldn't that be fun?</p>
+
+<p>Let's try to emulate the whole mechanism.</p>
+
+<ol>
+	<li>A new user types in "adduser" and a username prompt appears asking the user to put in their name.</li>
+	<li>If that username is already taken, tells the user that the username is already taken and to type in a different name. Else adds the new username and then asks for their password.</li>
+	<li>If the password field is blank, tells the user to put in a legit password.</li>
+	<li>Then saves the username::password in the /etc/shadow file followed by hashes.</li>
+	<li>Then at the time of login, a user types in their username and password.</li>
+	<li>If the typed in password matches with that of the saved hash in /etc/shadow, then user can log in, else exit.</li>
+</ol>
+
+<p><b>I'm assuming you are somewhat knowledgeable in shell scripting.</b></p>
+	
+<center><h2>Script 1: username.sh</center></h2>
+
+<p><b>Description:</b> What it basically does is that, it saves your name and your password in a file called mango.txt, and the next time you try logging in, the login.sh script pulls the data from mango.txt and compares that with input password.</p>
+	
+<center><h2>./username.sh</center></h2>
+
+<pre>
+<code>
+&num;&excl;/bin/sh
+
+&num; What I'm planning to do here is that, create a useradd script which allows a user to add themselves by puting in their names
+&num; and their password&period; This will save the username::password to a file called mango&period;txt and prompt at each login by running
+&num; the login&period;sh script If username already exists, notifies the user that a user with the same name exits, else add 
+&num; the new user along with a password&period; The password is saved in a md5sum form&period;
+
+exec 2&gt;/dev/null
+echo -n "Enter username: "
+read usame
+
+if &lsqb; "$usame" == "" &rsqb;; then echo -e "Username can not be blank\n"
+    &period;/username&period;sh
+else
+    grep -q $usame mango&period;txt
+    if &lsqb; "$?" == 0 &rsqb;; then
+    echo -e "A username with the same name already exists\n"   
+    &period;/username&period;sh
+    else
+        echo -n "Password: "
+        read -s -p "Password: " passwd
+        while true; do
+            if &lsqb; "$passwd" == "" &rsqb;; then
+                echo "Password can not be blank\n"
+        else
+            echo $usame::$(echo $passwd | md5sum) &gt;&gt; mango&period;txt
+            echo -e "\nUser $usame added\n"
+        break
+            fi
+        done
+    fi
+fi
+</code>
+</pre>
+<a class='btn' href='code/login.html-code1'>view raw</a>
+
+<center><h2>Script 2: login.sh</center></h2>
+
+
+<p><b>Description:</b> Now this script actually needs the mango.txt to work, else logging in will be impossible(just a prior warning; this is just a simple emulation as to how the same thing can be achieved with a shell script..don't just put it in your shell startup though..things will get damn messy at some point..)</p>
+
+<center><h2>./login.sh</center></h2>
+
+
+<pre>
+<code>
+&num;&excl;/bin/sh
+
+&num; A simple login bash script
+&num;trap interrupts your keyboard if you press ctrl+z or ctrl+c
+trap '' INT TSTP
+
+read -p "Enter username: " usname
+grep -q $usname mango&period;txt
+
+if &lsqb; "$?" -gt 0 &rsqb;; then
+    echo "Username not found"
+    sleep 1
+    pkill -9 bash
+else
+    read -s -p "Password: " password
+    if &lsqb; "$password" == "" &rsqb;; then 
+        echo "Password can not be blank"
+        &period;/login&period;sh
+    else
+        &num;saves the password in md5sum format in tmp&period;txt
+        echo $password | md5sum &gt; tmp&period;txt
+        &num;assigning a tmp variable which reads the tmp&period;txt
+        tmp="$(cat tmp&period;txt)"
+        &num;if the md5 hashes match, then allow login saying yo
+        cat mango&period;txt | grep -q $usname::$tmp
+        if &lsqb; "$?" == 0 &rsqb;; then
+            echo -e "\nyo"
+            &num;else print login failed
+        else
+            echo -e "\nLogin failed"
+            sleep 1
+            pkill -9 bash
+        fi
+    fi
+fi
+rm tmp&period;txt
+</code>
+</pre>
+<a class='btn' href='code/login.html-code2'>view raw</a>
+
+<p>Now this is actually nowhere near the way that works in a real Linux OS, however, the rest is up to you and how you use it.</p>
+
+<p>Before writing this post I also asked a question on Unix stack exchange about this script and how it worked on a Linux system, and got some good suggestions. Turns out that I can use <code>openssl</code> to actually induce salting.</p>
+
+<p>For this, you need to have <code>openssl</code> installed on your OS. If you're on a debian based system, chances are <code>openssl</code> is already installed on your system. If not you can always run <code>apt install openssl</code> from your preferred terminal. If you're on a macOS, you can install <code>openssl</code> using <code>brew install openssl</code> from your terminal. Once you have <code>openssl</code> installed, then we can begin</p>
+
+<p>Now, to induce salting, with <code>openssl</code> there's a one liner command; &lt;br&gt;</p>
+
+
+<pre>
+<code>
+openssl passwd -6 -salt xyz yourpassword
+</code>
+</pre>
+<a class='btn' href='code/login.html-code3'>view raw</a>
+
+<p><code>openssl</code> will generate a password followed by the <code>passwd</code> command. The number -6 indicates sha512sum character output, where -1 will generate a md5sum character output and -5 will generate a sha256sum character output. The -salt flag will tell the output to randomize the characters based on the input characters, in this case xyz. One way to test this out is to replace xyz with any other character and the output will be different. Replace yourpass with whatever password you choose. The same thing can be obtained with python3 like so;</p>
+
+
+<pre>
+<code>
+import crypt
+print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&lowbar;SHA512)))
+</code>
+</pre>
+<a class='btn' href='code/login.html-code4'>view raw</a>
+
+<p>Save this in a file like passwd.py and use <code>python3 passwd.py</code> to run the script from your terminal.</p>
+
+<p>This can also be issued as a one liner command, like so;</p>
+
+
+<pre>
+<code>
+python3 -c 'import crypt; print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&lowbar;SHA512)))'
+</code>
+</pre>
+<a class='btn' href='code/login.html-code5'>view raw</a>
+
+<p>What this will do is generate salted characters off of "yourpasswd" randomized with sha512sum checksum and output it to the terminal. You have to have Python3 installed prior to running this script. Linux and macOS comes with Python pre-installed. However, that might not always be the case. to install Python3 on Linux like OS, you can use your package manager to download and install Python3. On macOS, you can follow <a href="https://docs.python-guide.org/starting/install3/osx" rel="nofollow">this</a> tutorial.</p>
+
+<p>The python3 script will produce a different output on every run, which will make it impossible to verify the checksums. I haven't figured a proper way ti mitigate this issue, but for now let's use this script instead</p>
+
+
+<pre>
+<code>
+import crypt
+crypt&period;crypt('password', '$6$' + 'salt1234')
+</code>
+</pre>
+<a class='btn' href='code/login.html-code6'>view raw</a>
+
+
+<p>A more easier way would be to do it with <code>mkpasswd</code> from within bash. To generate sha512sum characters from given "password"</p>
+
+
+<pre>
+<code>
+mkpasswd -m sha-512 -S salt1234 password
+</code>
+</pre>
+<a class='btn' href='code/login.html-code7'>view raw</a>
+
+<p>Now, to &grave;code&grave; include this in our scripts <b>username.sh</b> and <b>login.sh</b> we just have to replace some variables with either the <code>openssl</code> or <code>mkpasswd</code> or <code>python</code></p>
+
+<center><h2>Salting with `mkpasswd`</center></h2>
+
+<p>On line 34 of the script <code>username.sh</code> we can replace </p>
+
+
+<pre>
+<code>
+echo $usame::$(echo $passwd | md5sum) &gt;&gt; mango&period;txt
+</code>
+</pre>
+<a class='btn' href='code/login.html-code8'>view raw</a>
+
+<p>with this line, if you plan to use mkpasswd.</p>
+
+
+<pre>
+<code>
+echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) &gt;&gt; mango&period;txt
+</code>
+</pre>
+<a class='btn' href='code/login.html-code9'>view raw</a>
+
+<p>Now on line 24 of <code>login.sh</code> you need to replace</p>
+
+
+<pre>
+<code>
+echo $password | md5sum &gt; tmp&period;txt
+</code>
+</pre>
+<a class='btn' href='code/login.html-code10'>view raw</a>
+
+<p>with</p>
+
+
+<pre>
+<code>
+echo $(mkpasswd -m sha-512 -S salt1234 $password) &gt; tmp&period;txt
+</code>
+</pre>
+<a class='btn' href='code/login.html-code11'>view raw</a>
+
+
+<p>Same results can be achieved with <code>openssl</code> and <code>python</code>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^_^</p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="../js/toggle.js"></script>
+
+</body>
+</html>
