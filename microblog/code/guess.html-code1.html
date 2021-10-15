@@ -1,0 +1,63 @@
+#!/bin/bash
+well=$(echo $RANDOM | cut -b "1-2")
+exec 2>/dev/null
+
+while true; do
+echo -e "\nI'm thinking of a number, can you guess what it is?"
+read number
+if [[ "$number" == "" ]]; then
+    echo -e "\nAhh breaking the loop ain't we?"
+    sleep 1
+    echo -e "\nWhat are you upto lately? "
+    read programming
+    case "$programming" in
+        "programming") echo -e "\nThat's so cool! Me too!"
+            ;;
+            *) echo -e "\nThat's cool!"
+            ;;
+    esac
+    sleep 1
+    echo -e "\nI've been into programming and pythons lately"
+    sleep 2
+    echo -e "\nHmm "
+    echo
+    ./ho.sh
+    echo -e "\nI've been into turmoils lately... :c"
+    sleep 2
+    echo -e "\nHopefully get a better grip on my life..."
+    sleep 2
+    echo -e "\nI will be leaving for college soon"
+    sleep 2
+    echo -e "\nTell me about you perhaps on curious.queries@gmail.com?"
+    sleep 2
+    echo -e "\nFarewell c:"
+    sleep 2
+    echo -e "\nThis was written at 3 pm on January 31st, 2020 on Android 5.1.1 with an app called termux and with vim editor"
+    echo -e "\nHopefully you have a wonderful rest of your day"
+    break
+    exit 0
+    else
+    if [[ "$number" -lt "$well" ]]; then
+        echo -e "\nThe number you guessed is lower than the actual value.."
+    else
+        if [[ "$number" -gt "$well" ]]; then
+            echo -e "\nThe number you guessed is higher than the actual value..."
+        else
+            if [[ "$number" = "$well" ]]; then
+                echo -e "\nYou got it right!!"
+                echo -e "\nWanna play again?[yes/no] "
+                read answer
+                case "$answer" in
+                    yes|y) ./guess.sh
+                        ;;
+                    no|n) echo -e "\nProgram ends"
+                        ;;
+                    *) echo -e "\nInvalid input... exiting program"
+                        ;;
+                esac
+                break
+            fi
+        fi
+    fi
+fi
+done

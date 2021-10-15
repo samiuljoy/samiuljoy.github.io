@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Microblogs</title>
+	<title>Generating a graphical tree with turtle</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=0.9">
 	<meta name="theme-color" content="#002f30">
-	<meta name="author" content="samiuljoy">
-	<meta name="description" content="this are some small microblogs">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Generate a fractal tree with python module turtle">
 	<link rel="stylesheet" href="../css/maind.css" type="text/css">
 	<link rel="stylesheet" href="../css/main.css" type="text/css">
-	<meta name="generator" content="microblog">
-	<link rel="canonical" href="https://samiuljoy.github.io/microblog/base.html">
+	<meta name="generator" content="turtle fractal tree python">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/turtle.html">
 </head>
 
 <body>
@@ -59,47 +59,50 @@ pre {
 </noscript>
 
 <main id="main" role="main">
-<center><h1>Microblogs</center></h1>
+<center><h2>Fractal tree</center></h2>
 
-<p>This is where my micro thoughts resides. Hopefully these articles comes to be of use.</p>
-
-
-<div class="card">
-<div class="date">September 4, 2021</div>
-<h2><a href="gchem.html">Chemical structures with groff chem</a></h2>
-<p>Learn how to draw chemical structures with groff chem</p>
-</div>
-
-<div class="card">
-<div class="date">February 13, 2020</div>
-<h2><a href="guess.html">guess.sh</a></h2>
-<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
-</div>
-
-<div class="card">
-<div class="date">February 20, 2020</div>
-<h2><a href="login.html">login.sh && username.sh</a></h2>
-<p>Emulating Linux login mechanism using bash scripts</p>
-</div>
-
-<div class="card">
-<div class="date">November 1, 2020</div>
-<h2><a href="emulate.html">Emulating user interactions using adb</a></h2>
-<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser</p>
-</div>
-
-<div class="card">
-<div class="date">October 15, 2021</div>
-<h2><a href="turtle.html">Turtle fractal tree</a></h2>
-<p>About the tree on the index page</p>
-</div>
+<center><img loading="lazy" class="pimg" src="../assets/turtlen.png" alt="Fractal tree"></center>
 
 
-<hr>
+<div class="caption">Fractal Tree</div>
 
+<p>The tree that you saw first on index page was made with turtle. Turtle is a graphical module that comes built in with python programming language. Below is the source code for the tree.</p>
 
+<pre>
+<code>
+import turtle
+
+hr = turtle&period;Turtle()
+hr&period;color("white", "white")
+
+ts = turtle&period;getscreen()
+ts&period;bgcolor("black")
+
+hr&period;left(90)
+hr&period;speed(1500)
+
+def tree(i):
+    if i &lt; 4:
+        return
+    else:
+        hr&period;forward(i)
+        hr&period;left(30)
+        tree(3 &ast; i/4)
+        hr&period;right(60)
+        tree(3 &ast; i/4)
+        hr&period;left(30)
+        hr&period;backward(i)
+tree(100)
+turtle&period;done()
+</code>
+</pre>
+<a class='btn' href='code/turtle.html-code1'>view raw</a>
+
+<p>I was going through my old notebooks, and found a turtle code in it, then modified it a bit.</p>
 
 <center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/about.md#contact" rel="nofollow">Contact</a> | <a href="#" rel="nofollow">Go To Top ^</a></p></center>
 
 
 <script>
