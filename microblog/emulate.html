@@ -107,7 +107,7 @@ ID	 	 device
 adb shell input keyevent 223; adb shell keyevent 224
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code1'>view raw</a>
+<a class='btn' href='code/emulate.html-code1.txt'>view raw</a>
 
 <p>What this one liner code does is, it turns off the screen with <code>keyevent 223</code>, and turns the screen on with <code>keyevent 224</code>. Now, onto what we're here for. Emulation. Let's jump straight to it. Let's begin with starting Chrome Browser from our terminal. We could do this with either by going to the shell and executing from there, or we could use our native terminal. The difference between them is just that we have to add <code>adb shell</code> prefix for the later case. Either way, suit yourself to what you prefer. Now to start chrome, we can issue this command;</p>
 
@@ -116,7 +116,7 @@ adb shell input keyevent 223; adb shell keyevent 224
 adb shell am start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code2'>view raw</a>
+<a class='btn' href='code/emulate.html-code2.txt'>view raw</a>
 
 <p><b>note: you could also use 'com.android.chrome/.MainActivity'</b></p>
 
@@ -128,7 +128,7 @@ adb shell am start -n com&period;android&period;chrome/com&period;google&period;
 adb shell input swipe 400 700 400 130 500
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code3'>view raw</a>
+<a class='btn' href='code/emulate.html-code3.txt'>view raw</a>
 
 <p>The 400 700 and 400 130 are <b>x</b> and <b>y</b> coordinates of the screen. 400 700 tells the device to emulate a tap on coordinate 400 700,then move across the screen to 400 130 coordinate, and this is done with <b>swipe</b> action. Now, we don't want the swipe action to be blazing fast, hence the velocity is defined with 500. Try replacing it with 100 and see things fly across the screen lol. The velocity part is optional and can be ignored. The important part of this whole thing is to get the pointer location, because for my phone, the coordinates were that and that, however this might be different in your case. So, to get the tap coordinates, you need to enable a feature under <b>Developer Options</b> on your device named <b>Pointer Locations</b>, go to developer options and scroll down a bit until you find pointer locations and enable it. After enabling it, you'll see a red margin on top of your screen, showing the coordinates. Tap on random surface of your screen, and you'll see the x and y coordinates pop up in <b>red</b>. Now, to do a swipe action, tap and note down the coordinates and then swipe up or down and take note of your final coordinates(note: the coordinates are the ones when the screen is tapped and hold, not the ones when tap is released), and that's it. Replace your four coordinates with the four coordinates above.</p>
 
@@ -142,7 +142,7 @@ adb shell input swipe 400 700 400 130 500
 adb shell input tap X Y
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code4'>view raw</a>
+<a class='btn' href='code/emulate.html-code4.txt'>view raw</a>
 
 <p>Replace <code>X</code> and <code>Y</code> with the coordinates you got while tapping over the search bar. That should input a tap action on only on those coordinates of your screen. Remember to have chrome opened into its home screen. This should bring up the area where we input our texts and notice that there's already a blinking cursor waiting for you to input texts. This is where we'll be inserting our search query. To do that just type in;</p>
 
@@ -152,7 +152,7 @@ adb shell input tap X Y
 adb shell input text 'test'
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code5'>view raw</a>
+<a class='btn' href='code/emulate.html-code5.txt'>view raw</a>
 
 <p>This should input the text 'test' into your search bar. Now, to emulate pressing 'Enter' key is pretty easy, just type in;</p>
 
@@ -162,7 +162,7 @@ adb shell input text 'test'
 adb shell input keyevent 66
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code6'>view raw</a>
+<a class='btn' href='code/emulate.html-code6.txt'>view raw</a>
 
 <p><code>keyevent 66</code> emulates Return action. So there you go, you just performed a simple search query. To sum all of these up, we should now have a script that looks like this;</p>
 
@@ -183,7 +183,7 @@ adb shell input swipe 400 700 400 150 500
 &num; we are swiping up, which is why on Y coordinates change, from 700(bottom) to 150 (up)
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code7'>view raw</a>
+<a class='btn' href='code/emulate.html-code7.txt'>view raw</a>
 
 <p>Pretty cool right? Try this automated search query to check for Cloudflare encryption</p>
 
@@ -210,7 +210,7 @@ sleep 4
 adb shell input swipe X Y X Y 500
 </code>
 </pre>
-<a class='btn' href='code/emulate.html-code8'>view raw</a>
+<a class='btn' href='code/emulate.html-code8.txt'>view raw</a>
 
 <h2># Aftermath</h2>
 

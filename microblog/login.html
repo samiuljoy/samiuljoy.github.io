@@ -118,7 +118,7 @@ else
 fi
 </code>
 </pre>
-<a class='btn' href='code/login.html-code1'>view raw</a>
+<a class='btn' href='code/login.html-code1.txt'>view raw</a>
 
 <center><h2>Script 2: login.sh</center></h2>
 
@@ -168,7 +168,7 @@ fi
 rm tmp&period;txt
 </code>
 </pre>
-<a class='btn' href='code/login.html-code2'>view raw</a>
+<a class='btn' href='code/login.html-code2.txt'>view raw</a>
 
 <p>Now this is actually nowhere near the way that works in a real Linux OS, however, the rest is up to you and how you use it.</p>
 
@@ -184,7 +184,7 @@ rm tmp&period;txt
 openssl passwd -6 -salt xyz yourpassword
 </code>
 </pre>
-<a class='btn' href='code/login.html-code3'>view raw</a>
+<a class='btn' href='code/login.html-code3.txt'>view raw</a>
 
 <p><code>openssl</code> will generate a password followed by the <code>passwd</code> command. The number -6 indicates sha512sum character output, where -1 will generate a md5sum character output and -5 will generate a sha256sum character output. The -salt flag will tell the output to randomize the characters based on the input characters, in this case xyz. One way to test this out is to replace xyz with any other character and the output will be different. Replace yourpass with whatever password you choose. The same thing can be obtained with python3 like so;</p>
 
@@ -195,7 +195,7 @@ import crypt
 print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&lowbar;SHA512)))
 </code>
 </pre>
-<a class='btn' href='code/login.html-code4'>view raw</a>
+<a class='btn' href='code/login.html-code4.txt'>view raw</a>
 
 <p>Save this in a file like passwd.py and use <code>python3 passwd.py</code> to run the script from your terminal.</p>
 
@@ -207,7 +207,7 @@ print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&l
 python3 -c 'import crypt; print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&lowbar;SHA512)))'
 </code>
 </pre>
-<a class='btn' href='code/login.html-code5'>view raw</a>
+<a class='btn' href='code/login.html-code5.txt'>view raw</a>
 
 <p>What this will do is generate salted characters off of "yourpasswd" randomized with sha512sum checksum and output it to the terminal. You have to have Python3 installed prior to running this script. Linux and macOS comes with Python pre-installed. However, that might not always be the case. to install Python3 on Linux like OS, you can use your package manager to download and install Python3. On macOS, you can follow <a href="https://docs.python-guide.org/starting/install3/osx" rel="nofollow">this</a> tutorial.</p>
 
@@ -220,7 +220,7 @@ import crypt
 crypt&period;crypt('password', '$6$' + 'salt1234')
 </code>
 </pre>
-<a class='btn' href='code/login.html-code6'>view raw</a>
+<a class='btn' href='code/login.html-code6.txt'>view raw</a>
 
 
 <p>A more easier way would be to do it with <code>mkpasswd</code> from within bash. To generate sha512sum characters from given "password"</p>
@@ -231,7 +231,7 @@ crypt&period;crypt('password', '$6$' + 'salt1234')
 mkpasswd -m sha-512 -S salt1234 password
 </code>
 </pre>
-<a class='btn' href='code/login.html-code7'>view raw</a>
+<a class='btn' href='code/login.html-code7.txt'>view raw</a>
 
 <p>Now, to &grave;code&grave; include this in our scripts <b>username.sh</b> and <b>login.sh</b> we just have to replace some variables with either the <code>openssl</code> or <code>mkpasswd</code> or <code>python</code></p>
 
@@ -245,7 +245,7 @@ mkpasswd -m sha-512 -S salt1234 password
 echo $usame::$(echo $passwd | md5sum) &gt;&gt; mango&period;txt
 </code>
 </pre>
-<a class='btn' href='code/login.html-code8'>view raw</a>
+<a class='btn' href='code/login.html-code8.txt'>view raw</a>
 
 <p>with this line, if you plan to use mkpasswd.</p>
 
@@ -255,7 +255,7 @@ echo $usame::$(echo $passwd | md5sum) &gt;&gt; mango&period;txt
 echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) &gt;&gt; mango&period;txt
 </code>
 </pre>
-<a class='btn' href='code/login.html-code9'>view raw</a>
+<a class='btn' href='code/login.html-code9.txt'>view raw</a>
 
 <p>Now on line 24 of <code>login.sh</code> you need to replace</p>
 
@@ -265,7 +265,7 @@ echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) &gt;&gt; mango&period;tx
 echo $password | md5sum &gt; tmp&period;txt
 </code>
 </pre>
-<a class='btn' href='code/login.html-code10'>view raw</a>
+<a class='btn' href='code/login.html-code10.txt'>view raw</a>
 
 <p>with</p>
 
@@ -275,7 +275,7 @@ echo $password | md5sum &gt; tmp&period;txt
 echo $(mkpasswd -m sha-512 -S salt1234 $password) &gt; tmp&period;txt
 </code>
 </pre>
-<a class='btn' href='code/login.html-code11'>view raw</a>
+<a class='btn' href='code/login.html-code11.txt'>view raw</a>
 
 
 <p>Same results can be achieved with <code>openssl</code> and <code>python</code>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^_^</p>
