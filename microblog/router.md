@@ -31,6 +31,15 @@ So, rest of the ports were open like port 81? I did `http://$router.ip:81` and i
 
 Having open ports is a major security hole on any device. If the device doesn't necessarily need any services to run/no service is running, it's just meaningless to keep ports open. That's just stupid. On the contrary, hiding basic admin features from the web panel is not a good thing to do, specially telnet and ACS remote access, which are enabled by default. I might contact the vendors for real reason behind this, and update this article based on the response.
 
+## Update
+
+.ce 11 September, 2022
+
+Okay, I figured out a way to stop the ACS service on the router. This option was accessible from the web interface and like telnet, it was hidden. Had to scrape couple of google pages in order to get to the correct url. Also, on earlier version of the firmware, these options were not hidden. Very weird indeed.
+
+Also I reached out to the dlink.ru people, but got no reply.
+
+
 .hr
 
 ----------------main
