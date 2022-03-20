@@ -431,7 +431,7 @@ main_generate() {
 
 	# noscript section
 
-	sed -i "/^+.*main$/ i <div id="switch" class="inner-switch">\n\t<span id="sword">λ<\/span>\n<\/div>\n<noscript>\n\t<style type="text\/css" media="all">\n\t@import '$dirr\/css\/dark.css' screen and (prefers-color-scheme: dark);\n.inner-switch {\n\tdisplay: none;\n}\n\t<\/style>\n<\/noscript>\n" $filename
+	sed -i "/^+.*main$/ i <div id="switch" class="inner-switch">\n\t<span id="sword">λ<\/span>\n<\/div>\n<noscript>\n\t<style type="text\/css" media="all">\n\t@import '$dirr\/css\/dark.css' screen and (prefers-color-scheme: dark);\n\t.inner-switch {\n\tdisplay: none;\n}\n\t<\/style>\n<\/noscript>\n" $filename
 
 	# card section start
 	sed -i '/^+.*card$/,/^-.*card$/ s/^\.date:\s\(.*\)/<div class="card">\n<div class="date">\1<\/div>/g' $filename
