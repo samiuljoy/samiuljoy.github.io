@@ -16,7 +16,6 @@ usage() {
 	echo "sh main.sh index index.md -------> convert index.md file to index.html"
 	echo "sh main.sh final -------> arrange all files to a main or final site directory"
 	echo "sh main.sh rss ----------> generate a rss feed of the articles from base.md files"
-	echo "sh main.sh lol ----------> ^_^"
 }
 
 # global variables
@@ -1595,8 +1594,6 @@ case "$1" in
 				return 1;
 				;;
 		esac
-		;;
-	lol ) echo "^_^"
 		;;
 	* ) usage
 		;;
