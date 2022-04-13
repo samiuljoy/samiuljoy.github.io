@@ -18,6 +18,7 @@ samiuljoy.github.io
 index.md
 about.md
 demo/base.md
+demo/ssg.md
 demo/syntax.md
 demo/basepage.md
 demo/indexpage.md

@@ -27,6 +27,10 @@ The base page holds page entries to different articles in the same directory. Si
 
 +++++++++++++++++card
 
+.date: April 12, 2022
+.article: [About ssg](ssg.html)
+.describe: A brief intro to ssg, what it is, it's function.
+
 .date: August 30, 2021
 .article: [Intro to basic syntaxes](syntax.html)
 .describe: This article section walks you through the basic syntaxes needed for editing markdown files in ssg
