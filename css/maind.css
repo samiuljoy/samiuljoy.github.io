@@ -9,6 +9,10 @@
  background: var(--dbac);
  color: var(--dpri);
 }
+.D .inner-switch {
+	color: var(--dpri);
+	border-bottom: 2px solid darkred;
+}
 .D a {
  color: var(--dpri);
  text-decoration: underline var(--dsec);

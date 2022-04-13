@@ -13,7 +13,7 @@ body{
 	-webkit-font-smoothing:antialiased;
 	text-rendering:optimizeLegibility;
 	-webkit-text-size-adjust:100%;
-	//zoom:1;
+	/* zoom:1; */
 	font-family: var(--hfont);
 	margin:0 auto;
 	max-width:50rem;
@@ -29,15 +29,20 @@ body{
 }
 .inner-switch{
 	font-size: 1rem;
-	background-color: inherit;
+	color: var(--sec);
 	cursor: pointer;
 	position: fixed;
 	margin: 0.5rem;
 	top: 0;
 	padding: 0.2rem;
+	padding-bottom: 0rem;
+	text-decoration: none;
+	border-bottom: 2px solid var(--sec);
 }
 @media screen and (min-width: 800px) {
-	.inner-switch { font-size: var(--fsize); }
+	.inner-switch {
+	font-size: var(--fsize);
+	}
 }
 .inner-switch:hover{
 	border-radius:0.3rem;
