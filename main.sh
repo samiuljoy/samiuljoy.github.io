@@ -486,8 +486,11 @@ main_generate() {
 	today="$(date +%B' '%e', '%Y)" && \
 		sed -i "s/\[\.today\]/$today/g" $filename
 
-	# markdown style image conversion
-	sed -i 's/\!\[\([^]]*\)\](\([^)]*\))/<center><img loading="lazy" class="pimg" src="\2" alt="\1"><\/center>/g' $filename
+	# markdown style video addition
+	sed -i 's/\!\!\[\([^]]*\)\](\([^)]*\))/<center>\n\t<video title="\1" controls>\n\t\t<source src="\2">\n\t<\/video>\n<\/center>/g' $filename
+
+	# markdown style image addition
+	sed -i 's/\!\[\([^]]*\)\](\([^)]*\))/<center>\n\t<img loading="lazy" class="pimg" src="\2" alt="\1">\n<\/center>/g' $filename
 
 	# main section
 	sed -i '/^+.*main$/,/^-.*main$/ s/^\.ce\sheader1:\s\(.*\)/<center><h1>\1<\/center><\/h1>/g' $filename

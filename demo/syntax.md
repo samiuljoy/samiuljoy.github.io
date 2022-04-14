@@ -163,6 +163,19 @@ And yes you can also use default markdown syntax to add images as well;
 
 .caption: Image: One of Terry Davis's quotes
 
+## # Video addition
+
+The video addition tag is pretty simple, follows a markdown alike syntax;
+
+```no
+	!![this is a video](../assets/mouseless.mp4)
+	.caption: video: keynav and xmouseless
+```
+
+!![this is a video](../assets/mouseless.mp4)
+
+.caption: video: keynav and xmouseless
+
 ## # Blockquotes
 
 Blockquotes also follows markdown syntax but each `>` expands to a new-line;

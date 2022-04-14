@@ -53,6 +53,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [Setup ibus avro on non Gnome platforms](avro.html)
 .describe: This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment
 
+.date: April 14, 2022
+.article: [Going moueless](mouseless.html)
+.describe: Control mouse in a more convenient and fast way
+
 ----------------card
 
 .hr

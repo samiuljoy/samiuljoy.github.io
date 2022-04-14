@@ -28,7 +28,7 @@ body{
 	}
 }
 .inner-switch{
-	font-size: 1rem;
+	font-size: 1.2rem;
 	color: var(--sec);
 	cursor: pointer;
 	position: fixed;
@@ -461,3 +461,16 @@ iframe{
 	border-radius: 0.2rem;
 	}
 }
+video {
+	width: 100%;
+	height: 205px;
+	border-radius: 0.2rem;
+}
+@media screen and (min-width: 800px){
+	video{
+	width: 560px;
+	height: 315px;
+	border-radius: 0.2rem;
+	}
+}
+
