@@ -25,9 +25,9 @@
 
 My mouse has been acting funky lately and it got to the point, where clicks and scrolling wouldn't work. The scroll wheel on the mouse got busted and scrolling was completely impossible. I was hoping I would get a new mouse, however busy life made me to completely ignore the need of a mouse since I was away from this pc for a while.
 
-Then couple days back, came across a video on youtube, the channel goes by the name **gotbletu** and he showed an excellent program to control the movement of mouse in a very quick and easy way. This is exactly what I've been looking for.
+Then couple days back, came across a video on youtube, the channel goes by the name [gotbletu](https://youtube.com/user/gotbletu) and he showed an excellent program to control the movement of mouse in a very quick and easy way.
 
-Gotbletu mentioned 2 programs, [keynav](https://github.com/jordansissel/keynav.git) and [xmouseless](https://github.com/jbensmann/xmouseless.git) Xmouseless is the program mainly used to control the mouse movement with keyboard and keynav helps to quickly move the mouse into specific portions of the screen. This would be very helpful if you're working with a big screen, that way jumping to co-ordinates would save bunch of time.
+He mentioned 2 programs, [keynav](https://github.com/jordansissel/keynav.git) and [xmouseless](https://github.com/jbensmann/xmouseless.git) Xmouseless is the program mainly used to control the mouse movement with keyboard and keynav helps to quickly move the mouse into specific portions of the screen. This would be very helpful if you're working with a big screen, that way jumping to co-ordinates would save bunch of time.
 
 ### Keynav setup
 
@@ -40,7 +40,7 @@ First git clone the repo;
 ```
 .code1
 
-Then read the README.md file and follow the instructions. The instructions are pretty easy to follow.
+Then read the README.md file and follow the instructions for building from source. The instructions are pretty easy to follow.
 
 ### Xmouseless setup
 
@@ -55,11 +55,11 @@ Then, edit the config header file {config.h} and make modifications to it as you
 
 I use dwm and assigned some function key as a hotkey to invoke keynav and xmouseless.
 
-Below is a diagram of keynav;
-
 !![this is a placeholder](../assets/mouseless.mp4)
 
 .caption: Keynav + xmouseless in action
+
+The whole mouse movement you see in the video above was done with my keyboard!
 
 .hr
 ----------------main
