@@ -1507,11 +1507,8 @@ rss_generate() {
 
 	awk -f "rss.awk" $rss_md > $rss_xml
 
-	# properly format header section
-	header
-
-	# ending tags
-	[ "$?" = 0 ] && \
+	# properly format header section and add ending tags
+	header && \
 		echo "</channel>" >> $rss_xml && \
 		echo "</rss>" >> $rss_xml
 }
