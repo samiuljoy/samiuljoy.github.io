@@ -8,6 +8,26 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
+	<pubDate>April 14, 2022</pubDate>
+	<title>Going mouseless</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/mouseless.html">https://samiuljoy.github.io/microblog/mouseless.html</a>
+	<p>Control mouse in a more convenient and fast way</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>April 12, 2022</pubDate>
+	<title>Setup ibus avro on non Gnome platforms</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/avro.html">https://samiuljoy.github.io/microblog/avro.html</a>
+	<p>This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>March  4, 2022</pubDate>
 	<title>Plans on future projects</title>
 	<description><![CDATA[

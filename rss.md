@@ -1,5 +1,15 @@
 
 <item>
+	<pubDate>April 12, 2022</pubDate>
+	<title>About ssg</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/demo/ssg.html">https://samiuljoy.github.io/demo/ssg.html</a>
+	<p>A brief intro to ssg, what it is, it's function.</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>August 30, 2021</pubDate>
 	<title>Intro to basic syntaxes</title>
 	<description><![CDATA[
@@ -86,6 +96,26 @@
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/future_projects.html">https://samiuljoy.github.io/microblog/future_projects.html</a>
 	<p>This article sums up my plans for future projects</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>April 12, 2022</pubDate>
+	<title>Setup ibus avro on non Gnome platforms</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/avro.html">https://samiuljoy.github.io/microblog/avro.html</a>
+	<p>This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>April 14, 2022</pubDate>
+	<title>Going mouseless</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/mouseless.html">https://samiuljoy.github.io/microblog/mouseless.html</a>
+	<p>Control mouse in a more convenient and fast way</p>
 	]]>
 	</description>
 </item>

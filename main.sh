@@ -1545,8 +1545,8 @@ case "$1" in
 	rmdir ) # remove a directory from all config and base.md files
 		rmmdir && sync
 		;;
-	all ) # convert all md files to html from sitemap section in config file
-		to_html && sync
+	all ) # convert all md files to html from sitemap section in config file and generate the rss feed
+		to_html && sync && rss_generate
 		;;
 	rss ) # make rss.xml file
 		rss_generate
