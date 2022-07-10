@@ -1,11 +1,11 @@
 +++++++++++++++++head
-.title: Academic stuff
+.title: Working with plants on whole new level
 .author: Samiul Joy
-.description: This portion of the website describes about academic stuff and research papers
+.description: Planning on working with plants on a more deeper level
 .style: ..//css/maind.css
 .style: ..//css/main.css
-.name-generator: Academic stuff
-.canonical-link: https://samiuljoy.github.io/academics/base.html
+.name-generator: Starting work on thesis related stuffs
+.canonical-link: https://samiuljoy.github.io/academics/thesis.html
 -------------------head
 
 ++++navigation
@@ -19,32 +19,12 @@
 ----------navigation
 
 ++++++++++++++++main
-.ce header2: Academic
-
-This portion of the website contains contents on academical stuffs and things relating to **Plant Science** and research articles/review articles. If you're interested to submit any articles to display on this section, don't hesitate to contact me. Contact me through the [about](../about.html) page.
-
-This page will soon have some articles in it hopefully.
-
-
-++++++++card
-
-
-
-.date: July 10, 2022
-.article: [Working with plants on whole new level](thesis.html)
-.describe: Planning on working with plants on a more deeper level
-
---------card
-
-
-
-.hr
-
+.ce header2: On the way
 ----------------main
 
 ++++++++++++++++footer
 .message: Made with <3 by [samiuljoy](https://github.com/samiuljoy)
-.message: [rss](/rss.xml) | [about](/about.html)
+.message: [rss](/rss.xml) | [about](/about.html) | [go to top](#)
 ------------------footer
 
 +++++++script

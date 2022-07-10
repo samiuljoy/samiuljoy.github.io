@@ -34,6 +34,7 @@ microblog/future_projects.md
 microblog/mouseless.md
 theology/base.md
 academics/base.md
+academics/thesis.md
 --------sitemap
 
 ++++navigation

@@ -120,3 +120,14 @@
 	</description>
 </item>
 
+
+<item>
+	<pubDate>July 10, 2022</pubDate>
+	<title>Working with plants on whole new level</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/academics/thesis.html">https://samiuljoy.github.io/academics/thesis.html</a>
+	<p>Planning on working with plants on a more deeper level</p>
+	]]>
+	</description>
+</item>
+
