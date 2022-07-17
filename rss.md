@@ -75,7 +75,7 @@
 	<title>Emulating user interactions using adb</title>
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/emulate.html">https://samiuljoy.github.io/microblog/emulate.html</a>
-	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser</p>
+	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android</p>
 	]]>
 	</description>
 </item>
@@ -116,6 +116,17 @@
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/mouseless.html">https://samiuljoy.github.io/microblog/mouseless.html</a>
 	<p>Control mouse in a more convenient and fast way</p>
+	]]>
+	</description>
+</item>
+
+
+<item>
+	<pubDate>July 17, 2022</pubDate>
+	<title>Numerical Aspects of The Holy Quran</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/theology/quran.html">https://samiuljoy.github.io/theology/quran.html</a>
+	<p>A Study about the numerical aspects of the Holy Quran</p>
 	]]>
 	</description>
 </item>

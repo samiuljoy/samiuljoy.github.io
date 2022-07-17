@@ -22,6 +22,16 @@
 .ce header2: Theology
 
 This section of the site contains contents relating to Theological stuff. May Allah almighty grant me knowledge to write something worthwhile theological articles on this page. I will be updating my contents soon, and if you're interested to submit an article, feel free to do so. Visit the [about](../about.html) page of this site to send me an article through email.
+
+++++++card
+
+.date: July 17, 2022
+.article: [Numerical Aspects of The Holy Quran](quran.html)
+.describe: A Study about the numerical aspects of the Holy Quran
+
+------------card
+
+
 ----------------main
 
 +++++++script

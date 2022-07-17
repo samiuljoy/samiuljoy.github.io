@@ -39,7 +39,7 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 .date: November 1, 2020
 .article: [Emulating user interactions using adb](emulate.html)
-.describe: Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser
+.describe: Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android
 
 .date: October 15, 2021
 .article: [Turtle fractal tree](turtle.html)

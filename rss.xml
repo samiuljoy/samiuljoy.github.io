@@ -8,6 +8,16 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
+	<pubDate>July 17, 2022</pubDate>
+	<title>Numerical Aspects of The Holy Quran</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/theology/quran.html">https://samiuljoy.github.io/theology/quran.html</a>
+	<p>A Study about the numerical aspects of the Holy Quran</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>July 10, 2022</pubDate>
 	<title>Working with plants on whole new level</title>
 	<description><![CDATA[
@@ -82,7 +92,7 @@
 	<title>Emulating user interactions using adb</title>
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/emulate.html">https://samiuljoy.github.io/microblog/emulate.html</a>
-	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser</p>
+	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android</p>
 	]]>
 	</description>
 </item>
