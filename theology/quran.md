@@ -70,7 +70,7 @@ Also, if you wondered, out of all these planets, Neptune, Jupiter, and other one
 > \[15\] and created Jann(father of the Jinn) from a smokeless flame of fire.
 > \[16\] So, (O mankind and Jinn), which of the bounties of your Lord will you deny?
 
- **Note:** Information here were taken from the introductory section of the Quran Sharif book
+ **Note:** Information here were taken from the introductory section of the Quran Sharif book which was translated by Hafiz Munir Uddin. The original copy can be found [here](https://www.alquranacademylondon.org.uk/our-publications/?orderby=popularity)
 .hr
 
 ----------------main
