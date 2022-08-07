@@ -142,6 +142,37 @@
 
 
 <item>
+	<pubDate>September 7, 2022</pubDate>
+	<title>Debian netinstall problems</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/netinst.html">https://samiuljoy.github.io/microblog/netinst.html</a>
+	<p>This article describes some difficulties I faced while installing debian with netinst iso</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>September 22, 2022</pubDate>
+	<title>Solving a puzzle</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/puzzle.html">https://samiuljoy.github.io/microblog/puzzle.html</a>
+	<p>Very bad neighborhood</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>September 25, 2022</pubDate>
+	<title>Captive Portal on Apache</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/captive.html">https://samiuljoy.github.io/microblog/captive.html</a>
+	<p>Learn to create captive portal pages on Apache web server</p>
+	]]>
+	</description>
+</item>
+
+
+<item>
 	<pubDate>July 17, 2022</pubDate>
 	<title>Numerical Aspects of The Holy Quran</title>
 	<description><![CDATA[

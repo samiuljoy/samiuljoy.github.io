@@ -41,14 +41,14 @@ Make sure you can access your phone from your PC through the shell. Connect usb 
 
 ```no
 	[user@debian]:~$ adb devices
-	
+
 	List of devices attached
 	* daemon starting on port 5555
 	* daemon started successfully
-	
+
 	ID	 	 device
 	0e46ee341 	 authorized
-	
+
 	[user@debian]:~$
 ```
 
@@ -185,4 +185,3 @@ else {
 ++++add
 .script: ../js/toggle.js
 -------add
-

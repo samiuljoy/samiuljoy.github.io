@@ -33,6 +33,11 @@ The first page had too many articles..
 .article: [Solving a puzzle](puzzle.html)
 .describe: Very bad neighborhood
 
+.date: September 25, 2022
+.article: [Captive Portal on Apache](captive.html)
+.describe: Learn to create captive portal pages on Apache web server
+
+
 -----------card
 
 .hr

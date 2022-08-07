@@ -42,6 +42,7 @@ academics/fail.md
 microblog/router.md
 microblog/netinst.md
 microblog/puzzle.md
+microblog/captive.md
 --------sitemap
 
 ++++navigation

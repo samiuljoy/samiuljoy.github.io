@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Generate Captive Portals</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Learn how to generate captive portal on Apache web servers">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Captive Portals on Apache2 web server">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/captive.html">
+</head>
+
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+
+<center><h2>Generate Captive Portals</center></h2>
+
+<p>This is a quick tutorial on how to generate captive portal pages on Apache web servers.</p>
+
+<p> <b>Step 01:</b> On <code>/var/www/html/</code> create a file named index.html with your captive portal username and password fields.</p>
+
+<p> <b>Step 02:</b> Then, on the pc where Apache is running, migrate to /etc/apache2/sites-enabled/ and edit a filename called 000-default.conf</p>
+<p> <b>Step 03:</b> Place the following lines on the end of 000-default.conf</p>
+
+<pre>
+<code>
+&lt;Directory "/var/www/html"&gt;
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP&lowbar;HOST} ^www\&period;(&period;&ast;)$ &lsqb;NC&rsqb;
+RewriteCond ^(&period;&ast;)$ http://%1/$1 &lsqb;R=301,L&rsqb;
+
+RewriteCond %{REQUEST&lowbar;FILENAME} &excl;-f
+RewriteCond %{REQUEST&lowbar;FILENAME} &excl;-d
+
+RewriteRule ^(&period;&ast;)$ / &lsqb;L,QSA&rsqb;
+&lt;/Directory&gt;
+</code>
+</pre>
+<a class='btn' href='code/captive.html-code1.txt'>view raw</a>
+
+<p><b>Description:</b> There's not much to describe here. There's been use of some clear regular expressions to replace every page starting with anything(^.&ast;) to the captive portal page(index.html) on establishing connection.</p>
+
+<p> <b>Step 04:</b> Then restart apache2 service, and you're all set.</p>
+
+<p><b>Note:</b> The Rewrite&ast; depends on a plugin called <b>rewrite</b> and in most cases this plugin is disabled by default, so to enable it you'd have to type in from the shell the following command as root;</p>
+
+<pre>
+<code>
+&num; a2enmod rewrite
+</code>
+</pre>
+<a class='btn' href='code/captive.html-code2.txt'>view raw</a>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="../js/toggle.js"></script>
+</body>
+</html>
