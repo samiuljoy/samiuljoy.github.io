@@ -120,6 +120,16 @@
 	</description>
 </item>
 
+<item>
+	<pubDate>August 22, 2022</pubDate>
+	<title>Forwarding tun0 traffic through access point on Android</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/vpn_tether.html">https://samiuljoy.github.io/microblog/vpn_tether.html</a>
+	<p>Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole</p>
+	]]>
+	</description>
+</item>
+
 
 <item>
 	<pubDate>July 17, 2022</pubDate>
@@ -138,6 +148,16 @@
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/academics/thesis.html">https://samiuljoy.github.io/academics/thesis.html</a>
 	<p>Planning on working with plants on a more deeper level</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>August 22, 2022</pubDate>
+	<title>Initial failed attempt on thesis</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/academics/fail.html">https://samiuljoy.github.io/academics/fail.html</a>
+	<p>Plants that were planted for experimental purposes, died, all of them.</p>
 	]]>
 	</description>
 </item>

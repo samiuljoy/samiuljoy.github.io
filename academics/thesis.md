@@ -19,7 +19,12 @@
 ----------navigation
 
 ++++++++++++++++main
-.ce header2: On the way
+.ce header2: Plant Research stuff
+
+I'm planning to work on some ecological and phytochemical analysis on plants. Hopefully everything works out nicely.
+
+.hr
+
 ----------------main
 
 ++++++++++++++++footer

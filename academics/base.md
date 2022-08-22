@@ -23,8 +23,6 @@
 
 This portion of the website contains contents on academical stuffs and things relating to **Plant Science** and research articles/review articles. If you're interested to submit any articles to display on this section, don't hesitate to contact me. Contact me through the [about](../about.html) page.
 
-This page will soon have some articles in it hopefully.
-
 
 ++++++++card
 
@@ -33,6 +31,11 @@ This page will soon have some articles in it hopefully.
 .date: July 10, 2022
 .article: [Working with plants on whole new level](thesis.html)
 .describe: Planning on working with plants on a more deeper level
+
+.date: August 22, 2022
+.article: [Initial failed attempt on thesis](fail.html)
+.describe: Plants that were planted for experimental purposes, died, all of them.
+
 
 --------card
 
