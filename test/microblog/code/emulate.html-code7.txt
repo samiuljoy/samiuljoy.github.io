@@ -1,0 +1,13 @@
+# Let's start up chrome
+adb shell start -n com.android.chrome/com.google.android.apps.chrome.Main
+# wait for chrome to start up properly, wait for 2 seconds
+sleep 2
+# perform a tap action on X and Y coordinates to bring up the search bar
+adb shell input tap X Y
+# perform a search query with text
+adb shell input text 'test'
+# and hit enter
+adb shell input keyevent 66
+# and to perform a swipe, put any bottom to top coordinates like so
+adb shell input swipe 400 700 400 150 500
+# we are swiping up, which is why on Y coordinates change, from 700(bottom) to 150 (up)

@@ -11,7 +11,7 @@
 ++++navigation
 .homepage: [home](..//index.html)
 .navmenu: roam
-.navpage: [demo](..//demos/base.html)
+.navpage: [demo](..//demo/base.html)
 .navpage: [microblog](..//microblog/base.html)
 .navpage: [theology](..//theology/base.html)
 .navpage: [academics](..//academics/base.html)

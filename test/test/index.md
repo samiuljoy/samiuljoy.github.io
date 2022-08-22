@@ -1,0 +1,30 @@
+++++++++++++++++head
+.title: A blog by samiuljoy
+.author: samiuljoy
+.description: A demo page on ssg + random blog
+.style: css/imain.css
+.name-generator: A personal space of samiuljoy
+.canonical: https://samiuljoy.github.io/
+--------------------head
+
+++++++++++++++++++++++intro
+.h2: samiuljoy.github.io
+.h2: Random stuffs
+.img: ![turtle tree](assets/fractal_resized.svg)
+----------------------intro
+
+++++++++++++++++++++navigation
+.page: [demo](demo/base.html)
+.page: [about](about.html)
+.page: [microblog](microblog/base.html)
+.page: [theology](theology/base.html)
+.page: [academics](academics/base.html)
+-------------------------navigation
+
++++++++++++++++++++footer
+.message: <!>
+--------------------footer
+
++++++++++++++++++++++script
+.script: js/itoggle.js
+---------------------script

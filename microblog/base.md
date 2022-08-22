@@ -57,6 +57,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [Going mouseless](mouseless.html)
 .describe: Control mouse in a more convenient and fast way
 
+.date: August 22, 2022
+.article: [Forwarding tun0 traffic through access point on Android](vpn_tether.html)
+.describe: Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole
+
 ----------------card
 
 .hr

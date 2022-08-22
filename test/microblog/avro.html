@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Getting started with ibus-avro</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="A short tutorial to set up ibus-avro on non-gnome platforms">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Tutorial">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/avro.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>ibus-avro</center></h2>
+
+<p> This is a tutorial on setting up <a href="https://github.com/sarim/ibus-avro" rel="nofollow">ibus-avro</a> on Linux systems that are devoid of any Desktop Environments such as Gnome or xfce and purely based on window managers or others. I use <a href="https://suckless.org/" rel="nofollow">dwm</a> on a debian system.</p>
+
+<p>My strategy was to build from source. Hence, I had to satisfy the dependencies. For a Debian distribution, all I needed was to install only these packages;</p>
+
+<pre>
+<code>
+$ apt install ibus \
+	ibus-gtk gjs \
+	automake \
+	autoconf \
+	make \
+	libibus-1&period;0-dev \
+	git
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code1.txt'>view raw</a>
+
+<p>I'm not sure if gjs is actually needed though. Anyways, after successful installation of these packages, git clone the repo;</p>
+
+<pre>
+<code>
+$ git clone https://github&period;com/sarim/ibus-avro&period;git
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code2.txt'>view raw</a>
+
+<p>then change directory to <code>ibus-avro</code> and run autoconf and automake;</p>
+
+<pre>
+<code>
+$ aclocal && autoconf && automake --add-missing
+
+$ &period;/configure --prefix=/usr
+
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code3.txt'>view raw</a>
+
+<p>then make install;</p>
+
+<pre>
+<code>
+$ make install
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code4.txt'>view raw</a>
+
+<p>Now, assuming that you use a <code>.xinitrc</code> or for a Debian based system there's <code>.xsessionrc</code>, you would add/export the following lines to your <code>.profile</code>;</p>
+
+<pre>
+<code>
+export GTK&lowbar;IM&lowbar;MODULE=ibus
+export XMODIFIERS=@im=ibus
+export QT&lowbar;IM&lowbar;MODULE=ibus
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code5.txt'>view raw</a>
+
+<p>Now, to start the ibus-daemon in the background; you could either create an alias or a function in your bash source file or under, <code>~/.local/bin/</code> directory and start or stop ibus avro from there;</p>
+
+<p>To start ibus-daemon; run</p>
+
+<pre>
+<code>
+$ ibus-daemon -dx
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code6.txt'>view raw</a>
+
+<p>You could probably add the line above to a shell script and integrate it like this, or you could invoke it at any time;</p>
+
+<pre>
+<code>
+&num;&excl;/usr/bin/env sh
+
+&num; check if xorg is running, if not running, then exit with exit code 1
+&lsqb; -z "$DISPLAY" &rsqb; && \
+	echo "No display server is running at this moment, exiting&period;&period;&period;" && \
+	return 1;
+&num; ELse daemoize ibus
+ibus-daemon -dx
+</code>
+</pre>
+<a class='btn' href='code/avro.html-code7.txt'>view raw</a>
+
+<p>And to stop ibus, just run <code>pkill ibus*</code> That should be enough.</p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

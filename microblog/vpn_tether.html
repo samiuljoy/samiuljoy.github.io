@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Forwarding tun0 traffic through access point on Android</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Tethering vpn traffic on android">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/vpn_tether.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>Tethering stuffs</center></h2>
+
+<p>I happened to have my friends Android phone that he gave me couple months back because it had a busted touch panel/sensor. Thought this would be a great opportunity to use it as a local dns resolver, to block ads and malicious websites. To do that, I needed to set up a vpn, preferably dns over https(DoH), which had recursive block mode and didn't require actual vpn server setup. Then I had to forward all traffic from the vpn to say the access point interface, and vice versa. The only downside being, I needed to have administrative privilege over the device, which I didn't.</p>
+
+<p>This phone had very poor binary code implementation as it showed several flaws even compared to the spare phone I had which is probably even cheaper than this one. For example, while experimenting with <code>iptables</code> some of the features didn't work with it even though it had a fairly newer kernel version. This phone has a vulnerable chipset, and was vulnerable to an exploit which helped me to get administrative privilege on the phone. This made my work much easier, as I was able to pull the boot.img from the /dev/block/&ast;/boot partition and patch it with magisk and flash it on the phone which allowed me to gain root access with magisk daemon running in the background. It is very hard to work with a phone with a busted touch panel. I had to use an external mouse and keyboard to get it working.</p>
+
+<p>I initially thought that, since I was root, it would be much easier to set up a forwarding tunnel connection to and from the access point and set up a hotspot and vpn setup, since I had done it previously on my other Android phone. As much as I would like to settle things over the terminal, I couldn't set up a proper forwarding rule on the device, hence I had to rely on an Android application to do the work for me which is a shame.</p>
+
+<p>I wasn't inclined to use an actual vpn service, rather a local dns resolver that had recursive blocking features. DnsCrypt proxy is a great tool for that. It is written in Go language and is very fast. And the vpn-tether application made it much easier to set up an actual forwarding connection. Now I'm using this device as a temporary home router that blocks malware sites, advertisements, gambling, fake news and porn sites. I'm planning on getting an actual router soon though.</p>
+
+<p> <b>Note: This post was intentionally written vaguely</b></p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+</body>
+</html>
