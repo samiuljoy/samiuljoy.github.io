@@ -61,6 +61,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [Forwarding tun0 traffic through access point on Android](vpn_tether.html)
 .describe: Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole
 
+.date: September 3, 2022
+.article: [Concerns about router](router.html)
+.describe: This article describes some of my concerns regarding the router and its behavior
+
 ----------------card
 
 .hr

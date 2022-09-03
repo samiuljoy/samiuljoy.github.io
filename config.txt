@@ -38,6 +38,7 @@ theology/quran.md
 academics/base.md
 academics/thesis.md
 academics/fail.md
+microblog/router.md
 --------sitemap
 
 ++++navigation

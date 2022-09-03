@@ -130,6 +130,16 @@
 	</description>
 </item>
 
+<item>
+	<pubDate>September 3, 2022</pubDate>
+	<title>Concerns about router</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/router.html">https://samiuljoy.github.io/microblog/router.html</a>
+	<p>This article describes some of my concerns regarding the router and its behavior</p>
+	]]>
+	</description>
+</item>
+
 
 <item>
 	<pubDate>July 17, 2022</pubDate>

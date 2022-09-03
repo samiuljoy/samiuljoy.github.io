@@ -8,6 +8,16 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
+	<pubDate>September 3, 2022</pubDate>
+	<title>Concerns about router</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/router.html">https://samiuljoy.github.io/microblog/router.html</a>
+	<p>This article describes some of my concerns regarding the router and its behavior</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>August 22, 2022</pubDate>
 	<title>Initial failed attempt on thesis</title>
 	<description><![CDATA[
