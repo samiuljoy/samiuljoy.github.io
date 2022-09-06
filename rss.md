@@ -140,6 +140,16 @@
 	</description>
 </item>
 
+<item>
+	<pubDate>September 7, 2022</pubDate>
+	<title>Debian netinstall problems</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/netinst.html">https://samiuljoy.github.io/microblog/netinst.html</a>
+	<p>This article describes some difficulties I faced while installing debian with netinst iso</p>
+	]]>
+	</description>
+</item>
+
 
 <item>
 	<pubDate>July 17, 2022</pubDate>

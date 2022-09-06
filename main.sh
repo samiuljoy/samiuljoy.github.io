@@ -325,7 +325,7 @@ main_generate() {
 		upto="$(grep '^```[[:digit:]]\+$' $filename | tail -n1 | cut -c 4-)"
 		code_directory="$(dirname $filename)/code"
 		mkdir -p "$code_directory"
-		
+
 		while [ "$code_number" -le "$upto" ]; do
 			sed -n "/^\`\`\`$code_number$/,/^\.code$code_number$/p" $filename > "$filename-code$code_number.txt"
 			sed -i '/^\.code[[:digit:]]\+/d' "$filename-code$code_number.txt"

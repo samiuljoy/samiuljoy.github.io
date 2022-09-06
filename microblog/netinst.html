@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Debian netinstall problems</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="This article describes some difficulties I faced while installing debian with netinst iso">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Problems while installing Debian netinstall with unetbootin">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/netinst.md">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>debian installation problems</center></h2>
+
+<p>The most easies way to write an iso from a Linux terminal is through the <code>dd</code> command, as in</p>
+
+<pre>
+<code>
+dd if=file&period;iso of=/dev/sdx bs=x status=progress
+</code>
+</pre>
+
+<p>And in most cases, this works just fine. However in case of debian netisntall image, writing with disk dump doesn't particularly does the job for me. One cause could be that the iso could be invoking codes that are probably unknown to the motherboard bios that I have since it's quite old, and it does infact work on other devices. So, I had to find an alternative. I can not just ditch my motherboard now can I?</p>
+
+<p>There's this usb tool called rufus which nicely writes iso files onto usb drives, however rufus is platform specific, it does not work on Linux. So I did google search, and came across this indian website that suggested unetbootin was the best alternative. You know as they say, there's always something not right about indian people suggesting things, and it turned out to be true. Unetbootin uses some weird method to write data to disk, and weirdly enough, the disk needs to be mounted while it's writing the iso.</p>
+
+<p>So while installing debian with unetbootin, after a while, the installation halts and complains that the installation media isn't properly configured or something like that. So stack exchange says that I needed to mount the installation media as a cdrom after migrating to terminal like so;</p>
+
+<pre>
+<code>
+mount /dev/sdx /cdrom/
+</code>
+</pre>
+
+<p>Then the installation continued normally, until some point where it says that the installation media couldn't configure grub. At that point you'd have to unmount /cdrom/ and the installation would continue normally.</p>
+
+<p>Not sure if these problems are with debian(highly unlikely) or with unetbootin. Well at least now I know how to install debian with unetbootin.</p>
+
+<hr>
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

@@ -65,6 +65,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [Concerns about router](router.html)
 .describe: This article describes some of my concerns regarding the router and its behavior
 
+.date: September 7, 2022
+.article: [Debian netinstall problems](netinst.html)
+.describe: This article describes some difficulties I faced while installing debian with netinst iso
+
 ----------------card
 
 .hr
