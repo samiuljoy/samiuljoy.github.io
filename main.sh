@@ -490,7 +490,10 @@ main_generate() {
 	sed -i 's/\!\!\[\([^]]*\)\](\([^)]*\))/<center>\n\t<video title="\1" controls>\n\t\t<source src="\2">\n\t<\/video>\n<\/center>/g' $filename
 
 	# markdown style image addition
-	sed -i 's/\!\[\([^]]*\)\](\([^)]*\))/<center>\n\t<img loading="lazy" class="pimg" src="\2" alt="\1">\n<\/center>/g' $filename
+	sed -i 's/^\!\[\([^]]*\)\](\([^)]*\))/<center>\n\t<img loading="lazy" class="pimg" src="\2" alt="\1">\n<\/center>/g' $filename
+
+	# custom markdown style next page
+	sed -i 's/^\.next\[\([^]]*\)\](\([^)]*\))/<center><div class="next_page"><a href="\2" rel="nofollow">\1<\/a><\/div><\/center>/g' $filename
 
 	# main section
 	sed -i '/^+.*main$/,/^-.*main$/ s/^\.ce\sheader1:\s\(.*\)/<center><h1>\1<\/center><\/h1>/g' $filename

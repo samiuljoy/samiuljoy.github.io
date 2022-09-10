@@ -373,6 +373,13 @@ Today is October 10, 2021, the day seems nice, and I'm feeling good today
 	Today is [.today], The day seems nice and all, and I'm feeling good today
 ```
 
+## Add a next page url
+
+You can also add next page href link to basepages;
+
+```no
+	.next[next->](base2.html)
+```
 
 ## # Code block section
 

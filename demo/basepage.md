@@ -99,7 +99,13 @@ ___.article section:___ The article section starts the same way date does. The t
 
 ___.describe section:___ The describe section is the text which gets displayed in the description section of the card section.
 
-That's how you add articles. Then to add another article, just add a blank line after .describe: and start from .date ^_^
+That's how you add articles. Then to add another article, just add a blank line after .describe: and start from .date ^\_^
+
+You can also add next page href link to basepages;
+
+```no
+	.next[next->](base2.html)
+```
 
 .hr
 ----------------main

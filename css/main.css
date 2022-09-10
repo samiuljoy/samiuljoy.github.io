@@ -220,6 +220,17 @@ nav ul li{
 .card a:visited{
 	color: grey;
 }
+.next_page a {
+	text-decoration: none;
+	font-size: var(--fsize);
+	color: var(--pri);
+}
+.next_page a:hover {
+	border-bottom: 2px dashed grey;
+	text-decoration: none;
+	border: 2px dotted grey;
+	color: var(--sec);
+}
 .tag{
 	font-weight: bold;
 	color: var(--sec);
