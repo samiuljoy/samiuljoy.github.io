@@ -29,6 +29,10 @@ The first page had too many articles..
 .article: [Debian netinstall problems](netinst.html)
 .describe: This article describes some difficulties I faced while installing debian with netinst iso
 
+.date: September 22, 2022
+.article: [Solving a puzzle](puzzle.html)
+.describe: Very bad neighborhood
+
 -----------card
 
 .hr

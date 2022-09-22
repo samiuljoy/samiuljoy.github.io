@@ -41,6 +41,7 @@ academics/thesis.md
 academics/fail.md
 microblog/router.md
 microblog/netinst.md
+microblog/puzzle.md
 --------sitemap
 
 ++++navigation
