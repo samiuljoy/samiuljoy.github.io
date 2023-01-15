@@ -1,0 +1,1 @@
+# mount -o ro,loop system.img system/

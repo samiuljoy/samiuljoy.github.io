@@ -1,0 +1,2 @@
+# ls -lh libwebview.so
+# libwebview.so -> /system/lib/libwebview.so

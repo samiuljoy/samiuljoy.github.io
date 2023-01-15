@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>adding system application</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#002f30">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="This article describes how to add system applications on your android manually with an unlocked device">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="adding system application to your android manually">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/webview.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h1>webview.apk</center></h1>
+
+<p>I have a very old android, a device from 2017 which is running on stock lollipop 5.1. I use this for class communication and talking to friends and some youtube occasionally. The problem with this device is that it didn't have a webview, well it did initially, but I removed it because I didn't need it at that time. Now, while running some email applications, webview happens to be a dependency. However, it being a system application, it's not possible to install it in a conventional way. We have to hack the system to install the application as a system application.</p>
+
+
+<h3># Getting webview.apk</h3>
+
+<p>I happen to have the stock system.img file on my disk luckily. All you need is to mount the img file as ro,loop file with the following command on to a directory called <code>system/</code>;</p>
+
+
+<pre>
+<code>
+&num; mount -o ro,loop system&period;img system/
+</code>
+</pre>
+<a class='btn' href='code/webview.html-code1.txt'>view raw</a>
+
+
+<p>Then navigate to <code>/system/app/</code> and copy the whole webview directory onto somewhere else. Then from there copy the directory to your phone.</p>
+
+<p><b>N.B. Do make sure to check the permission and the ownership on the webview directory, change the directory permission to 755 and the application webview.apk permission to 644</b></p>
+
+
+<h3># You'll need administrative privilege</h3>
+
+<p>To copy an application to a system/ directory needs to have administrative privilege, means you need to have root permission. Only with administrative privilege you can copy the application to <code>/system/app/</code> and then continue rest of the steps.</p>
+
+
+<h3># Linking shared libraries</h3>
+
+<p>The next step is probably a bit tricky. While the system.img file is still mounted on system/ directory on your pc, head over to the <code>webview/lib/arm/</code> directory and check out the shared library there. For webview, it should be something like libwebview.so which should be linked to <code>/system/lib/libwebview.so</code>. </p>
+
+<pre>
+<code>
+&num; ls -lh libwebview&period;so
+&num; libwebview&period;so -&gt; /system/lib/libwebview&period;so
+</code>
+</pre>
+<a class='btn' href='code/webview.html-code2.txt'>view raw</a>
+
+
+<p>You'll just need to create a symbolic link of the shared library on the same directory but on your phone.</p>
+
+
+<pre>
+<code>
+&num; cd /system/app/webview/lib/arm
+&num; ln -s libwebview&period;so /system/lib/libwebview&period;so
+</code>
+</pre>
+<a class='btn' href='code/webview.html-code3.txt'>view raw</a>
+
+<p>Then the application should appear and probably a soft reboot should do the job, and after that it should start working like a system application.</p>
+
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

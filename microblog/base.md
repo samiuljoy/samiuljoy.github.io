@@ -25,45 +25,45 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
 
-.date: September 4, 2021
-.article: [Chemical structures with groff chem](gchem.html)
-.describe: Learn how to draw chemical structures with groff chem
+.date: January 16, 2023
+.article: [Adding Applications Manually](webview.html)
+.describe: Adding applications manually on an unlocked android device
 
-.date: February 13, 2020
-.article: [guess.sh](guess.html)
-.describe: A simple number guessing game where you get to guess 2 digit random numbers
+.date: September 25, 2022
+.article: [Captive Portal on Apache](captive.html)
+.describe: Learn to create captive portal pages on Apache web server
 
-.date: February 20, 2020
-.article: [login.sh + username.sh](login.html)
-.describe: Emulating Linux login mechanism using bash scripts
+.date: September 22, 2022
+.article: [Solving a puzzle](puzzle.html)
+.describe: Very bad neighborhood
 
-.date: November 1, 2020
-.article: [Emulating user interactions using adb](emulate.html)
-.describe: Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android
+.date: September 7, 2022
+.article: [Debian netinstall problems](netinst.html)
+.describe: This article describes some difficulties I faced while installing debian with netinst iso
 
-.date: October 15, 2021
-.article: [Turtle fractal tree](turtle.html)
-.describe: About the tree on the index page
-
-.date: March  4, 2022
-.article: [Plans on future projects](future_projects.html)
-.describe: This article sums up my plans for future projects
-
-.date: April 12, 2022
-.article: [Setup ibus avro on non Gnome platforms](avro.html)
-.describe: This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment
-
-.date: April 14, 2022
-.article: [Going mouseless](mouseless.html)
-.describe: Control mouse in a more convenient and fast way
+.date: September 3, 2022
+.article: [Concerns about router](router.html)
+.describe: This article describes some of my concerns regarding the router and its behavior
 
 .date: August 22, 2022
 .article: [Forwarding tun0 traffic through access point on Android](vpn_tether.html)
 .describe: Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole
 
-.date: September 3, 2022
-.article: [Concerns about router](router.html)
-.describe: This article describes some of my concerns regarding the router and its behavior
+.date: April 14, 2022
+.article: [Going mouseless](mouseless.html)
+.describe: Control mouse in a more convenient and fast way
+
+.date: April 12, 2022
+.article: [Setup ibus avro on non Gnome platforms](avro.html)
+.describe: This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment
+
+.date: March  4, 2022
+.article: [Plans on future projects](future_projects.html)
+.describe: This article sums up my plans for future projects
+
+.date: October 15, 2021
+.article: [Turtle fractal tree](turtle.html)
+.describe: About the tree on the index page
 
 ----------------card
 

@@ -1,0 +1,2 @@
+# cd /system/app/webview/lib/arm
+# ln -s libwebview.so /system/lib/libwebview.so

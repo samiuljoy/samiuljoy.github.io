@@ -21,22 +21,25 @@
 ++++++++++++++++main
 .ce header2: microblogs page2
 
-The first page had too many articles..
+The first page had too many articles..so continuing from here
 
 ++++++++++++++++++card
 
-.date: September 7, 2022
-.article: [Debian netinstall problems](netinst.html)
-.describe: This article describes some difficulties I faced while installing debian with netinst iso
+.date: September 4, 2021
+.article: [Chemical structures with groff chem](gchem.html)
+.describe: Learn how to draw chemical structures with groff chem
 
-.date: September 22, 2022
-.article: [Solving a puzzle](puzzle.html)
-.describe: Very bad neighborhood
+.date: February 13, 2020
+.article: [guess.sh](guess.html)
+.describe: A simple number guessing game where you get to guess 2 digit random numbers
 
-.date: September 25, 2022
-.article: [Captive Portal on Apache](captive.html)
-.describe: Learn to create captive portal pages on Apache web server
+.date: February 20, 2020
+.article: [login.sh + username.sh](login.html)
+.describe: Emulating Linux login mechanism using bash scripts
 
+.date: November 1, 2020
+.article: [Emulating user interactions using adb](emulate.html)
+.describe: Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android
 
 -----------card
 

@@ -8,6 +8,16 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
+	<pubDate>January 16, 2023</pubDate>
+	<title>Adding Applications Manually</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/webview.html">https://samiuljoy.github.io/microblog/webview.html</a>
+	<p>Adding applications manually on an unlocked android device</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>September 25, 2022</pubDate>
 	<title>Captive Portal on Apache</title>
 	<description><![CDATA[

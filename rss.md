@@ -41,6 +41,107 @@
 
 
 <item>
+	<pubDate>January 16, 2023</pubDate>
+	<title>Adding Applications Manually</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/webview.html">https://samiuljoy.github.io/microblog/webview.html</a>
+	<p>Adding applications manually on an unlocked android device</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>September 25, 2022</pubDate>
+	<title>Captive Portal on Apache</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/captive.html">https://samiuljoy.github.io/microblog/captive.html</a>
+	<p>Learn to create captive portal pages on Apache web server</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>September 22, 2022</pubDate>
+	<title>Solving a puzzle</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/puzzle.html">https://samiuljoy.github.io/microblog/puzzle.html</a>
+	<p>Very bad neighborhood</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>September 7, 2022</pubDate>
+	<title>Debian netinstall problems</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/netinst.html">https://samiuljoy.github.io/microblog/netinst.html</a>
+	<p>This article describes some difficulties I faced while installing debian with netinst iso</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>September 3, 2022</pubDate>
+	<title>Concerns about router</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/router.html">https://samiuljoy.github.io/microblog/router.html</a>
+	<p>This article describes some of my concerns regarding the router and its behavior</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>August 22, 2022</pubDate>
+	<title>Forwarding tun0 traffic through access point on Android</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/vpn_tether.html">https://samiuljoy.github.io/microblog/vpn_tether.html</a>
+	<p>Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>April 14, 2022</pubDate>
+	<title>Going mouseless</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/mouseless.html">https://samiuljoy.github.io/microblog/mouseless.html</a>
+	<p>Control mouse in a more convenient and fast way</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>April 12, 2022</pubDate>
+	<title>Setup ibus avro on non Gnome platforms</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/avro.html">https://samiuljoy.github.io/microblog/avro.html</a>
+	<p>This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>March  4, 2022</pubDate>
+	<title>Plans on future projects</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/future_projects.html">https://samiuljoy.github.io/microblog/future_projects.html</a>
+	<p>This article sums up my plans for future projects</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>October 15, 2021</pubDate>
+	<title>Turtle fractal tree</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/turtle.html">https://samiuljoy.github.io/microblog/turtle.html</a>
+	<p>About the tree on the index page</p>
+	]]>
+	</description>
+</item>
+
+
+<item>
 	<pubDate>September 4, 2021</pubDate>
 	<title>Chemical structures with groff chem</title>
 	<description><![CDATA[
@@ -76,97 +177,6 @@
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/emulate.html">https://samiuljoy.github.io/microblog/emulate.html</a>
 	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>October 15, 2021</pubDate>
-	<title>Turtle fractal tree</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/turtle.html">https://samiuljoy.github.io/microblog/turtle.html</a>
-	<p>About the tree on the index page</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>March  4, 2022</pubDate>
-	<title>Plans on future projects</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/future_projects.html">https://samiuljoy.github.io/microblog/future_projects.html</a>
-	<p>This article sums up my plans for future projects</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>April 12, 2022</pubDate>
-	<title>Setup ibus avro on non Gnome platforms</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/avro.html">https://samiuljoy.github.io/microblog/avro.html</a>
-	<p>This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>April 14, 2022</pubDate>
-	<title>Going mouseless</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/mouseless.html">https://samiuljoy.github.io/microblog/mouseless.html</a>
-	<p>Control mouse in a more convenient and fast way</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>August 22, 2022</pubDate>
-	<title>Forwarding tun0 traffic through access point on Android</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/vpn_tether.html">https://samiuljoy.github.io/microblog/vpn_tether.html</a>
-	<p>Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 3, 2022</pubDate>
-	<title>Concerns about router</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/router.html">https://samiuljoy.github.io/microblog/router.html</a>
-	<p>This article describes some of my concerns regarding the router and its behavior</p>
-	]]>
-	</description>
-</item>
-
-
-<item>
-	<pubDate>September 7, 2022</pubDate>
-	<title>Debian netinstall problems</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/netinst.html">https://samiuljoy.github.io/microblog/netinst.html</a>
-	<p>This article describes some difficulties I faced while installing debian with netinst iso</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 22, 2022</pubDate>
-	<title>Solving a puzzle</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/puzzle.html">https://samiuljoy.github.io/microblog/puzzle.html</a>
-	<p>Very bad neighborhood</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 25, 2022</pubDate>
-	<title>Captive Portal on Apache</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/captive.html">https://samiuljoy.github.io/microblog/captive.html</a>
-	<p>Learn to create captive portal pages on Apache web server</p>
 	]]>
 	</description>
 </item>
