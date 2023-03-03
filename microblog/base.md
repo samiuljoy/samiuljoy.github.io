@@ -68,9 +68,6 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 ----------------card
 
 
-.next[next->](base2.html)
-
-
 .hr
 
 ----------------main

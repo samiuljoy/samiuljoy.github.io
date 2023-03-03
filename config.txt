@@ -33,7 +33,6 @@ microblog/avro.md
 microblog/future_projects.md
 microblog/mouseless.md
 microblog/vpn_tether.md
-microblog/base2.md
 theology/base.md
 theology/quran.md
 academics/base.md
