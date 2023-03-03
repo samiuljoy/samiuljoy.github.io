@@ -36,7 +36,7 @@ This is a quick tutorial on how to generate captive portal pages on Apache web s
 	RewriteEngine On
 	RewriteBase /
 	RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-	RewriteCond ^(.*)$ http://%1/$1 [R=301,L]
+	RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
 
 	RewriteCond %{REQUEST_FILENAME} !-f
 	RewriteCond %{REQUEST_FILENAME} !-d

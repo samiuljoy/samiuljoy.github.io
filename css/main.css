@@ -191,6 +191,11 @@ nav ul li{
 	text-decoration: none;
 	font-weight: normal;
 }
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto;
+	gap: 5px;
+}
 .date, author {
 	color: grey;
 	margin-bottom: 1rem;
