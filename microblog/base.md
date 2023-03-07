@@ -61,9 +61,25 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [Plans on future projects](future_projects.html)
 .describe: This article sums up my plans for future projects
 
+.date: November 1, 2020
+.article: [Emulating user interactions using adb](emulate.html)
+.describe: Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android
+
 .date: October 15, 2021
 .article: [Turtle fractal tree](turtle.html)
 .describe: About the tree on the index page
+
+.date: September 4, 2021
+.article: [Chemical structures with groff chem](gchem.html)
+.describe: Learn how to draw chemical structures with groff chem
+
+.date: February 20, 2020
+.article: [login.sh + username.sh](login.html)
+.describe: Emulating Linux login mechanism using bash scripts
+
+.date: February 13, 2020
+.article: [guess.sh](guess.html)
+.describe: A simple number guessing game where you get to guess 2 digit random numbers
 
 ----------------card
 

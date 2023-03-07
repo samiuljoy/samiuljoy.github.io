@@ -126,7 +126,7 @@ The idea of creating this came while I was reading a book called "Python Crash C
 ```
 
 
-> I'll always remeber how satisfied I felt watching my family play a game I created."
+> I'll always remember how satisfied I felt watching my family play a game I created."
 
 .hr
 
