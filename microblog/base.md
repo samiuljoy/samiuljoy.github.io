@@ -25,6 +25,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
 
+.date: July 12, 2023
+.article: [Windows is a little piece of shit](windows-is-shit.html)
+.describe: The struggle with windows made me comment on windows like this
+
 .date: January 16, 2023
 .article: [Adding Applications Manually](webview.html)
 .describe: Adding applications manually on an unlocked android device

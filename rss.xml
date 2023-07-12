@@ -8,6 +8,16 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
+	<pubDate>July 12, 2023</pubDate>
+	<title>Windows is a little piece of shit</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/windows-is-shit.html">https://samiuljoy.github.io/microblog/windows-is-shit.html</a>
+	<p>The struggle with windows made me comment on windows like this</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>January 16, 2023</pubDate>
 	<title>Adding Applications Manually</title>
 	<description><![CDATA[

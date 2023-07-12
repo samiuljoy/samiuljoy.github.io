@@ -43,6 +43,7 @@ microblog/netinst.md
 microblog/puzzle.md
 microblog/captive.md
 microblog/webview.md
+microblog/windows-is-shit.md
 --------sitemap
 
 ++++navigation

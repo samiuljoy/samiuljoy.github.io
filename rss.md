@@ -41,6 +41,16 @@
 
 
 <item>
+	<pubDate>July 12, 2023</pubDate>
+	<title>Windows is a little piece of shit</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/windows-is-shit.html">https://samiuljoy.github.io/microblog/windows-is-shit.html</a>
+	<p>The struggle with windows made me comment on windows like this</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>January 16, 2023</pubDate>
 	<title>Adding Applications Manually</title>
 	<description><![CDATA[
@@ -131,6 +141,16 @@
 </item>
 
 <item>
+	<pubDate>November 1, 2020</pubDate>
+	<title>Emulating user interactions using adb</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/emulate.html">https://samiuljoy.github.io/microblog/emulate.html</a>
+	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>October 15, 2021</pubDate>
 	<title>Turtle fractal tree</title>
 	<description><![CDATA[
@@ -140,23 +160,12 @@
 	</description>
 </item>
 
-
 <item>
 	<pubDate>September 4, 2021</pubDate>
 	<title>Chemical structures with groff chem</title>
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/gchem.html">https://samiuljoy.github.io/microblog/gchem.html</a>
 	<p>Learn how to draw chemical structures with groff chem</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>February 13, 2020</pubDate>
-	<title>guess.sh</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/guess.html">https://samiuljoy.github.io/microblog/guess.html</a>
-	<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
 	]]>
 	</description>
 </item>
@@ -172,11 +181,11 @@
 </item>
 
 <item>
-	<pubDate>November 1, 2020</pubDate>
-	<title>Emulating user interactions using adb</title>
+	<pubDate>February 13, 2020</pubDate>
+	<title>guess.sh</title>
 	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/emulate.html">https://samiuljoy.github.io/microblog/emulate.html</a>
-	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android</p>
+	<a href="https://samiuljoy.github.io/microblog/guess.html">https://samiuljoy.github.io/microblog/guess.html</a>
+	<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
 	]]>
 	</description>
 </item>
