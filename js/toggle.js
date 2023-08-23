@@ -12,7 +12,7 @@ const enableDarkMode = () => {
 }
 const disableDarkMode = () => {
 	document.body.classList.remove('D');
-	meta.setAttribute("content", "#002f30");
+	meta.setAttribute("content", "#f8f8eb");
 	//word2.innerHTML = '🔆';
 	word2.innerHTML = 'λ';
 	localStorage.setItem('darkMode', null);
