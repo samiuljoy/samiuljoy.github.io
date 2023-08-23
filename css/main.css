@@ -1,10 +1,15 @@
+@font-face {
+	font-family: "f";
+	src: url("f.ttf");
+}
+
 :root{
 	--pri: #382c14;
 	--sec: #382c14;
 	--lnk: #382c14;
 	--lc: #778899;
 	--lbl: #000000;
-	--hfont: Monospace;
+	--hfont: "f", Monospace;
 	--fsize: 1.5rem;
 }
 body{
