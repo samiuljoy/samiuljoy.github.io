@@ -25,6 +25,11 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
 
+
+.date: October 21, 2023
+.article: [Making the router less hot](routere.html)
+.describe: This article describes about different ways to make the router less hot when running and making it more efficient and fast
+
 .date: August 23, 2023
 .article: [BirdFeeding](bird.html)
 .describe: This is about feeding birds
@@ -84,6 +89,7 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .date: February 13, 2020
 .article: [guess.sh](guess.html)
 .describe: A simple number guessing game where you get to guess 2 digit random numbers
+
 
 ----------------card
 

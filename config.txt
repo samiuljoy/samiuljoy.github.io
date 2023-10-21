@@ -45,6 +45,7 @@ microblog/captive.md
 microblog/webview.md
 microblog/windows-is-shit.md
 microblog/bird.md
+microblog/routere.md
 --------sitemap
 
 ++++navigation
