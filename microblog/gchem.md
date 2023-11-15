@@ -21,7 +21,7 @@
 ++++++++++++++++main
 .ce header1: Groff Chem
 
-Learn how to create chemical structures with groff. Groff is a text formating process for Linux systems. Groff is the Gnu version of roff. Groff is what used to write man pages on Gnu/Linux systems and roff on Unix systems. Chem is an additional extension for drawing chemical structures with groff.
+Groff is a text formating process for Linux systems. Groff is the Gnu version of roff. Groff is what used to write man pages on Gnu/Linux systems and roff on Unix systems. Chem is an additional extension for drawing chemical structures with groff.
 
 Chemical structures are bounded between .cstart and .cend sections. There's different labels for different structures. There's ring structure, there's Benzene structures so on and so forth.
 
