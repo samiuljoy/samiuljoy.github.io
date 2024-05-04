@@ -20,9 +20,9 @@ const disableDarkMode = () => {
 if (darkMode === 'enabled') {
 	enableDarkMode();
 }
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-	enableDarkMode();
-}
+//if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//	enableDarkMode();
+//}
 darkModeToggle.addEventListener('click', () => {
 	darkMode = localStorage.getItem('darkMode');
 	if (darkMode !== 'enabled') {
