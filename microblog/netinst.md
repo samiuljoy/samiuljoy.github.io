@@ -29,7 +29,7 @@ The most easies way to write an iso from a Linux terminal is through the `dd` co
 
 And in most cases, this works just fine. However in case of debian netisntall image, writing with disk dump doesn't particularly does the job for me. One cause could be that the iso could be invoking codes that are probably unknown to the motherboard bios that I have since it's quite old, and it does infact work on other devices. So, I had to find an alternative. I can not just ditch my motherboard now can I?
 
-There's this usb tool called rufus which nicely writes iso files onto usb drives, however rufus is platform specific, it does not work on Linux. So I did google search, and came across this indian website that suggested unetbootin was the best alternative. You know as they say, there's always something not right about indian people suggesting things, and it turned out to be true. Unetbootin uses some weird method to write data to disk, and weirdly enough, the disk needs to be mounted while it's writing the iso.
+There's this usb tool called rufus which nicely writes iso files onto usb drives, however rufus is platform specific, it does not work on Linux. So I did google search, and came across this indian website that suggested unetbootin was the best alternative. Apparently, Unetbootin uses some weird method to write data to disk, and weirdly enough, the disk needs to be mounted while it's writing the iso.
 
 So while installing debian with unetbootin, after a while, the installation halts and complains that the installation media isn't properly configured or something like that. So stack exchange says that I needed to mount the installation media as a cdrom after migrating to terminal like so;
 

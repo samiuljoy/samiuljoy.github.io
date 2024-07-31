@@ -8,11 +8,21 @@
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
 <item>
-	<pubDate>July 12, 2023</pubDate>
-	<title>Windows is a little piece of shit</title>
+	<pubDate>October 21, 2023</pubDate>
+	<title>Making the router less hot</title>
 	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/windows-is-shit.html">https://samiuljoy.github.io/microblog/windows-is-shit.html</a>
-	<p>The struggle with windows made me comment on windows like this</p>
+	<a href="https://samiuljoy.github.io/microblog/routere.html">https://samiuljoy.github.io/microblog/routere.html</a>
+	<p>This article describes about different ways to make the router less hot when running and making it more efficient and fast</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>August 23, 2023</pubDate>
+	<title>BirdFeeding</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/bird.html">https://samiuljoy.github.io/microblog/bird.html</a>
+	<p>This is about feeding birds</p>
 	]]>
 	</description>
 </item>

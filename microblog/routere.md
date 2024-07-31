@@ -25,8 +25,11 @@ I have this cheap Dlink router that I bought as an alternative router for my hom
 
 
 #. Stopping services that are not needed by the router/halting extra processes running on the router
+
 #. Finding a way to turn off the router led lights because they are hard coded onto the router board
+
 #. Hiding the ssid of the WiFi because constant ssid broadcast heats up the router pretty quickly
+
 #. Disabling DHCP server
 
 
