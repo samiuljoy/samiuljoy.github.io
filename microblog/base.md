@@ -25,6 +25,9 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
 
+.date: September 23, 2024
+.article: [Accessing raspberry pi 2w through micro-usb](raspberry2ether.html)
+.describe: A short tut on accessing raspberry pi 2w through micro-usb, that way it becomes easier to access it through ssh on a pc and can connect to wifi at the same time
 
 .date: October 21, 2023
 .article: [Making the router less hot](routere.html)

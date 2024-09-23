@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Accessing raspberry pi 2w through micro-usb</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#f8f8eb">
+	<meta name="author" content="Samiul Ahmed">
+	<meta name="description" content="A short tut on accessing raspberry pi 2w through micro-usb, that way it becomes easier to access it through ssh on a pc and can connect to wifi at the same time">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Accessing raspberrypi 2w through usb">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/raspberrypi2ether.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import './css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>Rpi 2w through microusb</center></h2>
+
+<h2># Reason</h2>
+
+<p>To ssh into rpi2w and connect to wifi for internet access. Mainly using separate interfaces; ssh through usb and internet through wifi, because ssh through wifi adds latency.</p>
+
+
+<h2># Equipments</h2>
+
+<ul>
+	<li>Raspberry pi zero w/zero 2w (RaspberrypiOS)</li>
+</ul>
+
+<ul>
+	<li>A micro USB cable to power Raspberrypi</li>
+</ul>
+
+<h2># Procedure</h2>
+
+<p>To access raspberrypi through usb cable, usb interface needs to be activated. For that take out your sd card and then edit <code>config.txt</code> file in bootfs directory. Add the following line in <code>config.txt</code></p>
+
+
+<pre>
+<code>
+dtoverlay=dwc2
+</code>
+</pre>
+<a class='btn' href='code/raspberry2ether.html-code1.txt'>view raw</a>
+
+
+<p>Note that there is a line that says <code>otg_mode=1</code> or something similar to that, just uncomment that line because raspberrypi will be a network device instead of a usb device. Now, also make sure to load the dwc2 module at startup. So, for that edit <code>cmdline.txt</code> on your sdcard and add the following portion right after rootwait;</p>
+
+
+<pre>
+<code>
+modules-load=dwc2,g&lowbar;ether 
+</code>
+</pre>
+<a class='btn' href='code/raspberry2ether.html-code2.txt'>view raw</a>
+
+
+<p>Now boot up raspberry pi, log in and edit network config. Type into your terminal;</p>
+
+
+<pre>
+<code>
+$ sudo nmtui
+</code>
+</pre>
+
+
+<p>And then hit <code>Edit a connection</code>, then hit <code>&lt;Add&gt;</code>, then select <code>Ethernet</code> as type of connection, then fill up the blank spaces with reference to the image below;</p>
+
+<center>
+	<img loading="lazy" class="pimg" src="../assets/net.png" alt="nmtui">
+</center>
+
+
+<div class="caption">Image: nmtui overview</div>
+
+<p> <b>Note:</b> Notice that ipv4 is manual and the check box is selected where it says <code>Never use this as the default route</code>. The reason for that is so that we can use wifi as default interface for internet access.</p>
+
+
+<p>The snippet below summarizes the entire procedure pretty much. Remember all of this needs to be done within your raspberry pi as sudo or root.</p>
+
+<center>
+	<video title="nmtui" controls>
+		<source src="../assets/nmtui.mp4">
+	</video>
+</center>
+
+<div class="caption">Video: Walkthrough</div>
+
+
+<p>Now to access raspberrypi through your pc, just set a static ipv4 address within same subnet as /24 or 255.255.255.0. Notice in the walkthrough video we gave our raspberry pi an ip address of 192.168.0.2, so our pc can have any ip address between 192.168.0.3-192.168.0.253. And then you can easily ssh into your raspberry pi. Not only that, you can also share your computers internet connection to your raspberrypi. You'd just need to uncheck the <code>Never use this network as default route</code> in raspberrypi and enable ip forwarding in your pc and write some <code>iptables</code> rule. And for normal use, you can easily connect to wifi and access ssh at the same time.</p>
+
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

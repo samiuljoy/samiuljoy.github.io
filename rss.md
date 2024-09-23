@@ -41,6 +41,16 @@
 
 
 <item>
+	<pubDate>September 23, 2024</pubDate>
+	<title>Accessing raspberry pi 2w through micro-usb</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/raspberry2ether.html">https://samiuljoy.github.io/microblog/raspberry2ether.html</a>
+	<p>A short tut on accessing raspberry pi 2w through micro-usb, that way it becomes easier to access it through ssh on a pc and can connect to wifi at the same time</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>October 21, 2023</pubDate>
 	<title>Making the router less hot</title>
 	<description><![CDATA[
