@@ -1,1 +1,2 @@
-$ sudo nmtui
+# Considering your usb interface name is usb0 and the network profile name is usb;
+nmcli enable usb

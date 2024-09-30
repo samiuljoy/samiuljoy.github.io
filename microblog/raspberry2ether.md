@@ -77,6 +77,15 @@ The snippet below summarizes the entire procedure pretty much. Remember all of t
 
 Now to access raspberrypi through your pc, just set a static ipv4 address within same subnet as /24 or 255.255.255.0. Notice in the walkthrough video we gave our raspberry pi an ip address of 192.168.0.2, so our pc can have any ip address between 192.168.0.3-192.168.0.253. And then you can easily ssh into your raspberry pi. Not only that, you can also share your computers internet connection to your raspberrypi. You'd just need to uncheck the `Never use this network as default route` in raspberrypi and enable ip forwarding in your pc and write some `iptables` rule. And for normal use, you can easily connect to wifi and access ssh at the same time.
 
+Also, to auto enable usb0 interface at startup on raspberrypi, make sure to add this line in your `/etc/rc.local`;
+
+
+```3
+	# Considering your usb interface name is usb0 and the network profile name is usb;
+	nmcli enable usb
+```
+.code3
+
 
 .hr
 
