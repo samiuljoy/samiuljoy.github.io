@@ -43,9 +43,9 @@ Mail me on this address if you can figure out what this is;
 	#!/usr/bin/env sh
 
 	first_portion="samiul"
-	last_portion="joy46"
+	last_portion="ahmedmail"
 
-	address="yahoo.com"
+	address="gmail.com"
 	where="@"
 
 	# Send me email through this address
