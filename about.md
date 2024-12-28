@@ -25,13 +25,15 @@ The primary objective was to showcase the [ssg demo pages](demo/base.html). ssg 
 
 ### # About me
 
-A final year student of plant science. Did a thesis on the effects of auxin on _Rauvolfia tetraphylla_. Also found out the hard way that the plant _Abroma augustum_ can hardly tolerate water logged conditions. Other than plant stuff, I also like to fiddle around with computer stuff. I like solving/automating mundane tasks with scripting languages like shell scripting and python. Aside from these, I also do occassional website designing and some typing jobs (can type upto 90 wpm on average) as a freelancer. I am a linux user and have been since 2014, am very comfortable with platforms and terms such as Linux, CLI, raspberry pi, arduino and so on. I also took some online free classes regarding networking and firewalls, so I know a bit or two about setting up firewalls and networking equipments on Office, SoHo (Small office Home office) and the tools required for proper connection isolation and traffic control of packets for individual devices on a network. I wrote some programs over the years, you can check them out at my github
+A final year student of plant science. Did a thesis on the effects of auxin on _Rauvolfia tetraphylla_. You can read the abstract [here](assets/abstract.pdf). Also found out the hard way that the plant _Abroma augustum_ can hardly tolerate water logged conditions. Other than plant stuff, I also like to fiddle around with computer stuff. I like solving/automating mundane tasks with scripting languages like shell scripting and python. Aside from these, I also do occassional website designing and some typing jobs (can type upto 90 wpm on average) as a freelancer. I'm mainly a linux user and have been since 2014, am very comfortable with platforms and terms such as Linux, CLI, raspberry pi, arduino and so on. I also took some online free classes regarding networking and firewalls, so I know a bit or two about setting up firewalls and networking equipments on Office, SoHo (Small office Home office) and the tools required for proper connection isolation and traffic control of packets for individual devices on a network. I wrote some programs over the years, you can check them out at my github
 
 ### {id="contact"} # Other stuff
 
  /* This is a comment for now #. kaggle -> [kaggle.com/samiuljoy](https://www.kaggle.com/samiuljoy) */
 
-#. github -> [github.com/samiuljoy](https://www.github.com/samiuljoy)
+#. New Github -> [github.com/samiulahmedjoy](https://www.github.com/samiulahmedjoy)
+
+#. Old Github -> [github.com/samiuljoy](https://www.github.com/samiuljoy)
 
 #. Rss feed -> [rss.xml](https://samiuljoy.github.io/rss.xml)
 
