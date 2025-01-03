@@ -35,6 +35,10 @@ A final year student of plant science. Did a thesis on the effects of auxin on _
 
 #. Old Github -> [github.com/samiuljoy](https://www.github.com/samiuljoy)
 
+#. New Kaggle -> [kaggle.com/samiulahmedjoy](https://kaggle.com/samiulahmedjoy)
+
+#. Old Kaggle -> [kaggle.com/samiuljoy](https://kaggle.com/samiuljoy)
+
 #. Rss feed -> [rss.xml](https://samiuljoy.github.io/rss.xml)
 
 Mail me on this address if you can figure out what this is;
