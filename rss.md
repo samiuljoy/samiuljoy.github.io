@@ -41,6 +41,16 @@
 
 
 <item>
+	<pubDate>January 21, 2025</pubDate>
+	<title>Change keycodes</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/customkeys.html">https://samiuljoy.github.io/microblog/customkeys.html</a>
+	<p>Changing key parameters and re-assignment of keys on a Linux machine</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>September 23, 2024</pubDate>
 	<title>Accessing raspberry pi 2w through micro-usb</title>
 	<description><![CDATA[

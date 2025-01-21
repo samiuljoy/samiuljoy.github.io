@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Key reassignment</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#f8f8eb">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="Change keyboard key assignments">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Change keyboard keys and reassign them">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/customkeys.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>Key Assignment</center></h2>
+
+<p>I recently bought an ergonomic bluetooth keyboard that had some weird keys such as shift key was so big that most of the time I ended up hitting Enter key by mistake and Caps lock key was a bit larger too which when hitting the key <code>A</code> I ended up hitting Caps lock instead, the backspace key was very far/at the end of the keyboard for some reason and home/end and ins/del keys were also wierdly placed. I needed ins/del and home/end keys to switch between tabs within vim since these were the keybinds I used on all my other keyboards. All in all I was having a hard time typing properly/efficiently on this new keyboard.</p>
+
+<p>So, I ended up searching for ways to change the keys/map keys, and found bunch of programs on the interweb. Some of the programs either needed to be daemonized or were extremely advanced/complex compared to what I was looking for or were exclusively dependent on a graphical environment. I was looking for something simple and already built-in into the system. So, I came across these programs, <code>xmodmap</code>, <code>xdotool</code> and <code>setkeycodes</code>. Out of all of these, setkeycodes was definitely what I needed and was built right into the system.</p>
+
+<h2># setkeycodes</h2>
+
+<p> <code>setkeycodes</code> basically takes in custom mappings from <code>$USER</code> and modifies the kernel keymappings to <code>$USER</code>. Running <code>man</code> on <code>setkeycodes</code> shows this portion;</p>
+
+
+<pre>
+<code>
+SETKEYCODES(8)                                           System Manager's Manual                                           SETKEYCODES(8)
+
+NAME
+       setkeycodes - load kernel scancode-to-keycode mapping table entries
+
+SYNOPSIS
+       setkeycodes scancode keycode &period;&period;&period;
+
+DESCRIPTION
+       The  setkeycodes command reads its arguments two at a time, each pair of arguments consisting of a scancode (given in hexadecimal)
+       and a keycode (given in decimal)&period; For each such pair, it tells the kernel keyboard driver to map the  specified  scancode  to  the
+       specified keycode&period;
+
+       This command is useful only for people with slightly unusual keyboards, that have a few keys which produce scancodes that the ker‐
+       nel does not recognize&period;
+
+THEORY
+       The usual PC keyboard produces a series of scancodes for each key press and key release&period; (Scancodes are shown by showkey  -s,  see
+       showkey(1)  )  The  kernel  parses  this  stream of scancodes, and converts it to a stream of keycodes (key press/release events)&period;
+       (Keycodes are shown by showkey&period;)  Apart from a few scancodes with special meaning, and apart from the  sequence  produced  by  the
+       Pause  key,  and  apart from shiftstate related scancodes, and apart from the key up/down bit, the stream of scancodes consists of
+       unescaped scancodes xx (7 bits) and escaped scancodes e0 xx (8+7 bits)&period;  To these scancodes or  scancode  pairs,  a  corresponding
+       keycode  can  be assigned (in the range 1-127)&period;  For example, if you have a Macro key that produces e0 6f according to showkey(1),
+       the command
+              setkeycodes e06f 112
+       will assign the keycode 112 to it, and then loadkeys(1) can be used to define the function of this key&period;
+
+       Some older kernels might hardwire a low scancode range to the equivalent keycodes; setkeycodes will fail when  you  try  to  remap
+       these&period;
+</code>
+</pre>
+<a class='btn' href='code/customkeys.html-code1.txt'>view raw</a>
+
+<p>The <b>Theory</b> portion on the man page describes about key release and key press events. Using this info we can modify/assign different hex values to the keys that we want to change using the <code>showkey</code> command. Now if you look at the Theory section on the above code block, you'll see a line that says;</p>
+
+<pre>
+<code>
+setkeycodes e06f 112
+</code>
+</pre>
+
+<p>The first portion of the hex value <code>e06f</code> is the identifier of the first keypress event for a key and 112 is the key that the keypress event is being assigned to. So, the hex value of the first keypress is being assigned to key 112. Now, how do I know what is <code>e06f</code> or <code>112</code> or which keys they are. This is where <code>showkey</code> program comes in use.</p>
+
+<h2># showkey</h2>
+
+<p>The showkey command basically takes standard input keypresses and prints them out in hex values/digital values. There's basically 2 modes to it, key-press event and key-release event. These are 2 different events with different keyvalues that can be separately assigned to key/s. If you look at the <b>Theory</b> portion of the code block above, it clearly describes the mechanism by which showkey converts scancodes(hex values) to keycodes(decimal values)</p>
+
+<pre>
+<code>
+THEORY
+	The usual PC keyboard produces a series of scancodes for each key press and key release&period; (Scancodes are shown by showkey  -s,  see
+	showkey(1)  )  The  kernel  parses  this  stream of scancodes, and converts it to a stream of keycodes (key press/release events)&period;
+	(Keycodes are shown by showkey&period;)
+</code>
+</pre>
+
+<p> <b>[Note:]</b> Remember, both the <code>showkey</code> and <code>setkeycodes</code> command needs to be executed as root user since it makes changes systemwide rather than $USER</p>
+
+<h2># Execution</h2>
+
+<p>The entire process follows these sequential steps;</p>
+
+<ol>
+	<li>Get the scancode(decimal value) of the key that we want to change to</li>
+	<li>Get the scancode(hex value) of the key that we want to be changed</li>
+	<li>Code execution</li>
+	<li>Running it at boot time(making it a init service)</li>
+</ol>
+
+<h3># Step: 1</h3>
+
+<p>So in my case, I have a huge shift key that interferes with me pressing enter and the backspace key being too far, this is what I wanted to do;</p>
+
+<ul>
+	<li>Change the Right Shift key to Enter(since it's quite big)</li>
+	<li>Change the Enter key to Backspace(Since backspace is usually above enter)</li>
+</ul>
+
+<p>It's basically negating the functionality of right shift key because I never use the right shift key. So, to get the scancode(decimal value) of the Enter key, we need to execute;</p>
+
+<pre>
+<code>
+root@machine: showkey
+
+keycode 28 press
+keycode 28 release
+</code>
+</pre>
+
+<p>The decimal value of the Enter/Return key is 28. You can also get this value another way by running <code>dumpkeys</code> which would dump keyvals into standard output.</p>
+
+<h3># Step: 2</h3>
+
+<p>Now, to get the hex value of the shift key, we need to add the <code>-s</code> flag with showkey command. The <code>-s</code> flag tells showkey to print out hex values of the key press and release values.</p>
+
+<pre>
+<code>
+root@machine: showkey -s
+
+0x36 0xb6
+</code>
+</pre>
+
+<p>So, the <code>0x36</code> is the keypress value and <code>0xb6</code> is the key release value.</p>
+
+<h3># Step: 3</h3>
+
+<p>So, to assign the hex values of right shift keys to <code>Return/Enter</code> keycode values(decimal) you would have to run;</p>
+
+<pre>
+<code>
+root@machine: setkeycodes 0x36 28
+</code>
+</pre>
+<a class='btn' href='code/customkeys.html-code2.txt'>view raw</a>
+
+<p>That should be it. Now the shift key will behave like a Return/Enter key. This will be applied systemwide. However, this is not persistent. You can just place the last code into a shell script for convenience and can also put it into a init script to run it at startup.</p>
+
+<h3># Step: 4</h3>
+
+<p>To make it a init service, place the init script in somewhere like <code>/usr/local/bin/customkeys.sh</code> then place the <code>customkeys.service</code> service file in <code>/etc/systemd/system/customkeys.service</code></p>
+
+<pre>
+<code>
+&lsqb;Unit&rsqb;
+Description: Keymaps
+
+&lsqb;Service&rsqb;
+Type=oneshot
+NoNewPrivileges=yes
+User=root
+ExecStart=/usr/local/bin/customkeys&period;sh
+
+&lsqb;Install&rsqb;
+WantedBy=multi-user&period;target
+</code>
+</pre>
+<a class='btn' href='code/customkeys.html-code3.txt'>view raw</a>
+
+<p>Then run <code>systemctl enable customkeys.service</code> to enable the service. If you have rc as init service, then just reference it in your <code>rc.local</code>.</p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+</body>
+</html>

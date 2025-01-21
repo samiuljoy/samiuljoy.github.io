@@ -47,6 +47,7 @@ microblog/windows-is-shit.md
 microblog/bird.md
 microblog/routere.md
 microblog/raspberry2ether.md
+microblog/customkeys.md
 --------sitemap
 
 ++++navigation

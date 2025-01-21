@@ -25,6 +25,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
 
+.date: January 21, 2025
+.article: [Change keycodes](customkeys.html)
+.describe: Changing key parameters and re-assignment of keys on a Linux machine
+
 .date: September 23, 2024
 .article: [Accessing raspberry pi 2w through micro-usb](raspberry2ether.html)
 .describe: A short tut on accessing raspberry pi 2w through micro-usb, that way it becomes easier to access it through ssh on a pc and can connect to wifi at the same time
@@ -92,7 +96,6 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .date: February 13, 2020
 .article: [guess.sh](guess.html)
 .describe: A simple number guessing game where you get to guess 2 digit random numbers
-
 
 ----------------card
 
