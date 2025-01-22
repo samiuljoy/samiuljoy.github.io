@@ -136,9 +136,16 @@ That should be it. Now the shift key will behave like a Return/Enter key. This w
 
 ### # Step: 4
 
-To make it a init service, place the init script in somewhere like `/usr/local/bin/customkeys.sh` then place the `customkeys.service` service file in `/etc/systemd/system/customkeys.service`
+To make it a init service, place the init script in somewhere like `/usr/local/bin/customkeys.sh` then place the `customkeys.service` service file in `/etc/systemd/system/` as
 
 ```3
+	root@machine: touch /etc/systemd/system/customkeys.service
+```
+.code3
+
+Then add the following lines in it;
+
+```4
 	[Unit]
 	Description: Keymaps
 
@@ -151,9 +158,16 @@ To make it a init service, place the init script in somewhere like `/usr/local/b
 	[Install]
 	WantedBy=multi-user.target
 ```
-.code3
+.code4
 
-Then run `systemctl enable customkeys.service` to enable the service. If you have rc as init service, then just reference it in your `rc.local` file.
+Then run;
+
+```5
+	systemctl enable customkeys.service
+```
+.code5
+
+to enable the service. If you have rc as init service, then just reference it in your `rc.local` file.
 
 .hr
 
