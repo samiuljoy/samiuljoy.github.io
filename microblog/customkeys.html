@@ -182,7 +182,16 @@ root@machine: setkeycodes 0x36 28
 
 <h3># Step: 4</h3>
 
-<p>To make it a init service, place the init script in somewhere like <code>/usr/local/bin/customkeys.sh</code> then place the <code>customkeys.service</code> service file in <code>/etc/systemd/system/customkeys.service</code></p>
+<p>To make it a init service, place the init script in somewhere like <code>/usr/local/bin/customkeys.sh</code> then place the <code>customkeys.service</code> service file in <code>/etc/systemd/system/</code> as</p>
+
+<pre>
+<code>
+root@machine: touch /etc/systemd/system/customkeys&period;service
+</code>
+</pre>
+<a class='btn' href='code/customkeys.html-code3.txt'>view raw</a>
+
+<p>Then add the following lines in it;</p>
 
 <pre>
 <code>
@@ -199,9 +208,18 @@ ExecStart=/usr/local/bin/customkeys&period;sh
 WantedBy=multi-user&period;target
 </code>
 </pre>
-<a class='btn' href='code/customkeys.html-code3.txt'>view raw</a>
+<a class='btn' href='code/customkeys.html-code4.txt'>view raw</a>
 
-<p>Then run <code>systemctl enable customkeys.service</code> to enable the service. If you have rc as init service, then just reference it in your <code>rc.local</code>.</p>
+<p>Then run;</p>
+
+<pre>
+<code>
+systemctl enable customkeys&period;service
+</code>
+</pre>
+<a class='btn' href='code/customkeys.html-code5.txt'>view raw</a>
+
+<p>to enable the service. If you have rc as init service, then just reference it in your <code>rc.local</code> file.</p>
 
 <hr>
 

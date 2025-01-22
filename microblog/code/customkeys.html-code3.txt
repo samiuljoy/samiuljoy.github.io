@@ -1,11 +1,1 @@
-[Unit]
-Description: Keymaps
-
-[Service]
-Type=oneshot
-NoNewPrivileges=yes
-User=root
-ExecStart=/usr/local/bin/customkeys.sh
-
-[Install]
-WantedBy=multi-user.target
+root@machine: touch /etc/systemd/system/customkeys.service
