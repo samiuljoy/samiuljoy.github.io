@@ -25,6 +25,10 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
 
+.date: February  1, 2025
+.article: [Minimizing resource utilization while coding in an IoT environment](arduinocli.html)
+.describe: This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide.
+
 .date: January 21, 2025
 .article: [Change keycodes](customkeys.html)
 .describe: Changing key parameters and re-assignment of keys on a Linux machine

@@ -48,6 +48,7 @@ microblog/bird.md
 microblog/routere.md
 microblog/raspberry2ether.md
 microblog/customkeys.md
+microblog/arduinocli.md
 --------sitemap
 
 ++++navigation

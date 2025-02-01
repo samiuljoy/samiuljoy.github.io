@@ -1,7 +1,7 @@
 +++++++++++++++++head
-.title: About this site
+.title: Samiul Ahmed Joy's posts
 .author: samiuljoy
-.description: About this site
+.description: This site shares Samiul Ahmed Joy's random posts. 
 .style: ./css/maind.css
 .style: ./css/main.css
 .name-generator: About page

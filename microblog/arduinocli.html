@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Minimizing resource utilization while coding in an IoT environment</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#f8f8eb">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide.">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="This post is about minimizing resource utilization while coding for IoT devices instead of using a full-fledged ide">
+	<link rel="canonical" href="https://samiuljoy.github.io/microblog/arduinocli.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../theology/base.html">theology</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>IoT coding but efficiently</center></h2>
+
+<p>Arduino-ide is a software used by most people for IoT coding. However, the cpu/power consumption is surprisingly high. It's understandable to a degree given the fact that it's a IDE after all, tasks such as function lookup, code completion definitely requires high processing power, however compared to VS code, the cpu usage is quite high for Arduino-ide. Also, it keeps trying to connect to the internet every 2 seconds and complains while working offline, which is just absurd. These are the things I do on a regular basis while coding;</p>
+
+<ul class="ull">
+	<li>Write code</li>
+	<li>Compile code</li>
+	<li>Upload code to IoT devices</li>
+	<li>Download necessary libraries when needed</li>
+</ul>
+
+<p>These are pretty basic tasks which in my opinion should not require that much high cpu/power consumption. I was basically searching for something more simpler and ended up finding the CLI version of the Arduino IDE. Besides code completion/definition lookups, arduino-cli was basically the perfect program for me.</p>
+
+<h2># arduino-cli</h2>
+
+<p>arduino-cli is basically a cli version of the ide minus the gui environment, code completion and other fancy stuffs. I can code in my favorite editor(VIM), which barely spikes cpu usage, and then compile codes, again barely spikes cpu usage and then upload codes straight from the terminal. I don't even need to log into a gui environment to even run this program, can do everything right from the tty which is just convenient & efficient. You can read more about arduino-cli <a href="https://arduino.github.io/arduino-cli" rel="nofollow">here</a>. I've even managed to underclock my cpu and tune it into powersave mode and run the cli software without any hassle whatsoever. I'm working on some IoT automation projects and will be uploading/writing about them in the near future. Have fun using arduino-cli</p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

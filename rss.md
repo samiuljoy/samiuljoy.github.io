@@ -220,6 +220,16 @@
 	</description>
 </item>
 
+<item>
+	<pubDate>February  1, 2025</pubDate>
+	<title>Minimizing resource utilization while coding in an IoT environment</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/arduinocli.html">https://samiuljoy.github.io/microblog/arduinocli.html</a>
+	<p>This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide.</p>
+	]]>
+	</description>
+</item>
+
 
 <item>
 	<pubDate>July 17, 2022</pubDate>
