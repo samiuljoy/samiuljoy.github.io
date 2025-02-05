@@ -51,6 +51,7 @@
 <main id="main" role="main">
 <center><h2>Router Concerns</center></h2>
 
+<div class='date'>September 3, 2022</div>
 <p>So, I bought a new router. The old phone that I was using as a DNS based ad blocking access point just died. This lead me to buy a new router. We already had a router, but it didn't have native simcard support. The new one supports it, and it also supports open-wrt which is just golden for me.</p>
 
 <p>So the first thing I did after setting everything up was running a nmap port scan. I thought okay probably port 80 and 443 and 1 or 2 more ports for other services should be open. But no, this router had even a telnet daemon running in the background. Which is very suspicious, considering the fact that there was no default way for me to change the telnet settings from the router admin page. The telnet option was hidden. It also has some remote access services enabled by default, and can not be disabled from the routers login page, even from the telnet session I was unable to disable the ACS service on the router. I tried downloading the config file of the router, which surprisingly saves configs in json format, with password and everything in just clear text. From there, I tried disabling the ACS service, making changes to the json file and pushing it back in, however after reboot, this thing just changes the whole config to default. Which leaves me with one option that I'd have to telnet into the router and manually kill the process with <code>kill $PID</code> command.</p>
