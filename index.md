@@ -17,7 +17,7 @@
 .page: [demo](demo/base.html)
 .page: [about](about.html)
 .page: [microblog](microblog/base.html)
-.page: [theology](theology/base.html)
+.page: [projects](projects/base.html)
 .page: [academics](academics/base.html)
 -------------------------navigation
 

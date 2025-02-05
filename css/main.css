@@ -212,9 +212,7 @@ nav ul li{
 	font-weight: bold;
 	font-size: 14px;
 	margin-top: 0;
-}
-.date {
-	float: right;
+	text-align: end;
 }
 .author {
 	float: left;

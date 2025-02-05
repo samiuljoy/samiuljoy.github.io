@@ -13,7 +13,7 @@
 .navmenu: roam
 .navpage: [demo](..//demo/base.html)
 .navpage: [microblog](..//microblog/base.html)
-.navpage: [theology](..//theology/base.html)
+.navpage: [projects](..//projects/base.html)
 .navpage: [academics](..//academics/base.html)
 .backpage: [base](base.html)
 ----------navigation
@@ -26,10 +26,14 @@ This here is the base demo page for static site generator [ssg](https://github.c
 The base page holds page entries to different articles in the same directory. Since this is a demo page, check out how to properly format base.md pages, index,md pages and general markdown pages in the following article entries.
 
 +++++++++++++++++card
-
+ 
 .date: April 12, 2022
 .article: [About ssg](ssg.html)
 .describe: A brief intro to ssg, what it is, it's function.
+
+.date: February  5, 2025
+.article: [Basic command line rundown](cmdline.html)
+.describe: This post gives you a basic command line rundown on generating/working with ssg
 
 .date: August 30, 2021
 .article: [Intro to basic syntaxes](syntax.html)
@@ -45,9 +49,7 @@ The base page holds page entries to different articles in the same directory. Si
 
 -----------------card
 
-
 .hr
-
 
 ----------------main
 
@@ -73,4 +75,3 @@ else {
 +++++++++add
 .script: ..//js/toggle.js
 -----------add
-

@@ -1,11 +1,11 @@
 +++++++++++++++++head
-.title: Working with plants on whole new level
-.author: Samiul Joy
-.description: Planning on working with plants on a more deeper level
+.title: About my projects
+.author: Samiul Ahmed Joy
+.description: This page holds index of my different projects
 .style: ..//css/maind.css
 .style: ..//css/main.css
-.name-generator: Starting work on thesis related stuffs
-.canonical-link: https://samiuljoy.github.io/academics/thesis.html
+.name-generator: This page is a collective placeholder of projects that I've worked in
+.canonical-link: https://samiujoy.github.io/projects/base.html
 -------------------head
 
 ++++navigation
@@ -19,9 +19,9 @@
 ----------navigation
 
 ++++++++++++++++main
-.ce header2: Plant Research stuff
+.ce header2: My projects
 
-I'm planning to work on some ecological and phytochemical analysis on plants. Hopefully everything works out nicely.
+This page contains some of the projects I've worked on/will be working on.
 
 .hr
 

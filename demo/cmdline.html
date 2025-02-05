@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Basic command line rundown</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#f8f8eb">
+	<meta name="author" content="Samiul Joy">
+	<meta name="description" content="This post gives you a basic command line rundown on generating/working with ssg">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="This post gives you a general rundown on using this program from the command line">
+	<link rel="canonical" href="https://samiuljoy.github.io/demo/cmdline.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../projects/base.html">projects</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>Rundown of ssg</center></h2>
+
+<p>This is a basic rundown/usage of the program ssg from the terminal</p>
+
+<h3># Step 1</h3>
+
+<p>Generate a config file by running <code>sh main.sh config</code>. Then edit the config.txt file on your own. For an example config file, you can see <a href="https://samiuljoy.github.io/config.txt" rel="nofollow">https://samiuljoy.github.io/config.txt</a>. Make sure to add a <code>base.md</code> page on your first entry to every new page except for about and index page. The need for base.md page is to hold records of the different posts and display them on a dedicated page. For more info about basepage syntax please refer to <a href="https://samiuljoy.github.io/demo/basepage.html" rel="nofollow">https://samiuljoy.github.io/demo/basepage.html</a></p>
+
+<h3># Step 2</h3>
+
+<p>If you're done editing config.txt file, initialize everything that you've declared on your config file by running <code>sh main.sh init</code>. This will create all the files, directories and whatnot</p>
+
+<h3># Step 3</h3>
+
+<p>Now, generate navigation section by running <code>sh main.sh navgen</code>. This navigation part just adds home, roam and base buttons on your navigation section</p>
+
+<h3># Step 4</h3>
+
+<p>Now, edit your index.md page. Open your favorite text editor and edit the index.md file. For example index.md reference, see <a href="https://samiuljoy.github.io/index.md" rel="nofollow">https://samiuljoy.github.io/index.md</a> and for syntax help please refer to this documentation, <a href="https://samiuljoy.github.io/demo/indexpage.html" rel="nofollow">https://samiuljoy.github.io/demo/indexpage.html</a> After done editing the index.md file, just run <code>sh main.sh index index.md</code>, which will generate a index.html file.</p>
+
+<h3># Step 5</h3>
+
+<p>Now Edit the base.md page if your article is going to be in a directory such as <code>blog/firstblog.md</code>. In such case, first edit <code>blog/base.md</code> page with your text editor. For an example see <a href="https://samiuljoy.github.io/microblog/base.md" rel="nofollow">https://samiuljoy.github.io/microblog/base.md</a> and for syntax documentation, please refer to <a href="https://samiuljoy.github.io/demo/basepage.html" rel="nofollow">https://samiuljoy.github.io/demo/basepage.html</a> Just run <code>sh main.sh post</code> and when it asks for the filename, just add <code>blog/base.md</code> as the filename</p>
+
+<h3># Step 6</h3>
+
+<p>If you've completed everything above correctly, you can start writing your posts. You can either run <code>sh main.sh post</code> and add manual entries to config.txt, blog/base.md file or you could just run <code>sh main.sh add</code> and let all your entries by added automatically. It's your choice, depends on use case hence, added both post and add option for for variance.</p>
+
+<h3># Step 7</h3>
+
+<p>Now since you've added all posts and everything, now run <code>sh main.sh all</code>. This will generate html pages for all the files mentioned in <code>config.txt</code>.</p>
+
+<h3># Step 8</h3>
+
+<p>For convenience you can also run <code>sh main.sh final</code> which will copy all the generated html files into a separate sub-directory</p>
+<h3># Step 9</h3>
+
+<p>Last but not least, you can also generate rss.xml feeds of all your posts. Just run <code>sh main.sh rss</code></p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

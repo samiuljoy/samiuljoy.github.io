@@ -13,7 +13,7 @@
 .navmenu: roam
 .navpage: [demo](..//demo/base.html)
 .navpage: [microblog](..//microblog/base.html)
-.navpage: [theology](..//theology/base.html)
+.navpage: [projects](..//projects/base.html)
 .navpage: [academics](..//academics/base.html)
 .backpage: [base](base.html)
 ----------navigation

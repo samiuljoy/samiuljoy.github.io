@@ -33,8 +33,7 @@ microblog/avro.md
 microblog/future_projects.md
 microblog/mouseless.md
 microblog/vpn_tether.md
-theology/base.md
-theology/quran.md
+projects/base.md
 academics/base.md
 academics/thesis.md
 academics/fail.md
@@ -49,6 +48,7 @@ microblog/routere.md
 microblog/raspberry2ether.md
 microblog/customkeys.md
 microblog/arduinocli.md
+demo/cmdline.md
 --------sitemap
 
 ++++navigation
@@ -56,7 +56,7 @@ microblog/arduinocli.md
 .navmenu: roam
 .navpage: [demo](demo/base.html)
 .navpage: [microblog](microblog/base.html)
-.navpage: [theology](theology/base.html)
+.navpage: [projects](projects/base.html)
 .navpage: [academics](academics/base.html)
 .backpage: [base](base.html)
 ----------navigation

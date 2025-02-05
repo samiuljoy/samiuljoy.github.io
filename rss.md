@@ -41,6 +41,16 @@
 
 
 <item>
+	<pubDate>February  1, 2025</pubDate>
+	<title>Minimizing resource utilization while coding in an IoT environment</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/microblog/arduinocli.html">https://samiuljoy.github.io/microblog/arduinocli.html</a>
+	<p>This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide.</p>
+	]]>
+	</description>
+</item>
+
+<item>
 	<pubDate>January 21, 2025</pubDate>
 	<title>Change keycodes</title>
 	<description><![CDATA[
@@ -216,27 +226,6 @@
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/microblog/guess.html">https://samiuljoy.github.io/microblog/guess.html</a>
 	<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>February  1, 2025</pubDate>
-	<title>Minimizing resource utilization while coding in an IoT environment</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/microblog/arduinocli.html">https://samiuljoy.github.io/microblog/arduinocli.html</a>
-	<p>This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide.</p>
-	]]>
-	</description>
-</item>
-
-
-<item>
-	<pubDate>July 17, 2022</pubDate>
-	<title>Numerical Aspects of The Holy Quran</title>
-	<description><![CDATA[
-	<a href="https://samiuljoy.github.io/theology/quran.html">https://samiuljoy.github.io/theology/quran.html</a>
-	<p>A Study about the numerical aspects of the Holy Quran</p>
 	]]>
 	</description>
 </item>
