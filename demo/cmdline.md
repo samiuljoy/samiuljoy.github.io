@@ -25,7 +25,7 @@ This is a basic rundown/usage of the program ssg from the terminal
 
 ### # Step 1
 
-Generate a config file by running `sh main.sh config`. Then edit the config.txt file on your own. For an example config file, you can see [https://samiuljoy.github.io/config.txt](https://samiuljoy.github.io/config.txt). Make sure to add a `base.md` page on your first entry to every new page except for about and index page. The need for base.md page is to hold records of the different posts and display them on a dedicated page. For more info about basepage syntax please refer to [https://samiuljoy.github.io/demo/basepage.html](https://samiuljoy.github.io/demo/basepage.html)
+Generate a config file by running `sh main.sh config`. Then edit the config.txt file on your own. For an example config file, you can see [here](https://samiuljoy.github.io/config.txt). Make sure to add a `base.md` page on your first entry to every new page except for about and index page. The need for base.md page is to hold records of the different posts and display them on a dedicated page. For more info about basepage syntax please refer to [here](https://samiuljoy.github.io/demo/basepage.html)
 
 ### # Step 2
 
@@ -37,11 +37,11 @@ Now, generate navigation section by running `sh main.sh navgen`. This navigation
 
 ### # Step 4
 
-Now, edit your index.md page. Open your favorite text editor and edit the index.md file. For example index.md reference, see [https://samiuljoy.github.io/index.md](https://samiuljoy.github.io/index.md) and for syntax help please refer to this documentation, [https://samiuljoy.github.io/demo/indexpage.html](https://samiuljoy.github.io/demo/indexpage.html) After done editing the index.md file, just run `sh main.sh index index.md`, which will generate a index.html file.
+Now, edit your index.md page. Open your favorite text editor and edit the index.md file. For example index.md reference, see [here](https://samiuljoy.github.io/index.md) and for syntax help please refer to this documentation, [here](https://samiuljoy.github.io/demo/indexpage.html) After done editing the index.md file, just run `sh main.sh index index.md`, which will generate a index.html file.
 
 ### # Step 5
 
-Now Edit the base.md page if your article is going to be in a directory such as `blog/firstblog.md`. In such case, first edit `blog/base.md` page with your text editor. For an example see [https://samiuljoy.github.io/microblog/base.md](https://samiuljoy.github.io/microblog/base.md) and for syntax documentation, please refer to [https://samiuljoy.github.io/demo/basepage.html](https://samiuljoy.github.io/demo/basepage.html) Just run `sh main.sh post` and when it asks for the filename, just add `blog/base.md` as the filename
+Now Edit the base.md page if your article is going to be in a directory such as `blog/firstblog.md`. In such case, first edit `blog/base.md` page with your text editor. For an example see [here](https://samiuljoy.github.io/microblog/base.md) and for syntax documentation, please refer to [here](https://samiuljoy.github.io/demo/basepage.html) Just run `sh main.sh post` and when it asks for the filename, just add `blog/base.md` as the filename
 
 ### # Step 6
 
@@ -57,6 +57,11 @@ For convenience you can also run `sh main.sh final` which will copy all the gene
 ### # Step 9
 
 Last but not least, you can also generate rss.xml feeds of all your posts. Just run `sh main.sh rss`
+
+!!![CLI usage](https://www.youtube.com/embed/W9qleSpFd20?si=EYMd2c2WPGfhPTDt)
+
+.caption: Video: Here's a video reference showcasing CLI usage
+
 
 .hr
 
