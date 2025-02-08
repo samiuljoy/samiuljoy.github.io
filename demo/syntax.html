@@ -51,8 +51,7 @@
 <main id="main" role="main">
 <center><h1>Intro to syntax!</center></h1>
 
-<div class='date'>August 30, 2021</div>
-<center><img class="cover" src="../assets/terry.png" alt="A Famous quote from Terry Davis" loading="lazy"></center>
+<center><img class="cover" src="../assets/basepage.png" alt="Cover image" loading="lazy"></center>
 
 
 <div class="caption">This is a cover image</div>
@@ -186,44 +185,44 @@ some more text
 
 <pre>
 <code>
-&period;pimg: &period;&period;/assets/terry&period;png terry davis quote
+&period;pimg: &period;&period;/assets/basepage&period;png placeholder text
 
-&period;caption: Image: One of Terry Davis's quotes
+&period;caption: Image: Image example
 </code>
 </pre>
 
-<p>The .pimg portion is calling paragraph image method, then terry.png is the image file being called from previous directory assets and the later portion is just an alt, if image does not get displayed then show 'terry davis quote'. The caption portion is what get's displayed below the image.</p>
+<p>The .pimg portion is calling paragraph image method, then <a href="../assets/basepage.png" rel="nofollow">basepage.png</a> is the image file being called from previous directory assets and the later portion is just an alt, if image does not get displayed then show 'placeholder text'. The caption portion is what get's displayed below the image.</p>
 
-<center><img class="pimg" src="../assets/terry.png" alt="terry davis quote"></center>
+<center><img class="pimg" src="../assets/basepage.png" alt="placeholder text"></center>
 
 
-<div class="caption">Image: One of Terry Davis's quotes</div>
+<div class="caption">Image: Image example</div>
 
 <p>Alternatively you can also add class sections in images. The cover image(which is previously mentioned in css file) at the top looks like this in raw code;</p>
 
 <pre>
 <code>
-&period;img: class="cover" &period;&period;/assets/terry&period;png A famous quote from Terry Davis
+&period;img: class="cover" &period;&period;/assets/basepage&period;png placeholder text
 </code>
 </pre>
 
-<p><b>Explanation:</b> The <code>.img</code> method invokes class="cover" followed by the image file directory which is <code>../assets/terry.png</code>. The later portion is for accessibility which is an alt text. The spaces are separators in this case.</p>
+<p><b>Explanation:</b> The <code>.img</code> method invokes class="cover" followed by the image file directory which is <code>../assets/basepage.png</code>. The later portion is for accessibility which is an alt text. The spaces are separators in this case.</p>
 
 <p>And yes you can also use default markdown syntax to add images as well;</p>
 
 <pre>
 <code>
-&excl;&lsqb;Terry Davis&rsqb;(&period;&period;/assets/terry&period;png)
-&period;caption: Image: One of Terry Davis's quotes
+&excl;&lsqb;placeholder text&rsqb;(&period;&period;/assets/basepage&period;png)
+&period;caption: Image: Image example
 </code>
 </pre>
 
 <center>
-	<img loading="lazy" class="pimg" src="../assets/terry.png" alt="Terry Davis">
+	<img loading="lazy" class="pimg" src="../assets/basepage.png" alt="placeholder text">
 </center>
 
 
-<div class="caption">Image: One of Terry Davis's quotes</div>
+<div class="caption">Image: Example image</div>
 
 <h2># Video addition</h2>
 

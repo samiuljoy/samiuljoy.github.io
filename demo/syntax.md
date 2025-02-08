@@ -21,7 +21,7 @@
 ++++++++++++++++main
 .ce header1: Intro to syntax!
 
-.img: class="cover" ../assets/terry.png A Famous quote from Terry Davis
+.img: class="cover" ../assets/basepage.png Cover image
 
 .caption: This is a cover image
 
@@ -133,35 +133,35 @@ You can also jump through sections with `{id="idname"}` after a header section a
 Add paragraph images with `.pimg:` tags
 
 ```no
-	.pimg: ../assets/terry.png terry davis quote
+	.pimg: ../assets/basepage.png placeholder text
 	
-	.caption: Image: One of Terry Davis's quotes
+	.caption: Image: Image example
 ```
 
-The .pimg portion is calling paragraph image method, then terry.png is the image file being called from previous directory assets and the later portion is just an alt, if image does not get displayed then show 'terry davis quote'. The caption portion is what get's displayed below the image.
+The .pimg portion is calling paragraph image method, then [basepage.png](../assets/basepage.png) is the image file being called from previous directory assets and the later portion is just an alt, if image does not get displayed then show 'placeholder text'. The caption portion is what get's displayed below the image.
 
-.pimg: ../assets/terry.png terry davis quote
+.pimg: ../assets/basepage.png placeholder text
 
-.caption: Image: One of Terry Davis's quotes
+.caption: Image: Image example
 
 Alternatively you can also add class sections in images. The cover image(which is previously mentioned in css file) at the top looks like this in raw code;
 
 ```no
-	.img: class="cover" ../assets/terry.png A famous quote from Terry Davis
+	.img: class="cover" ../assets/basepage.png placeholder text
 ```
 
-__Explanation:__ The `.img` method invokes class="cover" followed by the image file directory which is `../assets/terry.png`. The later portion is for accessibility which is an alt text. The spaces are separators in this case.
+__Explanation:__ The `.img` method invokes class="cover" followed by the image file directory which is `../assets/basepage.png`. The later portion is for accessibility which is an alt text. The spaces are separators in this case.
 
 And yes you can also use default markdown syntax to add images as well;
 
 ```no
-	![Terry Davis](../assets/terry.png)
-	.caption: Image: One of Terry Davis's quotes
+	![placeholder text](../assets/basepage.png)
+	.caption: Image: Image example
 ```
 
-![Terry Davis](../assets/terry.png)
+![placeholder text](../assets/basepage.png)
 
-.caption: Image: One of Terry Davis's quotes
+.caption: Image: Example image
 
 ## # Video addition
 
