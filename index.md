@@ -16,6 +16,7 @@
 ++++++++++++++++++++navigation
 .page: [demo](demo/base.html)
 .page: [about](about.html)
+.page: [portfolio](portfolio.html)
 .page: [microblog](microblog/base.html)
 .page: [projects](projects/base.html)
 .page: [academics](academics/base.html)
