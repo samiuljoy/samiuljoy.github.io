@@ -1,10 +1,21 @@
 
+ 
 <item>
 	<pubDate>April 12, 2022</pubDate>
 	<title>About ssg</title>
 	<description><![CDATA[
 	<a href="https://samiuljoy.github.io/demo/ssg.html">https://samiuljoy.github.io/demo/ssg.html</a>
 	<p>A brief intro to ssg, what it is, it's function.</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>February  5, 2025</pubDate>
+	<title>Basic command line rundown</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/demo/cmdline.html">https://samiuljoy.github.io/demo/cmdline.html</a>
+	<p>This post gives you a basic command line rundown on generating/working with ssg</p>
 	]]>
 	</description>
 </item>
