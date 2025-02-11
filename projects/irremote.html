@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Remote Control Stuff</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#f8f8eb">
+	<meta name="author" content="Samiul Ahmed Joy">
+	<meta name="description" content="Turn relay module on or off based off of remote signal">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+	<meta name="generator" content="Turn relay module on or off based off of remote signal">
+	<link rel="canonical" href="https://samiuljoy.github.io/projects/irremote.html">
+</head>
+
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../projects/base.html">projects</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import '..//css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<main id="main" role="main">
+<center><h2>Ir Remote actions</center></h2>
+
+<div class='date'>February 12, 2025</div>
+<p>This post is going to be pretty straight-forward</p>
+
+<h3># What this does</h3>
+
+<p>Takes ir remote values and performs an action with it. In this case, it takes IR remote values and then switches relay module between NO/NC, basically turns it on or off</p>
+
+<h3># How this idea came to be</h3>
+
+<p>I felt lazy and didn't want to get up from bed at night to turn off electronic devices. Then realised this could actually help out old people to turn off lights/other electronic devices.</p>
+
+<h3># Equipments</h3>
+
+<ul>
+	<li>Arduino Nano (I used Arduino Nano, but you could use any dev board)</li>
+</ul>
+
+<ul>
+	<li>Relay Module (I used a 5v relay module)</li>
+</ul>
+
+<ul>
+	<li>IR Remote Sensor (I used a pretty basic sensor, it looks like a diode)</li>
+</ul>
+
+<ul>
+	<li>Jumper Wires</li>
+</ul>
+
+<ul>
+	<li>Bread Board (Depends on your use case)</li>
+</ul>
+
+<h3># External Libraries</h3>
+
+<p>You might need to install Arduino ir remote library from <a href="https://github.com/Arduino-IRremote/Arduino-IRremote" rel="nofollow">here</a> or search for irremote library from arduino ide.</p>
+
+<h3># Wiring</h3>
+
+<p>The <code>S</code> in the Diagram is for signal out, <code>-</code> for ground and <code>+</code> for vcc 5v. I've used 3v vcc for the IR sensor and 5v for the relay module. The Circuit diagram is below;</p>
+
+<center>
+	<img loading="lazy" class="pimg" src="../assets/arduino.png" alt="Circuit Diagram">
+</center>
+
+
+<div class="caption">Circuit Diagram</div>
+
+<p> <b><i>Note: This is a compressed version of the circuit diagram, however <a href="../assets/arduino.svg" rel="nofollow">here's</a> a more higher quality vector image if you need it</b></i></p>
+
+<h3># The Code</h3>
+
+<p>Here's the code for it;</p>
+
+<pre>
+<code>
+&num;include &lt;IRremote&period;hpp&gt;
+&num;include &lt;Wire&period;h&gt;
+
+&num;define IR&lowbar;RECEIVE&lowbar;PIN 3
+&num;define RELAY&lowbar;PIN 5
+
+const unsigned short int on&lowbar;val = 25; // remote value for on
+const unsigned short int off&lowbar;val = 69; //remote value for off
+
+unsigned short int w = 0;
+
+void setup() {
+	IrReceiver&period;begin(IR&lowbar;RECEIVE&lowbar;PIN, 0); // the 0 is for no constant blinking of led
+	pinMode(RECEIVE&lowbar;PIN, INPUT);
+	pinMode(RELAY&lowbar;PIN, OUTPUT);
+}
+
+void wifi&lowbar;off() {
+	digitalWrite(RELAY&lowbar;PIN, LOW);
+}
+
+void wifi&lowbar;on() {
+	digitalWrite(RELAY&lowbar;PIN, HIGH);
+}
+
+void loop() {
+
+	if (IrReceiver&period;decode()) {
+
+	switch(IrReceiver&period;decodedIRData&period;command) {
+			case on&lowbar;val:
+				wifi&lowbar;on();
+				w=1;
+				break ;
+			case off&lowbar;val:
+				wifi&lowbar;off();
+				w=0;
+				break ;
+			default:
+			if (w == 1) {
+				digitalWrite(LED&lowbar;BUILTIN, HIGH);
+				delay(500);
+				digitalWrite(LED&lowbar;BUILTIN, LOW);
+			}
+			break ;
+		}
+	}
+	IrReceiver&period;resume();
+	// Add 2 s delay so that arduino doesn't get too much hot
+	// because the IrReceiver function runs in a constant loop, this prevents it
+	delay(2000);
+}
+</code>
+</pre>
+<a class='btn' href='code/irremote.html-code1.txt'>view raw</a>
+
+
+<p>The codes pretty straight-forward, initialize the irremote, the decode signal every 2 secods, and if decode value matches our remote value, then turn on relay else, turn off.</p>
+
+<hr>
+
+
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+</script>
+
+	<script src="..//js/toggle.js"></script>
+
+</body>
+</html>

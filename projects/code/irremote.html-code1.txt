@@ -1,0 +1,52 @@
+#include <IRremote.hpp>
+#include <Wire.h>
+
+#define IR_RECEIVE_PIN 3
+#define RELAY_PIN 5
+
+const unsigned short int on_val = 25; // remote value for on
+const unsigned short int off_val = 69; //remote value for off
+
+unsigned short int w = 0;
+
+void setup() {
+	IrReceiver.begin(IR_RECEIVE_PIN, 0); // the 0 is for no constant blinking of led
+	pinMode(RECEIVE_PIN, INPUT);
+	pinMode(RELAY_PIN, OUTPUT);
+}
+
+void wifi_off() {
+	digitalWrite(RELAY_PIN, LOW);
+}
+
+void wifi_on() {
+	digitalWrite(RELAY_PIN, HIGH);
+}
+
+void loop() {
+
+	if (IrReceiver.decode()) {
+
+	switch(IrReceiver.decodedIRData.command) {
+			case on_val:
+				wifi_on();
+				w=1;
+				break ;
+			case off_val:
+				wifi_off();
+				w=0;
+				break ;
+			default:
+			if (w == 1) {
+				digitalWrite(LED_BUILTIN, HIGH);
+				delay(500);
+				digitalWrite(LED_BUILTIN, LOW);
+			}
+			break ;
+		}
+	}
+	IrReceiver.resume();
+	// Add 2 s delay so that arduino doesn't get too much hot
+	// because the IrReceiver function runs in a constant loop, this prevents it
+	delay(2000);
+}

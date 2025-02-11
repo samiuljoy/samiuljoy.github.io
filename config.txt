@@ -50,6 +50,7 @@ microblog/raspberry2ether.md
 microblog/customkeys.md
 microblog/arduinocli.md
 demo/cmdline.md
+projects/irremote.md
 --------sitemap
 
 ++++navigation

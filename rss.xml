@@ -7,6 +7,17 @@
 <link>https://samiuljoy.github.io/rss.xml</link>
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
+ 
+<item>
+	<pubDate>February 12, 2025</pubDate>
+	<title>Remote Control Stuff</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/projects/irremote.html">https://samiuljoy.github.io/projects/irremote.html</a>
+	<p>Turn relay module on or off based off of remote signal</p>
+	]]>
+	</description>
+</item>
+
 <item>
 	<pubDate>February  5, 2025</pubDate>
 	<title>Basic command line rundown</title>

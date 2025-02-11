@@ -242,6 +242,18 @@
 </item>
 
 
+ 
+<item>
+	<pubDate>February 12, 2025</pubDate>
+	<title>Remote Control Stuff</title>
+	<description><![CDATA[
+	<a href="https://samiuljoy.github.io/projects/irremote.html">https://samiuljoy.github.io/projects/irremote.html</a>
+	<p>Turn relay module on or off based off of remote signal</p>
+	]]>
+	</description>
+</item>
+
+
 <item>
 	<pubDate>July 10, 2022</pubDate>
 	<title>Working with plants on whole new level</title>

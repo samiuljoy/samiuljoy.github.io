@@ -23,6 +23,14 @@
 
 This page contains some of the projects I've worked on/will be working on.
 
+++++++++++++++++card
+ 
+.date: February 12, 2025
+.article: [Remote Control Stuff](irremote.html)
+.describe: Turn relay module on or off based off of remote signal
+
+-------------card
+
 .hr
 
 ----------------main
@@ -49,4 +57,3 @@ else {
 +++++++++add
 .script: ..//js/toggle.js
 -----------add
-
