@@ -81,7 +81,7 @@ Can design both static and dynamic websites along with backend management, sql/d
 
 ### # IoT Coding
 
-#. Made a remote controlled WiFi off/on switch for ease of access for Old People. The project can be found [here](https://github.com/samiulahmedjoy/irremotewifi)
+#. Made a remote controlled WiFi off/on switch for ease of access for Old People. The project can be found [here](https://github.com/samiulahmedjoy/irremote)
 
 #. Made a automated plant system that Monitors plant water level, and sends data through email. The project can be found [here](https://github.com/samiulahmedjoy/plantmanagement)
 
