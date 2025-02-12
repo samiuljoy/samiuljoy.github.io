@@ -522,7 +522,7 @@ __Will print out;__
 
 This is \\_ underscore and \\* is an asterisk and \\` this is a backtick
 
-That's it for basic syntax. Learn how to write base.md files on the [next](basepage.html) article or learn how to write index.md pages [here](indexpage.html). Check the source code for this site over [here](https://gitbub.com/samiuljoy/samiuljoy.github.io)
+That's it for basic syntax. Learn how to write base.md files on the [next](basepage.html) article or learn how to write index.md pages [here](indexpage.html). Check the source code for this site over [here](https://github.com/samiuljoy/samiuljoy.github.io)
 
 .hr
 
