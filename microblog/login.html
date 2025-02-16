@@ -49,7 +49,7 @@
 </noscript>
 
 <main id="main" role="main">
-<center><h1>./login.sh && ./username.sh</center></h1>
+<center><h1>./login.sh && ./username.sh</h1></center>
 
 <div class='date'>February 20, 2020</div>
 <p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a <u>/etc/shadow</u> file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) with a shell script? Wouldn't that be fun?</p>
@@ -67,11 +67,11 @@
 
 <p><b>I'm assuming you are somewhat knowledgeable in shell scripting.</b></p>
 	
-<center><h2>Script 1: username.sh</center></h2>
+<center><h2>Script 1: username.sh</h2></center>
 
 <p><b>Description:</b> What it basically does is that, it saves your name and your password in a file called mango.txt, and the next time you try logging in, the login.sh script pulls the data from mango.txt and compares that with input password.</p>
 	
-<center><h2>./username.sh</center></h2>
+<center><h2>./username.sh</h2></center>
 
 <pre>
 <code>
@@ -111,12 +111,12 @@ fi
 </pre>
 <a class='btn' href='code/login.html-code1.txt'>view raw</a>
 
-<center><h2>Script 2: login.sh</center></h2>
+<center><h2>Script 2: login.sh</h2></center>
 
 
 <p><b>Description:</b> Now this script actually needs the mango.txt to work, else logging in will be impossible(just a prior warning; this is just a simple emulation as to how the same thing can be achieved with a shell script..don't just put it in your shell startup though..things will get damn messy at some point..)</p>
 
-<center><h2>./login.sh</center></h2>
+<center><h2>./login.sh</h2></center>
 
 
 <pre>
@@ -226,7 +226,7 @@ mkpasswd -m sha-512 -S salt1234 password
 
 <p>Now, to &grave;code&grave; include this in our scripts <b>username.sh</b> and <b>login.sh</b> we just have to replace some variables with either the <code>openssl</code> or <code>mkpasswd</code> or <code>python</code></p>
 
-<center><h2>Salting with `mkpasswd`</center></h2>
+<center><h2>Salting with `mkpasswd`</h2></center>
 
 <p>On line 34 of the script <code>username.sh</code> we can replace </p>
 
