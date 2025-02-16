@@ -55,7 +55,7 @@ Then, edit the config header file {config.h} and make modifications to it as you
 
 I use dwm and assigned some function key as a hotkey to invoke keynav and xmouseless.
 
-!![this is a placeholder](../assets/mouseless.mp4)
+!!![this is a placeholder](https://www.youtube.com/embed/j8D76XRlABQ?si=c-3ADhSHeWvLV4LB)
 
 .caption: Keynav + xmouseless in action
 

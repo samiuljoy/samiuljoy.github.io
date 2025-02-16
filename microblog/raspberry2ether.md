@@ -71,7 +71,7 @@ And then hit `Edit a connection`, then hit `<Add>`, then select `Ethernet` as ty
 
 The snippet below summarizes the entire procedure pretty much. Remember all of this needs to be done within your raspberry pi as sudo or root.
 
-!![nmtui](../assets/nmtui.mp4)
+!!![nmtui](https://www.youtube.com/embed/GWRcZcp790M?si=YeD4nA0GBJtQZcIq)
 .caption: Video: Walkthrough
 
 
