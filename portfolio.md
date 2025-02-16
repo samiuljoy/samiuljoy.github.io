@@ -36,7 +36,7 @@ Motivated and detail-oriented Plant Science graduate student with a decent found
 * Data Analysis
 * Office Suite Programs
 * Linux and IoT Automation
-* Networking, Firewall,Iptables, Subnetting
+* Networking, Firewall, Iptables, Subnetting
 * Academic Research and Excerpt Writing
 
 ## # Experience
