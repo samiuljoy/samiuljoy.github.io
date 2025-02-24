@@ -55,8 +55,6 @@ The `S` in the Diagram is for signal out, `-` for ground and `+` for vcc 5v. I'v
 
 .caption: Circuit Diagram
 
- ___Note: This is a compressed version of the circuit diagram, however [here's](../assets/arduino.svg) a more higher quality vector image if you need it___
-
 ### # The Code
 
 Here's the code for it;
