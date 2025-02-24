@@ -25,6 +25,11 @@ This page contains some of the projects I've worked on/will be working on.
 
 ++++++++++++++++card
  
+.date: February 24, 2025
+.article: [Automate email sending with esp8266 nodemcu](plantmanagement.html)
+.describe: Send email automatically when sensor value goes below threshold
+
+ 
 .date: February 12, 2025
 .article: [Remote Control Stuff](irremote.html)
 .describe: Turn relay module on or off based off of remote signal

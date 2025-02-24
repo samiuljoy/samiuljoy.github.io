@@ -51,6 +51,7 @@ microblog/customkeys.md
 microblog/arduinocli.md
 demo/cmdline.md
 projects/irremote.md
+projects/plantmanagement.md
 --------sitemap
 
 ++++navigation

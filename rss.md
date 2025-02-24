@@ -244,6 +244,17 @@
 
  
 <item>
+	<pubDate>February 24, 2025</pubDate>
+	<title>Automate email sending with esp8266 nodemcu</title>
+	<description><![CDATA[
+	<a href=1>https://samiuljoy.github.io/projects/plantmanagement.html</a>
+	<p>Send email automatically when sensor value goes below threshold</p>
+	]]>
+	</description>
+</item>
+
+ 
+<item>
 	<pubDate>February 12, 2025</pubDate>
 	<title>Remote Control Stuff</title>
 	<description><![CDATA[
