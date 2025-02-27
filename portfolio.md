@@ -103,9 +103,9 @@ The University of Chittagong awarded this scholarship for achieving good results
 
 #. Email: samiulahmedmail -> Google Mail [Wrote this way to evade bot spam]
 
-#. Github: https://github.com/samiulahmedjoy
+#. Github: [https://github.com/samiulahmedjoy](@samiuljoy)
 
-#. Personal Website: https://samiuljoy.github.io
+#. Website: https://samiuljoy.github.io
 
 .hr
 
