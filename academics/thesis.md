@@ -1,10 +1,10 @@
 +++++++++++++++++head
-.title: Working with plants on whole new level
-.author: Samiul Joy
-.description: Planning on working with plants on a more deeper level
+.title: Effect of Auxins on growth and biochemical active components in Rauvolfia tetraphylla
+.author: Samiul Ahmed Joy
+.description: This post discusses about my works the plant Rauvolfia tetraphyll
 .style: ..//css/maind.css
 .style: ..//css/main.css
-.name-generator: Starting work on thesis related stuffs
+.name-generator: This post describes about my works on the plant Rauvolfia tetraphylla
 .canonical-link: https://samiuljoy.github.io/academics/thesis.html
 -------------------head
 
@@ -19,12 +19,9 @@
 ----------navigation
 
 ++++++++++++++++main
-.ce header2: Plant Research stuff
+.ce header2: Study on Rauvolfia tetraphylla
 
-I'm planning to work on some ecological and phytochemical analysis on plants. Hopefully everything works out nicely.
-
-.hr
-
+to be continued...
 ----------------main
 
 ++++++++++++++++footer

@@ -37,7 +37,7 @@ microblog/vpn_tether.md
 projects/base.md
 academics/base.md
 academics/thesis.md
-academics/fail.md
+academics/abromaaugustum.md
 microblog/router.md
 microblog/netinst.md
 microblog/puzzle.md
@@ -52,6 +52,7 @@ microblog/arduinocli.md
 demo/cmdline.md
 projects/irremote.md
 projects/plantmanagement.md
+academics/thesis.md
 --------sitemap
 
 ++++navigation

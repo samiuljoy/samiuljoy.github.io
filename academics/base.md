@@ -23,23 +23,17 @@
 
 This portion of the website contains contents on academical stuffs and things relating to **Plant Science** and research articles/review articles. If you're interested to submit any articles to display on this section, don't hesitate to contact me. Contact me through the [about](../about.html) page.
 
-
 ++++++++card
+ 
+.date: February 28, 2025
+.article: [Effect of Auxins on growth and biochemical active components](thesis.html)
+.describe: This post discusses about my works the plant _Rauvolfia tetraphyll_
 
-
-
-.date: July 10, 2022
-.article: [Working with plants on whole new level](thesis.html)
-.describe: Planning on working with plants on a more deeper level
-
-.date: August 22, 2022
-.article: [Initial failed attempt on thesis](fail.html)
-.describe: Plants that were planted for experimental purposes, died, all of them.
-
+.date: August 22, 2021
+.article: [Water Tolerance Test](abromaaugustum.html)
+.describe: This was an experiment conducted on the plant _Abroma augustum_ to check it's performance under stress condition.
 
 --------card
-
-
 
 .hr
 
@@ -67,4 +61,3 @@ else {
 +++++++++add
 .script: ..//js/toggle.js
 -----------add
-
