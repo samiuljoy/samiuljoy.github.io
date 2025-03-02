@@ -265,22 +265,23 @@
 </item>
 
 
+ 
 <item>
-	<pubDate>July 10, 2022</pubDate>
-	<title>Working with plants on whole new level</title>
+	<pubDate>February 28, 2025</pubDate>
+	<title>Effect of Auxins on growth and biochemical active components</title>
 	<description><![CDATA[
 	<a href=1>https://samiuljoy.github.io/academics/thesis.html</a>
-	<p>Planning on working with plants on a more deeper level</p>
+	<p>This post discusses about my works the plant _Rauvolfia tetraphylla_</p>
 	]]>
 	</description>
 </item>
 
 <item>
-	<pubDate>August 22, 2022</pubDate>
-	<title>Initial failed attempt on thesis</title>
+	<pubDate>August 22, 2021</pubDate>
+	<title>Water Tolerance Test</title>
 	<description><![CDATA[
-	<a href=1>https://samiuljoy.github.io/academics/fail.html</a>
-	<p>Plants that were planted for experimental purposes, died, all of them.</p>
+	<a href=1>https://samiuljoy.github.io/academics/abromaaugustum.html</a>
+	<p>This was an experiment conducted on the plant _Abroma augustum_ to check it's performance under stress condition.</p>
 	]]>
 	</description>
 </item>

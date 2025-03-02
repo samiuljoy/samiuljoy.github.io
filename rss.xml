@@ -9,6 +9,17 @@
 <!-- content starts here -->
  
 <item>
+	<pubDate>February 28, 2025</pubDate>
+	<title>Effect of Auxins on growth and biochemical active components</title>
+	<description><![CDATA[
+	<a href=1>https://samiuljoy.github.io/academics/thesis.html</a>
+	<p>This post discusses about my works the plant _Rauvolfia tetraphylla_</p>
+	]]>
+	</description>
+</item>
+
+ 
+<item>
 	<pubDate>February 24, 2025</pubDate>
 	<title>Automate email sending with esp8266 nodemcu</title>
 	<description><![CDATA[
@@ -141,20 +152,10 @@
 
 <item>
 	<pubDate>August 22, 2022</pubDate>
-	<title>Initial failed attempt on thesis</title>
+	<title>Forwarding tun0 traffic through access point on Android</title>
 	<description><![CDATA[
-	<a href=1>https://samiuljoy.github.io/academics/fail.html</a>
-	<p>Plants that were planted for experimental purposes, died, all of them.</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>July 10, 2022</pubDate>
-	<title>Working with plants on whole new level</title>
-	<description><![CDATA[
-	<a href=1>https://samiuljoy.github.io/academics/thesis.html</a>
-	<p>Planning on working with plants on a more deeper level</p>
+	<a href=1>https://samiuljoy.github.io/microblog/vpn_tether.html</a>
+	<p>Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole</p>
 	]]>
 	</description>
 </item>
@@ -215,6 +216,16 @@
 	<description><![CDATA[
 	<a href=1>https://samiuljoy.github.io/demo/indexpage.html</a>
 	<p>Learn how to edit index.md pages properly</p>
+	]]>
+	</description>
+</item>
+
+<item>
+	<pubDate>August 22, 2021</pubDate>
+	<title>Water Tolerance Test</title>
+	<description><![CDATA[
+	<a href=1>https://samiuljoy.github.io/academics/abromaaugustum.html</a>
+	<p>This was an experiment conducted on the plant _Abroma augustum_ to check it's performance under stress condition.</p>
 	]]>
 	</description>
 </item>
