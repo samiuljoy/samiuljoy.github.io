@@ -52,7 +52,6 @@ microblog/arduinocli.md
 demo/cmdline.md
 projects/irremote.md
 projects/plantmanagement.md
-academics/thesis.md
 --------sitemap
 
 ++++navigation

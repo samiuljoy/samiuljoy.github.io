@@ -21,6 +21,10 @@
 ++++++++++++++++main
 .ce header2: Water tolerance Experiment
 
+![Abroma augustum](../assets/abromaaugustum.jpg)
+
+.caption: Abroma augustum (source wikipedia)
+
  _Abroma augustum_ also known as the devil's breath/devil's plant is a general monsoon plant. Hence, it being a monsoon plant, I thought it would be more tolerable to water logged conditions since there's more possibilities of water logged conditions in monsoon, and the fact that the plant _Abroma augustum_ can mature in rainy season should easily imply that the plant should have better than average tolerability against water logged conditions. Or so I thought.
 
  I had couple of plants in mind for my thesis project, and _Abroma augustum_ was on my top priority list, since the amount of secondary metabolites in this plant are very rich and important to say the least. I mean, methanolic bark extract even showed apoptosis probabilities in EAC cells which in laments term means, it has possibilities to destroy cancer cells. Read [here](https://pmc.ncbi.nlm.nih.gov/articles/PMC7178513/). It's definitely an important medicinal plant to say the least. However, the approach we took for mass production of the plant includes rapid growth of the plant through Auxin hormone induction which potentially increases secondary metabolite production + morphological growth of the plant. However this procedure requires that the plant should be kept in seedling bags with proper drainage facility. Since it was monsoon season and _Abroma augustum_ was in perfect mature condition, I thought even without less drainage the plants should survive. I thought they were less susceptible to being attacked by atmospheric fungii/fungal spores too since it was their most favorable condition to have maximum yield which means the plants immune system should be at their maximum. Well I was wrong.

@@ -27,7 +27,7 @@ This portion of the website contains contents on academical stuffs and things re
  
 .date: February 28, 2025
 .article: [Effect of Auxins on growth and biochemical active components](thesis.html)
-.describe: This post discusses about my works the plant _Rauvolfia tetraphyll_
+.describe: This post discusses about my works the plant _Rauvolfia tetraphylla_
 
 .date: August 22, 2021
 .article: [Water Tolerance Test](abromaaugustum.html)
