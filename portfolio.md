@@ -32,11 +32,17 @@ Motivated and detail-oriented Plant Science graduate student with a decent found
 ## # Skills
 
 * Computer Programming
-* An average typing speed of 80 wpm
+
+* An average typing speed of 80-90 wpm
+
 * Data Analysis
+
 * Office Suite Programs
-* Linux and IoT Automation
+
+* Linux + IoT Automation
+
 * Networking, Firewall, Iptables, Subnetting
+
 * Academic Research and Excerpt Writing
 
 ## # Experience
@@ -45,11 +51,11 @@ Motivated and detail-oriented Plant Science graduate student with a decent found
 
  *2021 - 2024*
 
-Conducted an independent research on *Abroma augustum* plant against water-logging and academic research on optimized growth in *Rauvolfia tetraphylla* by testing different auxin hormone concentrations. Gained hands-on experience with soil preparation, planting, hormone application, sample collection, and laboratory testing while following strict protocols. Assisted professors with literature reviews, performed lab experiments, wrote a thesis and contributed to herbarium specimen evaluation and data analyses as part of academic studies.
+Conducted an independent [research](academics/abromaaugustum.html) on *Abroma augustum* plant against water-logging and academic [research](academics/thesis.html) on optimized growth in *Rauvolfia tetraphylla* by testing different Auxin hormone concentrations. Gained hands-on experience with soil preparation, planting, hormone application, sample collection, and laboratory testing while following strict protocols. Assisted professors with literature reviews, performed lab experiments, wrote a thesis and contributed to herbarium specimen evaluation and data analyses as part of academic studies.
 
 ### # Technological Experience
 
-Experienced Linux user since 2014 with expertise in Command Line Interface (CLI), Networking, Subnetting, Iptables and Web Designing (HTML, CSS, JS). Proficient in Shell Scripting(made a [static site generator](https://samiuljoy.github.io/demo/base.html)), semi-proficient in Python, and familiar with C/C++. Skilled in Statistical analysis using Excel and Data Visualization with Python's Matplotlib module. Proficient in various software tools, including Microsoft Office Suite, LibreOffice, Git, R Studio, VIM, BioPython. Comfortable with IoT devices such as RaspberryPi, Arduino, Esp8266 and other single-board computers, with additional skills in transcription, copywriting, article writing and fast typing (average of 80 wpm).
+Experienced Linux user since 2014 with expertise in Command Line Interface (CLI), Networking, Subnetting, Iptables and Web Designing (HTML, CSS, JS). Proficient in Shell Scripting(made a [static site generator](https://samiuljoy.github.io/demo/base.html)), semi-proficient in Python, and familiar with C/C++. Skilled in Statistical analysis using Excel and Data Visualization with Python's Matplotlib module. Proficient in various software tools, including Microsoft Office Suite, LibreOffice, Git, R Studio, VIM, BioPython. Comfortable with IoT devices such as RaspberryPi, Arduino, Esp8266 and other single-board computers, with additional skills in transcription, copywriting, article writing and relatively fast typing.
 
 ## # Projects
 
@@ -83,11 +89,11 @@ Can design both static and dynamic websites along with backend management, sql/d
 
 #. Made a remote controlled WiFi off/on switch for ease of access for Old People. The project can be found [here](https://github.com/samiulahmedjoy/irremote)
 
-#. Made a automated plant system that Monitors plant water level, and sends data through email. The project can be found [here](https://github.com/samiulahmedjoy/plantmanagement)
+#. Made a automated plant system that monitors plant water level, and sends data through email. The project can be found [here](https://github.com/samiulahmedjoy/plantmanagement)
 
 ### # Custom Vim ColorSchemes
 
-Made some modifications to vim colorschemes. The project can be found [here](https://github.com/samiuljoy/vim-dark-colorschemes) and [here](https://github.com/samiuljoy/customized-miramare)
+Made some modifications to vim colorschemes. The projects can be found [here](https://github.com/samiuljoy/vim-dark-colorschemes) and [here](https://github.com/samiuljoy/customized-miramare)
 
 ## # Awards
 

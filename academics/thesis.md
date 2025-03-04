@@ -58,36 +58,39 @@ So, _Rauvolfia tetraphylla_ produces seeds too however, the rate of success of p
 
 ## # Overview of Experimental Steps
 
-### Plant selection
+### - Plant selection
 
 A healthy, disease free _Rauvolfia tetraphylla_ mother plant was selected from the medicinal garden of University of Chittagong.
 
-### Experimental Site
+### - Experimental Site
 
 The location of the experiment was selected to be the Botanical garden of University of Chittagong as it had a suitable climatic condition for the proper growth of _Rauvolfia tetraphylla_
 
-### Rooting Media
+### - Rooting Media
 
 Sandy soil was used as rooting media and a total of 72 polybags were filled with it
 
-### Experimental Design
+### - Experimental Design
 
 CRD (Complete Randomized Design) method was used during the whole experiment
 
-### Preparing Treatment Solution
+### - Preparing Treatment Solution
 
 Different Concentrations of IAA, IBA and NAA were made. A total of 22 treatments were used with their concentration ranging from 250 ppm, 500 ppm, 750 ppm, 1000 ppm, 1250 ppm, 1500 ppm and 1750 ppm for each concentration.
 
-### Preparation of Stem Cuttings
+### - Preparation of Stem Cuttings
 
 Healthy and disease free stems were selected and made sure that they at least had 2-3 nodes on each cuttings. The cuttings were approximately 10-12 cm in length each.
 
-### Method of Treating the Cuttings
+### - Method of Treating the Cuttings
 
 The cuttings were treated using quick dip method. The basal end of the cuttings were dipped in the treatment for 10 seconds and then planted in the rooting medium.
 
-### Observation and Data Analysis
+### - Observation and Data Analysis
 At 30, 60 & 90 DAP vegetative and foliar data were observed and recorded in different parameters
+
+
+> **Note:** Graphical data was compiled using Python's Matplotlib Library
 
 
 ## # Observations at 30 DAP
@@ -152,12 +155,19 @@ At 30, 60 & 90 DAP vegetative and foliar data were observed and recorded in diff
 ## # Conclusion/Results
 
 * Maximum number of shoots (3.75) in T11 (IBA at 750 ppm)
+
 * Length of Shoots (11.67 cm) in T11 (IBA at 750 ppm)
+
 * Length of roots (12.308 cm) in T11 (IBA at 750 ppm)
+
 * Maximum fresh weight (8.8 gm) in T5 (IAA at 1000ppm)
+
 * Maximum leaf area (37.028 cm2) in T11 (IBA at 750 ppm)
+
 * Maximum foliar pigments were observed in T11 (IBA at 750 ppm)
+
 * Qualitative phytochemical screening showed positive results
+
 * In quantitative test for polyphenol, highest value was found to be 4.928% in T11 (IBA at 750 ppm)
 
 ## # Comment
