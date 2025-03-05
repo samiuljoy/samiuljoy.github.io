@@ -95,60 +95,59 @@ At 30, 60 & 90 DAP vegetative and foliar data were observed and recorded in diff
 
 ## # Observations at 30 DAP
 
-![Graphical Representation at 30 DAP](../assets/graph30.pdf.png)
+.img: class="cover" ../assets/graph30.pdf.png Graphical Representation at 30 DAP
 
 .caption: Overview of vegetative growth after 30 days
 
-![Tabular representation](../assets/table30.png)
+.img: class="cover" ../assets/table30.png Tabular representation
 
 .caption: Tabular representation at 30 DAP
 
-![Pictorial Representation](../assets/picture-15.pdf.png)
+.img: class="cover" ../assets/picture-15.pdf.png Pictorial Representation
 
 .caption: Pictorial Representation at 30 DAP
 
-
 ## # Observation at 60 DAP
 
-![Graphical Representation at 60 DAP](../assets/graph60-16.pdf.png)
+.img: class="cover" ../assets/graph60-16.pdf.png Graphical Representation at 60 DAP
 
 .caption: Overview of vegetative growth after 60 days
 
-![Tabular representation](../assets/table60.png)
+.img: class="cover" ../assets/table60.png Tabular Representation at 60 DAP
 
 .caption: Tabular Representation at 60 DAP
 
-![Pictorial representation](../assets/picture60-18.pdf.png)
+.img: class="cover" ../assets/picture60-18.pdf.png Pictorial Representation
 
 .caption: Pictorial Representation at 60 DAP
 
 ## # Observation at 90 DAP
 
-![Graphical Representation at 90 DAP](../assets/graph90-19.pdf.png)
+.img: class="cover" ../assets/graph90-19.pdf.png Graphical Representation at 90 DAP
 
 .caption: Overview of vegetative growth after 90 DAP
 
-![Tabular representation at 90 DAP](../assets/table90.png)
+.img: class="cover" ../assets/table90.png Tabular Representation at 90 DAP
 
 .caption: Tabular Representation at 90 DAP
 
-![Pictorial representation](../assets/picture90-21.pdf.png)
+.img: class="cover" ../assets/picture90-21.pdf.png Pictorial Representation at 90 DAP
 
 .caption: Pictorial Representation at 90 DAP
 
 ## # Comparative Analysis
 
-![Comparative Graphical Representation](../assets/comparativegrowth-22.pdf.png)
+.img: class="cover" ../assets/comparativegrowth-22.pdf.png Comparative Graphical Representation
 
 .caption: Comparative analysis
 
-![Comparative Tabular Representation](../assets/comparativetable.png)
+.img: class="cover" ../assets/comparativetable.png Comparative Tabular Representation
 
 .caption: Comparative Tabular Representation
 
 ## # Polyphenol Content in Leaves
 
-![Quantitative Polyphenol Content](../assets/quantitativetest-26.pdf.png)
+.img: class="cover" ../assets/quantitativetest-26.pdf.png
 
 .caption: Quantitative Polyphenol Content
 

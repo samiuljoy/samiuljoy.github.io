@@ -21,7 +21,7 @@
 ++++++++++++++++main
 .ce header2: Water tolerance Experiment
 
-![Abroma augustum](../assets/abromaaugustum.jpg)
+![Abroma Augustum](../assets/abromaaugustum.jpg)
 
 .caption: Abroma augustum (source wikipedia)
 
