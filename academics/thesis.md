@@ -21,7 +21,7 @@
 ++++++++++++++++main
 .ce header2: Study on Rauvolfia tetraphylla
 
-![Rauvolfia tetraphylla](../assets/rauvolfiatetraphylla.png)
+![Rauvolfia tetraphylla](../assets/rauvolfia.png)
 
 .caption: Rauvolfia tetraphylla [source](https://www.researchgate.net/figure/Rauvolfia-tetraphylla-L-A-Fruiting-branch-B-Inflorescence-C-Calyx-and-pedicel-D_fig1_268367934)
 
