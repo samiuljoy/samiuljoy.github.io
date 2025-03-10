@@ -1,8 +1,0 @@
-#!/usr/bin/env sh
-
-# check if xorg is running, if not running, then exit with exit code 1
-[ -z "$DISPLAY" ] && \
-	echo "No display server is running at this moment, exiting..." && \
-	return 1;
-# ELse daemoize ibus
-ibus-daemon -dx

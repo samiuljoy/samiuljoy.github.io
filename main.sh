@@ -1725,7 +1725,7 @@ rss_generate() {
 	<!-- content starts here -->
 	EOF
 
-	# Loop through all files in config file and add them
+	# Loop through all files in config file and add them to rss.xml
 	for i in $files; do
 		html_extension="$(echo $i | sed "s/\.md$/.html/g")"
 		date_val="$(grep -o -m 1 "<div class=.date.>.*<\/div>$" $html_extension | \

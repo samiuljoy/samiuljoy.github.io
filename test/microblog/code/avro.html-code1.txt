@@ -1,7 +1,0 @@
-$ apt install ibus \
-	ibus-gtk gjs \
-	automake \
-	autoconf \
-	make \
-	libibus-1.0-dev \
-	git

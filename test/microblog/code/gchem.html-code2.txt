@@ -1,1 +1,0 @@
-$ groff -mspdf -j filename.chem > file.pdf
