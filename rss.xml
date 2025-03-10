@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+xmlns:content="http://purl.org/rss/1.0/modules/content/"
+xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:atom="http://www.w3.org/2005/Atom"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+xmlns:media="http://search.yahoo.com/mrss/" >
 <channel>
 <title>samiuljoy.github.io</title>
 <description>A blog about random stuffs</description>
@@ -7,257 +13,3075 @@
 <link>https://samiuljoy.github.io/rss.xml</link>
 <atom:link href='https://samiuljoy.github.io/rss.xml' rel='self' type='application/rss+xml' />
 <!-- content starts here -->
- 
+
 <item>
-	<pubDate>February 28, 2025</pubDate>
-	<title>Effect of Auxins on growth and biochemical active components</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/academics/thesis.html'>https://samiuljoy.github.io/academics/thesis.html</a>
-	<p>This post discusses about my works the plant _Rauvolfia tetraphylla_</p>
+	<pubDate></pubDate>
+	<title>Effect of Auxins on growth and biochemical active components in Rauvolfia tetraphylla</title>
+	<link>https://samiuljoy.github.io/academics/thesis.html</link>
+	<description><![CDATA[ This post discusses about my works the plant Rauvolfia tetraphylla ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Study on Rauvolfia tetraphylla</h2></center>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/rauvolfia.png" alt="Rauvolfia tetraphylla">
+	</center>
+	
+	
+	<div class="caption">Rauvolfia tetraphylla <a href="https://www.researchgate.net/figure/Rauvolfia-tetraphylla-L-A-Fruiting-branch-B-Inflorescence-C-Calyx-and-pedicel-D_fig1_268367934" rel="nofollow">source</a></div>
+	
+	<p>This post gives a general overview of the work I've done on the plant <i>Rauvolfia tetraphylla</i>. Basically the premise of this experiment was to determinate best Auxin(IAA, IBA, NAA) concentration for maximum vegetative growth and secondary metabolite production in <i>Rauvolfia tetraphylla</i>.</p>
+	
+	<p> <b>Title of Thesis:</b> Studies on the Effect of Auxins on Stem Cuttings and Bioactive Components in <i>Rauvolfia tetraphylla</i> L.</p>
+	<p> <b>Thesis Lab Name:</b> Plant Ecology Laboratory - Department of Botany, University of Chittagong</p>
+	<p> <b>Thesis Supervisor:</b> Mohammed Sala Uddin, Professor - Department of Botany, University of Chittagong</p>
+	
+	<h2># Why This Plant</h2>
+	
+	<p> <i>Rauvolfia tetraphylla</i> is an excellent medicinal plant and is readily available in Chittagong, Bangladesh. It also shows vigorous growth during monsoon season, which was our starting season for thesis work so it was already a huge advantage. I initially intended to use <i>Abroma augustum</i>, however, after the previous failed <a href="abromaaugustum.html" rel="nofollow">attempt</a> to replicate it from cuttings, I was skeptical of taking further risks. Also, some of the medicinal properties of this plant includes, acting as a vasodilator, basically acting as an antihypertensive drug due to secondary metabolite reserpine, accumulation of vincristine and reserpine has also been reported after salinity stress induction, and vincristine as we know is a huge anticancer agent. Also, <i>Rauvolfia tetraphylla</i> has also shown successful scavenging against harmful radicals in cells, etc. and etc.</p>
+	
+	<h2># Why Vegetative Propagation?</h2>
+	
+	<p>So, <i>Rauvolfia tetraphylla</i> produces seeds too however, the rate of success of propagation through seed is quite low. One of the main reasons for poor seed germination is because of the seeds being fleshy, even after maturation, the inside of the seeds still remain semi-liquidish which makes it more susceptible to microbial attacks. Plus, the seeds also need a specific season for growth and development, which could potentially take a very long time depending on the time of plantation. Seed sterility can also be seen due to selfing in <i>Rauvolfia tetraphylla</i> which results in inbreeding depression. So, for a more efficient method of propagation, vegetative propagation is definitely the better choice here.</p>
+	
+	<h2># Aim of this Study</h2>
+	
+	<ul>
+		<li>Assessment of vegetative growth under different treatments of Auxins at 30, 60 and 90 DAP.</li>
+	</ul>
+	
+	<ul>
+		<li>Assessment of foliar pigments - Chlorophyll-a, Chlorophyll-b and Carotenoids.</li>
+	</ul>
+	
+	<ul>
+		<li>Assessment of Qualitative test for secondary metabolites at 30, 60 & 90 DAP.</li>
+	</ul>
+	
+	<ul>
+		<li>Determination of Polyphenol content</li>
+	</ul>
+	
+	<h2># Objective of this Study</h2>
+	
+	<ul>
+		<li>Development of an economical and effective propagation method for the conservation as well as mass cultivation of the plant</li>
+	</ul>
+	
+	<ul>
+		<li>Observing and determining the growth pattern for the maximum overall growth under specific concentrations of Auxin hormone.</li>
+	</ul>
+	
+	
+	<h2># Overview of Experimental Steps</h2>
+	
+	<h3>- Plant selection</h3>
+	
+	<p>A healthy, disease free <i>Rauvolfia tetraphylla</i> mother plant was selected from the medicinal garden of University of Chittagong.</p>
+	
+	<h3>- Experimental Site</h3>
+	
+	<p>The location of the experiment was selected to be the Botanical garden of University of Chittagong as it had a suitable climatic condition for the proper growth of <i>Rauvolfia tetraphylla</i></p>
+	
+	<h3>- Rooting Media</h3>
+	
+	<p>Sandy soil was used as rooting media and a total of 72 polybags were filled with it</p>
+	
+	<h3>- Experimental Design</h3>
+	
+	<p>CRD (Complete Randomized Design) method was used during the whole experiment</p>
+	
+	<h3>- Preparing Treatment Solution</h3>
+	
+	<p>Different Concentrations of IAA, IBA and NAA were made. A total of 22 treatments were used with their concentration ranging from 250 ppm, 500 ppm, 750 ppm, 1000 ppm, 1250 ppm, 1500 ppm and 1750 ppm for each concentration.</p>
+	
+	<h3>- Preparation of Stem Cuttings</h3>
+	
+	<p>Healthy and disease free stems were selected and made sure that they at least had 2-3 nodes on each cuttings. The cuttings were approximately 10-12 cm in length each.</p>
+	
+	<h3>- Method of Treating the Cuttings</h3>
+	
+	<p>The cuttings were treated using quick dip method. The basal end of the cuttings were dipped in the treatment for 10 seconds and then planted in the rooting medium.</p>
+	
+	<h3>- Observation and Data Analysis</h3>
+	<p>At 30, 60 & 90 DAP vegetative and foliar data were observed and recorded in different parameters</p>
+	
+	
+	<blockquote>
+		<p><b>Note:</b> Graphical data was compiled using Python's Matplotlib Library</p>
+	</blockquote>
+	
+	
+	<h2># Observations at 30 DAP</h2>
+	
+	<center><img class="cover" src="../assets/graph30.pdf.png" alt="Graphical Representation at 30 DAP" loading="lazy"></center>
+	
+	
+	<div class="caption">Overview of vegetative growth after 30 days</div>
+	
+	<center><img class="cover" src="../assets/table30.png" alt="Tabular representation" loading="lazy"></center>
+	
+	
+	<div class="caption">Tabular representation at 30 DAP</div>
+	
+	<center><img class="cover" src="../assets/picture-15.pdf.png" alt="Pictorial Representation" loading="lazy"></center>
+	
+	
+	<div class="caption">Pictorial Representation at 30 DAP</div>
+	
+	<h2># Observation at 60 DAP</h2>
+	
+	<center><img class="cover" src="../assets/graph60-16.pdf.png" alt="Graphical Representation at 60 DAP" loading="lazy"></center>
+	
+	
+	<div class="caption">Overview of vegetative growth after 60 days</div>
+	
+	<center><img class="cover" src="../assets/table60.png" alt="Tabular Representation at 60 DAP" loading="lazy"></center>
+	
+	
+	<div class="caption">Tabular Representation at 60 DAP</div>
+	
+	<center><img class="cover" src="../assets/picture60-18.pdf.png" alt="Pictorial Representation" loading="lazy"></center>
+	
+	
+	<div class="caption">Pictorial Representation at 60 DAP</div>
+	
+	<h2># Observation at 90 DAP</h2>
+	
+	<center><img class="cover" src="../assets/graph90-19.pdf.png" alt="Graphical Representation at 90 DAP" loading="lazy"></center>
+	
+	
+	<div class="caption">Overview of vegetative growth after 90 DAP</div>
+	
+	<center><img class="cover" src="../assets/table90.png" alt="Tabular Representation at 90 DAP" loading="lazy"></center>
+	
+	
+	<div class="caption">Tabular Representation at 90 DAP</div>
+	
+	<center><img class="cover" src="../assets/picture90-21.pdf.png" alt="Pictorial Representation at 90 DAP" loading="lazy"></center>
+	
+	
+	<div class="caption">Pictorial Representation at 90 DAP</div>
+	
+	<h2># Comparative Analysis</h2>
+	
+	<center><img class="cover" src="../assets/comparativegrowth-22.pdf.png" alt="Comparative Graphical Representation" loading="lazy"></center>
+	
+	
+	<div class="caption">Comparative analysis</div>
+	
+	<center><img class="cover" src="../assets/comparativetable.png" alt="Comparative Tabular Representation" loading="lazy"></center>
+	
+	
+	<div class="caption">Comparative Tabular Representation</div>
+	
+	<h2># Polyphenol Content in Leaves</h2>
+	
+	<center><img class="cover" src="../assets/quantitativetest-26.pdf.png"></center>
+	
+	
+	<div class="caption">Quantitative Polyphenol Content</div>
+	
+	<h2># Conclusion/Results</h2>
+	
+	<ul>
+		<li>Maximum number of shoots (3.75) in T11 (IBA at 750 ppm)</li>
+	</ul>
+	
+	<ul>
+		<li>Length of Shoots (11.67 cm) in T11 (IBA at 750 ppm)</li>
+	</ul>
+	
+	<ul>
+		<li>Length of roots (12.308 cm) in T11 (IBA at 750 ppm)</li>
+	</ul>
+	
+	<ul>
+		<li>Maximum fresh weight (8.8 gm) in T5 (IAA at 1000ppm)</li>
+	</ul>
+	
+	<ul>
+		<li>Maximum leaf area (37.028 cm2) in T11 (IBA at 750 ppm)</li>
+	</ul>
+	
+	<ul>
+		<li>Maximum foliar pigments were observed in T11 (IBA at 750 ppm)</li>
+	</ul>
+	
+	<ul>
+		<li>Qualitative phytochemical screening showed positive results</li>
+	</ul>
+	
+	<ul>
+		<li>In quantitative test for polyphenol, highest value was found to be 4.928% in T11 (IBA at 750 ppm)</li>
+	</ul>
+	
+	<h2># Comment</h2>
+	
+	<p>Hence, the aforementioned concentrations could be considered the most suitable for producing maximum biomass, and the qualitative presence of high number of secondary metabolites indicates the high medicinal value and the presence of quantitative polyphenol shows high anti-oxidant activity in <i>Rauvolfia tetraphylla</i> L.</p>
+	
+	<p>The ideal concentration for the maximum growth in <i>Rauvolfia tetraphylla</i> L. would be IBA at 750 ppm.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
- 
+
 <item>
-	<pubDate>February 24, 2025</pubDate>
-	<title>Automate email sending with esp8266 nodemcu</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/projects/plantmanagement.html'>https://samiuljoy.github.io/projects/plantmanagement.html</a>
-	<p>Send email automatically when sensor value goes below threshold</p>
+	<pubDate></pubDate>
+	<title>Water tolerance test for Abroma augustum</title>
+	<link>https://samiuljoy.github.io/academics/abromaaugustum.html</link>
+	<description><![CDATA[ This post is about water tolerance capability of the plant Abroma augustum. ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Water tolerance Experiment</h2></center>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/abromaaugustum.jpg" alt="Abroma Augustum">
+	</center>
+	
+	
+	<div class="caption">Abroma augustum (source wikipedia)</div>
+	
+	<p> <i>Abroma augustum</i> also known as the devil's breath/devil's plant is a general monsoon plant. Hence, it being a monsoon plant, I thought it would be more tolerable to water logged conditions since there's more possibilities of water logged conditions in monsoon, and the fact that the plant <i>Abroma augustum</i> can mature in rainy season should easily imply that the plant should have better than average tolerability against water logged conditions. Or so I thought.</p>
+	
+	<p> I had couple of plants in mind for my thesis project, and <i>Abroma augustum</i> was on my top priority list, since the amount of secondary metabolites in this plant are very rich and important to say the least. I mean, methanolic bark extract even showed apoptosis probabilities in EAC cells which in laments term means, it has possibilities to destroy cancer cells. Read <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC7178513/" rel="nofollow">here</a>. It's definitely an important medicinal plant to say the least. However, the approach we took for mass production of the plant includes rapid growth of the plant through Auxin hormone induction which potentially increases secondary metabolite production + morphological growth of the plant. However this procedure requires that the plant should be kept in seedling bags with proper drainage facility. Since it was monsoon season and <i>Abroma augustum</i> was in perfect mature condition, I thought even without less drainage the plants should survive. I thought they were less susceptible to being attacked by atmospheric fungii/fungal spores too since it was their most favorable condition to have maximum yield which means the plants immune system should be at their maximum. Well I was wrong.</p>
+	
+	<p>After 15 days of planting <i>Abroma augustum</i> in a less drained seed bed, they ended up dying. I planted about 20 replications and 3x3 of them were controls. Well, they all ended up dying. Apparently at 15 days, symptoms were mostly fungal attacks which was the least of our worries. Apparently uprooting the cuttings showed that most of them were unable to even create roots from the cuttings which was very odd despite the fact that <i>Abroma augustum</i> was mostly propagated through cuttings, from which roots were initiated. So that experiment failed.</p>
+	
+	<p>I then personally re-ran the experiment on our balcony instead of open field and propagated <i>Abroma augustum</i> through both seeds and cuttings. Well they both ended up growing perfectly. However the only change done here was the drainage. Yes, the pots had proper drainage holes in them. I think this was the game changer variable right there.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
- 
+
 <item>
-	<pubDate>February 12, 2025</pubDate>
+	<pubDate></pubDate>
 	<title>Remote Control Stuff</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/projects/irremote.html'>https://samiuljoy.github.io/projects/irremote.html</a>
-	<p>Turn relay module on or off based off of remote signal</p>
+	<link>https://samiuljoy.github.io/projects/irremote.html</link>
+	<description><![CDATA[ Turn relay module on or off based off of remote signal ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Ir Remote actions</h2></center>
+	
+	<p>This post is going to be pretty straight-forward</p>
+	
+	<h3># What this does</h3>
+	
+	<p>Takes ir remote values and performs an action with it. In this case, it takes IR remote values and then switches relay module between NO/NC, basically turns it on or off</p>
+	
+	<h3># How this idea came to be</h3>
+	
+	<p>I felt lazy and didn't want to get up from bed at night to turn off electronic devices. Then realised this could actually help out old people to turn off lights/other electronic devices.</p>
+	
+	<h3># Equipments</h3>
+	
+	<ul>
+		<li>Arduino Nano (I used Arduino Nano, but you could use any dev board)</li>
+	</ul>
+	
+	<ul>
+		<li>Relay Module (I used a 5v relay module)</li>
+	</ul>
+	
+	<ul>
+		<li>IR Remote Sensor (I used a pretty basic sensor, it looks like a diode)</li>
+	</ul>
+	
+	<ul>
+		<li>Jumper Wires</li>
+	</ul>
+	
+	<ul>
+		<li>Bread Board (Depends on your use case)</li>
+	</ul>
+	
+	<h3># External Libraries</h3>
+	
+	<p>You might need to install Arduino ir remote library from <a href="https://github.com/Arduino-IRremote/Arduino-IRremote" rel="nofollow">here</a> or search for irremote library from arduino ide.</p>
+	
+	<h3># Wiring</h3>
+	
+	<p>The <code>S</code> in the Diagram is for signal out, <code>-</code> for ground and <code>+</code> for vcc 5v. I've used 3v vcc for the IR sensor and 5v for the relay module. The Circuit diagram is below;</p>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/arduino.png" alt="Circuit Diagram">
+	</center>
+	
+	
+	<div class="caption">Circuit Diagram</div>
+	
+	<h3># The Code</h3>
+	
+	<p>Here's the code for it;</p>
+	
+	<pre>
+	<code>
+	&num;include &lt;IRremote&period;hpp&gt;
+	&num;include &lt;Wire&period;h&gt;
+	
+	&num;define IR&lowbar;RECEIVE&lowbar;PIN 3
+	&num;define RELAY&lowbar;PIN 5
+	
+	const unsigned short int on&lowbar;val = 25; // remote value for on
+	const unsigned short int off&lowbar;val = 69; //remote value for off
+	
+	unsigned short int w = 0;
+	
+	void setup() {
+		IrReceiver&period;begin(IR&lowbar;RECEIVE&lowbar;PIN, 0); // the 0 is for no constant blinking of led
+		pinMode(RECEIVE&lowbar;PIN, INPUT);
+		pinMode(RELAY&lowbar;PIN, OUTPUT);
+	}
+	
+	void wifi&lowbar;off() {
+		digitalWrite(RELAY&lowbar;PIN, LOW);
+	}
+	
+	void wifi&lowbar;on() {
+		digitalWrite(RELAY&lowbar;PIN, HIGH);
+	}
+	
+	void loop() {
+	
+		if (IrReceiver&period;decode()) {
+	
+		switch(IrReceiver&period;decodedIRData&period;command) {
+				case on&lowbar;val:
+					wifi&lowbar;on();
+					w=1;
+					break ;
+				case off&lowbar;val:
+					wifi&lowbar;off();
+					w=0;
+					break ;
+				default:
+				if (w == 1) {
+					digitalWrite(LED&lowbar;BUILTIN, HIGH);
+					delay(500);
+					digitalWrite(LED&lowbar;BUILTIN, LOW);
+				}
+				break ;
+			}
+		}
+		IrReceiver&period;resume();
+		// Add 2 s delay so that arduino doesn't get too much hot
+		// because the IrReceiver function runs in a constant loop, this prevents it
+		delay(2000);
+	}
+	</code>
+	</pre>
+	<a class='btn' href='code/irremote.html-code1.txt'>view raw</a>
+	
+	
+	<p>The codes pretty straight-forward, initialize the irremote, the decode signal every 2 secods, and if decode value matches our remote value, then turn on relay else, turn off.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
-<item>
-	<pubDate>February  5, 2025</pubDate>
-	<title>Basic command line rundown</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/demo/cmdline.html'>https://samiuljoy.github.io/demo/cmdline.html</a>
-	<p>This post gives you a basic command line rundown on generating/working with ssg</p>
-	]]>
-	</description>
-</item>
 
 <item>
-	<pubDate>February  1, 2025</pubDate>
-	<title>Minimizing resource utilization while coding in an IoT environment</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/arduinocli.html'>https://samiuljoy.github.io/microblog/arduinocli.html</a>
-	<p>This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide.</p>
+	<pubDate></pubDate>
+	<title>Automate email sending with esp8266 nodemcu</title>
+	<link>https://samiuljoy.github.io/projects/plantmanagement.html</link>
+	<description><![CDATA[ Send email automatically when sensor value goes below threshold ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Automate sending email</h2></center>
+	
+	<h3># What it does</h3>
+	
+	<p>The esp8266 nodemcu basically acts as a smtp client. When a sensor value goes below threshold/above threshold, it triggers <code>Send_mail()</code>function which ends up sending email to notify user.</p>
+	
+	<h3># Equipments/Dependencies</h3>
+	
+	<ul>
+		<li>Esp8266 Nodemcu/ESP32 dev board</li>
+	</ul>
+	
+	<ul>
+		<li>Wifi with internet connection</li>
+	</ul>
+	
+	<ul>
+		<li>Email Account</li>
+	</ul>
+	
+	<ul>
+		<li>Soil Moisture(Capacitive/Resistive) sensor</li>
+	</ul>
+	
+	<ul>
+		<li>Wires for connection</li>
+	</ul>
+	
+	<h3># Circuit Design</h3>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/soil.png" alt="Circuit Diagram">
+	</center>
+	
+	
+	<div class="caption">Circuit Diagram</div>
+	
+	<h3># Code</h3>
+	
+	<p>I've added multiple comments on the code for ease of understanding, the projects source code can be found <a href="https://github.com/samiulahmedjoy/plantmanagement" rel="nofollow">here</a></p>
+	
+	<hr>
+	
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
-<item>
-	<pubDate>January 21, 2025</pubDate>
-	<title>Change keycodes</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/customkeys.html'>https://samiuljoy.github.io/microblog/customkeys.html</a>
-	<p>Changing key parameters and re-assignment of keys on a Linux machine</p>
-	]]>
-	</description>
-</item>
 
 <item>
-	<pubDate>September 23, 2024</pubDate>
-	<title>Accessing raspberry pi 2w through micro-usb</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/raspberry2ether.html'>https://samiuljoy.github.io/microblog/raspberry2ether.html</a>
-	<p>A short tut on accessing raspberry pi 2w through micro-usb, that way it becomes easier to access it through ssh on a pc and can connect to wifi at the same time</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>October 21, 2023</pubDate>
-	<title>Making the router less hot</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/routere.html'>https://samiuljoy.github.io/microblog/routere.html</a>
-	<p>This article describes about different ways to make the router less hot when running and making it more efficient and fast</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>August 23, 2023</pubDate>
-	<title>BirdFeeding</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/bird.html'>https://samiuljoy.github.io/microblog/bird.html</a>
-	<p>This is about feeding birds</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>January 16, 2023</pubDate>
-	<title>Adding Applications Manually</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/webview.html'>https://samiuljoy.github.io/microblog/webview.html</a>
-	<p>Adding applications manually on an unlocked android device</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 25, 2022</pubDate>
-	<title>Captive Portal on Apache</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/captive.html'>https://samiuljoy.github.io/microblog/captive.html</a>
-	<p>Learn to create captive portal pages on Apache web server</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 22, 2022</pubDate>
-	<title>Solving a puzzle</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/puzzle.html'>https://samiuljoy.github.io/microblog/puzzle.html</a>
-	<p>Very bad neighborhood</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 7, 2022</pubDate>
-	<title>Debian netinstall problems</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/netinst.html'>https://samiuljoy.github.io/microblog/netinst.html</a>
-	<p>This article describes some difficulties I faced while installing debian with netinst iso</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>September 3, 2022</pubDate>
-	<title>Concerns about router</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/router.html'>https://samiuljoy.github.io/microblog/router.html</a>
-	<p>This article describes some of my concerns regarding the router and its behavior</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>August 22, 2022</pubDate>
-	<title>Forwarding tun0 traffic through access point on Android</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/vpn_tether.html'>https://samiuljoy.github.io/microblog/vpn_tether.html</a>
-	<p>Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole</p>
-	]]>
-	</description>
-</item>
-
-<item>
-	<pubDate>April 14, 2022</pubDate>
+	<pubDate></pubDate>
 	<title>Going mouseless</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/mouseless.html'>https://samiuljoy.github.io/microblog/mouseless.html</a>
-	<p>Control mouse in a more convenient and fast way</p>
+	<link>https://samiuljoy.github.io/microblog/mouseless.html</link>
+	<description><![CDATA[ Use keynav and xmouseless to use mouse effectively ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Keynav + Xmouseless</h2></center>
+	
+	<h3>Prelude</h3>
+	
+	<p>My mouse has been acting funky lately and it got to the point, where clicks and scrolling wouldn't work. The scroll wheel on the mouse got busted and scrolling was completely impossible. I was hoping I would get a new mouse, however busy life made me to completely ignore the need of a mouse since I was away from this pc for a while.</p>
+	
+	<p>Then couple days back, came across a video on youtube, the channel goes by the name <a href="https://youtube.com/user/gotbletu" rel="nofollow">gotbletu</a> and he showed an excellent program to control the movement of mouse in a very quick and easy way.</p>
+	
+	<p>He mentioned 2 programs, <a href="https://github.com/jordansissel/keynav.git" rel="nofollow">keynav</a> and <a href="https://github.com/jbensmann/xmouseless.git" rel="nofollow">xmouseless</a> Xmouseless is the program mainly used to control the mouse movement with keyboard and keynav helps to quickly move the mouse into specific portions of the screen. This would be very helpful if you're working with a big screen, that way jumping to co-ordinates would save bunch of time.</p>
+	
+	<h3>Keynav setup</h3>
+	
+	<p>You can get keynav through your distro repository or build your own from source. I did build mine from source.</p>
+	
+	<p>First git clone the repo;</p>
+	
+	<pre>
+	<code>
+	git clone https://github&period;com/jordansissel/keynav&period;git
+	</code>
+	</pre>
+	<a class='btn' href='code/mouseless.html-code1.txt'>view raw</a>
+	
+	<p>Then read the README.md file and follow the instructions for building from source. The instructions are pretty easy to follow.</p>
+	
+	<h3>Xmouseless setup</h3>
+	
+	<p>Same procedure, git clone the repo;</p>
+	
+	<pre>
+	<code>
+	https://github&period;com/jbensmann/xmouseless&period;git
+	</code>
+	</pre>
+	<a class='btn' href='code/mouseless.html-code2.txt'>view raw</a>
+	
+	<p>Then, edit the config header file {config.h} and make modifications to it as you please and then run make and make install.</p>
+	
+	<p>I use dwm and assigned some function key as a hotkey to invoke keynav and xmouseless.</p>
+	
+	<center>
+		<iframe src="https://www.youtube.com/embed/j8D76XRlABQ?si=c-3ADhSHeWvLV4LB" title="this is a placeholder" allow="accelerometer; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</center>
+	
+	
+	<div class="caption">Keynav + xmouseless in action</div>
+	
+	<p>The whole mouse movement you see in the video above was done with my keyboard!</p>
+	
+	<hr>
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
-<item>
-	<pubDate>April 12, 2022</pubDate>
-	<title>Setup ibus avro on non Gnome platforms</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/avro.html'>https://samiuljoy.github.io/microblog/avro.html</a>
-	<p>This is a short tutorial on how to get started ibus-avro on Gnu/Linux platforms without Gnome desktop environment</p>
-	]]>
-	</description>
-</item>
 
 <item>
-	<pubDate>March  4, 2022</pubDate>
+	<pubDate></pubDate>
+	<title>Concerns about router</title>
+	<link>https://samiuljoy.github.io/microblog/router.html</link>
+	<description><![CDATA[ This article describes some of my concerns regarding the router and its behavior ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Router Concerns</h2></center>
+	
+	<p>So, I bought a new router. The old phone that I was using as a DNS based ad blocking access point just died. This lead me to buy a new router. We already had a router, but it didn't have native simcard support. The new one supports it, and it also supports open-wrt which is just golden for me.</p>
+	
+	<p>So the first thing I did after setting everything up was running a nmap port scan. I thought okay probably port 80 and 443 and 1 or 2 more ports for other services should be open. But no, this router had even a telnet daemon running in the background. Which is very suspicious, considering the fact that there was no default way for me to change the telnet settings from the router admin page. The telnet option was hidden. It also has some remote access services enabled by default, and can not be disabled from the routers login page, even from the telnet session I was unable to disable the ACS service on the router. I tried downloading the config file of the router, which surprisingly saves configs in json format, with password and everything in just clear text. From there, I tried disabling the ACS service, making changes to the json file and pushing it back in, however after reboot, this thing just changes the whole config to default. Which leaves me with one option that I'd have to telnet into the router and manually kill the process with <code>kill $PID</code> command.</p>
+	
+	<p>I did some internet digging for this issue, but sadly was unable to find a proper solution for this. All routers with same vendor and model names had web features to turn it off/on from the admin panel. It is quite suspicious that telnet feature, even though was accessible from the admin panel, it was hidden from the default web panel.</p>
+	
+	<p>So, rest of the ports were open like port 81? I did <code>http://$router.ip:81</code> and it's just weirdly loads a bar and after a while says, no conncetion to the internet, even though it was clearly connected to the internet. There's also some more arbitary ports open, I ran <code>nmap -sV</code> for service checking on specific ports, and nmap was unable to detect a proper service on those ports except for telnetd on port 23.</p>
+	
+	<p>Having open ports is a major security hole on any device. If the device doesn't necessarily need any services to run/no service is running, it's just meaningless to keep ports open. That's just stupid. On the contrary, hiding basic admin features from the web panel is not a good thing to do, specially telnet and ACS remote access, which are enabled by default. I might contact the vendors for real reason behind this, and update this article based on the response.</p>
+	
+	<hr>
+	
+	<center><h3>Update as of 11 September, 2022</h3></center>
+	
+	<p>Okay, I figured out a way to stop the ACS service on the router. This option was accessible from the web interface and like telnet, it was hidden. Had to scrape couple of google pages in order to get to the correct url. Also, on earlier version of the firmware, these options were not hidden. Very weird indeed.</p>
+	
+	<p>Also I reached out to the vendor people, but got no reply.</p>
+	
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Debian netinstall problems</title>
+	<link>https://samiuljoy.github.io/microblog/netinst.html</link>
+	<description><![CDATA[ This article describes some difficulties I faced while installing debian with netinst iso ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>debian installation problems</h2></center>
+	
+	<p>The most easies way to write an iso from a Linux terminal is through the <code>dd</code> command, as in</p>
+	
+	<pre>
+	<code>
+	dd if=file&period;iso of=/dev/sdx bs=x status=progress
+	</code>
+	</pre>
+	
+	<p>And in most cases, this works just fine. However in case of debian netisntall image, writing with disk dump doesn't particularly does the job for me. One cause could be that the iso could be invoking codes that are probably unknown to the motherboard bios that I have since it's quite old, and it does infact work on other devices. So, I had to find an alternative. I can not just ditch my motherboard now can I?</p>
+	
+	<p>There's this usb tool called rufus which nicely writes iso files onto usb drives, however rufus is platform specific, it does not work on Linux. So I did google search, and came across this indian website that suggested unetbootin was the best alternative. Apparently, Unetbootin uses some weird method to write data to disk, and weirdly enough, the disk needs to be mounted while it's writing the iso.</p>
+	
+	<p>So while installing debian with unetbootin, after a while, the installation halts and complains that the installation media isn't properly configured or something like that. So stack exchange says that I needed to mount the installation media as a cdrom after migrating to terminal like so;</p>
+	
+	<pre>
+	<code>
+	mount /dev/sdx /cdrom/
+	</code>
+	</pre>
+	
+	<p>Then the installation continued normally, until some point where it says that the installation media couldn't configure grub. At that point you'd have to unmount /cdrom/ and the installation would continue normally.</p>
+	
+	<p>Not sure if these problems are with debian(highly unlikely) or with unetbootin. Well at least now I know how to install debian with unetbootin.</p>
+	
+	<hr>
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Neighbor didn't know how to set up a fake access point</title>
+	<link>https://samiuljoy.github.io/microblog/puzzle.html</link>
+	<description><![CDATA[ This neighbor knew how to set up an accesspoint, but didn't bother to set up a proper dhcp configuration, making it impossible to connect with a dynamic ip, only a static ip would work ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Crazy Pandemic</h2></center>
+	
+	<p>It was during the pandemic. I was searching for wifi with weak psks and without even realizing, I got myself into a honeypot.</p>
+	
+	<p>This ugly guy lived on the south-west side of our building, I knew it was his wifi, and he probably knew I was using his wifi as well. I even at some point saw him running ettercap on his pc. Anyways, he had set up a fake access point with probably some cheap wifi dongle and routed traffic through there, and couldn't figure out how to set up dhcp on the access point. The fact that I'm saying this is because, everytime I had to establish a connection to that access point, I had to set a static ip. He probably used something like <code>airbase-ng</code> to set up a fake access point with password like 12345678. I was such a fool at that time, even though I realized that he was monitoring my traffic, it completely escaped my mind that he was using a fake access point with poorly set up dhcp configuration.</p>
+	
+	<p>I've had crazy experiences during the pandemic, really crazy and this guy was a part of it.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Generate Captive Portals</title>
+	<link>https://samiuljoy.github.io/microblog/captive.html</link>
+	<description><![CDATA[ Learn how to generate captive portal on Apache web servers ]]></description>
+	<content:encoded><![CDATA[
+	
+	<center><h2>Generate Captive Portals</h2></center>
+	
+	<p>This is a quick tutorial on how to generate captive portal pages on Apache web servers.</p>
+	
+	<p> <b>Step 01:</b> On <code>/var/www/html/</code> create a file named index.html with your captive portal username and password fields.</p>
+	
+	<p> <b>Step 02:</b> Then, on the pc where Apache is running, migrate to /etc/apache2/sites-enabled/ and edit a filename called 000-default.conf</p>
+	<p> <b>Step 03:</b> Place the following lines on the end of 000-default.conf</p>
+	
+	<pre>
+	<code>
+	&lt;Directory "/var/www/html"&gt;
+	RewriteEngine On
+	RewriteBase /
+	RewriteCond %{HTTP&lowbar;HOST} ^www\&period;(&period;&ast;)$ &lsqb;NC&rsqb;
+	RewriteRule ^(&period;&ast;)$ http://%1/$1 &lsqb;R=301,L&rsqb;
+	
+	RewriteCond %{REQUEST&lowbar;FILENAME} &excl;-f
+	RewriteCond %{REQUEST&lowbar;FILENAME} &excl;-d
+	
+	RewriteRule ^(&period;&ast;)$ / &lsqb;L,QSA&rsqb;
+	&lt;/Directory&gt;
+	</code>
+	</pre>
+	<a class='btn' href='code/captive.html-code1.txt'>view raw</a>
+	
+	<p><b>Description:</b> There's not much to describe here. There's been use of some clear regular expressions to replace every page starting with anything(^.&ast;) to the captive portal page(index.html) on establishing connection.</p>
+	
+	<p> <b>Step 04:</b> Then restart apache2 service, and you're all set.</p>
+	
+	<p><b>Note:</b> The Rewrite&ast; depends on a plugin called <b>rewrite</b> and in most cases this plugin is disabled by default, so to enable it you'd have to type in from the shell the following command as root;</p>
+	
+	<pre>
+	<code>
+	&num; a2enmod rewrite
+	</code>
+	</pre>
+	<a class='btn' href='code/captive.html-code2.txt'>view raw</a>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>adding system application</title>
+	<link>https://samiuljoy.github.io/microblog/webview.html</link>
+	<description><![CDATA[ This article describes how to add system applications on your android manually with an unlocked device ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>webview.apk</h1></center>
+	
+	<p>I have a very old android, a device from 2017 which is running on stock lollipop 5.1. I use this for class communication and talking to friends and some youtube occasionally. The problem with this device is that it didn't have a webview, well it did initially, but I removed it because I didn't need it at that time. Now, while running some email applications, webview happens to be a dependency. However, it being a system application, it's not possible to install it in a conventional way. We have to hack the system to install the application as a system application.</p>
+	
+	
+	<h3># Getting webview.apk</h3>
+	
+	<p>I happen to have the stock system.img file on my disk luckily. All you need is to mount the img file as ro,loop file with the following command on to a directory called <code>system/</code>;</p>
+	
+	
+	<pre>
+	<code>
+	&num; mount -o ro,loop system&period;img system/
+	</code>
+	</pre>
+	<a class='btn' href='code/webview.html-code1.txt'>view raw</a>
+	
+	
+	<p>Then navigate to <code>/system/app/</code> and copy the whole webview directory onto somewhere else. Then from there copy the directory to your phone.</p>
+	
+	<p><b>N.B. Do make sure to check the permission and the ownership on the webview directory, change the directory permission to 755 and the application webview.apk permission to 644</b></p>
+	
+	
+	<h3># You'll need administrative privilege</h3>
+	
+	<p>To copy an application to a system/ directory needs to have administrative privilege, means you need to have root permission. Only with administrative privilege you can copy the application to <code>/system/app/</code> and then continue rest of the steps.</p>
+	
+	
+	<h3># Linking shared libraries</h3>
+	
+	<p>The next step is probably a bit tricky. While the system.img file is still mounted on system/ directory on your pc, head over to the <code>webview/lib/arm/</code> directory and check out the shared library there. For webview, it should be something like libwebview.so which should be linked to <code>/system/lib/libwebview.so</code>. </p>
+	
+	<pre>
+	<code>
+	&num; ls -lh libwebview&period;so
+	&num; libwebview&period;so -&gt; /system/lib/libwebview&period;so
+	</code>
+	</pre>
+	<a class='btn' href='code/webview.html-code2.txt'>view raw</a>
+	
+	
+	<p>You'll just need to create a symbolic link of the shared library on the same directory but on your phone.</p>
+	
+	
+	<pre>
+	<code>
+	&num; cd /system/app/webview/lib/arm
+	&num; ln -s libwebview&period;so /system/lib/libwebview&period;so
+	</code>
+	</pre>
+	<a class='btn' href='code/webview.html-code3.txt'>view raw</a>
+	
+	<p>Then the application should appear and probably a soft reboot should do the job, and after that it should start working like a system application.</p>
+	
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Windows is a little piece of shit</title>
+	<link>https://samiuljoy.github.io/microblog/windows-is-shit.html</link>
+	<description><![CDATA[ The struggle with windows made me comment on windows like this ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Windows=shit</h2></center>
+	
+	<p>I've recently installed windows 10 on my desktop ssd because of academic reasons and also because no one in the university among the teacher of our department knows how to even use linux. Which is really unfortunate, because I use linux on a daily basis, and am quite comfortable with it. Applications such as vim, the terminal and other linux applications are very good and efficient and far superior compared to windows applications. Although they are considerably more complicated and tough to use for the end user. Anyway, so after installing windows, I installed some applications, such as the mendley referencing manager and microsoft office for academic reasons.</p>
+	
+	
+	<h2>Initial Thoughts on windows</h2>
+	
+	<p>Initially I thought, well it works, it hasn't showed any anomalies and it seemed to be working just fine. I was okay with it initially, however after going online in 10 minutes, it started to go crazy, it started to automatically update and the computer with it's limited 4GB of ram, started to get a little bit slow. Then windows decided to show some really awful, disgusting, obscene news on the start menu, which took me by surprise, and I quickly googled on how to stop windows news from showing news to the start menu. Then edge would open randomly. I didn't like edge so I decided to download google chrome web browser, and when downloading chrome, edge showed a banner on bing saying you don't need chrome. That I found intrusive.</p>
+	
+	
+	<h2>Thoughts After The Update</h2>
+	
+	<p>After the windows update, windows got a lot slower and laggy. It started to lag frequently and would completely hang for no reason. The other day I was practicing my typing on <a href="https://monkeytype.com" rel="nofollow">monkeytype</a> and edge first started to hang and then the whole windows hanged. This was really unexpected. What if instead of practicing typing, I was doing my thesis work, and windows decides to randomly hang! That would be really uncomfortable and frustrating. This had happened to me multiple times though.</p>
+	
+	
+	<h2>Final Thoughts</h2>
+	
+	<p>I've ditched using windows 7 when it was 2015/2016 for no reason other than  just to try out linux. I've first tried/started with ubuntu and moved from there and used not too many linux distro's. Most of them were based off on debian, I've probably used 3 distros so far, and I'm a regular user of debian now. I never would've switched to windows if it not were for these teachers incompetence of not knowing how to use linux. After this catastrophic experience, I hate windows, not that I hated it before, but I hate it more now.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>BirdFeeding</title>
+	<link>https://samiuljoy.github.io/microblog/bird.html</link>
+	<description><![CDATA[ This is about feeding birds at home ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>BirdFeeding</h2></center>
+	
+	<p>Bird feeding is a very pleasant experience. It makes you feel good and worthy for some reason, at least that's my personal opinion. During the pandemic I fed birds, the whole pandemic and it really did make me feel good in the sense that, I was able to help the birds (sparrows) in some way, especially during the summer season, where strokes in birds happen the most due to excessive heat.</p>
+	
+	<p>I am still feeding birds to this day. I have this small square plastic box set up on our balcony and bird-feeds are there in them. The sparrows mostly come during the early morning, or at dawn or sometimes during the fazr time, then feeds on it and then leaves. Then they might occasionally come at around 12 pm in the noon, and then at 3 or 4 pm at noon, or when people are sleeping/taking a nap during the daytime. Below is a short video of a sparrow taking a short meal around 4 pm at noon time.</p>
+	
+	<center>
+		<iframe src="https://www.youtube.com/embed/eatpyJjYhTY?si=BGu3KoBQKc5maWkI" title="sparrow" allow="accelerometer; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</center>
+	
+	
+	<div class="caption">Sparrow taking a short meal</div>
+	
+	<hr>
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Making the router less hot</title>
+	<link>https://samiuljoy.github.io/microblog/routere.html</link>
+	<description><![CDATA[ This articles describes about different ways to make the router less hot when running and making it more efficient and faster ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Router Experimentation</h2></center>
+	
+	<p>I have this cheap Dlink router that I bought as an alternative router for my home. It's a pretty decent router, but it tends to get hot quickly. At first I thought, okay there's only 2/3 people using the internet on our home and the router runs at only 5V dc, it shouldn't be getting that hot. It gets up to 40 degree Celsius under high load, which is absurd. At one point I even thought adding an external fan to it. Well anyway the router had air-vents beneath it, but for some reason, I completely blocked the vents by hard mounting it to the wall, which lead to less air flow and consequently it being overheated. I quickly resolved this issue by adding erasers between the router and the wall so that air flow can be more easy. This drastically improved the heating issue, however it did heat up quite often whenever my ceiling fan was not running. Although not quite as hot as before but it was hot. So I did some research on the internals of the router and came to these 3 points that could improve the heating issue of the router;</p>
+	
+	
+	<ul class="ull">
+		<li>Stopping services that are not needed by the router/halting extra processes running on the router</li>
+	</ul>
+	
+	<ul class="ull">
+		<li>Finding a way to turn off the router led lights because they are hard coded onto the router board</li>
+	</ul>
+	
+	<ul class="ull">
+		<li>Hiding the ssid of the WiFi because constant ssid broadcast heats up the router pretty quickly</li>
+	</ul>
+	
+	<ul class="ull">
+		<li>Disabling DHCP server</li>
+	</ul>
+	
+	
+	<h2># Halting processes on the router</h2>
+	
+	<p>Luckily the router has a telnet service which allows me to get shell access to the router. From there I can kill processes that are quite unnecessary and not frequently needed/low priority processes. This helped with the heating issue, since processes were not running constantly on the router and because of that memory was not consumed by extra processes which also led to an increase in performance on the router.</p>
+	
+	<h2># Turning off led lights</h2>
+	
+	<p>This router has led lights hard coded onto its board. Due to constant blinking of the led lights, they made the whole motherboard of the router hot. So there were two ways to turn off the led lights, one was through the shell which turned off WiFi and Internet led lights but not the power led light. The other option I had was to physically take the led lights off the board. I initially turned off the led lights through the CLI which led to the power light being on constantly, and after a few hours, the board became hot as usual, especially around the led region of the board. So I took a wire cutter and took off the router led lights and that helped with the heating issue by quite a lot. It doesn't heat up that much even when the ceiling fan is turned off.</p>
+	
+	<h2># Hiding WiFi ssid</h2>
+	
+	<p>I was experimenting with an old Samsung phone and the phone for some reason couldn't connect to the WiFi because the ssid of the WiFi was hidden, so I made it visible and the phone could connect nicely. But the thing I found out was that after about an hour or so, the router got hot pretty quickly around 40 degree Celsius even after halting processes and turning off the led lights. Apparently, broadcasting the ssid of the WiFi consumes a good amount of power regardless of setting long beacon intervals/DTIM periods. Thus hiding the ssid of the WiFi made it less hot.</p>
+	
+	<h2># Disabling DHCP server</h2>
+	
+	<p>I'm not completely sure about this but DHCP server helped to lower temperatures by about 5 degrees on my router. It's probably because this router has a low ram and it couldn't handle the processes or services, hence turning it off improves performance and heating issues perhaps? Maybe. DHCP server on the router helps a device to obtain an ip address. Hence turning that off means I have to manually set static ip addresses on all my devices connected to the router.</p>
+	
+	<h2># End Result</h2>
+	
+	<p>These steps made my router quite fast and helped me to reduce heating issues. Benefits of this could potentially include increasing longevity of the router.</p>
+	
+	<hr>
+	
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Accessing raspberry pi 2w through micro-usb</title>
+	<link>https://samiuljoy.github.io/microblog/raspberry2ether.html</link>
+	<description><![CDATA[ A short tut on accessing raspberry pi 2w through micro-usb, that way it becomes easier to access it through ssh on a pc and can connect to wifi at the same time ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Rpi 2w through microusb</h2></center>
+	
+	<h2># Reason</h2>
+	
+	<p>To ssh into rpi2w and connect to wifi for internet access. Mainly using separate interfaces; ssh through usb and internet through wifi, because ssh through wifi adds latency.</p>
+	
+	
+	<h2># Equipments</h2>
+	
+	<ul>
+		<li>Raspberry pi zero w/zero 2w (RaspberrypiOS)</li>
+	</ul>
+	
+	<ul>
+		<li>A micro USB cable to power Raspberrypi</li>
+	</ul>
+	
+	<h2># Procedure</h2>
+	
+	<p>To access raspberrypi through usb cable, usb interface needs to be activated. For that take out your sd card and then edit <code>config.txt</code> file in bootfs directory. Add the following line in <code>config.txt</code></p>
+	
+	
+	<pre>
+	<code>
+	dtoverlay=dwc2
+	</code>
+	</pre>
+	<a class='btn' href='code/raspberry2ether.html-code1.txt'>view raw</a>
+	
+	
+	<p>Note that there is a line that says <code>otg_mode=1</code> or something similar to that, just uncomment that line because raspberrypi will be a network device instead of a usb device. Now, also make sure to load the dwc2 module at startup. So, for that edit <code>cmdline.txt</code> on your sdcard and add the following portion right after rootwait;</p>
+	
+	
+	<pre>
+	<code>
+	modules-load=dwc2,g&lowbar;ether 
+	</code>
+	</pre>
+	<a class='btn' href='code/raspberry2ether.html-code2.txt'>view raw</a>
+	
+	
+	<p>Now boot up raspberry pi, log in and edit network config. Type into your terminal;</p>
+	
+	
+	<pre>
+	<code>
+	$ sudo nmtui
+	</code>
+	</pre>
+	
+	
+	<p>And then hit <code>Edit a connection</code>, then hit <code>&lt;Add&gt;</code>, then select <code>Ethernet</code> as type of connection, then fill up the blank spaces with reference to the image below;</p>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/net.png" alt="nmtui">
+	</center>
+	
+	
+	<div class="caption">Image: nmtui overview</div>
+	
+	<p> <b>Note:</b> Notice that ipv4 is manual and the check box is selected where it says <code>Never use this as the default route</code>. The reason for that is so that we can use wifi as default interface for internet access.</p>
+	
+	
+	<p>The snippet below summarizes the entire procedure pretty much. Remember all of this needs to be done within your raspberry pi as sudo or root.</p>
+	
+	<center>
+		<iframe src="https://www.youtube.com/embed/GWRcZcp790M?si=YeD4nA0GBJtQZcIq" title="nmtui" allow="accelerometer; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</center>
+	
+	<div class="caption">Video: Walkthrough</div>
+	
+	
+	<p>Now to access raspberrypi through your pc, just set a static ipv4 address within same subnet as /24 or 255.255.255.0. Notice in the walkthrough video we gave our raspberry pi an ip address of 192.168.0.2, so our pc can have any ip address between 192.168.0.3-192.168.0.253. And then you can easily ssh into your raspberry pi. Not only that, you can also share your computers internet connection to your raspberrypi. You'd just need to uncheck the <code>Never use this network as default route</code> in raspberrypi and enable ip forwarding in your pc and write some <code>iptables</code> rule. And for normal use, you can easily connect to wifi and access ssh at the same time.</p>
+	
+	<p>Also, to auto enable usb0 interface at startup on raspberrypi, make sure to add this line in your <code>/etc/rc.local</code>;</p>
+	
+	
+	<pre>
+	<code>
+	&num; Considering your usb interface name is usb0 and the network profile name is usb;
+	nmcli enable usb
+	</code>
+	</pre>
+	<a class='btn' href='code/raspberry2ether.html-code3.txt'>view raw</a>
+	
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Key reassignment</title>
+	<link>https://samiuljoy.github.io/microblog/customkeys.html</link>
+	<description><![CDATA[ Change keyboard key assignments ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Key Assignment</h2></center>
+	
+	<p>I recently bought an ergonomic bluetooth keyboard that had some weird keys such as shift key was so big that most of the time I ended up hitting Enter key by mistake and Caps lock key was a bit larger too which when hitting the key <code>A</code> I ended up hitting Caps lock instead, the backspace key was very far/at the end of the keyboard for some reason and home/end and ins/del keys were also wierdly placed. I needed ins/del and home/end keys to switch between tabs within vim since these were the keybinds I used on all my other keyboards. All in all I was having a hard time typing properly/efficiently on this new keyboard.</p>
+	
+	<p>So, I ended up searching for ways to change the keys/map keys, and found bunch of programs on the interweb. Some of the programs either needed to be daemonized or were extremely advanced/complex compared to what I was looking for or were exclusively dependent on a graphical environment. I was looking for something simple and already built-in into the system. So, I came across these programs, <code>xmodmap</code>, <code>xdotool</code> and <code>setkeycodes</code>. Out of all of these, setkeycodes was definitely what I needed and was built right into the system.</p>
+	
+	<h2># setkeycodes</h2>
+	
+	<p> <code>setkeycodes</code> basically takes in custom mappings from <code>$USER</code> and modifies the kernel keymappings to <code>$USER</code>. Running <code>man</code> on <code>setkeycodes</code> shows this portion;</p>
+	
+	
+	<pre>
+	<code>
+	SETKEYCODES(8)                                           System Manager's Manual                                           SETKEYCODES(8)
+	
+	NAME
+	       setkeycodes - load kernel scancode-to-keycode mapping table entries
+	
+	SYNOPSIS
+	       setkeycodes scancode keycode &period;&period;&period;
+	
+	DESCRIPTION
+	       The  setkeycodes command reads its arguments two at a time, each pair of arguments consisting of a scancode (given in hexadecimal)
+	       and a keycode (given in decimal)&period; For each such pair, it tells the kernel keyboard driver to map the  specified  scancode  to  the
+	       specified keycode&period;
+	
+	       This command is useful only for people with slightly unusual keyboards, that have a few keys which produce scancodes that the ker‐
+	       nel does not recognize&period;
+	
+	THEORY
+	       The usual PC keyboard produces a series of scancodes for each key press and key release&period; (Scancodes are shown by showkey  -s,  see
+	       showkey(1)  )  The  kernel  parses  this  stream of scancodes, and converts it to a stream of keycodes (key press/release events)&period;
+	       (Keycodes are shown by showkey&period;)  Apart from a few scancodes with special meaning, and apart from the  sequence  produced  by  the
+	       Pause  key,  and  apart from shiftstate related scancodes, and apart from the key up/down bit, the stream of scancodes consists of
+	       unescaped scancodes xx (7 bits) and escaped scancodes e0 xx (8+7 bits)&period;  To these scancodes or  scancode  pairs,  a  corresponding
+	       keycode  can  be assigned (in the range 1-127)&period;  For example, if you have a Macro key that produces e0 6f according to showkey(1),
+	       the command
+	              setkeycodes e06f 112
+	       will assign the keycode 112 to it, and then loadkeys(1) can be used to define the function of this key&period;
+	
+	       Some older kernels might hardwire a low scancode range to the equivalent keycodes; setkeycodes will fail when  you  try  to  remap
+	       these&period;
+	</code>
+	</pre>
+	<a class='btn' href='code/customkeys.html-code1.txt'>view raw</a>
+	
+	<p>The <b>Theory</b> portion on the man page describes about key release and key press events. Using this info we can modify/assign different hex values to the keys that we want to change using the <code>showkey</code> command. Now if you look at the Theory section on the above code block, you'll see a line that says;</p>
+	
+	<pre>
+	<code>
+	setkeycodes e06f 112
+	</code>
+	</pre>
+	
+	<p>The first portion of the hex value <code>e06f</code> is the identifier of the first keypress event for a key and 112 is the key that the keypress event is being assigned to. So, the hex value of the first keypress is being assigned to key 112. Now, how do I know what is <code>e06f</code> or <code>112</code> or which keys they are. This is where <code>showkey</code> program comes in use.</p>
+	
+	<h2># showkey</h2>
+	
+	<p>The showkey command basically takes standard input keypresses and prints them out in hex values/digital values. There's basically 2 modes to it, key-press event and key-release event. These are 2 different events with different keyvalues that can be separately assigned to key/s. If you look at the <b>Theory</b> portion of the code block above, it clearly describes the mechanism by which showkey converts scancodes(hex values) to keycodes(decimal values)</p>
+	
+	<pre>
+	<code>
+	THEORY
+		The usual PC keyboard produces a series of scancodes for each key press and key release&period; (Scancodes are shown by showkey  -s,  see
+		showkey(1)  )  The  kernel  parses  this  stream of scancodes, and converts it to a stream of keycodes (key press/release events)&period;
+		(Keycodes are shown by showkey&period;)
+	</code>
+	</pre>
+	
+	<p> <b>[Note:]</b> Remember, both the <code>showkey</code> and <code>setkeycodes</code> command needs to be executed as root user since it makes changes systemwide rather than $USER</p>
+	
+	<h2># Execution</h2>
+	
+	<p>The entire process follows these sequential steps;</p>
+	
+	<ol>
+		<li>Get the scancode(decimal value) of the key that we want to change to</li>
+		<li>Get the scancode(hex value) of the key that we want to be changed</li>
+		<li>Code execution</li>
+		<li>Running it at boot time(making it a init service)</li>
+	</ol>
+	
+	<h3># Step: 1</h3>
+	
+	<p>So in my case, I have a huge shift key that interferes with me pressing enter and the backspace key being too far, this is what I wanted to do;</p>
+	
+	<ul>
+		<li>Change the Right Shift key to Enter(since it's quite big)</li>
+		<li>Change the Enter key to Backspace(Since backspace is usually above enter)</li>
+	</ul>
+	
+	<p>It's basically negating the functionality of right shift key because I never use the right shift key. So, to get the scancode(decimal value) of the Enter key, we need to execute;</p>
+	
+	<pre>
+	<code>
+	root@machine: showkey
+	
+	keycode 28 press
+	keycode 28 release
+	</code>
+	</pre>
+	
+	<p>The decimal value of the Enter/Return key is 28. You can also get this value another way by running <code>dumpkeys</code> which would dump keyvals into standard output.</p>
+	
+	<h3># Step: 2</h3>
+	
+	<p>Now, to get the hex value of the shift key, we need to add the <code>-s</code> flag with showkey command. The <code>-s</code> flag tells showkey to print out hex values of the key press and release values.</p>
+	
+	<pre>
+	<code>
+	root@machine: showkey -s
+	
+	0x36 0xb6
+	</code>
+	</pre>
+	
+	<p>So, the <code>0x36</code> is the keypress value and <code>0xb6</code> is the key release value.</p>
+	
+	<h3># Step: 3</h3>
+	
+	<p>So, to assign the hex values of right shift keys to <code>Return/Enter</code> keycode values(decimal) you would have to run;</p>
+	
+	<pre>
+	<code>
+	root@machine: setkeycodes 0x36 28
+	</code>
+	</pre>
+	<a class='btn' href='code/customkeys.html-code2.txt'>view raw</a>
+	
+	<p>That should be it. Now the shift key will behave like a Return/Enter key. This will be applied systemwide. However, this is not persistent. You can just place the last code into a shell script for convenience and can also put it into a init script to run it at startup.</p>
+	
+	<h3># Step: 4</h3>
+	
+	<p>To make it a init service, place the init script in somewhere like <code>/usr/local/bin/customkeys.sh</code> then place the <code>customkeys.service</code> service file in <code>/etc/systemd/system/</code> as</p>
+	
+	<pre>
+	<code>
+	root@machine: touch /etc/systemd/system/customkeys&period;service
+	</code>
+	</pre>
+	<a class='btn' href='code/customkeys.html-code3.txt'>view raw</a>
+	
+	<p>Then add the following lines in it;</p>
+	
+	<pre>
+	<code>
+	&lsqb;Unit&rsqb;
+	Description: Keymaps
+	
+	&lsqb;Service&rsqb;
+	Type=oneshot
+	NoNewPrivileges=yes
+	User=root
+	ExecStart=/usr/local/bin/customkeys&period;sh
+	
+	&lsqb;Install&rsqb;
+	WantedBy=multi-user&period;target
+	</code>
+	</pre>
+	<a class='btn' href='code/customkeys.html-code4.txt'>view raw</a>
+	
+	<p>Then run;</p>
+	
+	<pre>
+	<code>
+	systemctl enable customkeys&period;service
+	</code>
+	</pre>
+	<a class='btn' href='code/customkeys.html-code5.txt'>view raw</a>
+	
+	<p>to enable the service. If you have rc as init service, then just reference it in your <code>rc.local</code> file.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Minimizing resource utilization while coding in an IoT environment</title>
+	<link>https://samiuljoy.github.io/microblog/arduinocli.html</link>
+	<description><![CDATA[ This post is about minimizing resource utilization/maximizing power efficiency while coding for IoT devices instead of using a full-fledged ide. ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>IoT coding but efficiently</h2></center>
+	
+	<p>Arduino-ide is a software used by most people for IoT coding. However, the cpu/power consumption is surprisingly high. It's understandable to a degree given the fact that it's a IDE after all, tasks such as function lookup, code completion definitely requires high processing power, however compared to VS code, the cpu usage is quite high for Arduino-ide. Also, it keeps trying to connect to the internet every 2 seconds and complains while working offline, which is just absurd. These are the things I do on a regular basis while coding;</p>
+	
+	<ul class="ull">
+		<li>Write code</li>
+		<li>Compile code</li>
+		<li>Upload code to IoT devices</li>
+		<li>Download necessary libraries when needed</li>
+	</ul>
+	
+	<p>These are pretty basic tasks which in my opinion should not require that much high cpu/power consumption. I was basically searching for something more simpler and ended up finding the CLI version of the Arduino IDE. Besides code completion/definition lookups, arduino-cli was basically the perfect program for me.</p>
+	
+	<h2># arduino-cli</h2>
+	
+	<p>arduino-cli is basically a cli version of the ide minus the gui environment, code completion and other fancy stuffs. I can code in my favorite editor(VIM), which barely spikes cpu usage, and then compile codes, again barely spikes cpu usage and then upload codes straight from the terminal. I don't even need to log into a gui environment to even run this program, can do everything right from the tty which is just convenient & efficient. You can read more about arduino-cli <a href="https://arduino.github.io/arduino-cli" rel="nofollow">here</a>. I've even managed to underclock my cpu and tune it into powersave mode and run the cli software without any hassle whatsoever. I'm working on some IoT automation projects and will be uploading/writing about them in the near future. Have fun using arduino-cli</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Learn the basics of editing groff chemistry documents</title>
+	<link>https://samiuljoy.github.io/microblog/gchem.html</link>
+	<description><![CDATA[ Learn how to edit groff chemistry document files ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>Groff Chem</h1></center>
+	
+	<p>Groff is a text formating process for Linux systems. Groff is the Gnu version of roff. Groff is what used to write man pages on Gnu/Linux systems and roff on Unix systems. Chem is an additional extension for drawing chemical structures with groff.</p>
+	
+	<p>Chemical structures are bounded between .cstart and .cend sections. There's different labels for different structures. There's ring structure, there's Benzene structures so on and so forth.</p>
+	
+	<p>Below is an image of the structural formula of reserpine made with groff chem;</p>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/reserpine.png" alt="Reserpine">
+	</center>
+	
+	
+	<div class="caption">Figure: When viewed through a pdf viewer</div>
+	
+	<p>This is the source code for writing this is groff format;</p>
+	
+	<pre>
+	<code>
+	&period;cstart
+	R1:	benzene pointing up
+		bond -120 from R1&period;V5 ; O
+		bond left
+	R2:	flatring5 pointing down double 4,5 with &period;V2 at R1&period;V3 with &period;V3 at R1&period;V2 put N at 1
+		H below R2&period;V1
+	R3:	ring put N at 3 with &period;V5 at R2&period;V5
+	R4:	ring put N at 1 with &period;V1 at R3&period;V3
+		back bond -120 from R4&period;V4 ; H
+		back bond 60 from R4&period;V3 ; H
+	R5:	ring with &period;V1 at R4&period;V3
+		bond -120 
+	D1:	double bond down ; O
+		bond left from D1&period;start ; O
+		bond left
+		back bond 60 from R5&period;V3 ; H
+		back bond down from R5&period;V4 ; O
+		bond down from O
+		bond 120 from R5&period;V3 ; O
+		bond 50 from O
+	D2:	double bond up ; O
+		bond right length &period;1 from D2&period;start
+	B:	benzene pointing right
+		bond 45 from B&period;V6 ; O
+		bond right
+		bond right from B&period;V1 ; O
+		bond right
+		bond 135 from B&period;V2 ; O
+		bond right
+	&period;cend
+	</code>
+	</pre>
+	<a class='btn' href='code/gchem.html-code1.txt'>view raw</a>
+	
+	<p><b>Explanation:</b> The R1:, D1:, B: are just labels for different structures. The R1-5 are ring structures from ring 1 to ring 5. R1: is a variable to be exact. You can place any variable in place of R1: or D1: but naming R1 for ring structures or B1 for first bond make things a lot easier to understand.</p>
+	
+	<p><b>R1</b></p>
+	
+	<p>The R1 label has a benzene structure that is pointing up, means position 1 is the top section of the benzene ring. If you've said pointing down, then it'd mean position 1 would start from the bottom top part. R1.V5 means on ring 1 at position 5. So, <code>bond -120 from R1.V5; O</code> means make a bond at R1.V5 which is -120 degrees(if you omit the - symbol from -120 then it'd make a bond in the other side) and put O at the end of the bond. Then on the next line we make a bond from O to left side.</p>
+	
+	<p><b>R2</b></p>
+	
+	<p>R2 ring structure starts with a flatring which is 5 sided and is pointing down and has a double bond at position 4 and 5. The <code>with .V2 at R1.V3 with .V3 at R1.V2</code> means the bond at position V2 of R2 would make bond with the V3 position with ring1 at position V3 and same for the later part. And at the end, put N at position 1 of R2.</p>
+	
+	<p><b>R3</b></p>
+	
+	<p>Makes a ring and puts N at position 3 with .V5 with R2.V5</p>
+	
+	<p>Hopefully from this part you can decipher rest of the portion and figure out how it works properly. For further reading see extra documentation stuff in /usr/share/docs/groff and also you can check out the man page for chem syntax with <code>man chem</code>.</p>
+	
+	<h3>Compilation</h3>
+	
+	<p>For compiling this into a pdf use the <code>-j</code> flag(preprocessor), so the shell command would look something like this;</p>
+	
+	<pre>
+	<code>
+	$ groff -mspdf -j filename&period;chem &gt; file&period;pdf
+	</code>
+	</pre>
+	<a class='btn' href='code/gchem.html-code2.txt'>view raw</a>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>A simple number guessing game writen in shell script</title>
+	<link>https://samiuljoy.github.io/microblog/guess.html</link>
+	<description><![CDATA[ A simple number guessing game where you get to guess 2 digit numbers ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>./guess.sh</h1></center>
+	
+	<p>This here is a simple bash game where you guess a 2 digit number, but is it confined to only guessing the 2 digits? hmm...</p>
+	
+	<p>Also, this is my first game in bash script.</p>
+	
+	<p><b>For it to execute properly, you'll need another bash script named ho. ^.^</b></p>
+	
+	<center><h2>guess.sh</h2></center>
+	
+	<pre>
+	<code>
+	&num;&excl;/bin/bash
+	well=$(echo $RANDOM | cut -b "1-2")
+	exec 2&gt;/dev/null
+	
+	while true; do
+	echo -e "\nI'm thinking of a number, can you guess what it is?"
+	read number
+	if &lsqb;&lsqb; "$number" == "" &rsqb;&rsqb;; then
+	    echo -e "\nAhh breaking the loop ain't we?"
+	    sleep 1
+	    echo -e "\nWhat are you upto lately? "
+	    read programming
+	    case "$programming" in
+	        "programming") echo -e "\nThat's so cool&excl; Me too&excl;"
+	            ;;
+	            &ast;) echo -e "\nThat's cool&excl;"
+	            ;;
+	    esac
+	    sleep 1
+	    echo -e "\nI've been into programming and pythons lately"
+	    sleep 2
+	    echo -e "\nHmm "
+	    echo
+	    &period;/ho&period;sh
+	    echo -e "\nI've been into turmoils lately&period;&period;&period; :c"
+	    sleep 2
+	    echo -e "\nHopefully get a better grip on my life&period;&period;&period;"
+	    sleep 2
+	    echo -e "\nI will be leaving for college soon"
+	    sleep 2
+	    echo -e "\nTell me about you perhaps on curious&period;queries@gmail&period;com?"
+	    sleep 2
+	    echo -e "\nFarewell c:"
+	    sleep 2
+	    echo -e "\nThis was written at 3 pm on January 31st, 2020 on Android 5&period;1&period;1 with an app called termux and with vim editor"
+	    echo -e "\nHopefully you have a wonderful rest of your day"
+	    break
+	    exit 0
+	    else
+	    if &lsqb;&lsqb; "$number" -lt "$well" &rsqb;&rsqb;; then
+	        echo -e "\nThe number you guessed is lower than the actual value&period;&period;"
+	    else
+	        if &lsqb;&lsqb; "$number" -gt "$well" &rsqb;&rsqb;; then
+	            echo -e "\nThe number you guessed is higher than the actual value&period;&period;&period;"
+	        else
+	            if &lsqb;&lsqb; "$number" = "$well" &rsqb;&rsqb;; then
+	                echo -e "\nYou got it right&excl;&excl;"
+	                echo -e "\nWanna play again?&lsqb;yes/no&rsqb; "
+	                read answer
+	                case "$answer" in
+	                    yes|y) &period;/guess&period;sh
+	                        ;;
+	                    no|n) echo -e "\nProgram ends"
+	                        ;;
+	                    &ast;) echo -e "\nInvalid input&period;&period;&period; exiting program"
+	                        ;;
+	                esac
+	                break
+	            fi
+	        fi
+	    fi
+	fi
+	done
+	</code>
+	</pre>
+	<a class='btn' href='code/guess.html-code1.txt'>view raw</a>
+	
+	<p>You can save this as guess.sh and don't forget to chmod u+x the script. The ho.sh script is below, save it as ho.sh under the same directory as guess.sh, the chmod +x ho.sh, and you're good to go.</p>
+	
+	<center><h2>ho.sh</h2></center>
+	
+	<pre>
+	<code>
+	&num;&excl;/bin/bash
+	runtime="4 second"
+	endtime=$(date -ud "$runtime" +%s)
+	while &lsqb; "$(date -u +%s)" -lt "$endtime" &rsqb;; do
+		printf "&period;" $(sleep &period;5); printf "&period;" $(sleep &period;5); printf "&period;"$(sleep 0&period;5);
+		echo
+	done
+	</code>
+	</pre>
+	<a class='btn' href='code/guess.html-code2.txt'>view raw</a>
+	
+	<p>The idea of creating this came while I was reading a book called "Python Crash Course" by Erric Matthes, where the intro goes like this..</p>
+	
+	<blockquote>
+		<p>"I wrote my first program on a kit computer my dad had assembled in our basement. The computer consisted nothing more than a bare motherboard connected to a keyboard without a case, and it had a bare cathode ray tube for a monitor. My initial program was a simple number guessing game, which looked something like this</p>
+	</blockquote>
+	
+	
+	<pre>
+	<code>
+	I'm thinking of a number, try to guess the number I'm thinking of: 25
+	Too low&excl; Guess again: 50
+	Too high&excl; Guess again: 42
+	That's it&period; Would you like to play again? (Yes/No) no
+	Thank's for playing
+	</code>
+	</pre>
+	
+	
+	<blockquote>
+		<p>I'll always remember how satisfied I felt watching my family play a game I created."</p>
+	</blockquote>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Emulating login mechanism</title>
+	<link>https://samiuljoy.github.io/microblog/login.html</link>
+	<description><![CDATA[ Emulating login mechanism on a Linux System with shell scripts ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>./login.sh && ./username.sh</h1></center>
+	
+	<p>I was curious about the way a simple command like "passwd" and "adduser" worked on a Linux system. It basically saves the password in a <u>/etc/shadow</u> file and encrypts it using secure hashing algorithms with salting involved. Now what if we try to do the same(not the same, but something similar) with a shell script? Wouldn't that be fun?</p>
+	
+	<p>Let's try to emulate the whole mechanism.</p>
+	
+	<ol>
+		<li>A new user types in "adduser" and a username prompt appears asking the user to put in their name.</li>
+		<li>If that username is already taken, tells the user that the username is already taken and to type in a different name. Else adds the new username and then asks for their password.</li>
+		<li>If the password field is blank, tells the user to put in a legit password.</li>
+		<li>Then saves the username::password in the /etc/shadow file followed by hashes.</li>
+		<li>Then at the time of login, a user types in their username and password.</li>
+		<li>If the typed in password matches with that of the saved hash in /etc/shadow, then user can log in, else exit.</li>
+	</ol>
+	
+	<p><b>I'm assuming you are somewhat knowledgeable in shell scripting.</b></p>
+		
+	<center><h2>Script 1: username.sh</h2></center>
+	
+	<p><b>Description:</b> What it basically does is that, it saves your name and your password in a file called mango.txt, and the next time you try logging in, the login.sh script pulls the data from mango.txt and compares that with input password.</p>
+		
+	<center><h2>./username.sh</h2></center>
+	
+	<pre>
+	<code>
+	&num;&excl;/bin/sh
+	
+	&num; What I'm planning to do here is that, create a useradd script which allows a user to add themselves by puting in their names
+	&num; and their password&period; This will save the username::password to a file called mango&period;txt and prompt at each login by running
+	&num; the login&period;sh script If username already exists, notifies the user that a user with the same name exits, else add 
+	&num; the new user along with a password&period; The password is saved in a md5sum form&period;
+	
+	exec 2&gt;/dev/null
+	echo -n "Enter username: "
+	read usame
+	
+	if &lsqb; "$usame" == "" &rsqb;; then echo -e "Username can not be blank\n"
+	    &period;/username&period;sh
+	else
+	    grep -q $usame mango&period;txt
+	    if &lsqb; "$?" == 0 &rsqb;; then
+	    echo -e "A username with the same name already exists\n"   
+	    &period;/username&period;sh
+	    else
+	        echo -n "Password: "
+	        read -s -p "Password: " passwd
+	        while true; do
+	            if &lsqb; "$passwd" == "" &rsqb;; then
+	                echo "Password can not be blank\n"
+	        else
+	            echo $usame::$(echo $passwd | md5sum) &gt;&gt; mango&period;txt
+	            echo -e "\nUser $usame added\n"
+	        break
+	            fi
+	        done
+	    fi
+	fi
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code1.txt'>view raw</a>
+	
+	<center><h2>Script 2: login.sh</h2></center>
+	
+	
+	<p><b>Description:</b> Now this script actually needs the mango.txt to work, else logging in will be impossible(just a prior warning; this is just a simple emulation as to how the same thing can be achieved with a shell script..don't just put it in your shell startup though..things will get damn messy at some point..)</p>
+	
+	<center><h2>./login.sh</h2></center>
+	
+	
+	<pre>
+	<code>
+	&num;&excl;/bin/sh
+	
+	&num; A simple login bash script
+	&num;trap interrupts your keyboard if you press ctrl+z or ctrl+c
+	trap '' INT TSTP
+	
+	read -p "Enter username: " usname
+	grep -q $usname mango&period;txt
+	
+	if &lsqb; "$?" -gt 0 &rsqb;; then
+	    echo "Username not found"
+	    sleep 1
+	    pkill -9 bash
+	else
+	    read -s -p "Password: " password
+	    if &lsqb; "$password" == "" &rsqb;; then 
+	        echo "Password can not be blank"
+	        &period;/login&period;sh
+	    else
+	        &num;saves the password in md5sum format in tmp&period;txt
+	        echo $password | md5sum &gt; tmp&period;txt
+	        &num;assigning a tmp variable which reads the tmp&period;txt
+	        tmp="$(cat tmp&period;txt)"
+	        &num;if the md5 hashes match, then allow login saying yo
+	        cat mango&period;txt | grep -q $usname::$tmp
+	        if &lsqb; "$?" == 0 &rsqb;; then
+	            echo -e "\nyo"
+	            &num;else print login failed
+	        else
+	            echo -e "\nLogin failed"
+	            sleep 1
+	            pkill -9 bash
+	        fi
+	    fi
+	fi
+	rm tmp&period;txt
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code2.txt'>view raw</a>
+	
+	<p>Now this is actually nowhere near the way that works in a real Linux OS, however, the rest is up to you and how you use it.</p>
+	
+	<p>Before writing this post I also asked a question on Unix stack exchange about this script and how it worked on a Linux system, and got some good suggestions. Turns out that I can use <code>openssl</code> to actually induce salting.</p>
+	
+	<p>For this, you need to have <code>openssl</code> installed on your OS. If you're on a debian based system, chances are <code>openssl</code> is already installed on your system. If not you can always run <code>apt install openssl</code> from your preferred terminal. If you're on a macOS, you can install <code>openssl</code> using <code>brew install openssl</code> from your terminal. Once you have <code>openssl</code> installed, then we can begin</p>
+	
+	<p>Now, to induce salting, with <code>openssl</code> there's a one liner command; &lt;br&gt;</p>
+	
+	
+	<pre>
+	<code>
+	openssl passwd -6 -salt xyz yourpassword
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code3.txt'>view raw</a>
+	
+	<p><code>openssl</code> will generate a password followed by the <code>passwd</code> command. The number -6 indicates sha512sum character output, where -1 will generate a md5sum character output and -5 will generate a sha256sum character output. The -salt flag will tell the output to randomize the characters based on the input characters, in this case xyz. One way to test this out is to replace xyz with any other character and the output will be different. Replace yourpass with whatever password you choose. The same thing can be obtained with python3 like so;</p>
+	
+	
+	<pre>
+	<code>
+	import crypt
+	print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&lowbar;SHA512)))
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code4.txt'>view raw</a>
+	
+	<p>Save this in a file like passwd.py and use <code>python3 passwd.py</code> to run the script from your terminal.</p>
+	
+	<p>This can also be issued as a one liner command, like so;</p>
+	
+	
+	<pre>
+	<code>
+	python3 -c 'import crypt; print(crypt&period;crypt("yourpasswd", crypt&period;mksalt(crypt&period;METHOD&lowbar;SHA512)))'
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code5.txt'>view raw</a>
+	
+	<p>What this will do is generate salted characters off of "yourpasswd" randomized with sha512sum checksum and output it to the terminal. You have to have Python3 installed prior to running this script. Linux and macOS comes with Python pre-installed. However, that might not always be the case. to install Python3 on Linux like OS, you can use your package manager to download and install Python3. On macOS, you can follow <a href="https://docs.python-guide.org/starting/install3/osx" rel="nofollow">this</a> tutorial.</p>
+	
+	<p>The python3 script will produce a different output on every run, which will make it impossible to verify the checksums. I haven't figured a proper way ti mitigate this issue, but for now let's use this script instead</p>
+	
+	
+	<pre>
+	<code>
+	import crypt
+	crypt&period;crypt('password', '$6$' + 'salt1234')
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code6.txt'>view raw</a>
+	
+	
+	<p>A more easier way would be to do it with <code>mkpasswd</code> from within bash. To generate sha512sum characters from given "password"</p>
+	
+	
+	<pre>
+	<code>
+	mkpasswd -m sha-512 -S salt1234 password
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code7.txt'>view raw</a>
+	
+	<p>Now, to &grave;code&grave; include this in our scripts <b>username.sh</b> and <b>login.sh</b> we just have to replace some variables with either the <code>openssl</code> or <code>mkpasswd</code> or <code>python</code></p>
+	
+	<center><h2>Salting with `mkpasswd`</h2></center>
+	
+	<p>On line 34 of the script <code>username.sh</code> we can replace </p>
+	
+	
+	<pre>
+	<code>
+	echo $usame::$(echo $passwd | md5sum) &gt;&gt; mango&period;txt
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code8.txt'>view raw</a>
+	
+	<p>with this line, if you plan to use mkpasswd.</p>
+	
+	
+	<pre>
+	<code>
+	echo $usame::$(mkpasswd -m sha-512 -S salt1234 $passwd) &gt;&gt; mango&period;txt
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code9.txt'>view raw</a>
+	
+	<p>Now on line 24 of <code>login.sh</code> you need to replace</p>
+	
+	
+	<pre>
+	<code>
+	echo $password | md5sum &gt; tmp&period;txt
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code10.txt'>view raw</a>
+	
+	<p>with</p>
+	
+	
+	<pre>
+	<code>
+	echo $(mkpasswd -m sha-512 -S salt1234 $password) &gt; tmp&period;txt
+	</code>
+	</pre>
+	<a class='btn' href='code/login.html-code11.txt'>view raw</a>
+	
+	
+	<p>Same results can be achieved with <code>openssl</code> and <code>python</code>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^_^</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Emulating User Interactions Using ADB</title>
+	<link>https://samiuljoy.github.io/microblog/emulate.html</link>
+	<description><![CDATA[ Title is pretty much self explanatory, Using adb it was possible to emulate a normal user interaction on a Chrome browser. More ways to automate stuff in a very cool way! ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>Emulating User Interactions Using ADB</h1></center>
+	
+	<p>Couple days back, well actually couple months back I came across a random video on YouTube about headless chromium browsers being used as a web scrapping tool with node.js and puppeteer for emulating user interactions <a href="https://youtube.com/watch?v=aRXzW-o-zqs" rel="nofollow">the video</a>. The fact that we could emulate user inputs using a <code>cli</code> was quite fascinating, suffice to say one could write a script to automate a whole bunch of stuffs without triggering the <b>I'm not a robot</b> part(except some sites). Now, everything seems pretty darn cool and all, and I came across this idea if it was possible to emulate the same thing but on an Android device. Sad news is that, there's no "Headless Chrome" for Android devices, since it depends on a bunch of libraries and stuffs, which unfortunately aren't available on Android for the current time. However, (here comes the fun part), it's actually possible to emulate user interactions on Android devices, which of course isn't only limited to using Chrome, but also, the whole UI of Android, meaning, we can automate basically everything we usually do on a typical Android device, but with scripts. Now how cool is that? Sounds pretty cool right? Well, let's get started!</p>
+	
+	<h2># Stuffs we'll be needing are;</h2>
+	
+	<ol>
+		<li>A PC</li>
+		<li>An Android</li>
+		<li>Little bit of Internet</li>
+	</ol>
+	
+	<h2># Overview</h2>
+	
+	<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android<i>software</i>development#ADB" rel="nofollow">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it [^-^]</p>
+	
+	<h2># Gathering required stuffs</h2>
+	
+	<p>We'll be needing a PC to instruct and execute commands onto our devices. For that, we'll be needing adb. If you're on Linux OS, you can install adb using your package manager, if you're on macOS, you can install it using brew. Head over to your phone to enable usb debugging. Once you have everything set up, then we can begin.</p>
+	
+	<p>Make sure you can access your phone from your PC through the shell. Connect usb cable to your phone and open a terminal window on your PC, and type in <code>adb devices</code> which considering everything is properly set up, should display something like this</p>
+	
+	<pre>
+	<code>
+	&lsqb;user@debian&rsqb;:&sim;$ adb devices
+	
+	List of devices attached
+	&ast; daemon starting on port 5555
+	&ast; daemon started successfully
+	
+	ID	 	 device
+	0e46ee341 	 authorized
+	
+	&lsqb;user@debian&rsqb;:&sim;$
+	</code>
+	</pre>
+	
+	<p>Everything seems fine? Let's proceed to the next step</p>
+	
+	<h2># Fun part begins here</h2>
+	
+	<p>Now that your device is connected, just for sake of fun, try this in your terminal;</p>
+	
+	<pre>
+	<code>
+	adb shell input keyevent 223; adb shell keyevent 224
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code1.txt'>view raw</a>
+	
+	<p>What this one liner code does is, it turns off the screen with <code>keyevent 223</code>, and turns the screen on with <code>keyevent 224</code>. Now, onto what we're here for. Emulation. Let's jump straight to it. Let's begin with starting Chrome Browser from our terminal. We could do this with either by going to the shell and executing from there, or we could use our native terminal. The difference between them is just that we have to add <code>adb shell</code> prefix for the later case. Either way, suit yourself to what you prefer. Now to start chrome, we can issue this command;</p>
+	
+	<pre>
+	<code>
+	adb shell am start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code2.txt'>view raw</a>
+	
+	<p><b>note: you could also use 'com.android.chrome/.MainActivity'</b></p>
+	
+	<p>This should launch Chrome Browser on your Android. The first part before "/" tells the shell to use chrome, the part after / tells the shell to actually launch chrome with activity Main, which brings the chrome app in foreground. Pretty cool right? Now, let's emulate swipe action to make it seem like as if you were swiping across the screen. Swipe action are executed with <code>input swipe</code> action, like so</p>
+	
+	
+	<pre>
+	<code>
+	adb shell input swipe 400 700 400 130 500
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code3.txt'>view raw</a>
+	
+	<p>The 400 700 and 400 130 are <b>x</b> and <b>y</b> coordinates of the screen. 400 700 tells the device to emulate a tap on coordinate 400 700,then move across the screen to 400 130 coordinate, and this is done with <b>swipe</b> action. Now, we don't want the swipe action to be blazing fast, hence the velocity is defined with 500. Try replacing it with 100 and see things fly across the screen lol. The velocity part is optional and can be ignored. The important part of this whole thing is to get the pointer location, because for my phone, the coordinates were that and that, however this might be different in your case. So, to get the tap coordinates, you need to enable a feature under <b>Developer Options</b> on your device named <b>Pointer Locations</b>, go to developer options and scroll down a bit until you find pointer locations and enable it. After enabling it, you'll see a red margin on top of your screen, showing the coordinates. Tap on random surface of your screen, and you'll see the x and y coordinates pop up in <b>red</b>. Now, to do a swipe action, tap and note down the coordinates and then swipe up or down and take note of your final coordinates(note: the coordinates are the ones when the screen is tapped and hold, not the ones when tap is released), and that's it. Replace your four coordinates with the four coordinates above.</p>
+	
+	<h2># Performing a search query</h2>
+	<p>Now, onto the next step let's start the chrome browser again, and this time let's perform a search query. To do that, start chrome browser and jump onto its home page. There's a search bar on the home page. Now what we usually do is tap on the search bar and type in whatever we want and hit enter. Well, that's basically what we'll doing, but with scripts.</p>
+	
+	<p>Remember to take a note of the coordinates of the search bar where we'll be emulating a tap action as if we were actually tapping on the search bar. Tap and hold the search bar and take notes of your coordinates while holding. Got the coordinates? Good, now smash this into your terminal</p>
+	
+	<pre>
+	<code>
+	adb shell input tap X Y
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code4.txt'>view raw</a>
+	
+	<p>Replace <code>X</code> and <code>Y</code> with the coordinates you got while tapping over the search bar. That should input a tap action on only on those coordinates of your screen. Remember to have chrome opened into its home screen. This should bring up the area where we input our texts and notice that there's already a blinking cursor waiting for you to input texts. This is where we'll be inserting our search query. To do that just type in;</p>
+	
+	
+	<pre>
+	<code>
+	adb shell input text 'test'
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code5.txt'>view raw</a>
+	
+	<p>This should input the text 'test' into your search bar. Now, to emulate pressing 'Enter' key is pretty easy, just type in;</p>
+	
+	
+	<pre>
+	<code>
+	adb shell input keyevent 66
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code6.txt'>view raw</a>
+	
+	<p><code>keyevent 66</code> emulates Return action. So there you go, you just performed a simple search query. To sum all of these up, we should now have a script that looks like this;</p>
+	
+	<pre>
+	<code>
+	&num; Let's start up chrome
+	adb shell start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
+	&num; wait for chrome to start up properly, wait for 2 seconds
+	sleep 2
+	&num; perform a tap action on X and Y coordinates to bring up the search bar
+	adb shell input tap X Y
+	&num; perform a search query with text
+	adb shell input text 'test'
+	&num; and hit enter
+	adb shell input keyevent 66
+	&num; and to perform a swipe, put any bottom to top coordinates like so
+	adb shell input swipe 400 700 400 150 500
+	&num; we are swiping up, which is why on Y coordinates change, from 700(bottom) to 150 (up)
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code7.txt'>view raw</a>
+	
+	<p>Pretty cool right? Try this automated search query to check for Cloudflare encryption</p>
+	
+	<pre>
+	<code>
+	adb shell start -n com&period;android&period;chrome/com&period;google&period;android&period;apps&period;chrome&period;Main
+	sleep 2
+	adb shell input tap X Y
+	&num; %s have to be put between strings that contain spaces, we'll querying for 'cloudflare test'
+	adb shell input text 'cloudflare%stest'
+	&num; wait 2 seconds for search results to pop up
+	sleep 2
+	&num; what we're searching for is anything containing 'cloudflare esni' in the search queries&period;
+	&num; now tap on the search query
+	adb shell input tap X Y
+	&num; X and Y being the search result coordinates
+	&num; wait for the page to load properly
+	sleep 3
+	&num; then tap on the part that says 'check my browser'
+	adb shell input tap X Y
+	&num; wait for &sim;4 seconds for the results to properly load
+	sleep 4
+	&num; well there you go, you just completed an automated test, you can scroll down if you wish to,
+	adb shell input swipe X Y X Y 500
+	</code>
+	</pre>
+	<a class='btn' href='code/emulate.html-code8.txt'>view raw</a>
+	
+	<h2># Aftermath</h2>
+	
+	<p>Imagine all the stuffs we could automate with this!! Also, if you happen to have root privilege on your phone, that's even better, because with root privilege, you could put any script of yours and run it without needing a PC.</p>
+	
+	
+	<p><b>This page has more contents to come and needs some improvement, should've modified it before pushing. Oh well -.-</b></p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Generating a graphical tree with turtle</title>
+	<link>https://samiuljoy.github.io/microblog/turtle.html</link>
+	<description><![CDATA[ Generate a fractal tree with python module turtle ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Fractal tree</h2></center>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/fractal.svg" alt="Fractal tree">
+	</center>
+	
+	
+	<div class="caption">Fractal Tree</div>
+	
+	<p>The tree that you saw first on index page was made with turtle. Turtle is a graphical module that comes built in with python programming language. Below is the source code for the tree.</p>
+	
+	<pre>
+	<code>
+	import turtle
+	
+	hr = turtle&period;Turtle()
+	hr&period;color("white", "white")
+	
+	ts = turtle&period;getscreen()
+	ts&period;bgcolor("black")
+	
+	hr&period;left(90)
+	hr&period;speed(1500)
+	
+	def tree(i):
+	    if i &lt; 4:
+	        return
+	    else:
+	        hr&period;forward(i)
+	        hr&period;left(30)
+	        tree(3 &ast; i/4)
+	        hr&period;right(60)
+	        tree(3 &ast; i/4)
+	        hr&period;left(30)
+	        hr&period;backward(i)
+	tree(100)
+	turtle&period;done()
+	</code>
+	</pre>
+	<a class='btn' href='code/turtle.html-code1.txt'>view raw</a>
+	
+	<p>I was going through my old notebooks, and found a turtle code in it, then modified it a bit.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
 	<title>Plans on future projects</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/future_projects.html'>https://samiuljoy.github.io/microblog/future_projects.html</a>
-	<p>This article sums up my plans for future projects</p>
+	<link>https://samiuljoy.github.io/microblog/future_projects.html</link>
+	<description><![CDATA[ This article sums up my plans on future projectto do ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Plans on future projects</h2></center>
+	
+	<p>There's some things that I need to figure out for planning ahead and do more proper research on subjects. Plans for the future projects mainly includes embedded systems and learning to use them for something worthwhile. What I'm planning to do are;</p>
+	
+	<h3>Need a Raspberry pi</h3>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/rpi.jpg" alt="Raspberry pi">
+	</center>
+	
+	<div class="caption">A raspberry pi</div>
+	
+	<p>I need a raspberry pi. Reasons include using it as an arm based small computer to carry on daily life activities, or what people usually do on a computer. Besides that, I also plan on using raspberry pi as a irc server. Thought this would be a very nice idea, where people close to me can chat on a protocol from early 1950's with up to date encryption. Whats app is a facade, and I'm only using it because of circumstantial reasons. Worst of all, it is owned by facebook/meta corporate company where every bit of code is closed sourced. No wonder what they are collecting behind our backs.</p>
+	
+	<h3>Need a Arduino board</h3>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/arduino.jpg" alt="Arduino Uno board">
+	</center>
+	
+	<div class="caption">Arduino Uno</div>
+	
+	<p>I'm planning to get a Arduino uno board or something alike. Plans for arduino includes;</p>
+	
+	<ul class="ull">
+		<li>Automatic watering system for gardens and fields</li>
+		<li>Automatic water system for house-hold water containers</li>
+	</ul>
+	
+	<p>And if I'm successful with these projects, I'll try to go on commercial market place and sell these for real. All I now need is some proper utilization of time and vigorous experimentation.</p>
+	
+	<p>Aside from these, there's also academic plans, household plans and whatnot. Not everything can be shared on the internet now, can it?</p>
+	
+	<p>If you're interested to assist me in any way possible for these above projects, then I would be very delighted and would love to get in touch with you regarding these projects. You can contact me through the <a href="../about.html" rel="nofollow">about</a> page.</p>
+	
+	<p>Hope you had fun reading this small post.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
-<item>
-	<pubDate>October 15, 2021</pubDate>
-	<title>Turtle fractal tree</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/turtle.html'>https://samiuljoy.github.io/microblog/turtle.html</a>
-	<p>About the tree on the index page</p>
-	]]>
-	</description>
-</item>
 
 <item>
-	<pubDate>September 4, 2021</pubDate>
-	<title>Chemical structures with groff chem</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/gchem.html'>https://samiuljoy.github.io/microblog/gchem.html</a>
-	<p>Learn how to draw chemical structures with groff chem</p>
+	<pubDate></pubDate>
+	<title>Getting started with ibus-avro</title>
+	<link>https://samiuljoy.github.io/microblog/avro.html</link>
+	<description><![CDATA[ A short tutorial to set up ibus-avro on non-gnome platforms ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>ibus-avro</h2></center>
+	
+	<p> This is a tutorial on setting up <a href="https://github.com/sarim/ibus-avro" rel="nofollow">ibus-avro</a> on Linux systems that are devoid of any Desktop Environments such as Gnome or xfce and purely based on window managers or others. I use <a href="https://suckless.org/" rel="nofollow">dwm</a> on a debian system.</p>
+	
+	<p>My strategy was to build from source. Hence, I had to satisfy the dependencies. For a Debian distribution, all I needed was to install only these packages;</p>
+	
+	<pre>
+	<code>
+	$ apt install ibus \
+		ibus-gtk gjs \
+		automake \
+		autoconf \
+		make \
+		libibus-1&period;0-dev \
+		git
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code1.txt'>view raw</a>
+	
+	<p>I'm not sure if gjs is actually needed though. Anyways, after successful installation of these packages, git clone the repo;</p>
+	
+	<pre>
+	<code>
+	$ git clone https://github&period;com/sarim/ibus-avro&period;git
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code2.txt'>view raw</a>
+	
+	<p>then change directory to <code>ibus-avro</code> and run autoconf and automake;</p>
+	
+	<pre>
+	<code>
+	$ aclocal && autoconf && automake --add-missing
+	
+	$ &period;/configure --prefix=/usr
+	
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code3.txt'>view raw</a>
+	
+	<p>then make install;</p>
+	
+	<pre>
+	<code>
+	$ make install
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code4.txt'>view raw</a>
+	
+	<p>Now, assuming that you use a <code>.xinitrc</code> or for a Debian based system there's <code>.xsessionrc</code>, you would add/export the following lines to your <code>.profile</code>;</p>
+	
+	<pre>
+	<code>
+	export GTK&lowbar;IM&lowbar;MODULE=ibus
+	export XMODIFIERS=@im=ibus
+	export QT&lowbar;IM&lowbar;MODULE=ibus
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code5.txt'>view raw</a>
+	
+	<p>Now, to start the ibus-daemon in the background; you could either create an alias or a function in your bash source file or under, <code>~/.local/bin/</code> directory and start or stop ibus avro from there;</p>
+	
+	<p>To start ibus-daemon; run</p>
+	
+	<pre>
+	<code>
+	$ ibus-daemon -dx
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code6.txt'>view raw</a>
+	
+	<p>You could probably add the line above to a shell script and integrate it like this, or you could invoke it at any time;</p>
+	
+	<pre>
+	<code>
+	&num;&excl;/usr/bin/env sh
+	
+	&num; check if xorg is running, if not running, then exit with exit code 1
+	&lsqb; -z "$DISPLAY" &rsqb; && \
+		echo "No display server is running at this moment, exiting&period;&period;&period;" && \
+		return 1;
+	&num; ELse daemoize ibus
+	ibus-daemon -dx
+	</code>
+	</pre>
+	<a class='btn' href='code/avro.html-code7.txt'>view raw</a>
+	
+	<p>And to stop ibus, just run <code>pkill ibus*</code> That should be enough.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
-<item>
-	<pubDate>August 30, 2021</pubDate>
-	<title>Edit index.md pages</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/demo/indexpage.html'>https://samiuljoy.github.io/demo/indexpage.html</a>
-	<p>Learn how to edit index.md pages properly</p>
-	]]>
-	</description>
-</item>
 
 <item>
-	<pubDate>August 22, 2021</pubDate>
-	<title>Water Tolerance Test</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/academics/abromaaugustum.html'>https://samiuljoy.github.io/academics/abromaaugustum.html</a>
-	<p>This was an experiment conducted on the plant _Abroma augustum_ to check it's performance under stress condition.</p>
+	<pubDate></pubDate>
+	<title>Plans on future projects</title>
+	<link>https://samiuljoy.github.io/microblog/future_projects.html</link>
+	<description><![CDATA[ This article sums up my plans on future projectto do ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Plans on future projects</h2></center>
+	
+	<p>There's some things that I need to figure out for planning ahead and do more proper research on subjects. Plans for the future projects mainly includes embedded systems and learning to use them for something worthwhile. What I'm planning to do are;</p>
+	
+	<h3>Need a Raspberry pi</h3>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/rpi.jpg" alt="Raspberry pi">
+	</center>
+	
+	<div class="caption">A raspberry pi</div>
+	
+	<p>I need a raspberry pi. Reasons include using it as an arm based small computer to carry on daily life activities, or what people usually do on a computer. Besides that, I also plan on using raspberry pi as a irc server. Thought this would be a very nice idea, where people close to me can chat on a protocol from early 1950's with up to date encryption. Whats app is a facade, and I'm only using it because of circumstantial reasons. Worst of all, it is owned by facebook/meta corporate company where every bit of code is closed sourced. No wonder what they are collecting behind our backs.</p>
+	
+	<h3>Need a Arduino board</h3>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/arduino.jpg" alt="Arduino Uno board">
+	</center>
+	
+	<div class="caption">Arduino Uno</div>
+	
+	<p>I'm planning to get a Arduino uno board or something alike. Plans for arduino includes;</p>
+	
+	<ul class="ull">
+		<li>Automatic watering system for gardens and fields</li>
+		<li>Automatic water system for house-hold water containers</li>
+	</ul>
+	
+	<p>And if I'm successful with these projects, I'll try to go on commercial market place and sell these for real. All I now need is some proper utilization of time and vigorous experimentation.</p>
+	
+	<p>Aside from these, there's also academic plans, household plans and whatnot. Not everything can be shared on the internet now, can it?</p>
+	
+	<p>If you're interested to assist me in any way possible for these above projects, then I would be very delighted and would love to get in touch with you regarding these projects. You can contact me through the <a href="../about.html" rel="nofollow">about</a> page.</p>
+	
+	<p>Hope you had fun reading this small post.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
-<item>
-	<pubDate>November 1, 2020</pubDate>
-	<title>Emulating user interactions using adb</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/emulate.html'>https://samiuljoy.github.io/microblog/emulate.html</a>
-	<p>Title is pretty much self explanatory. We use adb and input keyevents to handle keystrokes to emulate a real user interaction to browse the internet with chrome browser on android</p>
-	]]>
-	</description>
-</item>
 
 <item>
-	<pubDate>February 20, 2020</pubDate>
-	<title>login.sh + username.sh</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/login.html'>https://samiuljoy.github.io/microblog/login.html</a>
-	<p>Emulating Linux login mechanism using bash scripts</p>
+	<pubDate></pubDate>
+	<title>Forwarding tun0 traffic through access point on Android</title>
+	<link>https://samiuljoy.github.io/microblog/vpn_tether.html</link>
+	<description><![CDATA[ Escalating privilege and working my way up on setting up a pseudo router like env on Android device and using it as a pseudo pi-hole ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Tethering stuffs</h2></center>
+	
+	<p>I happened to have my friends Android phone that he gave me couple months back because it had a busted touch panel/sensor. Thought this would be a great opportunity to use it as a local dns resolver, to block ads and malicious websites. To do that, I needed to set up a vpn, preferably dns over https(DoH), which had recursive block mode and didn't require actual vpn server setup. Then I had to forward all traffic from the vpn to say the access point interface, and vice versa. The only downside being, I needed to have administrative privilege over the device, which I didn't.</p>
+	
+	<p>This phone had very poor binary code implementation as it showed several flaws even compared to the spare phone I had which is probably even cheaper than this one. For example, while experimenting with <code>iptables</code> some of the features didn't work with it even though it had a fairly newer kernel version. This phone has a vulnerable chipset, and was vulnerable to an exploit which helped me to get administrative privilege on the phone. This made my work much easier, as I was able to pull the boot.img from the /dev/block/&ast;/boot partition and patch it with magisk and flash it on the phone which allowed me to gain root access with magisk daemon running in the background. It is very hard to work with a phone with a busted touch panel. I had to use an external mouse and keyboard to get it working.</p>
+	
+	<p>I initially thought that, since I was root, it would be much easier to set up a forwarding tunnel connection to and from the access point and set up a hotspot and vpn setup, since I had done it previously on my other Android phone. As much as I would like to settle things over the terminal, I couldn't set up a proper forwarding rule on the device, hence I had to rely on an Android application to do the work for me which is a shame.</p>
+	
+	<p>I wasn't inclined to use an actual vpn service, rather a local dns resolver that had recursive blocking features. DnsCrypt proxy is a great tool for that. It is written in Go language and is very fast. And the vpn-tether application made it much easier to set up an actual forwarding connection. Now I'm using this device as a temporary home router that blocks malware sites, advertisements, gambling, fake news and porn sites. I'm planning on getting an actual router soon though.</p>
+	
+	<p> <b>Note: This post was intentionally written vaguely</b></p>
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
 </item>
 
+
 <item>
-	<pubDate>February 13, 2020</pubDate>
-	<title>guess.sh</title>
-	<description><![CDATA[
-	<a href='https://samiuljoy.github.io/microblog/guess.html'>https://samiuljoy.github.io/microblog/guess.html</a>
-	<p>A simple number guessing game where you get to guess 2 digit random numbers</p>
+	<pubDate></pubDate>
+	<title>Basic command line rundown</title>
+	<link>https://samiuljoy.github.io/demo/cmdline.html</link>
+	<description><![CDATA[ This post gives you a basic command line rundown on generating/working with ssg ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Rundown of ssg</h2></center>
+	
+	<p>This is a basic rundown/usage of the program ssg from the terminal</p>
+	
+	<h3># Step 1</h3>
+	
+	<p>Generate a config file by running <code>sh main.sh config</code>. Then edit the config.txt file on your own. For an example config file, you can see <a href="https://samiuljoy.github.io/config.txt" rel="nofollow">here</a>. Make sure to add a <code>base.md</code> page on your first entry to every new page except for about and index page. The need for base.md page is to hold records of the different posts and display them on a dedicated page. For more info about basepage syntax please refer to <a href="https://samiuljoy.github.io/demo/basepage.html" rel="nofollow">here</a></p>
+	
+	<h3># Step 2</h3>
+	
+	<p>If you're done editing config.txt file, initialize everything that you've declared on your config file by running <code>sh main.sh init</code>. This will create all the files, directories and whatnot</p>
+	
+	<h3># Step 3</h3>
+	
+	<p>Now, generate navigation section by running <code>sh main.sh navgen</code>. This navigation part just adds home, roam and base buttons on your navigation section</p>
+	
+	<h3># Step 4</h3>
+	
+	<p>Now, edit your index.md page. Open your favorite text editor and edit the index.md file. For example index.md reference, see <a href="https://samiuljoy.github.io/index.md" rel="nofollow">here</a> and for syntax help please refer to this documentation, <a href="https://samiuljoy.github.io/demo/indexpage.html" rel="nofollow">here</a> After done editing the index.md file, just run <code>sh main.sh index index.md</code>, which will generate a index.html file.</p>
+	
+	<h3># Step 5</h3>
+	
+	<p>Now Edit the base.md page if your article is going to be in a directory such as <code>blog/firstblog.md</code>. In such case, first edit <code>blog/base.md</code> page with your text editor. For an example see <a href="https://samiuljoy.github.io/microblog/base.md" rel="nofollow">here</a> and for syntax documentation, please refer to <a href="https://samiuljoy.github.io/demo/basepage.html" rel="nofollow">here</a> Just run <code>sh main.sh post</code> and when it asks for the filename, just add <code>blog/base.md</code> as the filename</p>
+	
+	<h3># Step 6</h3>
+	
+	<p>If you've completed everything above correctly, you can start writing your posts. You can either run <code>sh main.sh post</code> and add manual entries to config.txt, blog/base.md file or you could just run <code>sh main.sh add</code> and let all your entries by added automatically. It's your choice, depends on use case hence, added both post and add option for for variance.</p>
+	
+	<h3># Step 7</h3>
+	
+	<p>Now since you've added all posts and everything, now run <code>sh main.sh all</code>. This will generate html pages for all the files mentioned in <code>config.txt</code>.</p>
+	
+	<h3># Step 8</h3>
+	
+	<p>For convenience you can also run <code>sh main.sh final</code> which will copy all the generated html files into a separate sub-directory</p>
+	<h3># Step 9</h3>
+	
+	<p>Last but not least, you can also generate rss.xml feeds of all your posts. Just run <code>sh main.sh rss</code></p>
+	
+	<center>
+		<iframe src="https://www.youtube.com/embed/W9qleSpFd20?si=EYMd2c2WPGfhPTDt" title="CLI usage" allow="accelerometer; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</center>
+	
+	
+	<div class="caption">Video: Here's a video reference showcasing CLI usage</div>
+	
+	
+	<hr>
+	
+	<!-- main section end -->
 	]]>
-	</description>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>About ssg</title>
+	<link>https://samiuljoy.github.io/demo/ssg.html</link>
+	<description><![CDATA[ A brief introduction to ssg ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>Static Site Generator</h1></center>
+	
+	<h2>What is ssg?</h2>
+	
+	<p> <a href="https://github.com/samiuljoy/ssg" rel="nofollow">ssg</a> is a static site generator written in shell script. This thing basically takes in files written in markdown format and converts them into proper html files that you can later deploy on your websites or your servers. All you need is a proper config.txt file and you are ready to go. This article does not elaborate on how to write and configure ssg or the config.txt file. Please see the <a href="https://github.com/samiuljoy/ssg" rel="nofollow">github</a> instructions for configuring and using ssg.</p>
+	
+	<p>For reference you can see how <a href="https://github.com/samiuljoy/samiuljoy.github.io" rel="nofollow">this</a> sites source code and all the files in it, and how they are arranged and how they work.</p>
+	
+	<h2>What is it used for?</h2>
+	
+	<p>For converting markown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of things. Here, you write documents in clear and elegant markown format and ssg does the dirty work for you and converts the file into html.</p>
+	
+	<p>Not only that, with a proper directory structure provided to a config file, you can arrange a whole website structure pretty easily and quickly.</p>
+	
+	<h2>Why should you use it?</h2>
+	
+	<p>Well, you can use it if;</p>
+	
+	<ul class="ull">
+		<li>You're converting a file from markown to html</li>
+		<li>you're deploying a website and want to create file structure automatically</li>
+		<li>if you dont love writing html syntax files and love markdown files</li>
+		<li>if you love speed</li>
+	</ul>
+	
+	<h2>Should I try it?</h2>
+	
+	<p>Depends on you. No harm in trying tho.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Basic Syntaxes</title>
+	<link>https://samiuljoy.github.io/demo/syntax.html</link>
+	<description><![CDATA[ A guide to basic syntaxes for ssg ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>Intro to syntax!</h1></center>
+	
+	<center><img class="cover" src="../assets/basepage.png" alt="Cover image" loading="lazy"></center>
+	
+	
+	<div class="caption">This is a cover image</div>
+	
+	<p>Alright syntax 101 for ssg! Syntax for ssg is pretty simple. Dead simple. Most of it is basic markdown syntax with some additional features like inserting a <a href="#table" rel="nofollow">table</a> or <a href="#underline" rel="nofollow">underlines</a> since markdown syntax doesn't support these features(yet). You can check the source code for this page in clear markdown format <a href="https://raw.githubusercontent.com/samiuljoy/ssg/main/demo/syntax.md" rel="nofollow">here</a>.</p>
+	
+	<p>See that heading at top that says 'Intro to syntax'? Notice the header is in center of the page and it's a header 1. Here's how you can add a center header1 tag;</p>
+	
+	<pre>
+	<code>
+	&period;ce header1: Intro to syntax&excl;
+	</code>
+	</pre>
+	
+	<p>Whatever after the colon(:) gets displayed on the main screen. Same way, you can add header2, header3 upto header4. Just add 1 or 2 or 3 or 4 after <code>header</code> and before <code>:</code></p>
+	
+	
+	<h2># Paragraphs</h2>
+	
+	<p>To add a new paragraph, just start typing anything after a new line just like you would do in markdown files. Here every newline gets wraped around <code>&lt;p&gt;</code> paragraph tags.</p>
+	
+	<h2># General header tags</h2>
+	
+	<p>General headers starts with # followed by header numbers. The header above that says '# General header tags' is a header2 writen like this;</p>
+	
+	<pre>
+	<code>
+	&num;&num; &num; General header tags
+	</code>
+	</pre>
+	
+	<p>Also normal headers as well;</p>
+	
+	<h1>This is header 1</h1>
+	<h2>This is header 2</h2>
+	<h3>This is header 3</h3>
+	<h4>This is header 4</h4>
+	
+	<p>which is;</p>
+	
+	<pre>
+	<code>
+	&num; This is header 1
+	&num;&num; This is header 2
+	&num;&num;&num; This is header 3
+	&num;&num;&num;&num; This is header 4
+	</code>
+	</pre>
+	
+	<h2># Bold texts</h2>
+	
+	<p>Bold tags follows basic markdown syntax, <b>this is a bold text</b> with double asterisks and <b>this</b> with double underscores which should look like this in raw mode;</p>
+	
+	<pre>
+	<code>
+	&ast;&ast;this is a bold text&ast;&ast; with double asterisks and &lowbar;&lowbar;this&lowbar;&lowbar; with double underscores
+	</code>
+	</pre>
+	
+	<p><b>Note:</b> If you're starting some line with bold or italic or bold-italic or urls then consider using underscores for bold,italic or bold-italics instead of asterisks and for urls use an extra space at the very begining.</p>
+	
+	<h2># Italic texts</h2>
+	
+	<p>Italic texts with one asterisk &ast; or one underscore &lowbar;. This text is <i>italic</i> and this is also <i>italic</i> which in markdown format looks like this;</p>
+	
+	<pre>
+	<code>
+	This text is &lowbar;italic&lowbar; and this is also &ast;italic&ast;
+	</code>
+	</pre>
+	
+	<h2># Bold-Italic texts</h2>
+	
+	<p>Bold-italic texts with three asterisks &ast;&ast;&ast; or three underscores &lowbar;&lowbar;&lowbar;. This text is <b><i>bold italic</b></i> and this is also <i><b>bold italic</b></i></p>
+	
+	<pre>
+	<code>
+	This text is &lowbar;&lowbar;&lowbar;bold italic&lowbar;&lowbar;&lowbar; and this is also &ast;&ast;&ast;bold italic&ast;&ast;&ast;
+	</code>
+	</pre>
+	
+	<h2 id="underline"># Underline texts</h2>
+	
+	<p>Markdown syntax does not come with any underline features, so this is how you do <u>underlines</u> for now, with three commas <code>,,,</code></p>
+	
+	<pre>
+	<code>
+	this is how you do ,,,underlines,,, for now
+	</code>
+	</pre>
+	
+	<h2># Strike Through texts</h2>
+	
+	<p>This text is a <strike>strike</strike> through <strike>text</strike></p>
+	
+	<pre>
+	<code>
+	This text is a &sim;&sim;strike&sim;&sim; through &sim;&sim;text&sim;&sim;
+	</code>
+	</pre>
+	
+	<h2># URL texts</h2>
+	
+	<p>Follows default markdown syntax.</p>
+	
+	<p> <a href="https://example.org" rel="nofollow">This</a> is a url that leads to example.org and <a href="https://duckduckgo.com" rel="nofollow">this</a> to duckduckgo.com</p>
+	
+	<pre>
+	<code>
+	&lsqb;This&rsqb;(https://example&period;org) is a url that leads to example&period;org and &lsqb;this&rsqb;(https://duckduckgo&period;com) to duckduckgo&period;com
+	</code>
+	</pre>
+	
+	<p>You can also jump through sections with <code>{id="idname"}</code> after a header section and mentioning the idname in url section with &lsqb;url link name&rsqb;(#idname)</p>
+	
+	<pre>
+	<code>
+	This is a text and this is a &lsqb;url&rsqb;(&num;another) which will jump to another section of the article&period;
+	This is some text and some more text
+	Again some text&period; Next portion is
+	
+	&num;&num;&num; {id="another"} &num; Some header text
+	
+	some more text
+	</code>
+	</pre>
+	
+	<h2># Image add</h2>
+	
+	<p>Add paragraph images with <code>.pimg:</code> tags</p>
+	
+	<pre>
+	<code>
+	&period;pimg: &period;&period;/assets/basepage&period;png placeholder text
+	
+	&period;caption: Image: Image example
+	</code>
+	</pre>
+	
+	<p>The .pimg portion is calling paragraph image method, then <a href="../assets/basepage.png" rel="nofollow">basepage.png</a> is the image file being called from previous directory assets and the later portion is just an alt, if image does not get displayed then show 'placeholder text'. The caption portion is what get's displayed below the image.</p>
+	
+	<center><img class="pimg" src="../assets/basepage.png" alt="placeholder text"></center>
+	
+	
+	<div class="caption">Image: Image example</div>
+	
+	<p>Alternatively you can also add class sections in images. The cover image(which is previously mentioned in css file) at the top looks like this in raw code;</p>
+	
+	<pre>
+	<code>
+	&period;img: class="cover" &period;&period;/assets/basepage&period;png placeholder text
+	</code>
+	</pre>
+	
+	<p><b>Explanation:</b> The <code>.img</code> method invokes class="cover" followed by the image file directory which is <code>../assets/basepage.png</code>. The later portion is for accessibility which is an alt text. The spaces are separators in this case.</p>
+	
+	<p>And yes you can also use default markdown syntax to add images as well;</p>
+	
+	<pre>
+	<code>
+	&excl;&lsqb;placeholder text&rsqb;(&period;&period;/assets/basepage&period;png)
+	&period;caption: Image: Image example
+	</code>
+	</pre>
+	
+	<center>
+		<img loading="lazy" class="pimg" src="../assets/basepage.png" alt="placeholder text">
+	</center>
+	
+	
+	<div class="caption">Image: Example image</div>
+	
+	<h2># Video addition</h2>
+	
+	<p>The video addition tag is pretty simple, follows a markdown alike syntax;</p>
+	
+	<pre>
+	<code>
+	&excl;&excl;&lsqb;this is a video&rsqb;(&period;&period;/assets/mouseless&period;mp4)
+	&period;caption: video: keynav and xmouseless
+	</code>
+	</pre>
+	
+	<center>
+		<video title="this is a video" controls>
+			<source src="../assets/mouseless.mp4">
+		</video>
+	</center>
+	
+	
+	<div class="caption">video: keynav and xmouseless</div>
+	
+	<h2># Blockquotes</h2>
+	
+	<p>Blockquotes also follows markdown syntax but each <code>&gt;</code> expands to a new-line;</p>
+	
+	<pre>
+	<code>
+	
+	&gt; This is a text in a blockquote
+	&gt; This is another line of text in a blockquote
+	
+	</code>
+	</pre>
+	
+	<p><b>Notice the extra one blank line above and one blank line below. This blank lines are necesary for blockquotes, also looks good too</b></p>
+	
+	<blockquote>
+		<p>This is a text in a blockquote</p>
+		<p>This is another line of text in a blockquote</p>
+	</blockquote>
+	
+	
+	<h2># Unordered lists</h2>
+	
+	<p>Like you'd do in a markdown file;</p>
+	
+	<pre>
+	<code>
+	
+	&ast; This is an item in an unordered list
+	&ast; Another item
+	&ast; And another item
+	
+	</code>
+	</pre>
+	<p><b>Notice the blank lines above and below</b></p>
+	
+	<ul>
+		<li>This is an item in an unordered list</li>
+		<li>Another item</li>
+		<li>And another item</li>
+	</ul>
+	
+	<p>You can also use dash - instead of asterisks</p>
+	
+	<pre>
+	<code>
+	
+	- This is an item in an unordered list
+	- Another item
+	- And another item
+	
+	</code>
+	</pre>
+	<p>Alternatively you can also use '#.' symbols instead of bullet points followed by a full-stop</p>
+	
+	<pre>
+	<code>
+	
+	&num;&period; This is an item in an unordered list
+	&num;&period; Another item
+	&num;&period; And another item
+	
+	</code>
+	</pre>
+	
+	<ul class="ull">
+		<li>This is an item in an unordered list</li>
+		<li>Another item</li>
+		<li>And another item</li>
+	</ul>
+	
+	<h2># Ordered lists</h2>
+	
+	<p>Also follows normal markdown syntax.</p>
+	
+	<pre>
+	<code>
+	
+	1&period; Item 1 in ordered list
+	2&period; Item 2 in ordered list
+	3&period; Item 3 in ordered list
+	
+	</code>
+	</pre>
+	
+	<ol>
+		<li>Item 1 in ordered list</li>
+		<li>Item 2 in ordered list</li>
+		<li>Item 3 in ordered list</li>
+	</ol>
+	
+	<p>Alternatively you can also use alphabets;</p>
+	
+	<pre>
+	<code>
+	
+	a&period; Item 1 in ordered list
+	b&period; Item 2 in ordered list
+	c&period; Item 3 in ordered list
+	
+	</code>
+	</pre>
+	
+	<p>Which eventually transforms into numbers, unfortunately, ordered list doesn't respect alphabetical orders in html.</p>
+	
+	<h2># Inline codes</h2>
+	
+	<p>You've noticed me typing inline <code>tags</code> like this. Here's how to do it;</p>
+	
+	<pre>
+	<code>
+	The text &grave;code&grave; will be an inline code
+	</code>
+	</pre>
+	
+	<p>The text <code>code</code> will be an inline code</p>
+	
+	<p>If you want literal backticks just do escapes</p>
+	
+	<pre>
+	<code>
+	The text \&grave;code\&grave; will have literal backticks
+	</code>
+	</pre>
+	
+	<p>The text &grave;code&grave; will have literal backticks</p>
+	
+	<h2 id="table"># Table addition</h2>
+	
+	<p>Tables are very easy to add. <code>.th: </code> is for table header, <code>.td: </code> is for table data. Here's how you add tables;</p>
+	
+	<pre>
+	<code>
+	
+	+++++++++++++++++table
+	
+	&period;th: header 1
+	&period;th: header 2
+	&period;th: header 3
+	&period;th: header 4
+	&period;th: header 5
+	
+	&period;td: data 1
+	&period;td: data 2
+	&period;td: data 3
+	&period;td: data 4
+	&period;td: data 5
+	
+	&period;td: data 6
+	&period;td: data 7
+	&period;td: data 8
+	&period;td: data 10
+	&period;td: data 11
+	
+	&period;td: data 10
+	&period;td: data 11
+	&period;td: data 12
+	&period;td: data 13
+	&period;td: data 14
+	
+	&period;td: data 15
+	&period;td: data 16
+	&period;td: data 17
+	&period;td: data 18
+	&period;td: data 19
+	
+	----------------table
+	
+	&period;caption: Table: A Demo Table
+	
+	</code>
+	</pre>
+	
+	<p><b>Notice the blank line before .th on line 1 and a blank line after the last .td: data 14. Blanks are important</b></p>
+	
+	<center>
+	<table>
+	
+		<tr>
+			<th>header 1</th>
+			<th>header 2</th>
+			<th>header 3</th>
+			<th>header 4</th>
+			<th>header 5</th>
+		</tr>
+	
+		<tr>
+			<td>data 1</td>
+			<td>data 2</td>
+			<td>data 3</td>
+			<td>data 4</td>
+			<td>data 5</td>
+		</tr>
+	
+		<tr>
+			<td>data 6</td>
+			<td>data 7</td>
+			<td>data 8</td>
+			<td>data 10</td>
+			<td>data 11</td>
+		</tr>
+	
+		<tr>
+			<td>data 10</td>
+			<td>data 11</td>
+			<td>data 12</td>
+			<td>data 13</td>
+			<td>data 14</td>
+		</tr>
+	
+		<tr>
+			<td>data 15</td>
+			<td>data 16</td>
+			<td>data 17</td>
+			<td>data 18</td>
+			<td>data 19</td>
+		</tr>
+	
+	</table>
+	</center>
+	<br>
+	
+	
+	
+	<div class="caption">Table: A Demo Table</div>
+	
+	
+	<h2># Add Month date, year</h2>
+	
+	<p>If you invoke <code>[ .today ]</code>,(with nospaces) this will add today's date like this;</p>
+	
+	<p>Today is October 10, 2021, the day seems nice, and I'm feeling good today</p>
+	
+	<pre>
+	<code>
+	Today is &lsqb;&period;today&rsqb;, The day seems nice and all, and I'm feeling good today
+	</code>
+	</pre>
+	
+	<h2>Add a next page url</h2>
+	
+	<p>You can also add next page href link to basepages;</p>
+	
+	<pre>
+	<code>
+	&period;next&lsqb;next-&gt;&rsqb;(base2&period;html)
+	</code>
+	</pre>
+	
+	<h2># Code block section</h2>
+	
+	<p>Code block section is mostly similar to the default markdown syntaxes with some changes/added features. This is how you do code blocks;</p>
+	
+	<pre>
+	<code>
+	&num;&excl;/usr/bin/env sh
+	echo "hello world"
+	</code>
+	</pre>
+	
+	<p>The portion above is a code block, which when writing should be written like this;</p>
+	
+	<pre>
+	<code>
+	&grave;&grave;&grave;no
+		&num;&excl;/usr/bin/env sh
+		echo "hello world"
+	&grave;&grave;&grave;
+	</code>
+	</pre>
+	
+	<p>/<i> the backslashes are escapes </i>/</p>
+	
+	<p>Every code block section should have an extra tab in front of each line. Notice the extra tabs before each line within backticks. The tabs gets rearranged into their original form when viewed from the web browser. The <code>no</code> portion means this is code section does not need to viewed as raw. Viewing in raw mode is similar to copying texts, but with view raw mode, you can curl or wget only the code portion instead of downloading the whole source code for the website then deleting all extra codes later. That's a pain.</p>
+	
+	<p>This is what it looks like with view raw mode;</p>
+	
+	<pre>
+	<code>
+	&num;&excl;/usr/bin/env sh
+	echo "hello world"
+	</code>
+	</pre>
+	<a class='btn' href='code/syntax.html-code1.txt'>view raw</a>
+	
+	<p>This is what you'd actually type in;</p>
+	
+	<pre>
+	<code>
+	&grave;&grave;&grave;1
+		&num;&excl;/usr/bin/env sh
+		echo "hello world"
+	&grave;&grave;&grave;
+	&period;code1
+	</code>
+	</pre>
+	
+	<p>The view raw text method uses serial number based code block arrangement in a separate directory assigned for raw code sections. The 1 after 3 backticks means it's the first code that needs to have a view raw section and the <code>.code1</code> later get's transformed into "view raw". The serial number should be same for 1 and .code1. Then for a second code block with view raw option you'd do 2 and the .code2 like this;</p>
+	
+	<pre>
+	<code>
+	&num;&excl;/usr/bin/env sh
+	echo "this is a second code block"
+	</code>
+	</pre>
+	<a class='btn' href='code/syntax.html-code2.txt'>view raw</a>
+	
+	<p>This would look something like this when writing;</p>
+	
+	<pre>
+	<code>
+	&grave;&grave;&grave;2
+		&num;&excl;/usr/bin/env sh
+		echo "this is a second code block"
+	&grave;&grave;&grave;
+	&period;code2
+	</code>
+	</pre>
+	
+	<p>So, no after 3 backticks means just normal code block section, no view raw code, and a numerical digit means it's supposed to be viewed as raw. Now from now on if I wanted to add another view raw code block section, I'd do 3 backticks and the add 3 to it and then add <code>.code3</code> after code block section.</p>
+	
+	<p><b>Note: Don't break the serial number however, if you mentioned code block with 1 then assign the next one with 3, this wouldn't work properly</b></p>
+	
+	<h2># Horizontal line</h2>
+	
+	<p>I made a customized horizontal line, just invoke <code>.hr</code></p>
+	
+	<pre>
+	<code>
+	&period;hr
+	</code>
+	</pre>
+	<p>This should print out a horizontal line like below;</p>
+	
+	<hr>
+	
+	<h2># Line breaks</h2>
+	
+	<p>Do line breaks with <code>.br</code></p>
+	
+	<pre>
+	<code>
+	This is a text
+	&period;br
+	This is another line of text but on a new line
+	</code>
+	</pre>
+	
+	<h2># Comments</h2>
+	
+	<p>Comments are more like c11 style, this is how you do comments;</p>
+	
+	<pre>
+	<code>
+	This is some text /&ast; this is a comment &ast;/
+	This is another line of text
+	</code>
+	</pre>
+	
+	<p>From the command line, you can also enable or disable comments;</p>
+	
+	<pre>
+	<code>
+	$ sh main&period;sh html -c file&period;md
+	</code>
+	</pre>
+	
+	<p>Comments are removed by default when no flags are mentioned.</p>
+	
+	<h2># Nested blockquotes (experimental)</h2>
+	
+	<p>You can also do nested blockquotes but they are still experimental. Here's how you do nested blockquotes;</p>
+	
+	<pre>
+	<code>
+	&gt; This is some text in blockquotes
+	&gt; Another line of text in a blockquote
+	&gt;&gt; This portion is in nested blockquotes
+	&gt;&gt; This portion is also in a nested blockquote on a new line
+	&gt; This text is in normal blockquotes
+	</code>
+	</pre>
+	
+	<blockquote>
+		<p>This is some text in blockquotes</p>
+		<p>Another line of text in a blockquote</p>
+		<blockquote>
+		<p>This portion is in nested blockquotes</p>
+		</blockquote>
+		<blockquote>
+		<p>This portion is also in a nested blockquote but on a new line</p>
+		</blockquote>
+		<p>This text is in normal blockquotes</p>
+	</blockquote>
+	
+	
+	<h2># Escape characters</h2>
+	
+	<p>You've noticed that underscores &lowbar; and &ast; asterisks are used as tag syntaxes. Well you can use literal underscores and asterisk with backslashes <code>\ _</code> without any spaces in between them;</p>
+	
+	<pre>
+	<code>
+	This is \&lowbar; underscore and \&ast; is an asterisk and \&grave; this is a backtick
+	</code>
+	</pre>
+	
+	<p><b>Will print out;</b></p>
+	
+	<p>This is &lowbar; underscore and &ast; is an asterisk and &grave; this is a backtick</p>
+	
+	<p>If you want to use literal \&lowbar; just use double backslashes;</p>
+	
+	<pre>
+	<code>
+	This is \\&lowbar; underscore and \\&ast; is an asterisk and \\&grave; this is a backtick
+	</code>
+	</pre>
+	
+	<p><b>Will print out;</b></p>
+	
+	<p>This is \&lowbar; underscore and \&ast; is an asterisk and \&grave; this is a backtick</p>
+	
+	<p>That's it for basic syntax. Learn how to write base.md files on the <a href="basepage.html" rel="nofollow">next</a> article or learn how to write index.md pages <a href="indexpage.html" rel="nofollow">here</a>. Check the source code for this site over <a href="https://github.com/samiuljoy/samiuljoy.github.io" rel="nofollow">here</a></p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Learn how to edit base pages</title>
+	<link>https://samiuljoy.github.io/demo/basepage.html</link>
+	<description><![CDATA[ Learn how to edit base.md pages ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>Basepage Edit</h1></center>
+	
+	<p>Learn how to edit base.md pages. base.md pages basically holds the article records along with some short introduction about this section of the webpage for the the articles under a topic. Editing base.md pages are very easy. If you've read the <a href="syntax.html" rel="nofollow">syntax.html</a> article, all syntaxes are valid here as well, the only extra portions are the .date entries, the .article entries and the .describe entry.</p>
+	
+	<p>To edit a dir/base.md file, you could manually edit it by hand or run from your terminal;</p>
+	
+	<pre>
+	<code>
+	$ sh main&period;sh post
+	
+	then when asked about filename: you put in dirname/base&period;md
+	where dirname is any directory name and base&period;md is the base file
+	</code>
+	</pre>
+	
+	<p>Then fill all the values and edit base.md file like this;</p>
+	
+	
+	<pre>
+	<code>
+	&period;ce header1: some page name
+	
+	This is a base page for some articles, Here are some articles;
+	
+	++++++++++++++++++++++++++++++++card
+	
+	&period;date: April 32, 2077
+	&period;article: &lsqb;Meeting the coolest person on the fediverse&rsqb;(cool&period;html)
+	&period;describe: On this day the coolest person on the fediverse was born and I got to meet them&excl;&excl;
+	
+	&period;date: August 25, 2022
+	&period;article: &lsqb;how I learned to cook for the first time&rsqb;(cook&period;html)
+	&period;describe: This article describes about my first experience with cooking
+	
+	&period;date: December 66, 4041
+	&period;article: &lsqb;How I almost smiled&rsqb;(smile&period;html)
+	&period;describe: This article describes how I almost smiled
+	
+	-----------------card
+	
+	</code>
+	</pre>
+	
+	<p>There's 3 articles mentioned here. Each of these articles has a .date, and .article and a .describe section seperated by a blank line bounded by a ++++card and ----card section.</p>
+	
+	
+	<p>The ++card --card section is what identifies this section as a article section.</p>
+	
+	
+	<pre>
+	<code>
+	&period;ce header1: some page name
+	
+	This is a base page for some articles&period; Here are some articles;
+	
+	++++++++++++++++++++card
+	
+	--------------------card
+	
+	
+	</code>
+	</pre>
+	
+	<p>Then add first article in card section.</p>
+	
+	<pre>
+	<code>
+	&period;ce header1: some page name
+	
+	This is a base page for some articles&period; Here are some articles;
+	
+	++++++++++++++++++++card
+	
+	&period;date: April 32, 2077
+	&period;article: &lsqb;Meeting the coolest person on the fediverse&rsqb;(cool&period;html)
+	&period;describe: On this day the coolest person on the fediverse was born and I got to meet them&excl;&excl;
+	
+	-------------------card
+	
+	</code>
+	</pre>
+	
+	<p><b><i>.date section:</b></i> The date section starts with .date and a colon(:) making .date: The date content should be in <code>Month date, year</code> which is <code>April 32, 2077</code>. Notice the space in between.</p>
+	
+	<p><b><i>.article section:</b></i> The article section starts the same way date does. The text the square brackets [text in square brackets] is the title. which gets displayed as a title and the text in (link.html) is the page it goes to. Much like normal url links in markdown format.</p>
+	
+	<p><b><i>.describe section:</b></i> The describe section is the text which gets displayed in the description section of the card section.</p>
+	
+	<p>That's how you add articles. Then to add another article, just add a blank line after .describe: and start from .date ^&lowbar;^</p>
+	
+	<p>You can also add next page href link to basepages;</p>
+	
+	<pre>
+	<code>
+	&period;next&lsqb;next-&gt;&rsqb;(base2&period;html)
+	</code>
+	</pre>
+	
+	<hr>
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Learn how to edit index.md pages</title>
+	<link>https://samiuljoy.github.io/demo/indexpage.html</link>
+	<description><![CDATA[ Learn how to write index.md pages with ssg ]]></description>
+	<content:encoded><![CDATA[
+	<center><h1>Syntax Intro to index.md</h1></center>
+	
+	<p>The index page needs to be edited manually means writing from scratch.</p>
+	
+	<p>Here's a sample demo page;</p>
+	
+	<pre>
+	<code>
+	$ cat index&period;md
+	
+	++++++++++++++++head
+	&period;title: A blog by samiuljoy
+	&period;author: samiuljoy
+	&period;description: A demo page on ssg + random blog
+	&period;style: css/imain&period;css
+	&period;name-generator: A personal space of samiuljoy
+	&period;canonical: https://samiuljoy&period;github&period;io/
+	--------------------head
+	
+	
+	++++++++++++++++++++++intro
+	&period;h2: samiuljoy&period;github&period;io
+	&period;h2: Random stuff
+	&period;img: &excl;&lsqb;rando image&rsqb;(assets/pens&period;png)
+	----------------------intro
+	
+	
+	++++++++++++++++++++navigation
+	&period;page: &lsqb;demo&rsqb;(demo/base&period;html)
+	&period;page: &lsqb;about&rsqb;(about&period;html)
+	&period;page: &lsqb;blog&rsqb;(blog/base&period;html)
+	-------------------------navigation
+	
+	
+	+++++++++++++++++++footer
+	&period;message: &lt;&excl;&gt;
+	--------------------footer
+	
+	
+	+++++++++++++++++++++script
+	&period;script: js/itoggle&period;js
+	---------------------script
+	
+	
+	</code>
+	</pre>
+	<a class='btn' href='code/indexpage.html-code1.txt'>view raw</a>
+	
+	
+	<h2># Head section</h2>
+	
+	<p>The ++head and --head section is the &lt;head&gt;&lt;/head&gt; tags.</p>
+	
+	
+	<p><b>.title</b> -&gt; is the title tag &lt;title&gt;</p>
+	
+	<p><b>.author</b> -&gt; Your name</p>
+	
+	<p><b>.description</b> -&gt; something to describe about the page</p>
+	
+	<p><b>.style</b> -&gt; the index css. You can change it if you like.</p>
+	
+	<p><b>.name-generator</b> -&gt; whatever you want to best describe the index page</p>
+	
+	<p><b>.canonical</b> -&gt; the link to your site, in my case I would type in https://samiuljoy.github.io</p>
+	
+	<h2># Intro section</h2>
+	
+	<p>Intro section ++intro --intro is what get's displayed on the screen.</p>
+	
+	<p><b>.h2</b> -&gt; heading 2 texts</p>
+	
+	<p><b>.img: !&lsqb;image alt&rsqb;(assets/image.png)</b> -&gt; is what gets displayed at the image section. The image section is mostly in markdown syntax.</p>
+	
+	<h2># Navigation section</h2>
+	
+	<p>These are the navigation pages. The words in square [square] brackets is what gets displayed and (dirname/base.html) is the link to the base.html file. Remember to only include base.html pages when mentioning directories.</p>
+	
+	<p>Bounded by ++navigation and --navigation and each page section starts with <code>.page:</code> followed by the display name and url</p>
+	
+	<h2># Footer section</h2>
+	
+	<p>Bounded by ++footer and --footer the <code>.message: </code> part is what get's displayed on the footer part</p>
+	
+	
+	<h2># Script section</h2>
+	
+	<p>This little script portion is for dark/light mode toggle. If you click the image, the page will be in dark mode and clicking again puts it in light mode. You can also add custom scripts the same way.</p>
+	
+	<p>This is what it should look like;</p>
+	
+	<h2># Generating index.md page</h2>
+	
+	<p>For generating index.md pages from the shell you'd do</p>
+	
+	<pre>
+	<code>
+	$ sh main&period;sh index index&period;md
+	</code>
+	</pre>
+	<p>This will generate a index.html</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>About the importance of RSS feeds</title>
+	<link>https://samiuljoy.github.io/microblog/rss.html</link>
+	<description><![CDATA[ Its about importance of rss and how rss makes things easy and organized for reading ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>RSS readers are awesome</h2></center>
+	
+	<h3># What is RSS reader</h3>
+	
+	<p> <a href="https://en.wikipedia.org/wiki/RSS" rel="nofollow">RSS</a> is basically a web feed in a custom piece of software. A rss reader fetches headlines from a website and displays it. It makes it easy to get headlines/articles from a website without actually visiting it from your browser. It's very minimalist, fast and to the point.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>About the importance of RSS feeds</title>
+	<link>https://samiuljoy.github.io/microblog/rss.html</link>
+	<description><![CDATA[ Its about importance of rss and how rss makes things easy and organized for reading ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>RSS readers are awesome</h2></center>
+	
+	<h3># What is RSS reader</h3>
+	
+	<p> <a href="https://en.wikipedia.org/wiki/RSS" rel="nofollow">RSS</a> is basically a web feed in a custom piece of software. A rss reader fetches headlines from a website and displays it. It makes it easy to get headlines/articles from a website without actually visiting it from your browser. It's very minimalist, fast and to the point.</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
 </item>
 
 </channel>

@@ -24,6 +24,10 @@
 This is where my micro thoughts resides. Hopefully these articles comes to be of use.
 
 ++++++++++++++++++card
+ 
+.date: March 11, 2025
+.article: [About the importance of RSS feeds](rss.html)
+.describe: Its about importance of rss and how rss makes things easy and organized for reading
 
 .date: February  1, 2025
 .article: [Minimizing resource utilization while coding in an IoT environment](arduinocli.html)
@@ -101,8 +105,11 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [guess.sh](guess.html)
 .describe: A simple number guessing game where you get to guess 2 digit random numbers
 
-----------------card
+.date: March 11, 2025
+.article: [Importance of RSS](rss.html)
+.describe: 
 
+----------------card
 
 .hr
 
@@ -130,4 +137,3 @@ else {
 +++++++++add
 .script: ..//js/toggle.js
 -----------add
-
