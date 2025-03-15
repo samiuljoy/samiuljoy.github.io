@@ -105,10 +105,6 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 .article: [guess.sh](guess.html)
 .describe: A simple number guessing game where you get to guess 2 digit random numbers
 
-.date: March 11, 2025
-.article: [Importance of RSS](rss.html)
-.describe: 
-
 ----------------card
 
 .hr

@@ -29,8 +29,6 @@ I initially thought that, since I was root, it would be much easier to set up a 
 
 I wasn't inclined to use an actual vpn service, rather a local dns resolver that had recursive blocking features. DnsCrypt proxy is a great tool for that. It is written in Go language and is very fast. And the vpn-tether application made it much easier to set up an actual forwarding connection. Now I'm using this device as a temporary home router that blocks malware sites, advertisements, gambling, fake news and porn sites. I'm planning on getting an actual router soon though.
 
- **Note: This post was intentionally written vaguely**
-
 .hr
 
 ----------------main

@@ -27,7 +27,7 @@
 
 ## # About me
 
-Motivated and detail-oriented Plant Science graduate student with a decent foundation in Plant Biology and Research Methodologies. Proficient in Computer Programming, scripting languages (Python, Bash), Linux-based automation to enhance data analysis and streamline research workflows and Website Designing. Adept at developing custom scripts, settings up firewalls, iptables, automating tasks with IoT, and optimizing processes for efficiency. A collaborative team player with problem-solving and analytical skills, committed to advancing Agricultural and Environmental sustainability through innovative research and efficiency.
+Motivated and detail-oriented Plant Science graduate student with a decent foundation in Plant Biology and Research Methodologies. Proficient in Computer Programming, scripting languages (Python, Bash), Linux-based automation to enhance data analysis, streamline research workflows and Website Designing. Adept at developing custom scripts, settings up firewalls, iptables, automating tasks with IoT, and optimizing processes for efficiency. A collaborative team player with problem-solving and analytical skills, committed to advancing Agricultural and Environmental sustainability through innovative research and efficiency.
 
 ## # Skills
 
@@ -57,6 +57,28 @@ Conducted an independent [research](academics/abromaaugustum.html) on *Abroma au
 
 Experienced Linux user since 2014 with expertise in Command Line Interface (CLI), Networking, Subnetting, Iptables and Web Designing (HTML, CSS, JS). Proficient in Shell Scripting(made a [static site generator](https://samiuljoy.github.io/demo/base.html)), semi-proficient in Python, and familiar with C/C++. Skilled in Statistical analysis using Excel and Data Visualization with Python's Matplotlib module. Proficient in various software tools, including Microsoft Office Suite, LibreOffice, Git, R Studio, VIM, BioPython. Comfortable with IoT devices such as RaspberryPi, Arduino, Esp8266 and other single-board computers, with additional skills in transcription, copywriting, article writing and relatively fast typing.
 
+### # Networking & Firewall Management
+
+Worked on SoHo firewall setup using iptables and advanced tools like `tc` for traffic control of packets.
+
+### # Router Boards
+
+Have hands-on experience with reputable router boards such as TP-Link, D-Link, Cudy + accessing router shells through UART and DMSC CLI management in advanced router boards.
+
+### # Android Analysis
+
+Android being based off of Linux kernel, gave me a huge advantage into exploring/getting to know the system better. My experience includes(but not limited to);
+
+* Gaining root shells on vulnerable armv7 devices using exploits that creates overflows on specific mediatek chipsets
+
+* Dnscrypt proxy for secure DNSSEC requests to DNS services -> read [here](microblog/vpn_tether.html)
+
+* Using shell scripts to emulate human-like browser navigation -> read [here](microblog/emulate.html)
+
+### # Website Designing
+
+Can design both static and dynamic websites along with backend management, SQL/database management + firewall.
+
 ## # Projects
 
 ### # Static Site Generator(ssg)
@@ -75,31 +97,28 @@ Wrote 3 theology based CLI tools. These are;
 
 ### # Python IRC bot
 
-Created a chatbot in Python programming language irc protocol. This chatbot automates google search excerpts, shows weather status and more. The source code is availble [here](https://github.com/samiuljoy/pyircbot)
-
-### # Networking & Firewall Management
-
-Worked on SoHo firewall setup with iptables and advanced tools like `tc` for traffic control of packets.
-
-### # Website Designing
-
-Can design both static and dynamic websites along with backend management, sql/database management + firewall.
+Created a chatbot in Python programming language for irc protocol. This chatbot automates google search excerpts, shows weather status and more. The source code is availble [here](https://github.com/samiuljoy/pyircbot)
 
 ### # IoT Coding
 
 #. Made a remote controlled WiFi off/on switch for ease of access for Old People. The project can be found [here](https://github.com/samiulahmedjoy/irremote)
 
-#. Made a automated plant system that monitors plant water level, and sends data through email. The project can be found [here](https://github.com/samiulahmedjoy/plantmanagement)
+#. Made an automated system that monitors plant water level and sends data through email when water level is below threshold. The project can be found [here](https://github.com/samiulahmedjoy/plantmanagement)
 
-### # Custom Vim ColorSchemes
 
-Made some modifications to vim colorschemes. The projects can be found [here](https://github.com/samiuljoy/vim-dark-colorschemes) and [here](https://github.com/samiuljoy/customized-miramare)
+### # Exam Websites
+
+I made some small local websites in a short period of time for high school/college students to participate and take exams. I added features like automatic time countdown and used localstorage + javascript to implement anti-cheats.
+
+### # Custom Vim Color-schemes
+
+Made some modifications to vim color-schemes. The projects can be found [here](https://github.com/samiuljoy/vim-dark-colorschemes) and [here](https://github.com/samiuljoy/customized-miramare)
 
 ## # Awards
 
 ### - National Science and Technology Awards (2022)
 
-The most prestigious fellowship awarded by The Ministry of Science and Technology.
+The most prestigious fellowship awarded by The Ministry of Science and Technology, Bangladesh.
 
 ### - Chittagong University Scholarship Awardee (2017)
 
@@ -107,9 +126,9 @@ The University of Chittagong awarded this scholarship for achieving good results
 
 ## # Contact Me
 
-#. Email: samiulahmedmail -> Google Mail [Wrote this way to evade bot spam]
+#. Email: samiulahmedmail -> Google Mail
 
-#. Github: [@samiuljoy](https://github.com/samiulahmedjoy)
+#. Github: [@samiulahmedjoy](https://github.com/samiulahmedjoy) + [@samiuljoy](https://github.com/samiuljoy)
 
 #. Website: https://samiuljoy.github.io
 
