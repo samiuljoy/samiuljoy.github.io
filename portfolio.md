@@ -69,11 +69,11 @@ Have hands-on experience with reputable router boards such as TP-Link, D-Link, C
 
 Android being based off of Linux kernel, gave me a huge advantage into exploring/getting to know the system better. My experience includes(but not limited to);
 
-* Gaining root shells on vulnerable armv7 devices using exploits that creates overflows on specific mediatek chipsets
+#. Gained root shells on vulnerable armv7 devices using exploits that creates overflows on specific mediatek chipsets
 
-* Dnscrypt proxy for secure DNSSEC requests to DNS services -> read [here](microblog/vpn_tether.html)
+#. Dnscrypt proxy for secure DNSSEC requests to DNS services -> read [here](microblog/vpn_tether.html)
 
-* Using shell scripts to emulate human-like browser navigation -> read [here](microblog/emulate.html)
+#. Shell scripts to emulate human-like browser navigation -> read [here](microblog/emulate.html)
 
 ### # Website Designing
 
@@ -128,7 +128,7 @@ The University of Chittagong awarded this scholarship for achieving good results
 
 #. Email: samiulahmedmail -> Google Mail
 
-#. Github: [@samiulahmedjoy](https://github.com/samiulahmedjoy) + [@samiuljoy](https://github.com/samiuljoy)
+#. Github: [@samiulahmedjoy](https://github.com/samiulahmedjoy) & [@samiuljoy](https://github.com/samiuljoy)
 
 #. Website: https://samiuljoy.github.io
 
