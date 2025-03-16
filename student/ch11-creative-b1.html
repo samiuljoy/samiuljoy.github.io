@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- header section begin -->
+<head>
+	<title>Exam on Biology first paper Chapter 11</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.9">
+	<meta name="theme-color" content="#f8f8eb">
+	<meta name="author" content="Samiul Ahmed Joy">
+	<meta name="description" content="Exam on Biology first paper Chapter 11">
+	<link rel="stylesheet" href="../css/maind.css" type="text/css">
+	<link rel="stylesheet" href="../css/main.css" type="text/css">
+</head>
+<!-- header section end -->
+
+<!-- navigation section begin -->
+<body>
+<header role="banner">
+<nav role="navigation">
+
+<ul class="navigation">
+	<li>
+		<a href="../index.html"><home>home</home></a>
+	</li><li class="dropdown">
+	<button class="dropbtn">
+		<div class="index">roam</div>
+	</button>
+	<div class="dropdown-content">
+		<a href="../demo/base.html">demo</a>
+		<a href="../microblog/base.html">microblog</a>
+		<a href="../projects/base.html">projects</a>
+		<a href="../academics/base.html">academics</a>
+		</div>
+	<li><a href="base.html"><back>base</back></a>
+</li>
+</ul>
+</nav>
+</header>
+<!-- navigation section end -->
+
+<div id=switch class=inner-switch>
+	<span id=sword>λ</span>
+</div>
+<noscript>
+	<style type=text/css media=all>
+	@import './css/dark.css' screen and (prefers-color-scheme: dark);
+	.inner-switch {
+	display: none;
+}
+	</style>
+</noscript>
+
+<!-- main section begin -->
+<main id="main" role="main">
+<center><h2>Plant Biotechnology Creative Q/A</h2></center>
+
+<center><h4>Total Time: <span id="countdown">50</span> Minutes | Total Marks: 30</h4></center>
+
+
+<h3># Creative 1</h3>
+
+<p>A very important defense protein is found in human body that plays an important role. This protein can be artificially created where a DNA foreign to bacterial chromosome can be used</p>
+
+<ol>
+	<li>What is PCR?</li>
+	<li>Write 3 main roles of Tissue Culture in Agriculture</li>
+	<li>Describe the process of creating the protein mentioned above</li>
+	<li>"The process mentioned above is more suitable for creating improved varieties compared to hybrid method" - Explain this statement</li>
+</ol>
+
+<h3># Creative 2</h3>
+
+<center>
+	<img loading="lazy" class="pimg" src="../assets/tc.png" alt="Tissue Culture Diagram">
+</center>
+
+
+<div class="caption">Tissue Culture Stem Diagram</div>
+
+<ol>
+	<li>What is a vector?</li>
+	<li>What do you mean by gene cloning?</li>
+	<li>Write the process of generating Image A from Image B</li>
+	<li>In modern times which one is more efficient in terms of culture methods.</li>
+</ol>
+
+
+<h3># Creative 3</h3>
+
+<p>Using plants totipotent properties, plants now can be artificially cultured in a controlled environment within a short period of time. From this, callus is created from explants and both rootless and rooted plants can be created.</p>
+
+<ol>
+	<li>What is plasmid?</li>
+	<li>What do you understand by genome sequencing?</li>
+	<li>Write the above steps along with proper labelled diagrams</li>
+	<li>Write down some of the major importance of using this method</li>
+</ol>
+
+<hr>
+
+<!-- main section end -->
+
+<!-- footer section begin -->
+<center><p>Made with &lt;3 by <a href="https://github.com/samiuljoy" rel="nofollow">samiuljoy</a></p></center>
+
+<center><p><a href="/rss.xml" rel="nofollow">rss</a> | <a href="/about.html" rel="nofollow">about</a> | <a href="#" rel="nofollow">go to top</a></p></center>
+
+<!-- footer section end -->
+
+
+<script>
+	mode = document.getElementById('switch');
+
+	if (! navigator.cookieEnabled) {
+		mode.style.display = 'none';
+	}
+	else if(! localStorage) {
+		mode.style.display = 'none';
+	}
+	else {
+		mode.style.display = 'inline';
+	}
+
+	var timeInSecs;
+	var ticker;
+
+	function startTimer(secs) {
+		timeInSecs = parseInt(secs);
+		ticker = setInterval("tick()", 1000); 
+	}
+
+	function tick( ) {
+		var secs = timeInSecs;
+		if (secs > 0) {
+		timeInSecs--; 
+	}
+	else {
+		clearInterval(ticker);
+		startTimer(50*60); // 4 minutes in seconds
+	}
+
+	var mins = Math.floor(secs/60);
+	secs %= 60;
+	var pretty = ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+
+	document.getElementById("countdown").innerHTML = pretty;
+	}
+
+	startTimer(50*60); // 4 minutes in seconds
+
+	//Credits to Gulzaib from Pakistan
+</script>
+
+	<script src="..//js/toggle.js"></script>
+</body>
+</html>
