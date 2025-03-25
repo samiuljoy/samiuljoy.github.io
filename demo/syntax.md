@@ -106,6 +106,15 @@ This text is a ~~strike~~ through ~~text~~
 	This text is a ~~strike~~ through ~~text~~
 ```
 
+
+## # Sup and Sub Script texts
+
+This text is a ^^sup^^ text and this is ^sub^ text
+
+```no
+	This text is a ^^sup^^ text and this is ^sub^ text
+```
+
 ## # URL texts
 
 Follows default markdown syntax.
