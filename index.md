@@ -1,9 +1,9 @@
 ++++++++++++++++head
-.title: A blog by samiuljoy
-.author: samiuljoy
-.description: A demo page on ssg + random blog
+.title: A Website by Samiul Ahmed Joy
+.author: samiul ahmed joy
+.description: A demo page on ssg and also random blog posts
 .style: css/imain.css
-.name-generator: A personal space of samiuljoy
+.name-generator: A personal space of samiul ahmed joy
 .canonical: https://samiuljoy.github.io/
 --------------------head
 

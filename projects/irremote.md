@@ -61,7 +61,6 @@ Here's the code for it;
 
 ```1
 	#include <IRremote.hpp>
-	#include <Wire.h>
 
 	#define IR_RECEIVE_PIN 3
 	#define RELAY_PIN 5

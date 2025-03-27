@@ -101,6 +101,8 @@ Created a chatbot in Python programming language for irc protocol. This chatbot 
 
 ### # IoT Coding
 
+These projects involve using IoT devices like Arduino, Esp dev boards, RaspberryPI for task automation
+
 #. Made a remote controlled WiFi off/on switch for ease of access for Old People. The project can be found [here](https://github.com/samiulahmedjoy/irremote)
 
 #. Made an automated system that monitors plant water level and sends data through email when water level is below threshold. The project can be found [here](https://github.com/samiulahmedjoy/plantmanagement)
