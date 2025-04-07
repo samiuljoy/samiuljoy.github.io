@@ -23,13 +23,13 @@
 
 ## What is ssg?
 
- [ssg](https://github.com/samiuljoy/ssg) is a static site generator written in shell script. This thing basically takes in files written in markdown format and converts them into proper html files that you can later deploy on your websites or your servers. All you need is a proper config.txt file and you are ready to go. This article does not elaborate on how to write and configure ssg or the config.txt file. Please see the [github](https://github.com/samiuljoy/ssg) instructions for configuring and using ssg.
+ [ssg](https://github.com/samiuljoy/ssg) is a static site generator written in shell script. This thing basically takes in files written in markdown format and converts them into proper html files that you can later deploy on your websites or your servers. All you need is a properly formatted config.txt file and you are ready to go. This article does not elaborate on configuring ssg or the formating config.txt file. Please see the [github](https://github.com/samiuljoy/ssg) instructions for configuring and using ssg, alternatively you can also read [this](cmdline.html) if you're getting started
 
-For reference you can see how [this](https://github.com/samiuljoy/samiuljoy.github.io) sites source code and all the files in it, and how they are arranged and how they work.
+For reference you can see [this](https://github.com/samiuljoy/samiuljoy.github.io) sites source code and all the markdown files in it, and how they are arranged and how they work. You can also watch a demo video on ssg, [here](https://www.youtube.com/watch?v=W9qleSpFd20) is the link to youtube.
 
-## What is it used for?
+## What it could be used for?
 
-For converting markown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of things. Here, you write documents in clear and elegant markown format and ssg does the dirty work for you and converts the file into html.
+For converting markdown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of things. Here, you write documents in clear and elegant markdown format and ssg does the dirty work for you and converts the file into html.
 
 Not only that, with a proper directory structure provided to a config file, you can arrange a whole website structure pretty easily and quickly.
 
@@ -38,9 +38,9 @@ Not only that, with a proper directory structure provided to a config file, you 
 Well, you can use it if;
 
 #. You're converting a file from markown to html
-#. you're deploying a website and want to create file structure automatically
-#. if you dont love writing html syntax files and love markdown files
-#. if you love speed
+#. You're deploying a website and want to create file structure automatically
+#. If you dont love writing html files and love markdown files
+#. If you love speed and efficiency
 
 ## Should I try it?
 

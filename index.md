@@ -9,7 +9,7 @@
 
 ++++++++++++++++++++++intro
 .h2: samiuljoy.github.io
-.h2: Random stuffs
+.h2: Est. at 2020
 .img: ![turtle tree](assets/fractal_resized.svg)
 ----------------------intro
 
