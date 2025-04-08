@@ -182,7 +182,6 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	<pre>
 	<code>
 	&num;include &lt;IRremote&period;hpp&gt;
-	&num;include &lt;Wire&period;h&gt;
 	
 	&num;define IR&lowbar;RECEIVE&lowbar;PIN 3
 	&num;define RELAY&lowbar;PIN 5
@@ -1066,8 +1065,6 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	
 	<p>I wasn't inclined to use an actual vpn service, rather a local dns resolver that had recursive blocking features. DnsCrypt proxy is a great tool for that. It is written in Go language and is very fast. And the vpn-tether application made it much easier to set up an actual forwarding connection. Now I'm using this device as a temporary home router that blocks malware sites, advertisements, gambling, fake news and porn sites. I'm planning on getting an actual router soon though.</p>
 	
-	<p> <b>Note: This post was intentionally written vaguely</b></p>
-	
 	<hr>
 	
 	<!-- main section end -->
@@ -1307,7 +1304,7 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	
 	<h2># Overview</h2>
 	
-	<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android<i>software</i>development#ADB" rel="nofollow">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it [^-^]</p>
+	<p>We'll be using <a href="https://en.m.wikipedia.org/wiki/Android<i>software</i>development#ADB" rel="nofollow">ADB</a> to access the debugging features of Android to emulate input key events(emulating taps on screen). We'll be launching the Chrome Browser from terminal using adb, then tap on the search bar to activate the text area input section, then we'll be putting in some texts, and turning on mobile data/WiFi and querying a search result. We'll then wait for the search results to appear and tap on the first result that pops up. And we'll add some stuffs as we go along this tutorial. If you think this will be tough and such, it's not, if anything, you'll probably end up enjoying it [<sub>-</sub>]</p>
 	
 	<h2># Gathering required stuffs</h2>
 	
@@ -1822,7 +1819,7 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	<a class='btn' href='code/login.html-code11.txt'>view raw</a>
 	
 	
-	<p>Same results can be achieved with <code>openssl</code> and <code>python</code>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck ^_^</p>
+	<p>Same results can be achieved with <code>openssl</code> and <code>python</code>. The python one needs a bit of extra work. Well, let's see if you can figure out how to implement the python part. Let me know if you do, you know how to reach me. Good luck <sub>_</sub></p>
 	
 	<hr>
 	
@@ -1844,7 +1841,7 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	
 	<p>Also, this is my first game in bash script.</p>
 	
-	<p><b>For it to execute properly, you'll need another bash script named ho. ^.^</b></p>
+	<p><b>For it to execute properly, you'll need another bash script named ho. <sub>.</sub></b></p>
 	
 	<center><h2>guess.sh</h2></center>
 	
@@ -2290,7 +2287,7 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	
 	<p><b><i>.describe section:</b></i> The describe section is the text which gets displayed in the description section of the card section.</p>
 	
-	<p>That's how you add articles. Then to add another article, just add a blank line after .describe: and start from .date ^&lowbar;^</p>
+	<p>That's how you add articles. Then to add another article, just add a blank line after .describe: and start from .date <sub>&lowbar;</sub></p>
 	
 	<p>You can also add next page href link to basepages;</p>
 	
@@ -2414,6 +2411,17 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	<pre>
 	<code>
 	This text is a &sim;&sim;strike&sim;&sim; through &sim;&sim;text&sim;&sim;
+	</code>
+	</pre>
+	
+	
+	<h2># Sup and Sub Script texts</h2>
+	
+	<p>This text is a <sup>sup</sup> text and this is <sub>sub</sub> text</p>
+	
+	<pre>
+	<code>
+	This text is a ^^sup^^ text and this is ^sub^ text
 	</code>
 	</pre>
 	
@@ -2950,13 +2958,13 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	
 	<h2>What is ssg?</h2>
 	
-	<p> <a href="https://github.com/samiuljoy/ssg" rel="nofollow">ssg</a> is a static site generator written in shell script. This thing basically takes in files written in markdown format and converts them into proper html files that you can later deploy on your websites or your servers. All you need is a proper config.txt file and you are ready to go. This article does not elaborate on how to write and configure ssg or the config.txt file. Please see the <a href="https://github.com/samiuljoy/ssg" rel="nofollow">github</a> instructions for configuring and using ssg.</p>
+	<p> <a href="https://github.com/samiuljoy/ssg" rel="nofollow">ssg</a> is a static site generator written in shell script. This thing basically takes in files written in markdown format and converts them into proper html files that you can later deploy on your websites or your servers. All you need is a properly formatted config.txt file and you are ready to go. This article does not elaborate on configuring ssg or the formating config.txt file. Please see the <a href="https://github.com/samiuljoy/ssg" rel="nofollow">github</a> instructions for configuring and using ssg, alternatively you can also read <a href="cmdline.html" rel="nofollow">this</a> if you're getting started</p>
 	
-	<p>For reference you can see how <a href="https://github.com/samiuljoy/samiuljoy.github.io" rel="nofollow">this</a> sites source code and all the files in it, and how they are arranged and how they work.</p>
+	<p>For reference you can see <a href="https://github.com/samiuljoy/samiuljoy.github.io" rel="nofollow">this</a> sites source code and all the markdown files in it, and how they are arranged and how they work. You can also watch a demo video on ssg, <a href="https://www.youtube.com/watch?v=W9qleSpFd20" rel="nofollow">here</a> is the link to youtube.</p>
 	
-	<h2>What is it used for?</h2>
+	<h2>What it could be used for?</h2>
 	
-	<p>For converting markown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of things. Here, you write documents in clear and elegant markown format and ssg does the dirty work for you and converts the file into html.</p>
+	<p>For converting markdown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of things. Here, you write documents in clear and elegant markdown format and ssg does the dirty work for you and converts the file into html.</p>
 	
 	<p>Not only that, with a proper directory structure provided to a config file, you can arrange a whole website structure pretty easily and quickly.</p>
 	
@@ -2966,9 +2974,9 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	
 	<ul class="ull">
 		<li>You're converting a file from markown to html</li>
-		<li>you're deploying a website and want to create file structure automatically</li>
-		<li>if you dont love writing html syntax files and love markdown files</li>
-		<li>if you love speed</li>
+		<li>You're deploying a website and want to create file structure automatically</li>
+		<li>If you dont love writing html files and love markdown files</li>
+		<li>If you love speed and efficiency</li>
 	</ul>
 	
 	<h2>Should I try it?</h2>
