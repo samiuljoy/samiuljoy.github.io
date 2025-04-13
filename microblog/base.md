@@ -25,6 +25,11 @@ This is where my micro thoughts resides. Hopefully these articles comes to be of
 
 ++++++++++++++++++card
  
+.date: April 13, 2025
+.article: [My experience with bsd os](bsdexperience.html)
+.describe: Article is about my experience with bsd (open/free) operating systems
+
+ 
 .date: March 11, 2025
 .article: [About the importance of RSS feeds](rss.html)
 .describe: Its about importance of rss and how rss makes things easy and organized for reading

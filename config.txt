@@ -52,6 +52,7 @@ academics/abromaaugustum.md
 projects/irremote.md
 projects/plantmanagement.md
 microblog/rss.md
+microblog/bsdexperience.md
 --------sitemap
 
 ++++navigation
