@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int i,j,isprime;
+
+int main() {
+	for (i=2; i<=30; i++) {
+		isprime=1;
+		printf("Value of i %d\n", i);
+
+		for(j=2; j<i; j++) {
+			printf("Value of j %d\n", j);
+			if(i%j==0) {
+				isprime=0;
+				break;
+			}
+		}
+		if (isprime==1) {
+		printf("Prime Numbers %d\n",i);
+	}
+
+	}
+	return 0;
+}
