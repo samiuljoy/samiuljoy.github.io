@@ -53,6 +53,9 @@ projects/irremote.md
 projects/plantmanagement.md
 microblog/rss.md
 microblog/bsdexperience.md
+theology/base.md
+theology/muhammad.md
+theology/favoriteverses.md
 --------sitemap
 
 ++++navigation
@@ -62,6 +65,7 @@ microblog/bsdexperience.md
 .navpage: [microblog](microblog/base.html)
 .navpage: [projects](projects/base.html)
 .navpage: [academics](academics/base.html)
+.navpage: [theology](../theology/base.html)
 .backpage: [base](base.html)
 ----------navigation
 

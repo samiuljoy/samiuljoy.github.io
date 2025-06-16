@@ -14,6 +14,7 @@
 .navpage: [microblog](..//microblog/base.html)
 .navpage: [projects](..//projects/base.html)
 .navpage: [academics](..//academics/base.html)
+.navpage: [theology](../theology/base.html)
 .backpage: [base](base.html)
 ----------navigation
 

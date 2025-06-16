@@ -1,11 +1,11 @@
 +++++++++++++++++head
-.title: About my projects
-.author: Samiul Ahmed Joy
-.description: This page holds index of my different projects
+.title: Some of my favorite verses from the Holy Quran
+.author: Samiul Ahmed
+.description: This post is about some of my favorite verses from the Holy Quran
 .style: ..//css/maind.css
 .style: ..//css/main.css
-.name-generator: This page is a collective placeholder of projects that I've worked in
-.canonical-link: https://samiujoy.github.io/projects/base.html
+.name-generator: This post is about some of my favorite verses from the Holy Quran
+.canonical-link: https://samiuljoy.github.io/favoriteverses.html
 -------------------head
 
 ++++navigation
@@ -15,30 +15,14 @@
 .navpage: [microblog](..//microblog/base.html)
 .navpage: [projects](..//projects/base.html)
 .navpage: [academics](..//academics/base.html)
-.navpage: [theology](../theology/base.html)
+.navpage: [theology](..//../theology/base.html)
 .backpage: [base](base.html)
 ----------navigation
 
 ++++++++++++++++main
-.ce header2: My projects
+.ce header2: Favorite Verses
 
-This page contains some of the projects I've worked on/will be working on.
-
-++++++++++++++++card
- 
-.date: February 24, 2025
-.article: [Automate email sending with esp8266 nodemcu](plantmanagement.html)
-.describe: Send email automatically when sensor value goes below threshold
-
- 
-.date: February 12, 2025
-.article: [Remote Control Stuff](irremote.html)
-.describe: Turn relay module on or off based off of remote signal
-
--------------card
-
-.hr
-
+This post will include some of my favorite verses from the Holy Quran. Stay tuned for a full article
 ----------------main
 
 ++++++++++++++++footer
@@ -63,3 +47,4 @@ else {
 +++++++++add
 .script: ..//js/toggle.js
 -----------add
+

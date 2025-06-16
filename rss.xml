@@ -22,15 +22,15 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	<content:encoded><![CDATA[
 	<center><h2>Bsd experience</h2></center>
 	
-	<p>Recently I got myself into tinkering with bsd operating systems. I knew about netbsd, openbsd and freebsd. So thought this would be a good idea to get started with open and freebsd. So, I did some basic googling on the internet, and found out that openbsd puts more effort into creating a by-default secure os, this consuming more system-resources. Freebsd on the other hand is more optimized for performance, and is considerably much much faster compared to openbsd and security can be enhanced on freebsd as well post installation. So, I thought why not try both of them</p>
+	<p>Recently I got myself into tinkering with bsd operating systems. I knew about netbsd, openbsd and freebsd. So thought this would be a good idea to get started with open and freebsd. So, I did some basic googling on the internet, and found out that openbsd puts more effort into creating a by-default secure os, thus consuming more system-resources. Freebsd on the other hand is more optimized for performance, and is considerably much much faster compared to openbsd and security can be enhanced on freebsd as well post installation. So, I thought why not try both of them</p>
 	
-	<h3>Experience with Openbsd</h3>
+	<h3># Experience with Openbsd</h3>
 	
 	<p>The openbsd download image file was comparatively small compared to freebsd. It was about 650MB or so. I had a an old motherboard that I used as a desktop, and thought running openbsd on that wouldn't be a problem since it was already supported on that platform. However, booting from usb was a hassle on the old platform, since it only had support for legacy bootloaders. But anyway, I managed to install openbsd on that hardware and the installation process was very easy and straightforward. Thankfully there was a MBR partition mode during installation instead of GPT, because of that I was able to install it on a legacy platform. I was surprised at how much efficient Openbsd was in terms of system utilization, it only used 30MB of RAM when idle and when running Xorg with dwm(window manager) it used upto 60-80MB or rams, which is surprising and brilliant to say the least. Then installing chromium on it, and watching youtube boosted the ram upto 1.4GB which was fine considering I was watching a ray tracing 60FPS video at 720P on a pentium dual core cpu from 2010. Everything seemed to work fine, until I ran fw<i>update. Running fw</i>update downloaded a file on my local $HOME directory called intel-drm.tar.gz which when I uzipped and untar, completely crashed my computer and the entire motherboard ended up being dead. So yeah. I mean I wouldn't even be surprised since US/Canada/Europe + friends have been targeting third world Muslim/Islamic countries since the birth of technology, so no surprise there. I even reached out to the openbsd devs and asked them why would running tar -xzf inside of an operating system entirely kill my PC, their logic was, "Oh you're hardware is old that's why, get rid of it.". Even though I have been running Linux on my system since 2020 or even before that and had no problems before, and openbsd just randomly destroys my PC, completely.</p>
 	
 	<p>It's fine I guess. I guess I was at fault for even trying out their OS. Anyways, that's my experience with openbsd</p>
 	
-	<h3>Experience with Freebsd</h3>
+	<h3># Experience with Freebsd</h3>
 	
 	<p>My journey with freebsd has been good so far. It's very fast, responsive. Has good support for raspberry PI dev boards. I couldn't even get Openbsd to boot properly on my Raspberry pi board, but anyway, yeah freebsd has been good and nothing has broken(yet).</p>
 	<!-- main section end -->
@@ -2981,19 +2981,19 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 	<content:encoded><![CDATA[
 	<center><h1>Static Site Generator</h1></center>
 	
-	<h2>What is ssg?</h2>
+	<h2># What is ssg?</h2>
 	
-	<p> <a href="https://github.com/samiuljoy/ssg" rel="nofollow">ssg</a> is a static site generator written in shell script. This thing basically takes in files written in markdown format and converts them into proper html files that you can later deploy on your websites or your servers. All you need is a properly formatted config.txt file and you are ready to go. This article does not elaborate on configuring ssg or the formating config.txt file. Please see the <a href="https://github.com/samiuljoy/ssg" rel="nofollow">github</a> instructions for configuring and using ssg, alternatively you can also read <a href="cmdline.html" rel="nofollow">this</a> if you're getting started</p>
+	<p> <a href="https://github.com/samiuljoy/ssg" rel="nofollow">ssg</a> is a static site generator written in shell script. This program can basically take in files written in markdown format and convert them into proper html format that you can later deploy on your websites or your servers. All you need is a properly formatted <code>config.txt</code> file and you are ready to go. This article does not elaborate on configuring ssg or the formating of config.txt file. Please see the <a href="https://github.com/samiuljoy/ssg" rel="nofollow">github</a> instructions for configuring and using ssg, alternatively you can also read <a href="cmdline.html" rel="nofollow">this</a> if you're getting started</p>
 	
 	<p>For reference you can see <a href="https://github.com/samiuljoy/samiuljoy.github.io" rel="nofollow">this</a> sites source code and all the markdown files in it, and how they are arranged and how they work. You can also watch a demo video on ssg, <a href="https://www.youtube.com/watch?v=W9qleSpFd20" rel="nofollow">here</a> is the link to youtube.</p>
 	
-	<h2>What it could be used for?</h2>
+	<h2># What can it be used for?</h2>
 	
-	<p>For converting markdown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of things. Here, you write documents in clear and elegant markdown format and ssg does the dirty work for you and converts the file into html.</p>
+	<p>For converting markdown files into html files. Markdown files are easy to write compared to html ones as they require you to have tags and brackets and all sorts of styling and things. Here, you write documents in clear and elegant markdown format and ssg does the heavy work for you and adds tags and html codes to convert the markdown file into html.</p>
 	
-	<p>Not only that, with a proper directory structure provided to a config file, you can arrange a whole website structure pretty easily and quickly.</p>
+	<p>Not only that, with a proper directory structure provided in a config file, you can arrange a whole website structure pretty easily and quickly.</p>
 	
-	<h2>Why should you use it?</h2>
+	<h2># Why should you use it?</h2>
 	
 	<p>Well, you can use it if;</p>
 	
@@ -3002,6 +3002,7 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 		<li>You're deploying a website and want to create file structure automatically</li>
 		<li>If you dont love writing html files and love markdown files</li>
 		<li>If you love speed and efficiency</li>
+		<li>If you're interested in writing a small self hosting blog with minimal footprint in a GNU/Linux environment.</li>
 	</ul>
 	
 	<h2>Should I try it?</h2>

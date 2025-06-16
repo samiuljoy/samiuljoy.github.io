@@ -25,21 +25,24 @@
 
 The Holy Quran contains some numerical aspects to it which coincides with real world. As mysterious as that sounds, there is definite truth to it. These numerical aspects surely would make someone more curious about the fact that whether "these" words of The Holy Quran are the words of a man or the Words of none but the creator of the whole universe, Allah.
 
-male and female are equal in Allah's perspective. Both the words "male" and "female" are mentioned 24 times in The Holy Quran. One interesting fact is that, during fertilization process, the egg and the sperm equates to a total of 46 chromosomes (23 male and 23 female chromosomes). There's also this ayat from Sura-an-Nisa, which proves the prior statement;
+male and female are equal in Allah's perspective. Both the arabic words "male" and "female" are mentioned 24 times in The Holy Quran. One interesting fact is that, during fertilization process, the egg and the sperm equates to a total of 46 chromosomes (23 male and 23 female chromosomes). There's also this ayat from Sura-an-Nisa, which proves the prior statement about male and female bearing equal importance from Allah's perspective;
 
 
 > \[4:124\] Whoever, male or female does good deeds and is a believer, than such people shall enter paradise, and they shall not be wronged in the least.
 
+And similarly on Sura Al-Ahzab;
 
-The word **salawat** in Arabic is the plural form the word **salat**. The word **salawat** is mentioned **5** times in The Holy Quran. **5** is the number of times we pray salat in a day.
+> \[33:35\] Surely ˹for˺ Muslim men and women, believing men and women, devout men and women, truthful men and women, patient men and women, humble men and women, charitable men and women, fasting men and women, men and women who guard their chastity, and men and women who remember Allah often, for ˹all of˺ them Allah has prepared forgiveness and a great reward.
 
-There can also be found some numerical symmetries among opposite words in The Holy Quran. For example, the word, **world** and **afterlife** has been mentioned in equal numbers in The Holy Quran, which is 115 times. The words **Iman** and **kufr** has been mentioned 25 times each. The words **benefit** and **loss** has been mentioned 50 times each. Similarly, the words **peace** and **chaos** has been mentioned in equal numbers which is 13 times and **hot** and **cold** has been mentioned 5 times each in The Holy Quran.
+The word **صَلَوَات**(salawat) in Arabic is the plural form the word **صلاة**(salat). The word **salawat** is mentioned **5** times in The Holy Quran. **5** is the number of times we pray salat in a day.
 
-The words **Malaikun** or **Malaika** in Arabic which means angels has been mentioned in same amount with respect to the word **saitan** or **shaiatin** which means the Devil in Arabic.
+There can also be found some numerical symmetries among opposite words in The Holy Quran. For example, the word, **world** and **الآخرة**(afterlife) has been mentioned in equal numbers in The Holy Quran, which is 115 times. The words **إِيمَان**(Iman) and **کُفْر**(kufr) has been mentioned 25 times each. The words **benefit** and **loss** has been mentioned 50 times each. Similarly, the words **peace** and **chaos** has been mentioned in equal numbers which is 13 times and **hot** and **cold** has been mentioned 5 times each in The Holy Quran.
 
-Similarly, the Arabic words, **Al-Khabish** which means "impurity" has been mentioned similar number of times with respect to the word **At-taiyab** which means holy or pure.
+The words **Malaikun** or **ملائكة**(Malaika) in Arabic which means angels has been mentioned in same amount with respect to the word **شيطان**(shaiatin) which means the Devil in Arabic.
 
-The word **Yamoon** in Arabic means day in English. The word **Yamoon** has been mentioned 365 times in The Holy Quran. The plural of this word is **Ayiiam** which means days. This has been mentioned in The Holy Quran 30 times. In our prophets time, people used to count days using moon, or now as we say lunar calendar. Surprisingly, the English word moon or the Arabic word **Qamar** has been mentioned 30 times in the entire Holy Quran. The word **Shahroon** means months. The Holy Quran contains this word 12 times.
+Similarly, the Arabic words, **خبيث**(Khabees) which means "impurity" has been mentioned similar number of times with respect to the word **طيب**(taiyab) which means holy or pure.
+
+The word **يوم**(yawm) in Arabic means day in English. The word **yawm** has been mentioned 365 times in The Holy Quran. The plural of this word is **Ayiiam** which means days. This has been mentioned in The Holy Quran 30 times. In our prophets time, people used to count days using moon, or now as we say lunar calendar. Surprisingly, the English word moon or the Arabic word **قمر**(qamar) has been mentioned 30 times in the entire Holy Quran. The word **Shahroon** means months. The Holy Quran contains this word 12 times.
 
 The words "land" and "waterbody" has been mentioned 13 and 32 times in The Holy Quran. If we add these 2 numbers, then we get 45. Now, if we calculate the percentiles then we can see that, 13 is 29% of 45 and 32 is 71% of 45. Surprisingly, the percentage of land and water on the Earth's surface is 29% and 71%.
 
