@@ -16,6 +16,39 @@ xmlns:media="http://search.yahoo.com/mrss/" >
 
 <item>
 	<pubDate></pubDate>
+	<title>Some of my favorite verses from the Holy Quran</title>
+	<link>https://samiuljoy.github.io/theology/favoriteverses.html</link>
+	<description><![CDATA[ This post is about some of my favorite verses from the Holy Quran ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Favorite Verses</h2></center>
+	
+	<p>This post will include some of my favorite verses from the Holy Quran. Stay tuned for a full article</p>
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
+	<title>Importance of Learning about the prophet Muhammad</title>
+	<link>https://samiuljoy.github.io/theology/muhammad.html</link>
+	<description><![CDATA[ This post is about learning about the prophet muhammad ]]></description>
+	<content:encoded><![CDATA[
+	<center><h2>Life of RasulAllah</h2></center>
+	
+	<p>Read the Sealed Necter by mubarakpuri to know about the life of Prophet Muhammad. I will be writing more on here</p>
+	
+	<hr>
+	
+	<!-- main section end -->
+	]]>
+	</content:encoded>
+</item>
+
+
+<item>
+	<pubDate></pubDate>
 	<title>My experience with bsd os</title>
 	<link>https://samiuljoy.github.io/microblog/bsdexperience.html</link>
 	<description><![CDATA[ Article is about my experience with bsd (open/free) operating systems ]]></description>
