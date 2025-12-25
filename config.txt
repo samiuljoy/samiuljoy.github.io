@@ -52,7 +52,6 @@ academics/abromaaugustum.md
 projects/irremote.md
 projects/plantmanagement.md
 microblog/rss.md
-microblog/bsdexperience.md
 theology/base.md
 theology/muhammad.md
 theology/favoriteverses.md
