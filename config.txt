@@ -17,6 +17,7 @@ samiuljoy.github.io
 ++++++++++sitemap
 index.md
 about.md
+delivery.md
 portfolio.md
 demo/cmdline.md
 demo/base.md
